@@ -6,6 +6,7 @@ This repository contains concise usage notes and request examples for common API
 1. Open the relevant document in `docs/`.
 2. Replace placeholders like `TOKEN`, `API_KEY`, `HOST`, and `PORT` with your values.
 3. Use the Python/PowerShell/curl snippets as a starting point.
+4. For more public APIs, browse https://free-apis.github.io/#/browse.
 
 ## Index
 
@@ -16,6 +17,17 @@ This repository contains concise usage notes and request examples for common API
 | Gmail | Google email service with SMTP and Gmail API access. | [docs/gmail.md](docs/gmail.md) |
 | Dropbox | Cloud file storage with REST API. | [docs/dropbox.md](docs/dropbox.md) |
 | Drupal JSON:API | Standardized JSON:API endpoints for Drupal content. | [docs/drupal-jsonapi.md](docs/drupal-jsonapi.md) |
+| Yesplan Integrations | Event management integrations and API endpoints. | [docs/yesplan.md](docs/yesplan.md) |
+| Open Food Facts | Open datasets and APIs for food product data. | [docs/openfoodfacts.md](docs/openfoodfacts.md) |
+| Jina AI Reader | Reader endpoint for fetching cleaned web content. | [docs/jina-ai.md](docs/jina-ai.md) |
+| Google Maps API | Geocoding, places, and map services. | [docs/google-maps.md](docs/google-maps.md) |
+| Leaflet | JavaScript mapping library for interactive maps. | [docs/leaflet.md](docs/leaflet.md) |
+| OpenStreetMap | Open map data with Nominatim geocoding. | [docs/openstreetmap.md](docs/openstreetmap.md) |
+| 9292 Travel Advice API | Travel planning API for the Netherlands. | [docs/9292.md](docs/9292.md) |
+| NS APIs | Nederlandse Spoorwegen travel information APIs. | [docs/ns.md](docs/ns.md) |
+| Ticketmaster | Event discovery and listings API. | [docs/ticketmaster.md](docs/ticketmaster.md) |
+| Lansweeper | Asset and reporting APIs. | [docs/lansweeper.md](docs/lansweeper.md) |
+| Apple iTunes Search API | Media catalog search API. | [docs/apple-itunes.md](docs/apple-itunes.md) |
 | OpenAI | AI model APIs for text, vision, and audio. | [docs/openai.md](docs/openai.md) |
 | BFL | Black Forest Labs model APIs. | [docs/bfl.md](docs/bfl.md) |
 | Ollama | Local model runtime with HTTP API. | [docs/ollama.md](docs/ollama.md) |
