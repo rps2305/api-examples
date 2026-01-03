@@ -17,6 +17,7 @@ This repository contains concise usage notes and request examples for common API
 | Dropbox | Cloud file storage with REST API. | [docs/dropbox.md](docs/dropbox.md) |
 | Drupal JSON:API | Standardized JSON:API endpoints for Drupal content. | [docs/drupal-jsonapi.md](docs/drupal-jsonapi.md) |
 | OpenAI | AI model APIs for text, vision, and audio. | [docs/openai.md](docs/openai.md) |
+| BFL | Black Forest Labs model APIs. | [docs/bfl.md](docs/bfl.md) |
 | Ollama | Local model runtime with HTTP API. | [docs/ollama.md](docs/ollama.md) |
 | Docker Engine API | REST API for Docker daemon management. | [docs/docker.md](docs/docker.md) |
 | Discord | Chat platform APIs and bot/webhook integrations. | [docs/discord.md](docs/discord.md) |
@@ -31,6 +32,7 @@ This repository contains concise usage notes and request examples for common API
 | Imaginary | HTTP image processing service. | [docs/imaginary.md](docs/imaginary.md) |
 | Pi-hole | DNS sinkhole with stats API. | [docs/pi-hole.md](docs/pi-hole.md) |
 | Proxmox VE | Virtualization platform with REST API. | [docs/proxmox.md](docs/proxmox.md) |
+| VMware vSphere Web Services API | SOAP-based API for vCenter/ESXi management. | [docs/vsphere-web-services.md](docs/vsphere-web-services.md) |
 | Semaphore | Ansible Semaphore automation API. | [docs/semaphore.md](docs/semaphore.md) |
 | Uptime Kuma | Self-hosted monitoring with API endpoints. | [docs/uptime-kuma.md](docs/uptime-kuma.md) |
 | Prowlarr | Indexer management API for the *arr* stack. | [docs/prowlarr.md](docs/prowlarr.md) |
@@ -41,6 +43,7 @@ This repository contains concise usage notes and request examples for common API
 | Web-Check | Self-hosted status and monitoring dashboard. | [docs/web-check.md](docs/web-check.md) |
 | Microsoft Graph | Unified API for Microsoft 365 services. | [docs/ms-graph.md](docs/ms-graph.md) |
 | Seeq | Industrial analytics platform and APIs. | [docs/seeq.md](docs/seeq.md) |
+| GE Vernova Historian | Historian time-series APIs for industrial data. | [docs/ge-vernova-historian.md](docs/ge-vernova-historian.md) |
 | EAL ATS | Applicant tracking system (vendor-provided API). | [docs/eal-ats.md](docs/eal-ats.md) |
 | KNMI | Dutch meteorological data platform APIs. | [docs/knmi.md](docs/knmi.md) |
 | Microsoft SQL Server | Relational database system (TDS protocol). | [docs/ms-sql.md](docs/ms-sql.md) |
@@ -48,6 +51,3 @@ This repository contains concise usage notes and request examples for common API
 
 ## Not found
 Some entries do not have clear public API documentation or are ambiguous. See [docs/NOTFOUND.md](docs/NOTFOUND.md) for details.
-
-- blf.ai
-- Historian
