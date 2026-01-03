@@ -17,6 +17,77 @@ response = client.responses.create(
 print(response.output_text)
 ```
 
+## Python (Vision)
+```python
+from openai import OpenAI
+
+client = OpenAI(api_key="OPENAI_API_KEY")
+
+response = client.responses.create(
+    model="gpt-4.1-mini",
+    input=[
+        {
+            "role": "user",
+            "content": [
+                {"type": "input_text", "text": "Describe the image in one sentence."},
+                {
+                    "type": "input_image",
+                    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg",
+                },
+            ],
+        }
+    ],
+)
+
+print(response.output_text)
+```
+
+## Python (Text-to-speech)
+```python
+import requests
+
+headers = {"Authorization": "Bearer OPENAI_API_KEY"}
+payload = {
+    "model": "gpt-4o-mini-tts",
+    "voice": "alloy",
+    "input": "Thanks for trying our API examples.",
+}
+
+resp = requests.post("https://api.openai.com/v1/audio/speech", headers=headers, json=payload)
+resp.raise_for_status()
+with open("speech.mp3", "wb") as f:
+    f.write(resp.content)
+```
+
+## Python (Tool calling)
+```python
+from openai import OpenAI
+
+client = OpenAI(api_key="OPENAI_API_KEY")
+
+response = client.responses.create(
+    model="gpt-4.1-mini",
+    input="What's the weather in Seattle?",
+    tools=[
+        {
+            "type": "function",
+            "function": {
+                "name": "get_weather",
+                "description": "Get the current weather in a city.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {"city": {"type": "string"}},
+                    "required": ["city"],
+                },
+            },
+        }
+    ],
+    tool_choice="auto",
+)
+
+print(response.output)
+```
+
 ## Structured outputs (JSON schema)
 ```python
 from openai import OpenAI
@@ -67,6 +138,65 @@ $body = @{ model = "gpt-4.1-mini"; input = "Write a short haiku about APIs." } |
 Invoke-RestMethod -Method Post -Uri "https://api.openai.com/v1/responses" -Headers $headers -Body $body
 ```
 
+## PowerShell (Vision)
+```powershell
+$headers = @{ Authorization = "Bearer OPENAI_API_KEY"; "Content-Type" = "application/json" }
+$body = @{
+  model = "gpt-4.1-mini"
+  input = @(
+    @{
+      role = "user"
+      content = @(
+        @{ type = "input_text"; text = "Describe the image in one sentence." }
+        @{ type = "input_image"; image_url = "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg" }
+      )
+    }
+  )
+} | ConvertTo-Json -Depth 6
+
+Invoke-RestMethod -Method Post -Uri "https://api.openai.com/v1/responses" -Headers $headers -Body $body
+```
+
+## PowerShell (Text-to-speech)
+```powershell
+$headers = @{ Authorization = "Bearer OPENAI_API_KEY" }
+$body = @{
+  model = "gpt-4o-mini-tts"
+  voice = "alloy"
+  input = "Thanks for trying our API examples."
+} | ConvertTo-Json
+
+Invoke-RestMethod -Method Post -Uri "https://api.openai.com/v1/audio/speech" -Headers $headers -Body $body -ContentType "application/json" -OutFile "speech.mp3"
+```
+
+## PowerShell (Tool calling)
+```powershell
+$headers = @{ Authorization = "Bearer OPENAI_API_KEY"; "Content-Type" = "application/json" }
+$body = @{
+  model = "gpt-4.1-mini"
+  input = "What's the weather in Seattle?"
+  tools = @(
+    @{
+      type = "function"
+      function = @{
+        name = "get_weather"
+        description = "Get the current weather in a city."
+        parameters = @{
+          type = "object"
+          properties = @{
+            city = @{ type = "string" }
+          }
+          required = @("city")
+        }
+      }
+    }
+  )
+  tool_choice = "auto"
+} | ConvertTo-Json -Depth 8
+
+Invoke-RestMethod -Method Post -Uri "https://api.openai.com/v1/responses" -Headers $headers -Body $body
+```
+
 ## PowerShell (Structured outputs)
 ```powershell
 $headers = @{ Authorization = "Bearer OPENAI_API_KEY"; "Content-Type" = "application/json" }
@@ -111,6 +241,60 @@ curl https://api.openai.com/v1/responses \
   -H "Authorization: Bearer OPENAI_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"model":"gpt-4.1-mini","input":"Write a short haiku about APIs."}'
+```
+
+## curl (Vision)
+```bash
+curl https://api.openai.com/v1/responses \
+  -H "Authorization: Bearer OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "gpt-4.1-mini",
+    "input": [
+      {
+        "role": "user",
+        "content": [
+          { "type": "input_text", "text": "Describe the image in one sentence." },
+          { "type": "input_image", "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg" }
+        ]
+      }
+    ]
+  }'
+```
+
+## curl (Text-to-speech)
+```bash
+curl https://api.openai.com/v1/audio/speech \
+  -H "Authorization: Bearer OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"gpt-4o-mini-tts","voice":"alloy","input":"Thanks for trying our API examples."}' \
+  --output speech.mp3
+```
+
+## curl (Tool calling)
+```bash
+curl https://api.openai.com/v1/responses \
+  -H "Authorization: Bearer OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "gpt-4.1-mini",
+    "input": "What'\''s the weather in Seattle?",
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "description": "Get the current weather in a city.",
+          "parameters": {
+            "type": "object",
+            "properties": { "city": { "type": "string" } },
+            "required": ["city"]
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto"
+  }'
 ```
 
 ## curl (Structured outputs)

@@ -5,17 +5,42 @@ Draw Things is an on-device AI image generation app. The project maintains a wik
 
 ## Python
 ```python
-# Check the Draw Things wiki for any supported automation interfaces.
+prompt = (
+    "Prompt: a cozy cabin in a snowy forest, cinematic lighting\n"
+    "Negative prompt: low quality, blurry\n"
+    "Steps: 30\n"
+    "Sampler: DPM++ 2M Karras\n"
+)
+
+with open("drawthings_prompt.txt", "w", encoding="utf-8") as f:
+    f.write(prompt)
+
+print("Saved drawthings_prompt.txt. Paste the contents into Draw Things.")
 ```
 
 ## PowerShell
 ```powershell
-# Check the Draw Things wiki for any supported automation interfaces.
+$prompt = @"
+Prompt: a cozy cabin in a snowy forest, cinematic lighting
+Negative prompt: low quality, blurry
+Steps: 30
+Sampler: DPM++ 2M Karras
+"@
+
+$prompt | Out-File -FilePath "drawthings_prompt.txt" -Encoding utf8
+Write-Host "Saved drawthings_prompt.txt. Paste the contents into Draw Things."
 ```
 
 ## curl
 ```bash
-# Check the Draw Things wiki for any supported automation interfaces.
+cat > drawthings_prompt.txt <<'EOF'
+Prompt: a cozy cabin in a snowy forest, cinematic lighting
+Negative prompt: low quality, blurry
+Steps: 30
+Sampler: DPM++ 2M Karras
+EOF
+
+echo "Saved drawthings_prompt.txt. Paste the contents into Draw Things."
 ```
 
 ## Docs
