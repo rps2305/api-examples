@@ -50,6 +50,7 @@ This repository contains concise usage notes and request examples for common API
 | Prowlarr | Indexer management API for the *arr* stack. | [docs/prowlarr.md](docs/prowlarr.md) |
 | Transmission | BitTorrent client with JSON-RPC API. | [docs/transmission.md](docs/transmission.md) |
 | Portainer | Container management UI with REST API. | [docs/portainer.md](docs/portainer.md) |
+| OmniFocus Automation | JavaScript automation API for OmniFocus. | [docs/omnifocus.md](docs/omnifocus.md) |
 | Cloadpanel.io (CloudPanel) | Web server control panel (API varies by install). | [docs/cloadpanel-io.md](docs/cloadpanel-io.md) |
 | Stirling PDF | Self-hosted PDF toolkit with REST API. | [docs/stirling-pdf.md](docs/stirling-pdf.md) |
 | Web-Check | Self-hosted status and monitoring dashboard. | [docs/web-check.md](docs/web-check.md) |
@@ -60,6 +61,10 @@ This repository contains concise usage notes and request examples for common API
 | KNMI | Dutch meteorological data platform APIs. | [docs/knmi.md](docs/knmi.md) |
 | Microsoft SQL Server | Relational database system (TDS protocol). | [docs/ms-sql.md](docs/ms-sql.md) |
 | Draw Things | On-device AI image generation app and wiki. | [docs/drawthings.md](docs/drawthings.md) |
+| Pentestbook API Enumeration | Reference guide for enumerating web service APIs. | [docs/pentestbook-apis.md](docs/pentestbook-apis.md) |
+| Reddit | OAuth2-protected REST APIs for Reddit. | [docs/reddit.md](docs/reddit.md) |
+| Tints Palette API | Palette generation endpoint for Tints. | [docs/tints.md](docs/tints.md) |
+| Visma Youforce | HR and payroll APIs for Youforce tenants. | [docs/visma-youforce.md](docs/visma-youforce.md) |
 
 ## Not found
 Some entries do not have clear public API documentation or are ambiguous. See [docs/NOTFOUND.md](docs/NOTFOUND.md) for details.
