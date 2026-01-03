@@ -15,6 +15,76 @@ resp.raise_for_status()
 print(resp.json()["response"])
 ```
 
+## Python (Vision)
+```python
+import base64
+import requests
+
+with open("image.jpg", "rb") as f:
+    image_b64 = base64.b64encode(f.read()).decode("utf-8")
+
+resp = requests.post(
+    "http://localhost:11434/api/chat",
+    json={
+        "model": "llama3.2-vision",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Describe the image in one sentence.",
+                "images": [image_b64],
+            }
+        ],
+    },
+)
+resp.raise_for_status()
+print(resp.json()["message"]["content"])
+```
+
+## Python (Text-to-speech, model-dependent)
+```python
+import base64
+import requests
+
+resp = requests.post(
+    "http://localhost:11434/api/generate",
+    json={"model": "bark", "prompt": "Thanks for trying our API examples.", "stream": False},
+)
+resp.raise_for_status()
+
+audio_b64 = resp.json()["response"]
+with open("speech.wav", "wb") as f:
+    f.write(base64.b64decode(audio_b64))
+```
+
+## Python (Tool calling)
+```python
+import requests
+
+resp = requests.post(
+    "http://localhost:11434/api/chat",
+    json={
+        "model": "llama3.1",
+        "messages": [{"role": "user", "content": "What's the weather in Seattle?"}],
+        "tools": [
+            {
+                "type": "function",
+                "function": {
+                    "name": "get_weather",
+                    "description": "Get the current weather in a city.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {"city": {"type": "string"}},
+                        "required": ["city"],
+                    },
+                },
+            }
+        ],
+    },
+)
+resp.raise_for_status()
+print(resp.json()["message"])
+```
+
 ## Structured outputs (JSON schema)
 ```python
 import requests
@@ -58,6 +128,62 @@ $body = @{ model = "llama3.1"; prompt = "Explain what an API is in one sentence.
 Invoke-RestMethod -Method Post -Uri "http://localhost:11434/api/generate" -Body $body -ContentType "application/json"
 ```
 
+## PowerShell (Vision)
+```powershell
+$imageBytes = [System.IO.File]::ReadAllBytes("image.jpg")
+$imageB64 = [Convert]::ToBase64String($imageBytes)
+$body = @{
+  model = "llama3.2-vision"
+  messages = @(
+    @{
+      role = "user"
+      content = "Describe the image in one sentence."
+      images = @($imageB64)
+    }
+  )
+} | ConvertTo-Json -Depth 6
+
+Invoke-RestMethod -Method Post -Uri "http://localhost:11434/api/chat" -Body $body -ContentType "application/json"
+```
+
+## PowerShell (Text-to-speech, model-dependent)
+```powershell
+$body = @{
+  model = "bark"
+  prompt = "Thanks for trying our API examples."
+  stream = $false
+} | ConvertTo-Json
+
+$resp = Invoke-RestMethod -Method Post -Uri "http://localhost:11434/api/generate" -Body $body -ContentType "application/json"
+[System.IO.File]::WriteAllBytes("speech.wav", [Convert]::FromBase64String($resp.response))
+```
+
+## PowerShell (Tool calling)
+```powershell
+$body = @{
+  model = "llama3.1"
+  messages = @(
+    @{ role = "user"; content = "What's the weather in Seattle?" }
+  )
+  tools = @(
+    @{
+      type = "function"
+      function = @{
+        name = "get_weather"
+        description = "Get the current weather in a city."
+        parameters = @{
+          type = "object"
+          properties = @{ city = @{ type = "string" } }
+          required = @("city")
+        }
+      }
+    }
+  )
+} | ConvertTo-Json -Depth 8
+
+Invoke-RestMethod -Method Post -Uri "http://localhost:11434/api/chat" -Body $body -ContentType "application/json"
+```
+
 ## PowerShell (Structured outputs)
 ```powershell
 $schema = @{
@@ -94,6 +220,58 @@ Invoke-RestMethod -Method Post -Uri "http://localhost:11434/api/generate" -Body 
 curl http://localhost:11434/api/generate \
   -H "Content-Type: application/json" \
   -d '{"model":"llama3.1","prompt":"Explain what an API is in one sentence."}'
+```
+
+## curl (Vision)
+```bash
+IMAGE_B64=$(base64 < image.jpg)
+
+curl http://localhost:11434/api/chat \
+  -H "Content-Type: application/json" \
+  -d "{
+    \"model\": \"llama3.2-vision\",
+    \"messages\": [
+      {
+        \"role\": \"user\",
+        \"content\": \"Describe the image in one sentence.\",
+        \"images\": [\"$IMAGE_B64\"]
+      }
+    ]
+  }"
+```
+
+## curl (Text-to-speech, model-dependent)
+```bash
+curl http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"model":"bark","prompt":"Thanks for trying our API examples.","stream":false}' \
+  | jq -r '.response' | base64 --decode > speech.wav
+```
+
+## curl (Tool calling)
+```bash
+curl http://localhost:11434/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "llama3.1",
+    "messages": [
+      { "role": "user", "content": "What'\''s the weather in Seattle?" }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "description": "Get the current weather in a city.",
+          "parameters": {
+            "type": "object",
+            "properties": { "city": { "type": "string" } },
+            "required": ["city"]
+          }
+        }
+      }
+    ]
+  }'
 ```
 
 ## curl (Structured outputs)
