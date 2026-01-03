@@ -53,6 +53,8 @@ This repository contains concise usage notes and request examples for common API
 | --- | --- | --- |
 | GitHub | REST and GraphQL APIs for repos and automation. | [docs/github.md](docs/github.md) |
 | Pentestbook API Enumeration | Reference guide for enumerating web service APIs. | [docs/pentestbook-apis.md](docs/pentestbook-apis.md) |
+| Postman Authentication | Configure diverse auth flows for Postman requests and collections. | [docs/postman-auth.md](docs/postman-auth.md) |
+| REST API | Generic REST API request patterns and examples. | [docs/rest-api.md](docs/rest-api.md) |
 
 ### Events & Ticketing
 
@@ -68,12 +70,15 @@ This repository contains concise usage notes and request examples for common API
 | Dropbox | Cloud file storage with REST API. | [docs/dropbox.md](docs/dropbox.md) |
 | Google Drive | File storage and metadata API. | [docs/google-drive.md](docs/google-drive.md) |
 | SMB | Network file-sharing protocol (Windows/Samba). | [docs/smb.md](docs/smb.md) |
+| SFTP | SSH File Transfer Protocol for secure file transfers. | [docs/sftp.md](docs/sftp.md) |
+| WebDAV | HTTP extensions for remote file management. | [docs/webdav.md](docs/webdav.md) |
 
 ### Infrastructure & DevOps
 
 | Name | Description | Doc |
 | --- | --- | --- |
 | Cloadpanel.io (CloudPanel) | Web server control panel (API varies by install). | [docs/cloadpanel-io.md](docs/cloadpanel-io.md) |
+| DNS | Domain Name System resolution and DNS-over-HTTPS. | [docs/dns.md](docs/dns.md) |
 | Docker Engine API | REST API for Docker daemon management. | [docs/docker.md](docs/docker.md) |
 | Pi-hole | DNS sinkhole with stats API. | [docs/pi-hole.md](docs/pi-hole.md) |
 | Portainer | Container management UI with REST API. | [docs/portainer.md](docs/portainer.md) |
