@@ -8,6 +8,13 @@ This repository contains concise usage notes and request examples for common API
 3. Use the Python/PowerShell/curl snippets as a starting point.
 4. For more public APIs, browse https://free-apis.github.io/#/browse.
 
+## Quality checks
+Run the docs validator before opening a PR to catch broken README links and indexing mismatches:
+
+```bash
+python scripts/validate_docs.py
+```
+
 ## Index
 
 ### AI & ML
