@@ -9,7 +9,8 @@ This repository contains concise usage notes and request examples for common API
 4. For more public APIs, browse https://free-apis.github.io/#/browse.
 
 ## Quality checks
-Run the docs validator before opening a PR to catch broken README links and indexing mismatches:
+Run the docs validator before opening a PR to catch broken README links, indexing
+mismatches, and missing standard doc sections:
 
 ```bash
 python scripts/validate_docs.py

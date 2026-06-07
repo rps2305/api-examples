@@ -12,6 +12,14 @@ DOCS_DIR = REPO_ROOT / "docs"
 README = REPO_ROOT / "README.md"
 README_LINK_RE = re.compile(r'href="(docs/[^"]+\.md)"')
 ALLOWED_UNINDEXED_DOCS = {"docs/NOTFOUND.md"}
+REQUIRED_DOC_SECTIONS = (
+    "## Overview",
+    "## Python",
+    "## PowerShell",
+    "## curl",
+    "## Docs",
+)
+SECTION_EXEMPT_DOCS = {"docs/NOTFOUND.md"}
 
 
 def main() -> int:
@@ -35,11 +43,22 @@ def main() -> int:
 
     for doc_path in sorted(DOCS_DIR.glob("*.md")):
         text = doc_path.read_text(encoding="utf-8")
-        first_non_empty = next((line for line in text.splitlines() if line.strip()), "")
+        relative_path = doc_path.relative_to(REPO_ROOT).as_posix()
+        first_non_empty = next(
+            (line for line in text.splitlines() if line.strip()), ""
+        )
         if not first_non_empty.startswith("# "):
-            errors.append(
-                f"{doc_path.relative_to(REPO_ROOT)} must start with a level-1 heading"
-            )
+            errors.append(f"{relative_path} must start with a level-1 heading")
+
+        if relative_path not in SECTION_EXEMPT_DOCS:
+            missing_sections = [
+                section for section in REQUIRED_DOC_SECTIONS if section not in text
+            ]
+            if missing_sections:
+                errors.append(
+                    f"{relative_path} is missing required sections: "
+                    + ", ".join(missing_sections)
+                )
 
     if errors:
         print("Validation failed:\n")
@@ -47,7 +66,9 @@ def main() -> int:
             print(f"- {err}")
         return 1
 
-    print("Validation passed: README index and docs files are consistent.")
+    print(
+        "Validation passed: README index, docs files, and doc sections are consistent."
+    )
     return 0
 
 

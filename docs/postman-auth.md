@@ -49,6 +49,73 @@ Use for public endpoints or when auth is handled elsewhere (for example via IP a
 2. Provide username, password, domain, and workstation.
 3. Postman will generate the NTLM authentication headers.
 
+## Python
+```python
+import requests
+from requests.auth import HTTPBasicAuth
+
+base_url = "https://api.example.com/v1"
+
+# Bearer token
+bearer_resp = requests.get(
+    f"{base_url}/widgets",
+    headers={"Authorization": "Bearer API_TOKEN"},
+)
+bearer_resp.raise_for_status()
+print(bearer_resp.json())
+
+# API key in a header
+api_key_resp = requests.get(
+    f"{base_url}/widgets",
+    headers={"X-API-Key": "API_KEY"},
+)
+api_key_resp.raise_for_status()
+
+# Basic auth
+basic_resp = requests.get(
+    f"{base_url}/widgets",
+    auth=HTTPBasicAuth("USERNAME", "PASSWORD"),
+)
+basic_resp.raise_for_status()
+```
+
+## PowerShell
+```powershell
+$baseUrl = "https://api.example.com/v1"
+
+# Bearer token
+Invoke-RestMethod -Method Get -Uri "$baseUrl/widgets" -Headers @{
+  Authorization = "Bearer API_TOKEN"
+}
+
+# API key in a header
+Invoke-RestMethod -Method Get -Uri "$baseUrl/widgets" -Headers @{
+  "X-API-Key" = "API_KEY"
+}
+
+# Basic auth
+$pair = "USERNAME:PASSWORD"
+$basic = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes($pair))
+Invoke-RestMethod -Method Get -Uri "$baseUrl/widgets" -Headers @{
+  Authorization = "Basic $basic"
+}
+```
+
+## curl
+```bash
+# Bearer token
+curl "https://api.example.com/v1/widgets" \
+  -H "Authorization: Bearer API_TOKEN"
+
+# API key in a header
+curl "https://api.example.com/v1/widgets" \
+  -H "X-API-Key: API_KEY"
+
+# Basic auth
+curl "https://api.example.com/v1/widgets" \
+  -u "USERNAME:PASSWORD"
+```
+
 ## Example environment variables
 Create an environment with variables like:
 - `API_BASE_URL`: `https://api.example.com/v1`
