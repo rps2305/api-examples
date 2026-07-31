@@ -41,6 +41,7 @@ def text(value: object, key: str = "name") -> str:
 
 def make_calendar(events: list[dict[str, object]]) -> str:
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//api-examples//FC Twente//EN", "CALSCALE:GREGORIAN", "X-WR-CALNAME:FC Twente wedstrijden"]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//api-examples//FC Twente//EN", "CALSCALE:GREGORIAN"]
     for event in events:
         kinds = event.get("@type")
         kinds = kinds if isinstance(kinds, list) else [kinds]
@@ -66,6 +67,7 @@ def make_calendar(events: list[dict[str, object]]) -> str:
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     return "\r\n".join(part for line in lines for part in fold(line)) + "\r\n"
+    return "\r\n".join(lines) + "\r\n"
 
 
 def main() -> None:
@@ -87,6 +89,10 @@ def main() -> None:
     count = calendar.count("BEGIN:VEVENT")
     if not count:
         parser.error("no usable SportsEvent entries with a name and startDate were found")
+    calendar = make_calendar(events)
+    count = calendar.count("BEGIN:VEVENT")
+    if not count:
+        parser.error("events were found, but none contained a name and startDate")
     try:
         args.output.write_text(calendar, encoding="utf-8", newline="")
     except OSError as exc:
