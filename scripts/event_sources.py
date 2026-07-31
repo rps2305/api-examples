@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
+from html.parser import HTMLParser
 import re
 from datetime import datetime, timezone
 from html import unescape
@@ -21,6 +23,27 @@ class EventSourceError(RuntimeError):
     """A concise, user-facing error raised when an event source cannot be read."""
 
 
+class JsonLdParser(HTMLParser):
+    """Collect JSON-LD script contents without relying on fragile HTML regexes."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.blocks: list[str] = []
+        self._parts: list[str] | None = None
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = {key.lower(): (value or "") for key, value in attrs}
+        if tag.lower() == "script" and attributes.get("type", "").lower() == "application/ld+json":
+            self._parts = []
+
+    def handle_data(self, data: str) -> None:
+        if self._parts is not None:
+            self._parts.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() == "script" and self._parts is not None:
+            self.blocks.append("".join(self._parts))
+            self._parts = None
 def get_json(url: str, headers: dict[str, str] | None = None) -> object:
     request = Request(url, headers={"User-Agent": "api-examples/1.0", **(headers or {})})
     with urlopen(request, timeout=30) as response:
@@ -67,6 +90,11 @@ def json_ld_events(html: str) -> list[dict[str, object]]:
             if "item" in value:
                 visit(value["item"])
 
+    parser = JsonLdParser()
+    parser.feed(html)
+    for raw in parser.blocks:
+        try:
+            visit(json.loads(raw.strip()))
     for raw in JSON_LD_RE.findall(html):
         try:
             visit(json.loads(unescape(raw).strip()))
@@ -82,6 +110,17 @@ def print_events(events: list[dict[str, object]]) -> None:
 def ical_datetime(value: object) -> str:
     """Convert a schema.org ISO date/time to an iCalendar UTC or all-day value."""
     raw = str(value)
+    if len(raw) == 10:
+        try:
+            datetime.strptime(raw, "%Y-%m-%d")
+        except ValueError:
+            pass
+        else:
+            return f";VALUE=DATE:{raw.replace('-', '')}"
+    try:
+        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError:
+        raise EventSourceError(f"invalid event date/time: {raw}") from None
     if re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw):
         return f";VALUE=DATE:{raw.replace('-', '')}"
     parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))

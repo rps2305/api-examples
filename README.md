@@ -14,6 +14,7 @@ mismatches, and missing standard doc sections:
 
 ```bash
 python scripts/validate_docs.py
+python -m unittest discover -s tests -v
 ```
 
 ## Index

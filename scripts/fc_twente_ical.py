@@ -16,6 +16,23 @@ def escape(value: object) -> str:
     return str(value).replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
 
+def fold(line: str) -> list[str]:
+    """Fold an iCalendar content line at the RFC 5545 75-octet boundary."""
+    result: list[str] = []
+    prefix = ""
+    while len((prefix + line).encode("utf-8")) > 75:
+        size = 75 - len(prefix.encode("utf-8"))
+        cut = 0
+        for index in range(1, len(line) + 1):
+            if len(line[:index].encode("utf-8")) > size:
+                break
+            cut = index
+        result.append(prefix + line[:cut])
+        line, prefix = line[cut:], " "
+    result.append(prefix + line)
+    return result
+
+
 def text(value: object, key: str = "name") -> str:
     if isinstance(value, dict):
         return str(value.get(key, ""))
@@ -23,6 +40,7 @@ def text(value: object, key: str = "name") -> str:
 
 
 def make_calendar(events: list[dict[str, object]]) -> str:
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//api-examples//FC Twente//EN", "CALSCALE:GREGORIAN", "X-WR-CALNAME:FC Twente wedstrijden"]
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//api-examples//FC Twente//EN", "CALSCALE:GREGORIAN"]
     for event in events:
         kinds = event.get("@type")
@@ -48,6 +66,7 @@ def make_calendar(events: list[dict[str, object]]) -> str:
             lines.append(f"URL:{event['url']}")
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
+    return "\r\n".join(part for line in lines for part in fold(line)) + "\r\n"
     return "\r\n".join(lines) + "\r\n"
 
 
@@ -63,6 +82,13 @@ def main() -> None:
         parser.error(str(exc))
     if not events:
         parser.error("no schema.org events found; check the fixtures URL or page format")
+    try:
+        calendar = make_calendar(events)
+    except EventSourceError as exc:
+        parser.error(str(exc))
+    count = calendar.count("BEGIN:VEVENT")
+    if not count:
+        parser.error("no usable SportsEvent entries with a name and startDate were found")
     calendar = make_calendar(events)
     count = calendar.count("BEGIN:VEVENT")
     if not count:

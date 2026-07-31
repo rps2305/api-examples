@@ -18,6 +18,9 @@ accept `--input PAGE.html`, which is useful for parsing a page downloaded in a
 browser or for scheduled processing without another HTTP request. Network and
 HTTP failures produce a short command-line error instead of a Python traceback.
 
+The parser and calendar generator are covered by offline HTML-fixture tests, so
+the core behavior can be validated without contacting the source websites.
+
 ## Python
 No third-party Python packages are needed. From the repository root, run:
 
