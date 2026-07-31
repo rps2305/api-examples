@@ -1,0 +1,2 @@
+# RFC 5545 requires CRLF line endings; do not flag those as diff whitespace.
+event-calendar/events.ics -whitespace

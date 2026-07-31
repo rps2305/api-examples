@@ -5,18 +5,11 @@ from __future__ import annotations
 
 import json
 from datetime import datetime, timezone
-from html.parser import HTMLParser
-import re
-from datetime import datetime, timezone
 from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
-
-JSON_LD_RE = re.compile(
-    r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
-    re.IGNORECASE | re.DOTALL,
-)
 
 
 class EventSourceError(RuntimeError):
@@ -44,6 +37,8 @@ class JsonLdParser(HTMLParser):
         if tag.lower() == "script" and self._parts is not None:
             self.blocks.append("".join(self._parts))
             self._parts = None
+
+
 def get_json(url: str, headers: dict[str, str] | None = None) -> object:
     request = Request(url, headers={"User-Agent": "api-examples/1.0", **(headers or {})})
     with urlopen(request, timeout=30) as response:
@@ -94,9 +89,6 @@ def json_ld_events(html: str) -> list[dict[str, object]]:
     parser.feed(html)
     for raw in parser.blocks:
         try:
-            visit(json.loads(raw.strip()))
-    for raw in JSON_LD_RE.findall(html):
-        try:
             visit(json.loads(unescape(raw).strip()))
         except json.JSONDecodeError:
             continue
@@ -121,9 +113,6 @@ def ical_datetime(value: object) -> str:
         parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
     except ValueError:
         raise EventSourceError(f"invalid event date/time: {raw}") from None
-    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw):
-        return f";VALUE=DATE:{raw.replace('-', '')}"
-    parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
     if parsed.tzinfo is None:
         return f":{parsed.strftime('%Y%m%dT%H%M%S')}"
     return f":{parsed.astimezone(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"

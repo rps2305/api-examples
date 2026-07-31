@@ -1,0 +1,11 @@
+services:
+  event-calendar:
+    container_name: event-calendar
+    build:
+      context: ..
+      dockerfile: event-calendar/Dockerfile
+    ports:
+      - "127.0.0.1:3480:8080"
+    env_file:
+      - .env
+    restart: unless-stopped

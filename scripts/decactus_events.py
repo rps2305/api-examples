@@ -1,12 +1,54 @@
 #!/usr/bin/env python3
-"""Get events published on the De Cactus agenda as schema.org JSON."""
+"""Get events from the De Cactus agenda page."""
 
 import argparse
+import json
 from pathlib import Path
+from urllib.request import Request, urlopen
 
 from event_sources import EventSourceError, json_ld_events, load_text, print_events
 
-DEFAULT_URL = "https://www.decactus.nl/agenda/"
+DEFAULT_URL = "https://www.decactus.nl/"
+STAGER_BASE_URL = "https://decactus.stager.co"
+STAGER_SHOP_ID = 2290
+
+
+def stager_events() -> list[dict[str, object]]:
+    """Get every event from the Stager shop embedded on De Cactus' agenda."""
+    session_request = Request(
+        f"{STAGER_BASE_URL}/shop/v1/session/new",
+        data=json.dumps({"shopId": STAGER_SHOP_ID, "locale": "NL"}).encode(),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urlopen(session_request, timeout=30) as response:
+        token = json.load(response)["accessToken"]["jwt"]
+
+    events: list[dict[str, object]] = []
+    offset = 0
+    while True:
+        request = Request(
+            f"{STAGER_BASE_URL}/shop/v1/events?offset={offset}&limit=10",
+            headers={"Authorization": f"Bearer {token}"},
+        )
+        with urlopen(request, timeout=30) as response:
+            page = json.load(response)
+        if not page:
+            return events
+        for item in page:
+            event_id = item["eventId"]
+            events.append(
+                {
+                    "@type": "Event",
+                    "name": item["name"].strip(),
+                    "startDate": item["startsOn"],
+                    "endDate": item["endsOn"],
+                    "location": "De Cactus, Hengelo",
+                    "url": f"{STAGER_BASE_URL}/shop/default/events/{event_id}",
+                    "ticketUrl": f"{STAGER_BASE_URL}/shop/default/events/{event_id}",
+                }
+            )
+        offset += len(page)
 
 
 def main() -> None:
@@ -15,7 +57,7 @@ def main() -> None:
     parser.add_argument("--input", type=Path, help="parse a previously downloaded HTML file")
     args = parser.parse_args()
     try:
-        events = json_ld_events(load_text(args.url, args.input))
+        events = json_ld_events(load_text(args.url, args.input)) if args.input else stager_events()
     except EventSourceError as exc:
         parser.error(str(exc))
     if not events:
