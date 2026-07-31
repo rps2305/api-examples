@@ -382,6 +382,12 @@ python scripts/validate_docs.py
   </thead>
   <tbody>
     <tr>
+      <td>Dutch events and FC Twente calendar</td>
+      <td>Metropool and De Cactus event exports plus an FC Twente iCalendar generator.</td>
+      <td>No</td>
+      <td><a href="docs/dutch-events.md">docs/dutch-events.md</a></td>
+    </tr>
+    <tr>
       <td>Ticketmaster</td>
       <td>Event discovery and listings API.</td>
       <td>Yes</td>
