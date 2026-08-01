@@ -10,6 +10,10 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
+
+
+LOCAL_TIMEZONE = ZoneInfo("Europe/Amsterdam")
 
 
 class EventSourceError(RuntimeError):
@@ -99,6 +103,40 @@ def print_events(events: list[dict[str, object]]) -> None:
     print(json.dumps(events, ensure_ascii=False, indent=2))
 
 
+def normalize_datetime(value: object, *, floating_local: bool = False) -> str:
+    """Return a date unchanged or an absolute instant normalized to UTC.
+
+    Some Stager shop feeds suffix venue wall-clock values with ``Z`` even though
+    the clock value is configured in the venue's local timezone. For those
+    fields, ``floating_local`` deliberately preserves the clock before attaching
+    Europe/Amsterdam and converting to UTC.
+    """
+    raw = str(value).strip()
+    if len(raw) == 10:
+        try:
+            datetime.strptime(raw, "%Y-%m-%d")
+        except ValueError:
+            pass
+        else:
+            return raw
+    try:
+        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError:
+        raise EventSourceError(f"invalid event date/time: {raw}") from None
+    if floating_local:
+        parsed = parsed.replace(tzinfo=None)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=LOCAL_TIMEZONE)
+    return parsed.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
+def normalize_event_times(event: dict[str, object], *, floating_local: bool = False) -> None:
+    """Normalize every timestamp on one imported event in place."""
+    for key in ("startDate", "endDate"):
+        if event.get(key):
+            event[key] = normalize_datetime(event[key], floating_local=floating_local)
+
+
 def ical_datetime(value: object) -> str:
     """Convert a schema.org ISO date/time to an iCalendar UTC or all-day value."""
     raw = str(value)
@@ -109,10 +147,5 @@ def ical_datetime(value: object) -> str:
             pass
         else:
             return f";VALUE=DATE:{raw.replace('-', '')}"
-    try:
-        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
-    except ValueError:
-        raise EventSourceError(f"invalid event date/time: {raw}") from None
-    if parsed.tzinfo is None:
-        return f":{parsed.strftime('%Y%m%dT%H%M%S')}"
-    return f":{parsed.astimezone(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
+    normalized = normalize_datetime(raw)
+    return f":{datetime.fromisoformat(normalized.replace('Z', '+00:00')).strftime('%Y%m%dT%H%M%SZ')}"

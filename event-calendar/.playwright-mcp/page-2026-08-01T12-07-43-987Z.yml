@@ -1,0 +1,62 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - paragraph [ref=f3e4]: UIT VANDAAG · TWENTE
+      - heading "Disclaimer" [level=1] [ref=f3e5]
+    - link "← Terug naar de agenda" [ref=f3e6] [cursor=pointer]:
+      - /url: index.html
+  - main [ref=f3e7]:
+    - paragraph [ref=f3e8]: Uit Vandaag Twente is een persoonlijke, onafhankelijke planningsagenda. Ronald Punt gebruikt hem om favoriete concerten, evenementen en FC Twente-wedstrijden naast elkaar te zien — en zo niet per ongeluk twee afspraken op hetzelfde moment te maken. Vrienden en kennissen mogen de agenda gebruiken als zij hem handig vinden.
+    - heading "Redactionele scope" [level=2] [ref=f3e9]
+    - paragraph [ref=f3e10]: De selectie richt zich op Ronalds favoriete plekken in Hengelo, Almelo en Enschede en op wedstrijden van FC Twente. Het is bewust geen compleet overzicht van alle theaters, bioscopen, festivals en podia in Twente.
+    - paragraph [ref=f3e11]:
+      - text: Metropool, De Cactus, Oogst, FC Twente en Uit in Hengelo worden bij het starten en daarna iedere zes uur opgehaald. Evenementen met dezelfde genormaliseerde naam en aanvang worden samengevoegd; een bekende locatie helpt om dezelfde gebeurtenis ook bij kleine tijdverschillen te herkennen.
+      - generic [ref=f3e12]: "Laatste succesvolle verwerking van alle bronnen: zaterdag 1 augustus 2026 om 14:06."
+    - heading "Bronnen en tickets" [level=2] [ref=f3e13]
+    - paragraph [ref=f3e14]: De agenda verzamelt publiek beschikbare informatie van onderstaande organisaties. Controleer voor tijden, beschikbaarheid, toegang en tickets altijd de oorspronkelijke aanbieder.
+    - list [ref=f3e15]:
+      - listitem [ref=f3e16]:
+        - link [ref=f3e17] [cursor=pointer]:
+          - /url: https://metropool.nl
+          - img "Metropool" [ref=f3e18]
+          - text: Metropool
+      - listitem [ref=f3e19]:
+        - link [ref=f3e20] [cursor=pointer]:
+          - /url: https://decactus.nl
+          - img "De Cactus" [ref=f3e21]
+          - text: De Cactus
+      - listitem [ref=f3e22]:
+        - link [ref=f3e23] [cursor=pointer]:
+          - /url: https://fctwente.nl/wedstrijden/eerste-selectie
+          - img "FC Twente" [ref=f3e24]
+          - text: FC Twente
+      - listitem [ref=f3e25]:
+        - link [ref=f3e26] [cursor=pointer]:
+          - /url: https://oogst.eu/
+          - img "Broedplaats Oogst" [ref=f3e27]
+          - text: Oogst
+      - listitem [ref=f3e28]:
+        - link [ref=f3e29] [cursor=pointer]:
+          - /url: https://uitinhengelo.nl/agenda
+          - img "Uit in Hengelo" [ref=f3e30]
+          - text: Uit in Hengelo
+      - listitem [ref=f3e31]:
+        - link "Rijksoverheid — officiële feestdagen" [ref=f3e32] [cursor=pointer]:
+          - /url: https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/officiele-feestdagen
+          - generic [ref=f3e33]: 🇳🇱
+          - text: Rijksoverheid — officiële feestdagen
+    - heading "Webscraping en juistheid" [level=2] [ref=f3e34]
+    - paragraph [ref=f3e35]: Deze website gebruikt webscraping om openbare agenda-informatie te verzamelen. Gegevens kunnen onvolledig, vertraagd of gewijzigd zijn. Uit Vandaag Twente geeft geen garantie op de juistheid, volledigheid of beschikbaarheid van de informatie en is niet verantwoordelijk voor wijzigingen, afgelaste evenementen, ticketverkoop of externe websites.
+    - heading "AI" [level=2] [ref=f3e36]
+    - paragraph [ref=f3e37]: Deze website is ontwikkeld met hulp van AI, waaronder OpenAI Codex. AI is gebruikt als hulpmiddel bij ontwerp en ontwikkeling; de agenda-informatie zelf komt uit de hierboven genoemde openbare bronnen.
+    - heading "Geen verbondenheid" [level=2] [ref=f3e38]
+    - paragraph [ref=f3e39]: Uit Vandaag Twente is niet verbonden aan, gesponsord door of namens Metropool, De Cactus, FC Twente, Ticketmaster of andere genoemde organisaties. Merknamen en logo’s blijven eigendom van hun respectieve rechthebbenden en worden uitsluitend gebruikt ter bronvermelding.
+    - heading "Gebruik op eigen risico" [level=2] [ref=f3e40]
+    - paragraph [ref=f3e41]: Gebruik deze agenda als inspiratie en controleer altijd de originele evenementpagina. Door de website te gebruiken, doe je dat op eigen risico.
+  - contentinfo [ref=f3e42]:
+    - text: Een idee van
+    - link "Ronald Punt" [ref=f3e43] [cursor=pointer]:
+      - /url: https://www.ronaldpunt.nl
+    - text: . Deze agenda gebruikt webscraping; gebruik op eigen risico.
+    - link "Disclaimer" [ref=f3e44] [cursor=pointer]:
+      - /url: disclaimer.html

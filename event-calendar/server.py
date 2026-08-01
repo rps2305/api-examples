@@ -4,11 +4,16 @@
 from __future__ import annotations
 
 import hmac
+import ipaddress
 import json
 import os
+import secrets
 import threading
 import time
+from collections import defaultdict, deque
 from datetime import datetime
+from email.headerregistry import Address
+from email.errors import HeaderParseError
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -20,8 +25,36 @@ import personal_digest
 
 CALENDAR_DIR = Path(__file__).resolve().parent
 SEND_PATH = "/webhook/send"
+SUGGESTION_PATH = "/api/suggestions"
+SUGGESTION_TOKEN_PATH = "/api/suggestions/token"
 BUILD_LOCK = threading.Lock()
 SCHEDULE_TIMEZONE = ZoneInfo("Europe/Amsterdam")
+FORM_SECRET = secrets.token_bytes(32)
+FORM_TOKEN_MAX_AGE = 2 * 60 * 60
+FORM_TOKEN_MIN_AGE = 3
+MAX_REQUEST_SIZE = 8_192
+RATE_LIMIT_WINDOW = 60 * 60
+RATE_LIMIT_COUNT = 3
+RATE_LIMIT_COOLDOWN = 60
+CALENDAR_REFRESH_INTERVAL = 6 * 60 * 60
+RATE_LOCK = threading.Lock()
+RATE_HISTORY: dict[str, deque[float]] = defaultdict(deque)
+USED_TOKENS: dict[str, float] = {}
+SUGGESTION_CATEGORIES = {"Evenement", "Correctie", "Website", "Anders"}
+SECURITY_HEADERS = {
+    "Content-Security-Policy": (
+        "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; "
+        "form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self'; "
+        "style-src-attr 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; "
+        "manifest-src 'self'; worker-src 'self'; frame-src 'none'; upgrade-insecure-requests"
+    ),
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+}
 
 
 def authorized(header: str | None) -> bool:
@@ -41,6 +74,91 @@ def build_and_send() -> int:
     return len(events)
 
 
+def create_form_token(now: float | None = None) -> str:
+    """Create a short-lived signed token without storing browser state."""
+    issued = int(now if now is not None else time.time())
+    payload = f"{issued}.{secrets.token_urlsafe(18)}"
+    signature = hmac.digest(FORM_SECRET, payload.encode(), "sha256").hex()
+    return f"{payload}.{signature}"
+
+
+def valid_form_token(token: object, now: float | None = None) -> bool:
+    """Accept an unused, correctly signed token only after a human-sized delay."""
+    if not isinstance(token, str) or len(token) > 160:
+        return False
+    try:
+        issued_text, nonce, supplied = token.split(".", 2)
+        issued = int(issued_text)
+    except (TypeError, ValueError):
+        return False
+    payload = f"{issued}.{nonce}"
+    expected = hmac.digest(FORM_SECRET, payload.encode(), "sha256").hex()
+    current = now if now is not None else time.time()
+    age = current - issued
+    if not hmac.compare_digest(supplied, expected):
+        return False
+    if age < FORM_TOKEN_MIN_AGE or age > FORM_TOKEN_MAX_AGE:
+        return False
+    with RATE_LOCK:
+        expired = [used for used, used_at in USED_TOKENS.items() if current - used_at > FORM_TOKEN_MAX_AGE]
+        for used in expired:
+            USED_TOKENS.pop(used, None)
+        if token in USED_TOKENS:
+            return False
+        USED_TOKENS[token] = current
+    return True
+
+
+def within_rate_limit(client: str, now: float | None = None) -> bool:
+    """Reserve one submission slot for a client address."""
+    current = now if now is not None else time.time()
+    with RATE_LOCK:
+        history = RATE_HISTORY[client]
+        while history and current - history[0] > RATE_LIMIT_WINDOW:
+            history.popleft()
+        if history and current - history[-1] < RATE_LIMIT_COOLDOWN:
+            return False
+        if len(history) >= RATE_LIMIT_COUNT:
+            return False
+        history.append(current)
+    return True
+
+
+def valid_email(value: object) -> str:
+    """Return a normalized optional address or raise ValueError."""
+    if value in (None, ""):
+        return ""
+    if not isinstance(value, str) or len(value) > 254 or "\r" in value or "\n" in value:
+        raise ValueError("invalid email")
+    try:
+        parsed = Address(addr_spec=value.strip())
+    except (HeaderParseError, ValueError):
+        raise ValueError("invalid email") from None
+    if not parsed.username or "." not in parsed.domain:
+        raise ValueError("invalid email")
+    return parsed.addr_spec
+
+
+def validate_suggestion(data: object) -> tuple[str, str, str, str, str]:
+    """Validate and normalize the public form's bounded fields."""
+    if not isinstance(data, dict):
+        raise ValueError("invalid payload")
+    website = data.get("website", "")
+    if not isinstance(website, str):
+        raise ValueError("invalid payload")
+    name = data.get("name", "")
+    message = data.get("message", "")
+    category = data.get("category", "")
+    if not isinstance(name, str) or len(name.strip()) > 80:
+        raise ValueError("invalid name")
+    if not isinstance(message, str) or not 20 <= len(message.strip()) <= 2_000:
+        raise ValueError("invalid message")
+    if category not in SUGGESTION_CATEGORIES:
+        raise ValueError("invalid category")
+    email = valid_email(data.get("email", ""))
+    return name.strip(), email, category, message.strip(), website.strip()
+
+
 def weekly_digest_loop() -> None:
     """Send once per ISO week when it is Monday in the configured 07:00 hour."""
     sent_week: tuple[int, int] | None = None
@@ -57,14 +175,113 @@ def weekly_digest_loop() -> None:
         time.sleep(30)
 
 
+def calendar_refresh_loop() -> None:
+    """Refresh all agenda sources every six hours, preserving the last good build on failure."""
+    while True:
+        time.sleep(CALENDAR_REFRESH_INTERVAL)
+        try:
+            with BUILD_LOCK:
+                build_calendar.main()
+            print("Agenda automatisch ververst.")
+        except Exception as exc:
+            print(f"Automatisch verversen mislukt; laatste goede agenda blijft staan: {exc}")
+
+
 class CalendarHandler(SimpleHTTPRequestHandler):
     """Static files plus a single token-protected POST endpoint."""
+
+    extensions_map = {
+        **SimpleHTTPRequestHandler.extensions_map,
+        ".webp": "image/webp",
+        ".woff2": "font/woff2",
+    }
 
     def __init__(self, *args: object, **kwargs: object) -> None:
         super().__init__(*args, directory=str(CALENDAR_DIR), **kwargs)
 
+    def end_headers(self) -> None:
+        """Cache fingerprinted static resources while keeping generated pages fresh."""
+        for name, value in SECURITY_HEADERS.items():
+            self.send_header(name, value)
+        request = urlparse(self.path)
+        if request.path.startswith("/assets/") or request.query:
+            self.send_header("Cache-Control", "public, max-age=31536000, immutable")
+        else:
+            self.send_header("Cache-Control", "no-cache")
+        super().end_headers()
+
+    def json_response(self, status: HTTPStatus, payload: dict[str, object]) -> None:
+        body = json.dumps(payload).encode()
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_GET(self) -> None:  # noqa: N802
+        if urlparse(self.path).path == SUGGESTION_TOKEN_PATH:
+            self.json_response(HTTPStatus.OK, {"token": create_form_token()})
+            return
+        super().do_GET()
+
+    def client_identifier(self) -> str:
+        """Use proxy forwarding only when the direct peer is local and trusted."""
+        peer = ipaddress.ip_address(self.client_address[0])
+        # Nginx overwrites X-Real-IP, while X-Forwarded-For can contain client input.
+        forwarded = self.headers.get("X-Real-IP", "").strip()
+        if peer.is_loopback and forwarded:
+            try:
+                return str(ipaddress.ip_address(forwarded))
+            except ValueError:
+                pass
+        return str(peer)
+
+    def handle_suggestion(self) -> None:
+        expected_origin = os.environ.get("EVENT_CALENDAR_PUBLIC_ORIGIN", "https://event-calendar.puntuale.nl")
+        if self.headers.get("Origin") != expected_origin:
+            self.json_response(HTTPStatus.FORBIDDEN, {"error": "Ongeldige aanvraag."})
+            return
+        if self.headers.get_content_type() != "application/json":
+            self.json_response(HTTPStatus.UNSUPPORTED_MEDIA_TYPE, {"error": "Ongeldig formulier."})
+            return
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+        except ValueError:
+            length = 0
+        if length <= 0 or length > MAX_REQUEST_SIZE:
+            self.json_response(HTTPStatus.REQUEST_ENTITY_TOO_LARGE, {"error": "Ongeldig formulier."})
+            return
+        try:
+            data = json.loads(self.rfile.read(length))
+            name, email, category, message, website = validate_suggestion(data)
+        except (json.JSONDecodeError, UnicodeDecodeError, ValueError):
+            self.json_response(HTTPStatus.BAD_REQUEST, {"error": "Controleer de ingevulde velden."})
+            return
+        # Bots commonly fill fields hidden from people. Return success without sending.
+        if website:
+            self.json_response(HTTPStatus.ACCEPTED, {"sent": True})
+            return
+        if not valid_form_token(data.get("token")):
+            self.json_response(HTTPStatus.BAD_REQUEST, {"error": "Ververs de pagina en probeer opnieuw."})
+            return
+        if not within_rate_limit(self.client_identifier()):
+            self.json_response(HTTPStatus.TOO_MANY_REQUESTS, {"error": "Probeer het later opnieuw."})
+            return
+        try:
+            personal_digest.send_suggestion(name, email, category, message)
+        except Exception:
+            self.log_error("Could not send a website suggestion")
+            self.json_response(HTTPStatus.BAD_GATEWAY, {"error": "Versturen lukt nu niet. Probeer het later opnieuw."})
+            return
+        self.json_response(HTTPStatus.CREATED, {"sent": True})
+
     def do_POST(self) -> None:  # noqa: N802
-        if urlparse(self.path).path != SEND_PATH:
+        request_path = urlparse(self.path).path
+        if request_path == SUGGESTION_PATH:
+            self.handle_suggestion()
+            return
+        if request_path != SEND_PATH:
             self.send_error(HTTPStatus.NOT_FOUND)
             return
         if not authorized(self.headers.get("Authorization")):
@@ -93,6 +310,7 @@ def main() -> None:
         print(f"Initial agenda update failed: {exc}")
     if os.environ.get("EVENT_CALENDAR_SCHEDULE_ENABLED", "true").lower() == "true":
         threading.Thread(target=weekly_digest_loop, name="weekly-digest", daemon=True).start()
+        threading.Thread(target=calendar_refresh_loop, name="calendar-refresh", daemon=True).start()
     server = ThreadingHTTPServer(("0.0.0.0", port), CalendarHandler)
     print(f"Agenda beschikbaar op http://0.0.0.0:{port}")
     server.serve_forever()

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" role="img" aria-labelledby="title">
+  <title id="title">Uit in Hengelo</title>
+  <rect width="180" height="72" fill="#fff"/>
+  <path d="M14 15h152M14 57h152" fill="none" stroke="#3154a1" stroke-width="4"/>
+  <text x="14" y="46" fill="#3154a1" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">Hengelo</text>
+  <text x="131" y="27" fill="#3154a1" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1">UIT IN</text>
+</svg>

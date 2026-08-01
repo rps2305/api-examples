@@ -5,11 +5,14 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime
 from html import unescape
+from zoneinfo import ZoneInfo
 
 from event_sources import load_text
 
 URL = "https://oogst.eu/agenda/"
+TIMEZONE = ZoneInfo("Europe/Amsterdam")
 MONTHS = {
     "januari": "01",
     "februari": "02",
@@ -45,7 +48,9 @@ def scrape_events(html: str) -> list[dict[str, object]]:
             continue
         start = f"{date.group(3)}-{MONTHS[date.group(2).lower()]}-{int(date.group(1)):02d}"
         if date.group(4):
-            start += f"T{date.group(4)}:00+02:00"
+            start = datetime.fromisoformat(f"{start}T{date.group(4)}:00").replace(
+                tzinfo=TIMEZONE
+            ).isoformat()
         genre = ", ".join(
             clean(value) for value in re.findall(r"<span[^>]*>(.*?)</span>", card, re.S)
         )

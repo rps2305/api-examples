@@ -1,14 +1,36 @@
 {
   "name": "Uit Vandaag — Twente",
   "short_name": "Uit Vandaag",
-  "description": "Concerten en FC Twente-wedstrijden in één actuele Twentse agenda.",
+  "description": "Concerten, evenementen, FC Twente-wedstrijden en feestdagen in één actuele Twentse agenda.",
   "lang": "nl-NL",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#f7f4ed",
   "theme_color": "#111827",
+  "categories": ["entertainment", "lifestyle", "sports"],
+  "prefer_related_applications": false,
   "icons": [
-    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Vandaag",
+      "short_name": "Vandaag",
+      "description": "Bekijk alleen wat er vandaag te doen is.",
+      "url": "/?view=today",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Voor jou",
+      "short_name": "Voor jou",
+      "description": "Bekijk evenementen die passen bij Ronalds muzieksmaak.",
+      "url": "/?view=recommended",
+      "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
   ]
 }

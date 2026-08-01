@@ -13,6 +13,7 @@ from email.message import EmailMessage
 from html import escape
 from pathlib import Path
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 EVENTS = Path(__file__).with_name("events.json")
 RECIPIENT = "ronald.punt@mac.com"
@@ -20,6 +21,7 @@ SMTP_HOST = "smtp.gmail.com"
 SMTP_USERNAME = "ronaldpunt.hengelo@gmail.com"
 KEYCHAIN_SERVICE = "com.ronald.event-calendar.gmail"
 PUBLIC_SITE_URL = "https://event-calendar.puntuale.nl"
+LOCAL_TIMEZONE = ZoneInfo("Europe/Amsterdam")
 
 # De e-mailclient ondersteunt geen CSS-variabelen; deze tokens spiegelen de website.
 EMAIL_COLORS = {
@@ -38,20 +40,20 @@ EMAIL_FONT_DISPLAY = "Arial Narrow, Arial, Helvetica, sans-serif"
 
 
 def upcoming_events() -> list[dict[str, object]]:
-    now = datetime.now().astimezone()
+    now = datetime.now(LOCAL_TIMEZONE)
     end = now + timedelta(days=30)
     events = json.loads(EVENTS.read_text(encoding="utf-8"))
     return [
         event
         for event in events
-        if now <= datetime.fromisoformat(str(event["startDate"]).replace("Z", "+00:00")).astimezone() < end
+        if now <= datetime.fromisoformat(str(event["startDate"]).replace("Z", "+00:00")).astimezone(LOCAL_TIMEZONE) < end
     ]
 
 
 def html_digest(events: list[dict[str, object]]) -> str:
     items = []
     for event in events:
-        start = datetime.fromisoformat(str(event["startDate"]).replace("Z", "+00:00")).astimezone()
+        start = datetime.fromisoformat(str(event["startDate"]).replace("Z", "+00:00")).astimezone(LOCAL_TIMEZONE)
         links = f'<a href="{escape(str(event["url"]))}">Info</a>' if event.get("url") else ""
         if event.get("ticketUrl") and event["ticketUrl"] != event.get("url"):
             links += f' · <a href="{escape(str(event["ticketUrl"]))}">Tickets</a>'
@@ -75,6 +77,33 @@ def html_digest(events: list[dict[str, object]]) -> str:
 
 
 def send_email(content: str) -> None:
+    message = EmailMessage()
+    message["Subject"] = "Uit deze week — Twente"
+    message["From"] = os.environ.get("EVENT_CALENDAR_FROM", os.environ.get("EVENT_CALENDAR_SMTP_USERNAME", SMTP_USERNAME))
+    message["To"] = RECIPIENT
+    message.set_content("Open deze e-mail in een HTML-compatibele client.")
+    message.add_alternative(content, subtype="html")
+    send_message(message)
+
+
+def send_suggestion(name: str, email: str, category: str, suggestion: str) -> None:
+    """Deliver a validated website suggestion without exposing the recipient publicly."""
+    message = EmailMessage()
+    message["Subject"] = f"Uit Vandaag — nieuwe suggestie ({category})"
+    message["From"] = os.environ.get("EVENT_CALENDAR_FROM", os.environ.get("EVENT_CALENDAR_SMTP_USERNAME", SMTP_USERNAME))
+    message["To"] = RECIPIENT
+    if email:
+        message["Reply-To"] = email
+    sender = name or "Anonieme bezoeker"
+    reply_address = email or "Niet opgegeven"
+    message.set_content(
+        f"Naam: {sender}\nE-mail: {reply_address}\nCategorie: {category}\n\n{suggestion}\n"
+    )
+    send_message(message)
+
+
+def send_message(message: EmailMessage) -> None:
+    """Send one prepared message through the configured authenticated SMTP account."""
     password = os.environ.get("EVENT_CALENDAR_SMTP_PASSWORD")
     if password is None:
         if os.name != "posix" or not Path("/usr/bin/security").exists():
@@ -86,13 +115,7 @@ def send_email(content: str) -> None:
     host = os.environ.get("EVENT_CALENDAR_SMTP_HOST", SMTP_HOST)
     username = os.environ.get("EVENT_CALENDAR_SMTP_USERNAME", SMTP_USERNAME)
     port = int(os.environ.get("EVENT_CALENDAR_SMTP_PORT", "465"))
-    message = EmailMessage()
-    message["Subject"] = "Uit deze week — Twente"
-    message["From"] = os.environ.get("EVENT_CALENDAR_FROM", username)
-    message["To"] = RECIPIENT
-    message.set_content("Open deze e-mail in een HTML-compatibele client.")
-    message.add_alternative(content, subtype="html")
-    with smtplib.SMTP_SSL(host, port) as smtp:
+    with smtplib.SMTP_SSL(host, port, timeout=20) as smtp:
         smtp.login(username, password)
         smtp.send_message(message)
 

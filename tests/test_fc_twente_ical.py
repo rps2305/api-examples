@@ -37,7 +37,7 @@ class CalendarTests(unittest.TestCase):
         self.assertEqual(matches[0]["name"], "FC Twente - NEC")
         self.assertNotIn("location", matches[0])
 
-    def test_marks_fc_twente_as_home_only_when_listed_second(self) -> None:
+    def test_marks_fc_twente_as_home_only_when_listed_first(self) -> None:
         html = (
             '<div class="bg-white grid grid-cols-3"><div class="text-lg font-serif">'
             '14 augustus 2026</div> zaterdag 20:00 <img alt="Logo NEC">'
@@ -47,8 +47,18 @@ class CalendarTests(unittest.TestCase):
             '<img alt="Logo NEC"><aside data-drawer>'
         )
         matches = scrape_matches(html)
-        self.assertTrue(matches[0]["isHome"])
-        self.assertFalse(matches[1]["isHome"])
+        self.assertFalse(matches[0]["isHome"])
+        self.assertTrue(matches[1]["isHome"])
+
+    def test_winter_fixture_uses_central_european_standard_time(self) -> None:
+        html = """
+        <div class="bg-white grid grid-cols-3">
+          <div class="text-lg font-serif">15 januari 2027</div>
+          vrijdag 20:00
+          <img alt="Logo Eerste Selectie"><img alt="Logo NEC">
+        <aside data-drawer>
+        """
+        self.assertEqual(scrape_matches(html)[0]["startDate"], "2027-01-15T20:00:00+01:00")
 
 
 if __name__ == "__main__":

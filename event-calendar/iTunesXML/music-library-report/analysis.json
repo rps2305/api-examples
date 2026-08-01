@@ -1,0 +1,136 @@
+{
+  "source": "Bibliotheek.xml",
+  "export_date": "July 24, 2026",
+  "tracks": 32831,
+  "playlists": 1,
+  "duration_hours": 2199.8,
+  "size_gb": 253.03,
+  "total_plays": 8721,
+  "played_tracks": 3908,
+  "unique_artists": 8932,
+  "unique_albums": 17504,
+  "apple_music_tracks": 6215,
+  "matched_tracks": 12721,
+  "top_genres": [
+    [
+      "Rock",
+      7088
+    ],
+    [
+      "Pop",
+      4734
+    ],
+    [
+      "Alternative",
+      2707
+    ],
+    [
+      "Top 40",
+      1985
+    ],
+    [
+      "Top40",
+      974
+    ],
+    [
+      "Latin",
+      837
+    ],
+    [
+      "Dance",
+      758
+    ],
+    [
+      "Metal",
+      581
+    ],
+    [
+      "World",
+      514
+    ]
+  ],
+  "top_artists": [
+    [
+      "U2",
+      362
+    ],
+    [
+      "The Beatles",
+      349
+    ],
+    [
+      "The Rolling Stones",
+      312
+    ],
+    [
+      "Tori Amos",
+      268
+    ],
+    [
+      "R.E.M.",
+      192
+    ],
+    [
+      "Pink Floyd",
+      172
+    ],
+    [
+      "Simple Minds",
+      169
+    ],
+    [
+      "Manu Chao",
+      154
+    ],
+    [
+      "Metallica",
+      147
+    ],
+    [
+      "Cocteau Twins",
+      146
+    ]
+  ],
+  "top_played_artists": [
+    [
+      "The Beatles",
+      1410
+    ],
+    [
+      "Maite Hontele",
+      278
+    ],
+    [
+      "Manu Chao",
+      274
+    ],
+    [
+      "Herman Finkers",
+      173
+    ],
+    [
+      "U2",
+      136
+    ],
+    [
+      "Nick Cave & The Bad Seeds",
+      134
+    ],
+    [
+      "Lana Del Rey",
+      112
+    ],
+    [
+      "Florence + The Machine",
+      98
+    ],
+    [
+      "Buena Vista Social Club",
+      88
+    ],
+    [
+      "Doe Maar",
+      79
+    ]
+  ]
+}

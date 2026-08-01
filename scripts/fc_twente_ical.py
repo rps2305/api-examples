@@ -6,8 +6,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import re
+from datetime import datetime
 from html import unescape
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from event_sources import EventSourceError, ical_datetime, json_ld_events, load_text
 
@@ -27,6 +29,7 @@ MONTHS = {
     "november": "11",
     "december": "12",
 }
+TIMEZONE = ZoneInfo("Europe/Amsterdam")
 
 
 def scrape_matches(html: str) -> list[dict[str, object]]:
@@ -49,7 +52,9 @@ def scrape_matches(html: str) -> list[dict[str, object]]:
             continue
         start = f"{date.group(3)}-{MONTHS[date.group(2)]}-{int(date.group(1)):02d}"
         if time:
-            start += f"T{time.group(1)}:00+02:00"
+            start = datetime.fromisoformat(f"{start}T{time.group(1)}:00").replace(
+                tzinfo=TIMEZONE
+            ).isoformat()
         teams = ["FC Twente" if team == "Eerste Selectie" else unescape(team) for team in teams]
         matches.append(
             {
@@ -57,8 +62,8 @@ def scrape_matches(html: str) -> list[dict[str, object]]:
                 "name": f"{teams[0]} - {teams[1]}",
                 "startDate": start,
                 "genre": "Voetbal",
-                # The FC Twente fixture card lists the away team first.
-                "isHome": teams[1] == "FC Twente",
+                # The FC Twente fixture card lists the home team first.
+                "isHome": teams[0] == "FC Twente",
             }
         )
     return matches

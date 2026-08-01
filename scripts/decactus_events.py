@@ -6,11 +6,28 @@ import json
 from pathlib import Path
 from urllib.request import Request, urlopen
 
-from event_sources import EventSourceError, json_ld_events, load_text, print_events
+from event_sources import EventSourceError, json_ld_events, load_text, normalize_datetime, print_events
 
 DEFAULT_URL = "https://www.decactus.nl/"
 STAGER_BASE_URL = "https://decactus.stager.co"
 STAGER_SHOP_ID = 2290
+
+
+def event_from_stager(item: dict[str, object]) -> dict[str, object]:
+    """Normalize a Stager shop event, including its explicit availability status."""
+    event_id = item["eventId"]
+    return {
+        "@type": "Event",
+        "name": str(item["name"]).strip(),
+        # Stager serializes these venue wall-clock fields with a Z suffix.
+        # Attach the venue timezone before converting them to a real UTC instant.
+        "startDate": normalize_datetime(item["startsOn"], floating_local=True),
+        "endDate": normalize_datetime(item["endsOn"], floating_local=True),
+        "location": "De Cactus, Hengelo",
+        "url": f"{STAGER_BASE_URL}/shop/default/events/{event_id}",
+        "ticketUrl": f"{STAGER_BASE_URL}/shop/default/events/{event_id}",
+        "soldOut": item.get("soldOut") is True,
+    }
 
 
 def stager_events() -> list[dict[str, object]]:
@@ -36,18 +53,7 @@ def stager_events() -> list[dict[str, object]]:
         if not page:
             return events
         for item in page:
-            event_id = item["eventId"]
-            events.append(
-                {
-                    "@type": "Event",
-                    "name": item["name"].strip(),
-                    "startDate": item["startsOn"],
-                    "endDate": item["endsOn"],
-                    "location": "De Cactus, Hengelo",
-                    "url": f"{STAGER_BASE_URL}/shop/default/events/{event_id}",
-                    "ticketUrl": f"{STAGER_BASE_URL}/shop/default/events/{event_id}",
-                }
-            )
+            events.append(event_from_stager(item))
         offset += len(page)
 
 

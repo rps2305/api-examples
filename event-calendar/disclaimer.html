@@ -2,16 +2,18 @@
 <html lang="nl">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Disclaimer — Uit Vandaag Twente</title>
     <meta name="description" content="Disclaimer, bronvermelding en informatie over de werkwijze van Uit Vandaag Twente." />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#111827" />
+    <script src="theme.js?v=20260801-2"></script>
     <link rel="canonical" href="https://event-calendar.puntuale.nl/disclaimer.html" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="assets/fonts/archivo-narrow-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=20260801-10" />
   </head>
   <body>
     <header class="legal-header">
@@ -19,13 +21,19 @@
       <a href="index.html">← Terug naar de agenda</a>
     </header>
     <main class="legal-main">
-      <p>Uit Vandaag Twente is een persoonlijk, onafhankelijk overzicht van evenementen en voetbalwedstrijden in Twente. Ronald Punt wil niet meerdere afspraken op hetzelfde moment plannen; dat is de reden voor dit zijproject. Door concerten en FC Twente-wedstrijden naast elkaar te zetten, wordt kiezen voor een vrije avond eenvoudiger.</p>
+      <p>Uit Vandaag Twente is een persoonlijke, onafhankelijke planningsagenda. Ronald Punt gebruikt hem om favoriete concerten, evenementen en FC Twente-wedstrijden naast elkaar te zien — en zo niet per ongeluk twee afspraken op hetzelfde moment te maken. Vrienden en kennissen mogen de agenda gebruiken als zij hem handig vinden.</p>
+      <h2>Redactionele scope</h2>
+      <p>De selectie richt zich op Ronalds favoriete plekken in Hengelo, Almelo en Enschede en op wedstrijden van FC Twente. Het is bewust geen compleet overzicht van alle theaters, bioscopen, festivals en podia in Twente.</p>
+      <p>Metropool, De Cactus, Oogst, FC Twente en Uit in Hengelo worden bij het starten en daarna iedere zes uur opgehaald. Evenementen met dezelfde genormaliseerde naam en aanvang worden samengevoegd; een bekende locatie helpt om dezelfde gebeurtenis ook bij kleine tijdverschillen te herkennen. <!-- DISCLAIMER_REFRESH_START --><span class="refresh-status">Laatste succesvolle verwerking van alle bronnen: zaterdag 1 augustus 2026 om 14:06.</span><!-- DISCLAIMER_REFRESH_END --></p>
       <h2>Bronnen en tickets</h2>
       <p>De agenda verzamelt publiek beschikbare informatie van onderstaande organisaties. Controleer voor tijden, beschikbaarheid, toegang en tickets altijd de oorspronkelijke aanbieder.</p>
       <ul class="source-list">
         <li><a href="https://metropool.nl" target="_blank" rel="noopener noreferrer"><img src="assets/logo-metropool.svg" alt="Metropool" />Metropool</a></li>
         <li><a href="https://decactus.nl" target="_blank" rel="noopener noreferrer"><img src="assets/logo-de-cactus.png" alt="De Cactus" />De Cactus</a></li>
         <li><a href="https://fctwente.nl/wedstrijden/eerste-selectie" target="_blank" rel="noopener noreferrer"><img src="assets/logo-fc-twente.svg" alt="FC Twente" />FC Twente</a></li>
+        <li><a href="https://oogst.eu/" target="_blank" rel="noopener noreferrer"><img class="source-logo source-logo-wide" src="assets/logo-oogst.svg" alt="Broedplaats Oogst" />Oogst</a></li>
+        <li><a href="https://uitinhengelo.nl/agenda" target="_blank" rel="noopener noreferrer"><img class="source-logo source-logo-wide" src="assets/logo-uit-in-hengelo.svg" alt="Uit in Hengelo" />Uit in Hengelo</a></li>
+        <li><a href="https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/officiele-feestdagen" target="_blank" rel="noopener noreferrer"><span class="source-mark" aria-hidden="true">🇳🇱</span>Rijksoverheid — officiële feestdagen</a></li>
       </ul>
       <h2>Webscraping en juistheid</h2>
       <p>Deze website gebruikt webscraping om openbare agenda-informatie te verzamelen. Gegevens kunnen onvolledig, vertraagd of gewijzigd zijn. Uit Vandaag Twente geeft geen garantie op de juistheid, volledigheid of beschikbaarheid van de informatie en is niet verantwoordelijk voor wijzigingen, afgelaste evenementen, ticketverkoop of externe websites.</p>
@@ -36,6 +44,6 @@
       <h2>Gebruik op eigen risico</h2>
       <p>Gebruik deze agenda als inspiratie en controleer altijd de originele evenementpagina. Door de website te gebruiken, doe je dat op eigen risico.</p>
     </main>
-    <footer class="site-footer">Een idee van <a href="https://www.ronaldpunt.nl" target="_blank" rel="noreferrer">Ronald Punt</a>. Deze agenda gebruikt webscraping; gebruik op eigen risico. <a href="disclaimer.html">Disclaimer</a></footer>
+    <footer class="site-footer">Een idee van <a href="https://www.ronaldpunt.nl" target="_blank" rel="noopener noreferrer">Ronald Punt</a>. Deze agenda gebruikt webscraping; gebruik op eigen risico. <a href="disclaimer.html">Disclaimer</a></footer>
   </body>
 </html>

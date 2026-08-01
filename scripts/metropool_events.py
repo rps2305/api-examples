@@ -3,9 +3,11 @@
 
 import argparse
 import re
+from datetime import datetime
 from html import unescape
 from pathlib import Path
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 from event_sources import EventSourceError, get_text, json_ld_events, load_text, print_events
 
@@ -14,6 +16,7 @@ PARTIAL_URL = (
     "https://metropool.nl/mvc/event/partial?pNumber={page}"
     "&keyword=&genre=&tag=&type=&StartDate=&EndDate=&locatie=&label=&newAnnounced=False"
 )
+TIMEZONE = ZoneInfo("Europe/Amsterdam")
 
 
 def clean(value: str) -> str:
@@ -32,10 +35,18 @@ def scrape_events(html: str) -> list[dict[str, object]]:
         location = re.search(r'<p class="event-location">(.*?)</p>', card, re.DOTALL)
         link = re.search(r'<a class="remove-underline" href="([^"]+)" data-detail-link=', card)
         ticket = re.search(r'<a class="btn btn-primary[^>]* href="([^"]+)"', card)
+        tags = [
+            clean(value)
+            for value in re.findall(
+                r'<span class="[^"]*\btag\b[^"]*"[^>]*>(.*?)</span>', card, re.DOTALL
+            )
+        ]
         if not name or not date_time:
             continue
         date = date_time.group(1)
-        start = f"{date[6:]}-{date[3:5]}-{date[:2]}T{date_time.group(2)}:00+02:00"
+        start = datetime.strptime(
+            f"{date} {date_time.group(2)}", "%d-%m-%Y %H:%M"
+        ).replace(tzinfo=TIMEZONE).isoformat()
         event: dict[str, object] = {
             "@type": "Event",
             "name": clean(name.group(1)),
@@ -49,6 +60,8 @@ def scrape_events(html: str) -> list[dict[str, object]]:
             event["url"] = f"https://metropool.nl{link.group(1)}"
         if ticket:
             event["ticketUrl"] = urljoin(DEFAULT_URL, unescape(ticket.group(1)))
+        if any(tag.casefold() == "uitverkocht" for tag in tags):
+            event["soldOut"] = True
         events.append(event)
     return events
 
