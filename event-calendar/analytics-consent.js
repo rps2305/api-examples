@@ -96,7 +96,8 @@
     accept.type = 'button';
     actions.append(reject, accept);
     notice.append(copy, actions);
-    document.body.append(notice);
+    // Keep consent controls first in the keyboard order without forcing focus.
+    document.body.prepend(notice);
 
     const closeWith = choice => {
       storeChoice(choice);

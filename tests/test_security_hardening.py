@@ -11,7 +11,7 @@ import server
 
 class SecurityHardeningTests(unittest.TestCase):
     def test_external_blank_links_isolate_the_opener(self) -> None:
-        for path in (ROOT / "index.html", ROOT / "about.html", ROOT / "disclaimer.html"):
+        for path in (ROOT / "index.html", ROOT / "about.html", ROOT / "disclaimer.html", ROOT / "privacy.html"):
             html = path.read_text(encoding="utf-8")
             for fragment in html.split('target="_blank"')[1:]:
                 opening_tag = fragment.split(">", 1)[0]

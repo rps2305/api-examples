@@ -20,6 +20,7 @@ OUTPUT = Path(__file__).with_name("events.json")
 ICAL = Path(__file__).with_name("events.ics")
 INDEX = Path(__file__).with_name("index.html")
 DISCLAIMER = Path(__file__).with_name("disclaimer.html")
+PRERENDER_LIMIT = 60
 sys.path.insert(0, str(SCRIPTS))
 
 from event_sources import load_text, normalize_event_times  # noqa: E402
@@ -220,9 +221,9 @@ def prerender_event(event: dict[str, object]) -> str:
 
 
 def prerender_agenda(events: list[dict[str, object]]) -> str:
-    """Build the complete semantic agenda used before JavaScript enhancement."""
+    """Build an initial semantic agenda page; JavaScript progressively reveals the rest."""
     groups: dict[str, list[dict[str, object]]] = {}
-    for event in events:
+    for event in events[:PRERENDER_LIMIT]:
         groups.setdefault(local_date_key(event["startDate"]), []).append(event)
     sections: list[str] = []
     for day_key, items in groups.items():

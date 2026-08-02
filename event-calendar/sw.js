@@ -1,16 +1,18 @@
 const CACHE_PREFIX = 'uit-vandaag-';
-const STATIC_CACHE = `${CACHE_PREFIX}static-20260802-22`;
-const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-20260802-23`;
+const STATIC_CACHE = `${CACHE_PREFIX}static-20260802-26`;
+const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-20260802-27`;
 
 const APP_SHELL = [
   '/',
   '/index.html',
   '/about.html',
   '/disclaimer.html',
-  '/styles.css?v=20260801-14',
-  '/app.js?v=20260802-13',
-  '/analytics-consent.js?v=20260801-1',
-  '/theme.js?v=20260801-2',
+  '/privacy.html',
+  '/styles.css?v=20260802-17',
+  '/app.js?v=20260802-14',
+  '/back-to-top.js?v=20260802-2',
+  '/analytics-consent.js?v=20260802-2',
+  '/theme.js?v=20260802-3',
   '/loading-watchdog.js?v=20260801-1',
   '/site.webmanifest',
   '/events.json',
@@ -32,15 +34,10 @@ const APP_SHELL = [
   '/assets/logo-oogst.svg',
   '/assets/logo-uit-in-hengelo.svg',
   '/assets/venues/metropool-640.webp',
-  '/assets/venues/metropool-1280.webp',
   '/assets/venues/de-cactus-640.webp',
-  '/assets/venues/de-cactus-1280.webp',
   '/assets/venues/oogst-640.webp',
-  '/assets/venues/oogst-1280.webp',
   '/assets/venues/uit-in-hengelo-640.webp',
-  '/assets/venues/uit-in-hengelo-1280.webp',
   '/assets/venues/grolsch-veste-640.webp',
-  '/assets/venues/grolsch-veste-1280.webp',
 ];
 
 self.addEventListener('install', event => {

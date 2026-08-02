@@ -3,11 +3,14 @@ const status = document.querySelector('#status');
 const search = document.querySelector('#search');
 const networkStatus = document.querySelector('#network-status');
 const agendaSummary = document.querySelector('#agenda-summary');
+const loadMoreButton = document.querySelector('[data-load-more]');
 const initialView = new URLSearchParams(location.search).get('view');
+const PAGE_SIZE = 60;
 let filter = 'all';
 let query = '';
 let todayOnly = initialView === 'today';
 let recommendedOnly = initialView === 'recommended';
+let visibleLimit = PAGE_SIZE;
 let hasPrerenderedAgenda = agenda.dataset.prerendered === 'true';
 const DEFAULT_EVENT_DURATION_MINUTES = 120;
 const dateFormat = new Intl.DateTimeFormat('nl-NL', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -16,7 +19,6 @@ const timeFormat = new Intl.DateTimeFormat('nl-NL', {
 });
 const suggestionForm = document.querySelector('#suggestion-form');
 const suggestionStatus = document.querySelector('#suggestion-status');
-const themeToggle = document.querySelector('#theme-toggle');
 const sourcePriority = new Map([
   ['metropool', 0],
   ['de-cactus', 1],
@@ -27,23 +29,6 @@ const allowedSources = new Set(['metropool', 'de-cactus', 'fc-twente', 'oogst', 
 let suggestionToken = '';
 
 document.documentElement.classList.remove('no-js');
-
-function syncThemeToggle() {
-  if (!themeToggle) return;
-  const dark = document.documentElement.dataset.theme === 'dark';
-  themeToggle.setAttribute('aria-label', dark ? 'Gebruik lichte modus' : 'Gebruik donkere modus');
-  themeToggle.setAttribute('aria-pressed', String(dark));
-  themeToggle.querySelector('[data-theme-label]').textContent = dark ? 'Licht' : 'Donker';
-}
-
-syncThemeToggle();
-themeToggle?.addEventListener('click', () => {
-  const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-  document.documentElement.dataset.theme = theme;
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#090d14' : '#111827');
-  try { localStorage.setItem('uit-vandaag-theme', theme); } catch { /* Preference remains active for this visit. */ }
-  syncThemeToggle();
-});
 
 function plainText(value, maximumLength = 300) {
   return String(value ?? '')
@@ -217,21 +202,35 @@ function agendaOrder(first, second) {
   return priority || first.startDate.localeCompare(second.startDate) || first.name.localeCompare(second.name, 'nl');
 }
 
+function syncLoadMore(visibleCount, totalCount) {
+  if (!loadMoreButton) return;
+  const remaining = Math.max(0, totalCount - visibleCount);
+  loadMoreButton.hidden = remaining === 0;
+  loadMoreButton.textContent = remaining
+    ? `Toon volgende ${Math.min(PAGE_SIZE, remaining)} plannen`
+    : 'Alle plannen zijn zichtbaar';
+}
+
 function render(events) {
-  if (hasPrerenderedAgenda && filter === 'all' && !todayOnly && !recommendedOnly && !query) {
+  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && filter === 'all' && !todayOnly && !recommendedOnly && !query) {
+    const visibleCount = Math.min(PAGE_SIZE, events.length);
     status.dataset.state = 'ready';
-    status.textContent = `${events.length} plannen in de agenda`;
+    status.textContent = `${visibleCount} van ${events.length} plannen zichtbaar`;
+    syncLoadMore(visibleCount, events.length);
     return;
   }
   const today = twenteDateKey();
-  const shown = events.filter(event =>
+  const matching = events.filter(event =>
     (filter === 'all' || event.source === filter)
     && (!recommendedOnly || event.recommended === true)
     && (!todayOnly || eventDateKey(event) === today)
     && (!query || `${event.name} ${event.location} ${event.genre} ${event.source}`.toLowerCase().includes(query)));
+  const shown = matching.slice(0, visibleLimit);
   const groups = Object.groupBy(shown, eventDateKey);
   status.dataset.state = 'ready';
-  status.textContent = `${shown.length} ${shown.length === 1 ? 'plan' : 'plannen'}${todayOnly ? ' vandaag' : ' in de agenda'}${recommendedOnly ? ' voor jou' : ''}`;
+  status.textContent = matching.length > shown.length
+    ? `${shown.length} van ${matching.length} plannen zichtbaar${recommendedOnly ? ' voor jou' : ''}`
+    : `${matching.length} ${matching.length === 1 ? 'plan' : 'plannen'}${todayOnly ? ' vandaag' : ' in de agenda'}${recommendedOnly ? ' voor jou' : ''}`;
   const emptyMessage = recommendedOnly ? 'Geen sterke muziekmatches in deze selectie. Bekijk de volledige agenda.' : todayOnly ? 'Vandaag staat er niets in deze selectie. Bekijk de volledige agenda.' : 'Geen plannen gevonden. Probeer een andere zoekterm.';
   hasPrerenderedAgenda = false;
   agenda.dataset.prerendered = 'false';
@@ -254,8 +253,9 @@ function render(events) {
     day.append(heading, dayEvents);
     content.append(day);
   }
-  if (!shown.length) content.append(element('p', 'empty', emptyMessage));
+  if (!matching.length) content.append(element('p', 'empty', emptyMessage));
   agenda.replaceChildren(content);
+  syncLoadMore(shown.length, matching.length);
 }
 
 function syncNetworkStatus() {
@@ -288,6 +288,11 @@ try {
     recommendedButton.setAttribute('aria-pressed', 'true');
   }
   render(events);
+  loadMoreButton?.addEventListener('click', () => {
+    visibleLimit += PAGE_SIZE;
+    hasPrerenderedAgenda = false;
+    render(events);
+  });
   agenda.addEventListener('click', event => {
     const button = event.target.closest('[data-event-calendar]');
     if (button) downloadEvent(JSON.parse(button.dataset.eventCalendar));
@@ -295,22 +300,24 @@ try {
   document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
     document.querySelector('[data-filter].active').classList.remove('active');
     document.querySelector('[data-filter][aria-pressed="true"]').setAttribute('aria-pressed', 'false');
-    button.classList.add('active'); filter = button.dataset.filter; render(events);
+    button.classList.add('active'); filter = button.dataset.filter; visibleLimit = PAGE_SIZE; render(events);
     button.setAttribute('aria-pressed', 'true');
   }));
   document.querySelector('[data-today-filter]').addEventListener('click', event => {
     todayOnly = !todayOnly;
+    visibleLimit = PAGE_SIZE;
     event.currentTarget.classList.toggle('active', todayOnly);
     event.currentTarget.setAttribute('aria-pressed', String(todayOnly));
     render(events);
   });
   document.querySelector('[data-recommended-filter]').addEventListener('click', event => {
     recommendedOnly = !recommendedOnly;
+    visibleLimit = PAGE_SIZE;
     event.currentTarget.classList.toggle('active', recommendedOnly);
     event.currentTarget.setAttribute('aria-pressed', String(recommendedOnly));
     render(events);
   });
-  search.addEventListener('input', event => { query = event.target.value.toLowerCase(); render(events); });
+  search.addEventListener('input', event => { query = event.target.value.toLowerCase(); visibleLimit = PAGE_SIZE; render(events); });
 } catch {
   showStatusError('De agenda kon niet worden geladen.');
 }

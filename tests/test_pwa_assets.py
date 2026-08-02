@@ -26,7 +26,7 @@ class PwaAssetsTests(unittest.TestCase):
 
     def test_offline_shell_contains_current_generated_files(self) -> None:
         worker = (ROOT / "sw.js").read_text(encoding="utf-8")
-        for asset in ("/", "/about.html", "/events.json", "/events.ics", "/site.webmanifest"):
+        for asset in ("/", "/about.html", "/privacy.html", "/events.json", "/events.ics", "/site.webmanifest"):
             self.assertIn(f"'{asset}'", worker)
 
     def test_homepage_has_semantic_agenda_heading_structure(self) -> None:
@@ -68,7 +68,7 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("function updateAgendaSummary(events)", app)
         self.assertIn("dateKeyAfter(today, 7)", app)
         self.assertIn("updateAgendaSummary(events)", app)
-        self.assertIn("hasPrerenderedAgenda && filter === 'all'", app)
+        self.assertIn("hasPrerenderedAgenda && visibleLimit === PAGE_SIZE", app)
         self.assertIn("requestIdleCallback(refreshSummary", app)
 
     def test_matomo_is_consent_first_and_available_on_every_page(self) -> None:
@@ -81,10 +81,11 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("requestIdleCallback", analytics)
         self.assertIn("deleteMatomoCookies", analytics)
         self.assertIn("event-calendar/analytics-consent.js", (ROOT / "Dockerfile").read_text(encoding="utf-8"))
-        for name in ("index.html", "about.html", "disclaimer.html"):
+        for name in ("index.html", "about.html", "disclaimer.html", "privacy.html"):
             page = (ROOT / name).read_text(encoding="utf-8")
-            self.assertIn('analytics-consent.js?v=20260801-1', page)
+            self.assertIn('analytics-consent.js?v=20260802-2', page)
             self.assertIn('data-privacy-settings', page)
+        self.assertIn("document.body.prepend(notice)", analytics)
 
     def test_disclaimer_explains_matomo_and_cookie_durations(self) -> None:
         disclaimer = (ROOT / "disclaimer.html").read_text(encoding="utf-8")
@@ -129,10 +130,13 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertEqual(schema["@type"], "ItemList")
         self.assertGreater(schema["numberOfItems"], 0)
         prerendered = index.split("<!-- EVENT_LIST_START -->", 1)[1].split("<!-- EVENT_LIST_END -->", 1)[0]
-        self.assertEqual(prerendered.count('<article class="event '), len(events))
+        self.assertEqual(prerendered.count('<article class="event '), min(60, len(events)))
         self.assertIn("<h3>", prerendered)
         app = (ROOT / "app.js").read_text(encoding="utf-8")
         self.assertIn("hasPrerenderedAgenda", app)
+        self.assertIn("const PAGE_SIZE = 60", app)
+        self.assertIn("matching.slice(0, visibleLimit)", app)
+        self.assertIn("data-load-more", index)
 
     def test_browser_times_are_fixed_to_the_venue_timezone(self) -> None:
         app = (ROOT / "app.js").read_text(encoding="utf-8")
@@ -146,6 +150,41 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("endDate,", app)
         self.assertIn("if (!endDate && event.startDate.length !== 10)", app)
         self.assertIn("lines.push(`DTEND${icalDateValue(endDate)}`)", app)
+
+    def test_back_to_top_is_accessible_and_available_on_every_page(self) -> None:
+        script = (ROOT / "back-to-top.js").read_text(encoding="utf-8")
+        styles = (ROOT / "styles.css").read_text(encoding="utf-8")
+        self.assertIn("Math.max(window.scrollY, document.documentElement.scrollTop)", script)
+        self.assertIn("window.addEventListener('pageshow', updateVisibility)", script)
+        self.assertIn("window.visualViewport?.addEventListener('resize', updateVisibility)", script)
+        self.assertIn("prefers-reduced-motion: reduce", script)
+        self.assertIn("heading.focus({ preventScroll: true })", script)
+        self.assertIn(".back-to-top[hidden]", styles)
+        self.assertIn("calc(var(--space-3) + env(safe-area-inset-top, 0px))", styles)
+        self.assertIn("calc(var(--space-4) + env(safe-area-inset-bottom, 0px))", styles)
+        for name in ("index.html", "about.html", "disclaimer.html", "privacy.html"):
+            page = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn('data-back-to-top hidden aria-label="Terug naar boven"', page)
+            self.assertIn('back-to-top.js?v=20260802-2', page)
+
+    def test_suggestion_privacy_copy_and_page_are_complete(self) -> None:
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        privacy = (ROOT / "privacy.html").read_text(encoding="utf-8")
+        self.assertIn('class="form-privacy form-wide"', index)
+        self.assertIn("Naam en e-mailadres zijn optioneel", index)
+        self.assertIn("Categorie en suggestie zijn verplicht", index)
+        self.assertEqual(index.count('class="required-label">Verplicht'), 2)
+        self.assertIn('href="privacy.html">Lees meer over privacy</a>', index)
+        self.assertIn("De website slaat je naam, e-mailadres en suggestie niet op in een database", privacy)
+        self.assertIn("Ronald Punt is verantwoordelijk voor deze verwerking", privacy)
+        self.assertIn("een afzonderlijk verzoek om verwijdering niet nodig", privacy)
+        self.assertIn("event-calendar/privacy.html", (ROOT / "Dockerfile").read_text(encoding="utf-8"))
+        self.assertIn("/privacy.html", (ROOT / "sw.js").read_text(encoding="utf-8"))
+
+    def test_homepage_footer_links_to_de_twee_wezen_weesjes(self) -> None:
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('href="https://www.detweewezen.nl/weesjes"', index)
+        self.assertIn("Weesjes bij De Twee Wezen ↗", index)
 
     def test_agenda_has_no_javascript_and_loading_failure_fallbacks(self) -> None:
         index = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -166,6 +205,23 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn(".venue-track { animation: none; transform: none; will-change: auto; }", reduced_motion)
         self.assertIn(".venue-window { overflow-x: auto; scroll-snap-type: x mandatory; }", reduced_motion)
         self.assertIn(".venue-card:nth-child(n + 6) { display: none; }", reduced_motion)
+
+    def test_contrast_touch_targets_and_theme_controls_are_consistent(self) -> None:
+        styles = (ROOT / "styles.css").read_text(encoding="utf-8")
+        theme = (ROOT / "theme.js").read_text(encoding="utf-8")
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn(".editorial-scope a { color: var(--color-link-on-dark)", styles)
+        self.assertIn("background: var(--color-masthead);", styles)
+        self.assertIn("min-inline-size: 44px", styles)
+        self.assertIn("overflow-wrap: anywhere", styles)
+        self.assertIn('sizes="(max-width: 700px) 78vw, (max-width: 1409px) 44vw, 620px"', index)
+        self.assertIn('class="skip-link" href="#agenda-controls"', index)
+        self.assertIn('id="agenda-controls" class="controls" tabindex="-1"', index)
+        self.assertIn("function setupToggle()", theme)
+        for name in ("index.html", "about.html", "disclaimer.html", "privacy.html"):
+            page = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn('id="theme-toggle"', page)
+            self.assertIn('theme.js?v=20260802-3', page)
 
     def test_sold_out_events_render_a_visual_badge(self) -> None:
         app = (ROOT / "app.js").read_text(encoding="utf-8")
