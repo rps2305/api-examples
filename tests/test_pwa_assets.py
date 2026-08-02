@@ -35,6 +35,8 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("<h1>Uitagenda Twente:", index)
         self.assertIn("const title = element('h2')", app)
         self.assertIn("dateNode.dateTime = date", app)
+        self.assertIn("element('span', 'day-year', date.slice(0, 4))", app)
+        self.assertIn('class="day-year">', index)
         self.assertIn("element('h3', '', event.name)", app)
 
     def test_homepage_images_have_alternative_text(self) -> None:
@@ -66,6 +68,31 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("function updateAgendaSummary(events)", app)
         self.assertIn("dateKeyAfter(today, 7)", app)
         self.assertIn("updateAgendaSummary(events)", app)
+        self.assertIn("hasPrerenderedAgenda && filter === 'all'", app)
+        self.assertIn("requestIdleCallback(refreshSummary", app)
+
+    def test_matomo_is_consent_first_and_available_on_every_page(self) -> None:
+        analytics = (ROOT / "analytics-consent.js").read_text(encoding="utf-8")
+        for command in ("requireConsent", "setConsentGiven", "trackPageView", "enableLinkTracking"):
+            self.assertIn(command, analytics)
+        self.assertIn("https://matomo.puntuale.nl/", analytics)
+        self.assertIn("MATOMO_SITE_ID = '15'", analytics)
+        self.assertIn("readChoice() !== 'granted'", analytics)
+        self.assertIn("requestIdleCallback", analytics)
+        self.assertIn("deleteMatomoCookies", analytics)
+        self.assertIn("event-calendar/analytics-consent.js", (ROOT / "Dockerfile").read_text(encoding="utf-8"))
+        for name in ("index.html", "about.html", "disclaimer.html"):
+            page = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn('analytics-consent.js?v=20260801-1', page)
+            self.assertIn('data-privacy-settings', page)
+
+    def test_disclaimer_explains_matomo_and_cookie_durations(self) -> None:
+        disclaimer = (ROOT / "disclaimer.html").read_text(encoding="utf-8")
+        self.assertIn('id="privacy"', disclaimer)
+        self.assertIn("Zonder toestemming", disclaimer)
+        self.assertIn("13 maanden", disclaimer)
+        self.assertIn("30 minuten", disclaimer)
+        self.assertIn("6 maanden", disclaimer)
 
     def test_page_titles_and_about_description_are_locally_specific(self) -> None:
         index = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -73,6 +100,16 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("<title>Uitagenda Twente – Concerten, evenementen en FC Twente</title>", index)
         self.assertIn("<title>Ronalds muzieksmaak en concerttips – Uitagenda Twente</title>", about)
         self.assertIn("de persoonlijke basis voor concerttips en aanbevelingen in Uitagenda Twente", about)
+
+    def test_bam_is_announced_and_volunteer_context_is_clear(self) -> None:
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        about = (ROOT / "about.html").read_text(encoding="utf-8")
+        disclaimer = (ROOT / "disclaimer.html").read_text(encoding="utf-8")
+        self.assertIn("BAM! Festival</a> worden later toegevoegd", index)
+        self.assertIn("al jarenlang vrijwilliger bij Metropool, BAM! Festival en Oogst", about)
+        self.assertIn("al jarenlang vrijwilliger bij Metropool, BAM! Festival en Oogst", disclaimer)
+        self.assertIn("Deze agenda maak ik op persoonlijke titel", about)
+        self.assertIn("de website is geen officiële publicatie", disclaimer)
 
     def test_social_sharing_metadata_is_complete(self) -> None:
         index = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -102,6 +139,13 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("timeZone: 'Europe/Amsterdam'", app)
         self.assertIn("Object.groupBy(shown, eventDateKey)", app)
         self.assertIn("new Date(event.startDate).toISOString()", app)
+
+    def test_individual_calendar_export_uses_known_or_default_end_time(self) -> None:
+        app = (ROOT / "app.js").read_text(encoding="utf-8")
+        self.assertIn("const DEFAULT_EVENT_DURATION_MINUTES = 120", app)
+        self.assertIn("endDate,", app)
+        self.assertIn("if (!endDate && event.startDate.length !== 10)", app)
+        self.assertIn("lines.push(`DTEND${icalDateValue(endDate)}`)", app)
 
     def test_agenda_has_no_javascript_and_loading_failure_fallbacks(self) -> None:
         index = (ROOT / "index.html").read_text(encoding="utf-8")

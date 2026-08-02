@@ -2,60 +2,11 @@
   {
     "@type": "Event",
     "name": "Zomer Zandspeeltuin",
-    "startDate": "2026-08-01",
+    "startDate": "2026-08-02",
     "location": "",
     "genre": "Kinderen, Zomervakantie",
     "url": "https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin",
     "endDate": "2026-08-30",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Karol Mossakowski",
-    "startDate": "2026-08-01T13:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/karol-mossakowski",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Heartfelt Noise",
-    "startDate": "2026-08-01T16:00:00Z",
-    "location": "Broedplaats Oogst, Hengelo",
-    "genre": "Band, DJ, Muziek, 18:00",
-    "url": "https://oogst.eu/agenda/",
-    "source": "oogst"
-  },
-  {
-    "@type": "Event",
-    "name": "Old School New Wave Dance Party @ De Cactus",
-    "startDate": "2026-08-01T18:30:00Z",
-    "endDate": "2026-08-01T23:00:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111638564",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111638564",
-    "soldOut": true,
-    "source": "de-cactus",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor new wave en old school."
-  },
-  {
-    "@type": "Event",
-    "name": "Clownerie Proeverij",
-    "startDate": "2026-08-02T08:00:00Z",
-    "location": "",
-    "genre": "Evenement",
-    "url": "https://uitinhengelo.nl/evenementen/clownerie-proeverij",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-08-02T08:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
     "source": "hengelo"
   },
   {
@@ -69,20 +20,20 @@
   },
   {
     "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-08-02T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
     "name": "Open Zondagen Heemtuin",
     "startDate": "2026-08-02T11:00:00Z",
     "location": "",
     "genre": "Actief, Diversen",
     "url": "https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Open zondag watermolen Oele",
+    "startDate": "2026-08-02T11:00:00Z",
+    "location": "",
+    "genre": "Diversen",
+    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
     "source": "hengelo"
   },
   {
@@ -689,20 +640,20 @@
   },
   {
     "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-08-16T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
     "name": "Open Zondagen Heemtuin",
     "startDate": "2026-08-16T11:00:00Z",
     "location": "",
     "genre": "Actief, Diversen",
     "url": "https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Open zondag watermolen Oele",
+    "startDate": "2026-08-16T11:00:00Z",
+    "location": "",
+    "genre": "Diversen",
+    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
     "source": "hengelo"
   },
   {

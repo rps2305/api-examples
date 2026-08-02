@@ -94,6 +94,12 @@ def calendar(events: list[dict[str, object]]) -> str:
                 f"SUMMARY:{escape(name)}",
             ]
         )
+        end = event.get("endDate")
+        if not end and len(str(start)) != 10:
+            parsed_start = datetime.fromisoformat(str(start).replace("Z", "+00:00"))
+            end = parsed_start + timedelta(minutes=120)
+        if end:
+            lines.append(f"DTEND{ical_datetime(end)}")
         if event.get("location"):
             lines.append(f"LOCATION:{escape(event['location'])}")
         if event.get("url"):
@@ -225,7 +231,7 @@ def prerender_agenda(events: list[dict[str, object]]) -> str:
         items.sort(key=lambda event: (SOURCE_PRIORITY.get(str(event.get("source")), 10), str(event["startDate"]), str(event.get("name", "")).casefold()))
         count = len(items)
         sections.append(
-            f'<section class="day"><div class="day-heading"><h2><time datetime="{day_key}">{label}</time></h2>'
+            f'<section class="day"><div class="day-heading"><h2><time datetime="{day_key}">{label}<span class="day-year">{current.year}</span></time></h2>'
             f'<span>{count} {"plan" if count == 1 else "plannen"}</span></div>'
             f'<div class="day-events">{"".join(prerender_event(event) for event in items)}</div></section>'
         )

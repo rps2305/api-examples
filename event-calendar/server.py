@@ -44,8 +44,9 @@ SUGGESTION_CATEGORIES = {"Evenement", "Correctie", "Website", "Anders"}
 SECURITY_HEADERS = {
     "Content-Security-Policy": (
         "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; "
-        "form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self'; "
-        "style-src-attr 'none'; img-src 'self' data:; font-src 'self'; connect-src 'self'; "
+        "form-action 'self'; script-src 'self' https://matomo.puntuale.nl; script-src-attr 'none'; style-src 'self'; "
+        "style-src-attr 'none'; img-src 'self' data: https://matomo.puntuale.nl; font-src 'self'; "
+        "connect-src 'self' https://matomo.puntuale.nl; "
         "manifest-src 'self'; worker-src 'self'; frame-src 'none'; upgrade-insecure-requests"
     ),
     "X-Content-Type-Options": "nosniff",

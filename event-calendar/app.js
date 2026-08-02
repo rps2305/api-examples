@@ -9,6 +9,7 @@ let query = '';
 let todayOnly = initialView === 'today';
 let recommendedOnly = initialView === 'recommended';
 let hasPrerenderedAgenda = agenda.dataset.prerendered === 'true';
+const DEFAULT_EVENT_DURATION_MINUTES = 120;
 const dateFormat = new Intl.DateTimeFormat('nl-NL', { weekday: 'long', day: 'numeric', month: 'long' });
 const timeFormat = new Intl.DateTimeFormat('nl-NL', {
   hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam',
@@ -52,6 +53,7 @@ function plainText(value, maximumLength = 300) {
 }
 
 function safeUrl(value) {
+  if (!value) return '';
   try {
     const url = new URL(value);
     return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
@@ -65,11 +67,14 @@ function normalizeEvent(value) {
   const source = plainText(value.source, 30);
   const name = plainText(value.name, 300);
   const startDate = plainText(value.startDate, 40);
+  const rawEndDate = plainText(value.endDate, 40);
   if (!allowedSources.has(source) || !name || !/^\d{4}-\d{2}-\d{2}(?:T.+)?$/.test(startDate) || Number.isNaN(Date.parse(startDate))) return null;
+  const endDate = /^\d{4}-\d{2}-\d{2}(?:T.+)?$/.test(rawEndDate) && !Number.isNaN(Date.parse(rawEndDate)) ? rawEndDate : '';
   return {
     '@type': source === 'fc-twente' ? 'SportsEvent' : 'Event',
     name,
     startDate,
+    endDate,
     location: plainText(value.location, 300),
     genre: plainText(value.genre, 200),
     url: safeUrl(value.url),
@@ -109,10 +114,16 @@ function showStatusError(message) {
 
 function icalText(event) {
   const escapeIcal = value => String(value || '').replace(/\\/g, '\\\\').replace(/[,;]/g, '\\$&').replace(/\n/g, '\\n');
-  const dateValue = event.startDate.length === 10
-    ? `;VALUE=DATE:${event.startDate.replaceAll('-', '')}`
-    : `:${new Date(event.startDate).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')}`;
-  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Uit Vandaag Twente//NL', 'BEGIN:VEVENT', `UID:${encodeURIComponent(`${event.name}-${event.startDate}`)}@event-calendar.puntuale.nl`, `DTSTART${dateValue}`, `SUMMARY:${escapeIcal(event.name)}`];
+  const icalDateValue = value => value.length === 10
+    ? `;VALUE=DATE:${value.replaceAll('-', '')}`
+    : `:${new Date(value).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')}`;
+  const normalizedStart = event.startDate.length === 10 ? event.startDate : new Date(event.startDate).toISOString();
+  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Uit Vandaag Twente//NL', 'BEGIN:VEVENT', `UID:${encodeURIComponent(`${event.name}-${event.startDate}`)}@event-calendar.puntuale.nl`, `DTSTART${icalDateValue(normalizedStart)}`, `SUMMARY:${escapeIcal(event.name)}`];
+  let endDate = event.endDate;
+  if (!endDate && event.startDate.length !== 10) {
+    endDate = new Date(new Date(event.startDate).getTime() + DEFAULT_EVENT_DURATION_MINUTES * 60_000).toISOString();
+  }
+  if (endDate) lines.push(`DTEND${icalDateValue(endDate)}`);
   if (event.location) lines.push(`LOCATION:${escapeIcal(event.location)}`);
   if (event.url) lines.push(`URL:${event.url}`);
   return `${lines.concat('END:VEVENT', 'END:VCALENDAR').join('\r\n')}\r\n`;
@@ -207,17 +218,21 @@ function agendaOrder(first, second) {
 }
 
 function render(events) {
+  if (hasPrerenderedAgenda && filter === 'all' && !todayOnly && !recommendedOnly && !query) {
+    status.dataset.state = 'ready';
+    status.textContent = `${events.length} plannen in de agenda`;
+    return;
+  }
   const today = twenteDateKey();
   const shown = events.filter(event =>
     (filter === 'all' || event.source === filter)
     && (!recommendedOnly || event.recommended === true)
     && (!todayOnly || eventDateKey(event) === today)
-    && JSON.stringify(event).toLowerCase().includes(query));
+    && (!query || `${event.name} ${event.location} ${event.genre} ${event.source}`.toLowerCase().includes(query)));
   const groups = Object.groupBy(shown, eventDateKey);
   status.dataset.state = 'ready';
   status.textContent = `${shown.length} ${shown.length === 1 ? 'plan' : 'plannen'}${todayOnly ? ' vandaag' : ' in de agenda'}${recommendedOnly ? ' voor jou' : ''}`;
   const emptyMessage = recommendedOnly ? 'Geen sterke muziekmatches in deze selectie. Bekijk de volledige agenda.' : todayOnly ? 'Vandaag staat er niets in deze selectie. Bekijk de volledige agenda.' : 'Geen plannen gevonden. Probeer een andere zoekterm.';
-  if (hasPrerenderedAgenda && filter === 'all' && !todayOnly && !recommendedOnly && !query) return;
   hasPrerenderedAgenda = false;
   agenda.dataset.prerendered = 'false';
   const content = document.createDocumentFragment();
@@ -225,8 +240,13 @@ function render(events) {
     const day = element('section', 'day');
     const heading = element('div', 'day-heading');
     const title = element('h2');
-    const dateNode = element('time', '', dateFormat.format(new Date(`${date}T12:00:00`)));
+    const renderedDate = new Date(`${date}T12:00:00`);
+    const dateNode = element('time');
     dateNode.dateTime = date;
+    dateNode.append(
+      document.createTextNode(dateFormat.format(renderedDate)),
+      element('span', 'day-year', date.slice(0, 4)),
+    );
     title.append(dateNode);
     heading.append(title, element('span', '', `${items.length} ${items.length === 1 ? 'plan' : 'plannen'}`));
     const dayEvents = element('div', 'day-events');
@@ -254,7 +274,9 @@ try {
   const parsedEvents = JSON.parse(document.querySelector('#event-data').textContent);
   if (!Array.isArray(parsedEvents)) throw new TypeError('Event feed must be an array');
   const events = parsedEvents.map(normalizeEvent).filter(Boolean);
-  updateAgendaSummary(events);
+  const refreshSummary = () => updateAgendaSummary(events);
+  if ('requestIdleCallback' in window) window.requestIdleCallback(refreshSummary, { timeout: 2_000 });
+  else window.setTimeout(refreshSummary, 0);
   if (todayOnly) {
     const todayButton = document.querySelector('[data-today-filter]');
     todayButton.classList.add('active');

@@ -62,6 +62,8 @@ class SecurityHardeningTests(unittest.TestCase):
         policy = headers["Content-Security-Policy"]
         self.assertIn("script-src 'self'", policy)
         self.assertIn("frame-ancestors 'none'", policy)
+        self.assertIn("script-src 'self' https://matomo.puntuale.nl", policy)
+        self.assertIn("connect-src 'self' https://matomo.puntuale.nl", policy)
         self.assertNotIn("'unsafe-inline'", policy)
         self.assertNotIn("'unsafe-eval'", policy)
 
