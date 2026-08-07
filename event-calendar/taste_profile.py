@@ -13,6 +13,7 @@ FAVORED_ARTISTS = (
     "Maite Hontelé",
     "Manu Chao",
     "Nick Cave",
+    "Joy Division",
     "Florence + The Machine",
     "Buena Vista Social Club",
     "Lana Del Rey",
@@ -35,6 +36,8 @@ FAVORED_ARTISTS = (
     "Rammstein",
     "Arctic Monkeys",
     "Editors",
+    "Claw Boys Claw",
+    "Björk",
     "U2",
     "The Rolling Stones",
     "Tori Amos",
@@ -43,6 +46,10 @@ FAVORED_ARTISTS = (
     "Cocteau Twins",
     "Nirvana",
     "Doe Maar",
+    "Drukwerk",
+    "Het Goede Doel",
+    "Normaal",
+    "Paceshifters",
     "Celia Cruz",
     "Fratsen",
     "Red Hot Chili Peppers",
@@ -59,6 +66,21 @@ FAVORED_ARTISTS = (
 
 # Explicit negative preferences always win over broad genre or festival matches.
 EXCLUDED_ARTISTS = ("Pearl Jam",)
+
+# These are intentionally narrow. Nederlandstalige pop is not excluded: named
+# favourites such as Doe Maar and Het Goede Doel should still be recommended.
+DISLIKED_STYLE_SIGNALS = (
+    "jazz",
+    "disco",
+    "volkszanger",
+    "volkszangers",
+    "levenslied",
+    "smartlap",
+    "schlager",
+    "feestzanger",
+    "piratenmuziek",
+    "casio",
+)
 
 STYLE_SIGNALS = (
     ("alternative", 3, "alternative rock"),
@@ -114,6 +136,9 @@ def taste_recommendation(event: dict[str, object]) -> str | None:
         if contains_phrase(title, artist):
             punctuation = "" if artist.endswith(".") else "."
             return f"Sluit aan bij je voorkeur voor {artist}{punctuation}"
+
+    if any(contains_phrase(context, phrase) for phrase in DISLIKED_STYLE_SIGNALS):
+        return None
 
     score = 0
     labels: list[str] = []

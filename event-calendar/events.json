@@ -2,229 +2,11 @@
   {
     "@type": "Event",
     "name": "Zomer Zandspeeltuin",
-    "startDate": "2026-08-02",
+    "startDate": "2026-08-06",
     "location": "",
     "genre": "Kinderen, Zomervakantie",
     "url": "https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin",
     "endDate": "2026-08-30",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Pas op! – Pad (kinderactiviteit)",
-    "startDate": "2026-08-02T11:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen",
-    "url": "https://uitinhengelo.nl/evenementen/pas-op-pad-kinderactiviteit",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Zondagen Heemtuin",
-    "startDate": "2026-08-02T11:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-08-02T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "KRC Genk - FC Twente",
-    "startDate": "2026-08-02T16:30:00Z",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen De Tempel",
-    "startDate": "2026-08-03T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen De Hengelose Es",
-    "startDate": "2026-08-03T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen Nijverheid & zomereditie Houtdorpweek",
-    "startDate": "2026-08-03T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiekids Zomerfestijn 2026",
-    "startDate": "2026-08-03T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen BS De Jeugd",
-    "startDate": "2026-08-03T09:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Vakantiespelen, Zomervakantie, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-bs-de-jeugd",
-    "endDate": "2026-08-13T12:30:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Maak 't bij Oyfo",
-    "startDate": "2026-08-03T09:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Kunst & Cultuur, Zomervakantie, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen De Tempel",
-    "startDate": "2026-08-04T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen De Hengelose Es",
-    "startDate": "2026-08-04T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen Nijverheid & zomereditie Houtdorpweek",
-    "startDate": "2026-08-04T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiekids Zomerfestijn 2026",
-    "startDate": "2026-08-04T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Maak 't bij Oyfo",
-    "startDate": "2026-08-04T09:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Kunst & Cultuur, Zomervakantie, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Pubquiz @'t Pleintje",
-    "startDate": "2026-08-04T18:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen De Tempel",
-    "startDate": "2026-08-05T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen Nijverheid & zomereditie Houtdorpweek",
-    "startDate": "2026-08-05T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiekids Zomerfestijn 2026",
-    "startDate": "2026-08-05T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Maak 't bij Oyfo",
-    "startDate": "2026-08-05T09:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Kunst & Cultuur, Zomervakantie, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Akoestische Sessie 5 augustus 2026",
-    "startDate": "2026-08-05T18:30:00Z",
-    "endDate": "2026-08-05T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111652276",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111652276",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen De Tempel",
-    "startDate": "2026-08-06T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen De Hengelose Es",
-    "startDate": "2026-08-06T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vakantiespelen Nijverheid & zomereditie Houtdorpweek",
-    "startDate": "2026-08-06T07:30:00Z",
-    "location": "",
-    "genre": "Kinderen, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid",
     "source": "hengelo"
   },
   {
@@ -238,11 +20,31 @@
   },
   {
     "@type": "Event",
+    "name": "Rabobank Beach Courts Hengelo",
+    "startDate": "2026-08-06T08:00:00Z",
+    "location": "",
+    "genre": "Sport & Spel",
+    "url": "https://uitinhengelo.nl/evenementen/rabobank-beach-courts",
+    "endDate": "2026-08-30T20:00:00Z",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Maak 't bij Oyfo",
     "startDate": "2026-08-06T09:00:00Z",
     "location": "",
     "genre": "Kinderen, Kunst & Cultuur, Zomervakantie, Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Vakantiespelen BS De Jeugd",
+    "startDate": "2026-08-06T09:00:00Z",
+    "location": "",
+    "genre": "Kinderen, Vakantiespelen, Zomervakantie, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/vakantiespelen-bs-de-jeugd",
+    "endDate": "2026-08-13T12:30:00Z",
     "source": "hengelo"
   },
   {
@@ -367,6 +169,24 @@
     "source": "hengelo"
   },
   {
+    "@type": "Event",
+    "name": "The Days After",
+    "startDate": "2026-08-09T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/the-days-after",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "The Shadolds",
+    "startDate": "2026-08-09T12:00:00Z",
+    "location": "",
+    "genre": "Evenement",
+    "url": "https://uitinhengelo.nl/evenementen/the-shadolds",
+    "source": "hengelo"
+  },
+  {
     "@type": "SportsEvent",
     "name": "Heerenveen - FC Twente",
     "startDate": "2026-08-09T14:45:00Z",
@@ -394,20 +214,20 @@
   },
   {
     "@type": "Event",
-    "name": "Vakantiekids Zomerfestijn 2026",
-    "startDate": "2026-08-10T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
     "name": "Zomerkunsten bij Oyfo Kunstenschool",
     "startDate": "2026-08-10T08:00:00Z",
     "location": "",
     "genre": "Kinderen, Kunst & Cultuur, Vakantiespelen",
     "url": "https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Vakantiekids Zomerfestijn 2026",
+    "startDate": "2026-08-10T08:00:00Z",
+    "location": "",
+    "genre": "Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie",
+    "url": "https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026",
     "source": "hengelo"
   },
   {
@@ -430,20 +250,20 @@
   },
   {
     "@type": "Event",
-    "name": "Vakantiekids Zomerfestijn 2026",
-    "startDate": "2026-08-11T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
     "name": "Zomerkunsten bij Oyfo Kunstenschool",
     "startDate": "2026-08-11T08:00:00Z",
     "location": "",
     "genre": "Kinderen, Kunst & Cultuur, Vakantiespelen",
     "url": "https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Vakantiekids Zomerfestijn 2026",
+    "startDate": "2026-08-11T08:00:00Z",
+    "location": "",
+    "genre": "Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie",
+    "url": "https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026",
     "source": "hengelo"
   },
   {
@@ -466,6 +286,15 @@
   },
   {
     "@type": "Event",
+    "name": "Zomerkunsten bij Oyfo Kunstenschool",
+    "startDate": "2026-08-12T08:00:00Z",
+    "location": "",
+    "genre": "Kinderen, Kunst & Cultuur, Vakantiespelen",
+    "url": "https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Vakantiekids Zomerfestijn 2026",
     "startDate": "2026-08-12T08:00:00Z",
     "location": "",
@@ -475,11 +304,11 @@
   },
   {
     "@type": "Event",
-    "name": "Zomerkunsten bij Oyfo Kunstenschool",
-    "startDate": "2026-08-12T08:00:00Z",
+    "name": "Aan de slag met kunstmatige intelligentie!",
+    "startDate": "2026-08-13T07:30:00Z",
     "location": "",
-    "genre": "Kinderen, Kunst & Cultuur, Vakantiespelen",
-    "url": "https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool",
+    "genre": "Kinderen, Kunst & Cultuur, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/aan-de-slag-met-kunstmatige-intelligentie-10-t-m-14-jaar",
     "source": "hengelo"
   },
   {
@@ -511,11 +340,11 @@
   },
   {
     "@type": "Event",
-    "name": "Aan de slag met kunstmatige intelligentie!",
-    "startDate": "2026-08-13T07:30:00Z",
+    "name": "Zomerkunsten bij Oyfo Kunstenschool",
+    "startDate": "2026-08-13T08:00:00Z",
     "location": "",
-    "genre": "Kinderen, Kunst & Cultuur, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/aan-de-slag-met-kunstmatige-intelligentie-10-t-m-14-jaar",
+    "genre": "Kinderen, Kunst & Cultuur, Vakantiespelen",
+    "url": "https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool",
     "source": "hengelo"
   },
   {
@@ -528,18 +357,9 @@
     "source": "hengelo"
   },
   {
-    "@type": "Event",
-    "name": "Zomerkunsten bij Oyfo Kunstenschool",
-    "startDate": "2026-08-13T08:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Kunst & Cultuur, Vakantiespelen",
-    "url": "https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool",
-    "source": "hengelo"
-  },
-  {
     "@type": "SportsEvent",
     "name": "DAC Dunajská Streda - FC Twente",
-    "startDate": "2026-08-13T16:00:00Z",
+    "startDate": "2026-08-13T17:00:00Z",
     "genre": "Voetbal",
     "isHome": false,
     "source": "fc-twente"
@@ -629,12 +449,21 @@
   },
   {
     "@type": "Event",
-    "name": "Skin Deep (Bluesrock with a slice of Funk, NL)",
+    "name": "Classic Outdoor",
+    "startDate": "2026-08-15T17:00:00Z",
+    "location": "",
+    "genre": "Actief, Jeugd / Familie, Broedplaats Oogst, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/classic-outdoor",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Johnny Bernhard Country Band (Country, Blues, NL)",
     "startDate": "2026-08-15T18:30:00Z",
     "endDate": "2026-08-15T21:30:00Z",
     "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111661329",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111661329",
+    "url": "https://decactus.stager.co/shop/default/events/111685394",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111685394",
     "soldOut": false,
     "source": "de-cactus"
   },
@@ -654,6 +483,24 @@
     "location": "",
     "genre": "Diversen",
     "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Deventer Jazz Orkest",
+    "startDate": "2026-08-16T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/deventer-jazz-orkest",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Clockwork",
+    "startDate": "2026-08-16T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/clockwork",
     "source": "hengelo"
   },
   {
@@ -751,6 +598,15 @@
   },
   {
     "@type": "Event",
+    "name": "Oogst live: Nana Adjoua + Luwten",
+    "startDate": "2026-08-22T17:00:00Z",
+    "location": "Broedplaats Oogst, Hengelo",
+    "genre": "Band, Live, Muziek, 19:00",
+    "url": "https://oogst.eu/agenda/",
+    "source": "oogst"
+  },
+  {
+    "@type": "Event",
     "name": "Oogst Live: Nana Adjoa + LUWTEN",
     "startDate": "2026-08-22T18:00:00Z",
     "location": "Hengelo",
@@ -758,6 +614,24 @@
     "url": "https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten",
     "ticketUrl": "https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten",
     "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Oogst live: Nana Adjoua + Luwten",
+    "startDate": "2026-08-22T18:00:00Z",
+    "location": "",
+    "genre": "Actief, Jeugd / Familie, Broedplaats Oogst, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/oogst-live-nana-adjoua-luwten",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Guess The Groove",
+    "startDate": "2026-08-22T18:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/guess-the-groove",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -809,6 +683,24 @@
     "location": "",
     "genre": "Actief, Diversen",
     "url": "https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "The DS Band",
+    "startDate": "2026-08-23T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Diversen, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/the-ds-band",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "ISLE",
+    "startDate": "2026-08-23T12:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/isle",
     "source": "hengelo"
   },
   {
@@ -923,6 +815,17 @@
   },
   {
     "@type": "Event",
+    "name": "Oogst live: Ooostblok + Jeepers Creepers",
+    "startDate": "2026-08-29T08:00:00Z",
+    "location": "",
+    "genre": "Actief, Jeugd / Familie, Broedplaats Oogst, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/oogst-live-ooostblok-jeepers-creepers",
+    "source": "hengelo",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Ooostblok."
+  },
+  {
+    "@type": "Event",
     "name": "Kasbah Vintage/Brocantemarkt",
     "startDate": "2026-08-29T08:00:00Z",
     "location": "",
@@ -998,6 +901,24 @@
     "location": "",
     "genre": "Actief, Diversen",
     "url": "https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "@Jo's",
+    "startDate": "2026-08-30T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/jos",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Luc Mats",
+    "startDate": "2026-08-30T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/luc-mats",
     "source": "hengelo"
   },
   {
@@ -1274,6 +1195,24 @@
   },
   {
     "@type": "Event",
+    "name": "LOFT",
+    "startDate": "2026-09-06T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/loft",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "The Kopp'l Stones",
+    "startDate": "2026-09-06T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/the-koppl-stones",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Mark Harman & The Rhumba Kings (Rock&Roll, Rockabilly, UK)",
     "startDate": "2026-09-06T13:00:00Z",
     "endDate": "2026-09-06T15:30:00Z",
@@ -1347,6 +1286,15 @@
     "location": "",
     "genre": "Theater",
     "url": "https://uitinhengelo.nl/evenementen/come-from-away",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Barefoot at Sundown Festival [verplaatst vanwege de warmte naar vr 11 sep]",
+    "startDate": "2026-09-11T14:00:00Z",
+    "location": "",
+    "genre": "Kinderen, Jeugd / Familie, Broedplaats Oogst, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/barefoot-at-sundown-festival",
     "source": "hengelo"
   },
   {
@@ -1562,6 +1510,24 @@
   },
   {
     "@type": "Event",
+    "name": "V-Street",
+    "startDate": "2026-09-13T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/v-street",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Vocal Group Notes",
+    "startDate": "2026-09-13T12:00:00Z",
+    "location": "",
+    "genre": "Actief, Jeugd / Familie, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/vocal-group-notes",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "JazzRock Café - Rayn Bechoe & the Flavors of Soul",
     "startDate": "2026-09-13T13:00:00Z",
     "location": "Hengelo",
@@ -1753,6 +1719,16 @@
   },
   {
     "@type": "Event",
+    "name": "Oktoberfest München",
+    "startDate": "2026-09-19",
+    "endDate": "2026-10-04",
+    "location": "Theresienwiese, München",
+    "genre": "Oktoberfeest",
+    "url": "https://www.oktoberfest.de/en/information/oktoberfest-opening-times/opening-hours-munich-oktoberfest",
+    "source": "bijzonder"
+  },
+  {
+    "@type": "Event",
     "name": "Jongdierenkeuring HKSV",
     "startDate": "2026-09-19T08:30:00Z",
     "location": "",
@@ -1780,6 +1756,15 @@
     "url": "https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta",
     "ticketUrl": "https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta",
     "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Oogst live: Loe + Jenta + Marije Bruinsma",
+    "startDate": "2026-09-19T18:00:00Z",
+    "location": "",
+    "genre": "Actief, Jeugd / Familie, Broedplaats Oogst, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/oogst-live-loe-jenta-marije-bruinsma",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -2103,6 +2088,24 @@
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111600997",
     "soldOut": false,
     "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Ben's Boogaloo Soul Jazz Extravaganza!",
+    "startDate": "2026-09-27T17:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/bens-boogaloo-soul-jazz-extravaganza",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Sosha Sophia",
+    "startDate": "2026-09-27T17:00:00Z",
+    "location": "",
+    "genre": "Actief, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/sosha-sophia",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -2566,7 +2569,9 @@
     "url": "https://decactus.stager.co/shop/default/events/111578875",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111578875",
     "soldOut": true,
-    "source": "de-cactus"
+    "source": "de-cactus",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Normaal."
   },
   {
     "@type": "Event",
@@ -2626,7 +2631,9 @@
     "url": "https://decactus.stager.co/shop/default/events/111575965",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111575965",
     "soldOut": true,
-    "source": "de-cactus"
+    "source": "de-cactus",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Normaal."
   },
   {
     "@type": "Event",
@@ -3253,6 +3260,17 @@
   },
   {
     "@type": "Event",
+    "name": "Skin Deep (Bluesrock with a slice of Funk, NL)",
+    "startDate": "2026-10-29T19:30:00Z",
+    "endDate": "2026-10-29T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111661329",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111661329",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Discophonic Orchestra",
     "startDate": "2026-10-30T19:00:00Z",
     "location": "",
@@ -3426,6 +3444,14 @@
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/blok-amp-doos-2-2",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Verjaardag Ronald",
+    "startDate": "2026-11-02",
+    "location": "",
+    "genre": "Geboren 2 november 1969",
+    "source": "persoonlijk"
   },
   {
     "@type": "Event",
@@ -5547,7 +5573,9 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/drukwerk",
     "ticketUrl": "https://www.ticketmaster.nl/event/1750450312?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "source": "metropool"
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Drukwerk."
   },
   {
     "@type": "Event",
@@ -7078,6 +7106,14 @@
   },
   {
     "@type": "Event",
+    "name": "Verjaardag Ronald",
+    "startDate": "2027-11-02",
+    "location": "",
+    "genre": "Geboren 2 november 1969",
+    "source": "persoonlijk"
+  },
+  {
+    "@type": "Event",
     "name": "Eerste kerstdag",
     "startDate": "2027-12-25",
     "genre": "Nationale feestdag",
@@ -7093,5 +7129,13 @@
     "location": "Nederland",
     "url": "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/officiele-feestdagen",
     "source": "feestdagen"
+  },
+  {
+    "@type": "Event",
+    "name": "Verjaardag Ronald",
+    "startDate": "2028-11-02",
+    "location": "",
+    "genre": "Geboren 2 november 1969",
+    "source": "persoonlijk"
   }
 ]

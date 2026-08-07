@@ -4,179 +4,11 @@ PRODID:-//Uit Vandaag Twente//NL
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Uit Vandaag — Twente
 BEGIN:VEVENT
-UID:67e5a4d90dfe6d2e07e09b22@event-calendar.puntuale.nl
-DTSTART;VALUE=DATE:20260802
+UID:db499af4618c1d46fc03c398@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20260806
 SUMMARY:Zomer Zandspeeltuin
 DTEND;VALUE=DATE:20260830
 URL:https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin
-END:VEVENT
-BEGIN:VEVENT
-UID:9c597d0058d453a8b6d1d723@event-calendar.puntuale.nl
-DTSTART:20260802T110000Z
-SUMMARY:Pas op! – Pad (kinderactiviteit)
-DTEND:20260802T130000Z
-URL:https://uitinhengelo.nl/evenementen/pas-op-pad-kinderactiviteit
-END:VEVENT
-BEGIN:VEVENT
-UID:8860bbee6e61b0113f45306c@event-calendar.puntuale.nl
-DTSTART:20260802T110000Z
-SUMMARY:Open Zondagen Heemtuin
-DTEND:20260802T130000Z
-URL:https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
-END:VEVENT
-BEGIN:VEVENT
-UID:9657b09d692bd6ec1451eca5@event-calendar.puntuale.nl
-DTSTART:20260802T110000Z
-SUMMARY:Open zondag watermolen Oele
-DTEND:20260802T130000Z
-URL:https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele
-END:VEVENT
-BEGIN:VEVENT
-UID:18005c5d01e4fe923b8a62dc@event-calendar.puntuale.nl
-DTSTART:20260802T163000Z
-SUMMARY:KRC Genk - FC Twente
-DTEND:20260802T183000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:17c5177158870e60791bdece@event-calendar.puntuale.nl
-DTSTART:20260803T073000Z
-SUMMARY:Vakantiespelen De Tempel
-DTEND:20260803T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
-END:VEVENT
-BEGIN:VEVENT
-UID:ba0698673d84fc3ba671a219@event-calendar.puntuale.nl
-DTSTART:20260803T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260803T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:58ee6e4172c2e6ec4f30618f@event-calendar.puntuale.nl
-DTSTART:20260803T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260803T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:472e6e0499b57a8b0484afd3@event-calendar.puntuale.nl
-DTSTART:20260803T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260803T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:c5033b63639930a8d7d43795@event-calendar.puntuale.nl
-DTSTART:20260803T090000Z
-SUMMARY:Vakantiespelen BS De Jeugd
-DTEND:20260813T123000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-bs-de-jeugd
-END:VEVENT
-BEGIN:VEVENT
-UID:d2cf1f7838a3611056958a82@event-calendar.puntuale.nl
-DTSTART:20260803T090000Z
-SUMMARY:Maak 't bij Oyfo
-DTEND:20260803T110000Z
-URL:https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo
-END:VEVENT
-BEGIN:VEVENT
-UID:f97368be557b063e755208b8@event-calendar.puntuale.nl
-DTSTART:20260804T073000Z
-SUMMARY:Vakantiespelen De Tempel
-DTEND:20260804T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
-END:VEVENT
-BEGIN:VEVENT
-UID:ea616e70af0cbd6916a5d973@event-calendar.puntuale.nl
-DTSTART:20260804T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260804T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:65a5e4ea9ab3c00186c21f7d@event-calendar.puntuale.nl
-DTSTART:20260804T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260804T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:92d1868da2abb504b8629201@event-calendar.puntuale.nl
-DTSTART:20260804T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260804T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:f242f59eabd80985ddffdc63@event-calendar.puntuale.nl
-DTSTART:20260804T090000Z
-SUMMARY:Maak 't bij Oyfo
-DTEND:20260804T110000Z
-URL:https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo
-END:VEVENT
-BEGIN:VEVENT
-UID:da2106e95cdf81bbbfdd0726@event-calendar.puntuale.nl
-DTSTART:20260804T183000Z
-SUMMARY:Pubquiz @'t Pleintje
-DTEND:20260804T203000Z
-URL:https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje
-END:VEVENT
-BEGIN:VEVENT
-UID:116793c3db94cf62b85eb5aa@event-calendar.puntuale.nl
-DTSTART:20260805T073000Z
-SUMMARY:Vakantiespelen De Tempel
-DTEND:20260805T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
-END:VEVENT
-BEGIN:VEVENT
-UID:ddd5e670dd2a61a8bcc7ad9b@event-calendar.puntuale.nl
-DTSTART:20260805T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260805T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:7bf953852ff0c095499630a5@event-calendar.puntuale.nl
-DTSTART:20260805T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260805T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:cfdcf815839327bd15b3c7a0@event-calendar.puntuale.nl
-DTSTART:20260805T090000Z
-SUMMARY:Maak 't bij Oyfo
-DTEND:20260805T110000Z
-URL:https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo
-END:VEVENT
-BEGIN:VEVENT
-UID:40d188261a1e36e22e7f932a@event-calendar.puntuale.nl
-DTSTART:20260805T183000Z
-SUMMARY:Akoestische Sessie 5 augustus 2026
-DTEND:20260805T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111652276
-END:VEVENT
-BEGIN:VEVENT
-UID:b46c7e1ba55ec6ba54e298a1@event-calendar.puntuale.nl
-DTSTART:20260806T073000Z
-SUMMARY:Vakantiespelen De Tempel
-DTEND:20260806T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
-END:VEVENT
-BEGIN:VEVENT
-UID:6ae8e2e73dc63aa4e5021d5f@event-calendar.puntuale.nl
-DTSTART:20260806T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260806T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:5648557ef7e2262c76c92e90@event-calendar.puntuale.nl
-DTSTART:20260806T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260806T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
 END:VEVENT
 BEGIN:VEVENT
 UID:1b5a310c2ea2f890610e3eb7@event-calendar.puntuale.nl
@@ -186,11 +18,25 @@ DTEND:20260806T100000Z
 URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:89c65fd645236d4d779e20ad@event-calendar.puntuale.nl
+DTSTART:20260806T080000Z
+SUMMARY:Rabobank Beach Courts Hengelo
+DTEND:20260830T200000Z
+URL:https://uitinhengelo.nl/evenementen/rabobank-beach-courts
+END:VEVENT
+BEGIN:VEVENT
 UID:9b47e398c16906a2e2e7f6d1@event-calendar.puntuale.nl
 DTSTART:20260806T090000Z
 SUMMARY:Maak 't bij Oyfo
 DTEND:20260806T110000Z
 URL:https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo
+END:VEVENT
+BEGIN:VEVENT
+UID:40a4a3dddbd3064304273063@event-calendar.puntuale.nl
+DTSTART:20260806T090000Z
+SUMMARY:Vakantiespelen BS De Jeugd
+DTEND:20260813T123000Z
+URL:https://uitinhengelo.nl/evenementen/vakantiespelen-bs-de-jeugd
 END:VEVENT
 BEGIN:VEVENT
 UID:1bce2014eaf82a889f5af408@event-calendar.puntuale.nl
@@ -287,6 +133,20 @@ DTEND:20260809T130000Z
 URL:https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
 END:VEVENT
 BEGIN:VEVENT
+UID:21ff338c50b2927d6f272165@event-calendar.puntuale.nl
+DTSTART:20260809T120000Z
+SUMMARY:The Days After
+DTEND:20260809T140000Z
+URL:https://uitinhengelo.nl/evenementen/the-days-after
+END:VEVENT
+BEGIN:VEVENT
+UID:ce5af1f4acab50df95a81abe@event-calendar.puntuale.nl
+DTSTART:20260809T120000Z
+SUMMARY:The Shadolds
+DTEND:20260809T140000Z
+URL:https://uitinhengelo.nl/evenementen/the-shadolds
+END:VEVENT
+BEGIN:VEVENT
 UID:a4988b9063afa92d120dee94@event-calendar.puntuale.nl
 DTSTART:20260809T144500Z
 SUMMARY:Heerenveen - FC Twente
@@ -307,18 +167,18 @@ DTEND:20260810T093000Z
 URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
 END:VEVENT
 BEGIN:VEVENT
-UID:b3b2231b21058a0e5246ca01@event-calendar.puntuale.nl
-DTSTART:20260810T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260810T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:d095234dd3c777dfb4334423@event-calendar.puntuale.nl
 DTSTART:20260810T080000Z
 SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
 DTEND:20260810T100000Z
 URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
+END:VEVENT
+BEGIN:VEVENT
+UID:b3b2231b21058a0e5246ca01@event-calendar.puntuale.nl
+DTSTART:20260810T080000Z
+SUMMARY:Vakantiekids Zomerfestijn 2026
+DTEND:20260810T100000Z
+URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:01f7fbbc06ad5f7f9fccad86@event-calendar.puntuale.nl
@@ -335,18 +195,18 @@ DTEND:20260811T093000Z
 URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
 END:VEVENT
 BEGIN:VEVENT
-UID:f096f74a3a9cc75d96014939@event-calendar.puntuale.nl
-DTSTART:20260811T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260811T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
 UID:c21a7fafc24b52bb01aa3080@event-calendar.puntuale.nl
 DTSTART:20260811T080000Z
 SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
 DTEND:20260811T100000Z
 URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
+END:VEVENT
+BEGIN:VEVENT
+UID:f096f74a3a9cc75d96014939@event-calendar.puntuale.nl
+DTSTART:20260811T080000Z
+SUMMARY:Vakantiekids Zomerfestijn 2026
+DTEND:20260811T100000Z
+URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:4eaf820220b0cccc6c10955e@event-calendar.puntuale.nl
@@ -363,6 +223,13 @@ DTEND:20260812T093000Z
 URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
 END:VEVENT
 BEGIN:VEVENT
+UID:3cc18cc1ef7d7b042086d485@event-calendar.puntuale.nl
+DTSTART:20260812T080000Z
+SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
+DTEND:20260812T100000Z
+URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
+END:VEVENT
+BEGIN:VEVENT
 UID:453470e9674fd4d20b611dbd@event-calendar.puntuale.nl
 DTSTART:20260812T080000Z
 SUMMARY:Vakantiekids Zomerfestijn 2026
@@ -370,11 +237,12 @@ DTEND:20260812T100000Z
 URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:3cc18cc1ef7d7b042086d485@event-calendar.puntuale.nl
-DTSTART:20260812T080000Z
-SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
-DTEND:20260812T100000Z
-URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
+UID:7301f8af10a0683faf0c2612@event-calendar.puntuale.nl
+DTSTART:20260813T073000Z
+SUMMARY:Aan de slag met kunstmatige intelligentie!
+DTEND:20260813T093000Z
+URL:https://uitinhengelo.nl/evenementen/aan-de-slag-met-kunstmatige-intelli
+ gentie-10-t-m-14-jaar
 END:VEVENT
 BEGIN:VEVENT
 UID:b16497afb948c4ecd9582ce1@event-calendar.puntuale.nl
@@ -398,12 +266,11 @@ DTEND:20260813T093000Z
 URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
 END:VEVENT
 BEGIN:VEVENT
-UID:7301f8af10a0683faf0c2612@event-calendar.puntuale.nl
-DTSTART:20260813T073000Z
-SUMMARY:Aan de slag met kunstmatige intelligentie!
-DTEND:20260813T093000Z
-URL:https://uitinhengelo.nl/evenementen/aan-de-slag-met-kunstmatige-intelli
- gentie-10-t-m-14-jaar
+UID:83591090c4467e497e4a5428@event-calendar.puntuale.nl
+DTSTART:20260813T080000Z
+SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
+DTEND:20260813T100000Z
+URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
 END:VEVENT
 BEGIN:VEVENT
 UID:c083ff28b7ef8e8e5f490893@event-calendar.puntuale.nl
@@ -413,17 +280,10 @@ DTEND:20260813T100000Z
 URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:83591090c4467e497e4a5428@event-calendar.puntuale.nl
-DTSTART:20260813T080000Z
-SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
-DTEND:20260813T100000Z
-URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
-END:VEVENT
-BEGIN:VEVENT
-UID:a6925eb1f0244fc93e681c6b@event-calendar.puntuale.nl
-DTSTART:20260813T160000Z
+UID:e4bf0fd4ad2ba4b31326fece@event-calendar.puntuale.nl
+DTSTART:20260813T170000Z
 SUMMARY:DAC Dunajská Streda - FC Twente
-DTEND:20260813T180000Z
+DTEND:20260813T190000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:191989a02295884816d5f576@event-calendar.puntuale.nl
@@ -491,12 +351,19 @@ DTEND:20260815T130000Z
 URL:https://uitinhengelo.nl/evenementen/schaaktoernooi-voor-jongeren-12
 END:VEVENT
 BEGIN:VEVENT
-UID:634b7e174b05a56fb7f74c6b@event-calendar.puntuale.nl
+UID:05a54fee4e55b99002ea8afa@event-calendar.puntuale.nl
+DTSTART:20260815T170000Z
+SUMMARY:Classic Outdoor
+DTEND:20260815T190000Z
+URL:https://uitinhengelo.nl/evenementen/classic-outdoor
+END:VEVENT
+BEGIN:VEVENT
+UID:9d359575b3e0f3e468d12718@event-calendar.puntuale.nl
 DTSTART:20260815T183000Z
-SUMMARY:Skin Deep (Bluesrock with a slice of Funk\, NL)
+SUMMARY:Johnny Bernhard Country Band (Country\, Blues\, NL)
 DTEND:20260815T213000Z
 LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111661329
+URL:https://decactus.stager.co/shop/default/events/111685394
 END:VEVENT
 BEGIN:VEVENT
 UID:7d5aaf0e04a56c2f01aeb68f@event-calendar.puntuale.nl
@@ -511,6 +378,20 @@ DTSTART:20260816T110000Z
 SUMMARY:Open zondag watermolen Oele
 DTEND:20260816T130000Z
 URL:https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele
+END:VEVENT
+BEGIN:VEVENT
+UID:842a5f627f3552ce34081b13@event-calendar.puntuale.nl
+DTSTART:20260816T120000Z
+SUMMARY:Deventer Jazz Orkest
+DTEND:20260816T140000Z
+URL:https://uitinhengelo.nl/evenementen/deventer-jazz-orkest
+END:VEVENT
+BEGIN:VEVENT
+UID:e09f565400f4ab6b107d804f@event-calendar.puntuale.nl
+DTSTART:20260816T120000Z
+SUMMARY:Clockwork
+DTEND:20260816T140000Z
+URL:https://uitinhengelo.nl/evenementen/clockwork
 END:VEVENT
 BEGIN:VEVENT
 UID:ec85688f100814d4b8ad56c3@event-calendar.puntuale.nl
@@ -581,12 +462,34 @@ LOCATION:Hertme
 URL:https://metropool.nl/agenda/blof
 END:VEVENT
 BEGIN:VEVENT
+UID:7c4a0610ae1e39da5bd34aa9@event-calendar.puntuale.nl
+DTSTART:20260822T170000Z
+SUMMARY:Oogst live: Nana Adjoua + Luwten
+DTEND:20260822T190000Z
+LOCATION:Broedplaats Oogst\, Hengelo
+URL:https://oogst.eu/agenda/
+END:VEVENT
+BEGIN:VEVENT
 UID:442e029842c5c0aaf7bedd36@event-calendar.puntuale.nl
 DTSTART:20260822T180000Z
 SUMMARY:Oogst Live: Nana Adjoa + LUWTEN
 DTEND:20260822T200000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten
+END:VEVENT
+BEGIN:VEVENT
+UID:521e63ae936ef9476db6ad7a@event-calendar.puntuale.nl
+DTSTART:20260822T180000Z
+SUMMARY:Oogst live: Nana Adjoua + Luwten
+DTEND:20260822T200000Z
+URL:https://uitinhengelo.nl/evenementen/oogst-live-nana-adjoua-luwten
+END:VEVENT
+BEGIN:VEVENT
+UID:60c3a91e8e9e7566c471a79d@event-calendar.puntuale.nl
+DTSTART:20260822T180000Z
+SUMMARY:Guess The Groove
+DTEND:20260822T200000Z
+URL:https://uitinhengelo.nl/evenementen/guess-the-groove
 END:VEVENT
 BEGIN:VEVENT
 UID:697379966759cdfed8275e5e@event-calendar.puntuale.nl
@@ -625,6 +528,20 @@ DTSTART:20260823T110000Z
 SUMMARY:Open Zondagen Heemtuin
 DTEND:20260823T130000Z
 URL:https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
+END:VEVENT
+BEGIN:VEVENT
+UID:5f8e543796c9f9f1b8577426@event-calendar.puntuale.nl
+DTSTART:20260823T120000Z
+SUMMARY:The DS Band
+DTEND:20260823T140000Z
+URL:https://uitinhengelo.nl/evenementen/the-ds-band
+END:VEVENT
+BEGIN:VEVENT
+UID:e105376f88ae7ae31d60bcbf@event-calendar.puntuale.nl
+DTSTART:20260823T120000Z
+SUMMARY:ISLE
+DTEND:20260823T140000Z
+URL:https://uitinhengelo.nl/evenementen/isle
 END:VEVENT
 BEGIN:VEVENT
 UID:7bed6289811e2ba2344e0aa1@event-calendar.puntuale.nl
@@ -711,6 +628,14 @@ LOCATION:De Cactus\, Hengelo
 URL:https://decactus.stager.co/shop/default/events/111561650
 END:VEVENT
 BEGIN:VEVENT
+UID:83093f989ab87a80f2e916d7@event-calendar.puntuale.nl
+DTSTART:20260829T080000Z
+SUMMARY:Oogst live: Ooostblok + Jeepers Creepers
+DTEND:20260829T100000Z
+URL:https://uitinhengelo.nl/evenementen/oogst-live-ooostblok-jeepers-creepe
+ rs
+END:VEVENT
+BEGIN:VEVENT
 UID:880836d44ca4d299b907671e@event-calendar.puntuale.nl
 DTSTART:20260829T080000Z
 SUMMARY:Kasbah Vintage/Brocantemarkt
@@ -768,6 +693,20 @@ DTSTART:20260830T110000Z
 SUMMARY:Open Zondagen Heemtuin
 DTEND:20260830T130000Z
 URL:https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
+END:VEVENT
+BEGIN:VEVENT
+UID:bdde5f857c15b4c4d3b4626d@event-calendar.puntuale.nl
+DTSTART:20260830T120000Z
+SUMMARY:@Jo's
+DTEND:20260830T140000Z
+URL:https://uitinhengelo.nl/evenementen/jos
+END:VEVENT
+BEGIN:VEVENT
+UID:9267dd17ed4d8cd751258afd@event-calendar.puntuale.nl
+DTSTART:20260830T120000Z
+SUMMARY:Luc Mats
+DTEND:20260830T140000Z
+URL:https://uitinhengelo.nl/evenementen/luc-mats
 END:VEVENT
 BEGIN:VEVENT
 UID:05efecc8ec10b3738b060ba1@event-calendar.puntuale.nl
@@ -977,6 +916,20 @@ URL:https://uitinhengelo.nl/evenementen/drumfanfare-hengelo-presenteert-mar
  smuziek-festival-ter-ere-van-diamanten-jubileum
 END:VEVENT
 BEGIN:VEVENT
+UID:4cb150569145963802c09d6a@event-calendar.puntuale.nl
+DTSTART:20260906T120000Z
+SUMMARY:LOFT
+DTEND:20260906T140000Z
+URL:https://uitinhengelo.nl/evenementen/loft
+END:VEVENT
+BEGIN:VEVENT
+UID:79718fc025b76bf15e62f06d@event-calendar.puntuale.nl
+DTSTART:20260906T120000Z
+SUMMARY:The Kopp'l Stones
+DTEND:20260906T140000Z
+URL:https://uitinhengelo.nl/evenementen/the-koppl-stones
+END:VEVENT
+BEGIN:VEVENT
 UID:67471f6b8105c5b57d31025f@event-calendar.puntuale.nl
 DTSTART:20260906T130000Z
 SUMMARY:Mark Harman & The Rhumba Kings (Rock&Roll\, Rockabilly\, UK)
@@ -1033,6 +986,14 @@ DTSTART:20260910T183000Z
 SUMMARY:Come from away
 DTEND:20260910T203000Z
 URL:https://uitinhengelo.nl/evenementen/come-from-away
+END:VEVENT
+BEGIN:VEVENT
+UID:6593b4ad004d2dd242cfed69@event-calendar.puntuale.nl
+DTSTART:20260911T140000Z
+SUMMARY:Barefoot at Sundown Festival [verplaatst vanwege de warmte naar vr 
+ 11 sep]
+DTEND:20260911T160000Z
+URL:https://uitinhengelo.nl/evenementen/barefoot-at-sundown-festival
 END:VEVENT
 BEGIN:VEVENT
 UID:a2a385a89d3fcc1b734b3ddf@event-calendar.puntuale.nl
@@ -1198,6 +1159,20 @@ DTEND:20260913T140000Z
 URL:https://uitinhengelo.nl/evenementen/de-ridder-zonder-billen-3-3
 END:VEVENT
 BEGIN:VEVENT
+UID:6ba8bffd00acf9e006b98b90@event-calendar.puntuale.nl
+DTSTART:20260913T120000Z
+SUMMARY:V-Street
+DTEND:20260913T140000Z
+URL:https://uitinhengelo.nl/evenementen/v-street
+END:VEVENT
+BEGIN:VEVENT
+UID:33aaa4ef38f39f9067b8e6d4@event-calendar.puntuale.nl
+DTSTART:20260913T120000Z
+SUMMARY:Vocal Group Notes
+DTEND:20260913T140000Z
+URL:https://uitinhengelo.nl/evenementen/vocal-group-notes
+END:VEVENT
+BEGIN:VEVENT
 UID:7b65e7e2c239246206b8c2e1@event-calendar.puntuale.nl
 DTSTART:20260913T130000Z
 SUMMARY:JazzRock Café - Rayn Bechoe & the Flavors of Soul
@@ -1344,6 +1319,15 @@ SUMMARY:Lambertuskermis
 URL:https://uitinhengelo.nl/evenementen/lambertuskermis
 END:VEVENT
 BEGIN:VEVENT
+UID:6572c63fa51026b3e60d7e10@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20260919
+SUMMARY:Oktoberfest München
+DTEND;VALUE=DATE:20261004
+LOCATION:Theresienwiese\, München
+URL:https://www.oktoberfest.de/en/information/oktoberfest-opening-times/ope
+ ning-hours-munich-oktoberfest
+END:VEVENT
+BEGIN:VEVENT
 UID:7d8e4a870c2a82034a2b526a@event-calendar.puntuale.nl
 DTSTART:20260919T083000Z
 SUMMARY:Jongdierenkeuring HKSV
@@ -1365,6 +1349,14 @@ SUMMARY:Oogst Live: LOE. + Marije Bruinsma + Jenta
 DTEND:20260919T200000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta
+END:VEVENT
+BEGIN:VEVENT
+UID:1c46a026cb1128dc05211a84@event-calendar.puntuale.nl
+DTSTART:20260919T180000Z
+SUMMARY:Oogst live: Loe + Jenta + Marije Bruinsma
+DTEND:20260919T200000Z
+URL:https://uitinhengelo.nl/evenementen/oogst-live-loe-jenta-marije-bruinsm
+ a
 END:VEVENT
 BEGIN:VEVENT
 UID:1d6bc18e1542a7a351dc75c0@event-calendar.puntuale.nl
@@ -1612,6 +1604,21 @@ SUMMARY:Jeffrey Halford & The Healers (Roots\, Americana\, USA)
 DTEND:20260927T153000Z
 LOCATION:De Cactus\, Hengelo
 URL:https://decactus.stager.co/shop/default/events/111600997
+END:VEVENT
+BEGIN:VEVENT
+UID:8881afb1377bc33f3d379dd0@event-calendar.puntuale.nl
+DTSTART:20260927T170000Z
+SUMMARY:Ben's Boogaloo Soul Jazz Extravaganza!
+DTEND:20260927T190000Z
+URL:https://uitinhengelo.nl/evenementen/bens-boogaloo-soul-jazz-extravaganz
+ a
+END:VEVENT
+BEGIN:VEVENT
+UID:f90f293f22e1051b567f7b22@event-calendar.puntuale.nl
+DTSTART:20260927T170000Z
+SUMMARY:Sosha Sophia
+DTEND:20260927T190000Z
+URL:https://uitinhengelo.nl/evenementen/sosha-sophia
 END:VEVENT
 BEGIN:VEVENT
 UID:74512a54bfb50d3c7f1675bc@event-calendar.puntuale.nl
@@ -2494,6 +2501,14 @@ DTEND:20261029T210000Z
 URL:https://uitinhengelo.nl/evenementen/dolly-dots-de-musical
 END:VEVENT
 BEGIN:VEVENT
+UID:f5b65fe7a287c2a1e42a93db@event-calendar.puntuale.nl
+DTSTART:20261029T193000Z
+SUMMARY:Skin Deep (Bluesrock with a slice of Funk\, NL)
+DTEND:20261029T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111661329
+END:VEVENT
+BEGIN:VEVENT
 UID:b67987b4442f11c8d8709078@event-calendar.puntuale.nl
 DTSTART:20261030T190000Z
 SUMMARY:Discophonic Orchestra
@@ -2627,6 +2642,11 @@ DTSTART:20261101T143000Z
 SUMMARY:Blok & Doos (2+)
 DTEND:20261101T163000Z
 URL:https://uitinhengelo.nl/evenementen/blok-amp-doos-2-2
+END:VEVENT
+BEGIN:VEVENT
+UID:5b3abaaea2c932a138fc438e@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20261102
+SUMMARY:Verjaardag Ronald
 END:VEVENT
 BEGIN:VEVENT
 UID:619e0bea45dfba93be8b2138@event-calendar.puntuale.nl
@@ -5446,6 +5466,11 @@ LOCATION:De Cactus\, Hengelo
 URL:https://decactus.stager.co/shop/default/events/111668449
 END:VEVENT
 BEGIN:VEVENT
+UID:b20dff279530bdb856d8f34f@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20271102
+SUMMARY:Verjaardag Ronald
+END:VEVENT
+BEGIN:VEVENT
 UID:180f88c133a543fcfb4046fd@event-calendar.puntuale.nl
 DTSTART;VALUE=DATE:20271225
 SUMMARY:Eerste kerstdag
@@ -5460,5 +5485,10 @@ SUMMARY:Tweede kerstdag
 LOCATION:Nederland
 URL:https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vra
  ag-en-antwoord/officiele-feestdagen
+END:VEVENT
+BEGIN:VEVENT
+UID:a3bef2a146da0221948b1ff9@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20281102
+SUMMARY:Verjaardag Ronald
 END:VEVENT
 END:VCALENDAR

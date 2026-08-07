@@ -10,9 +10,13 @@ De agenda verzamelt toekomstige openbare items van Metropool, De Cactus, Broedpl
 
 Controleer tijden, toegang en tickets altijd bij de oorspronkelijke aanbieder. Zie `disclaimer.html` voor bronlinks en de volledige disclaimer.
 
+## Todo
+
+- Voeg Zwarte Cross toe zodra de organisator de datum van de editie 2027 officieel op [zwartecross.nl](https://www.zwartecross.nl/) publiceert. De editie van 2026 (16–19 juli) is voorbij; er is nog geen bevestigde datum voor 2027.
+
 ## Wekelijkse e-mail
 
-De digest gaat iedere maandag om 07:00 naar `ronald.punt@mac.com` en bevat de komende maand. Gmail gebruikt standaard `smtp.gmail.com` via SSL op poort 465. Het app-wachtwoord staat veilig in je macOS Keychain onder `com.ronald.event-calendar.gmail`; zet het nooit in een bestand of commit. Optioneel: `EVENT_CALENDAR_SMTP_PORT`, `EVENT_CALENDAR_FROM`, en `EVENT_CALENDAR_WEBHOOK_URL`.
+De digest gaat iedere maandag om 07:00 naar `ronald.punt@mac.com` en toont de rest van deze maand plus de volgende maand. Gmail gebruikt standaard `smtp.gmail.com` via SSL op poort 465. Het app-wachtwoord staat veilig in je macOS Keychain onder `com.ronald.event-calendar.gmail`; zet het nooit in een bestand of commit. De afzender wordt weergegeven als `Uit Vandaag – Twente`; stel met `EVENT_CALENDAR_FROM` alleen het e-mailadres in. Optioneel: `EVENT_CALENDAR_SMTP_PORT` en `EVENT_CALENDAR_WEBHOOK_URL`.
 
 Vervang `PERSONAL_CALENDAR_PATH` in `com.ronald.event-calendar.plist` door het absolute pad van deze map. Plaats daarna het bestand in `~/Library/LaunchAgents/` en laad het met `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.ronald.event-calendar.plist`.
 

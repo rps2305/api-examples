@@ -1,6 +1,8 @@
 const agenda = document.querySelector('#agenda');
 const status = document.querySelector('#status');
 const search = document.querySelector('#search');
+const monthFilter = document.querySelector('#month-filter');
+const yearFilter = document.querySelector('#year-filter');
 const networkStatus = document.querySelector('#network-status');
 const agendaSummary = document.querySelector('#agenda-summary');
 const loadMoreButton = document.querySelector('[data-load-more]');
@@ -8,6 +10,8 @@ const initialView = new URLSearchParams(location.search).get('view');
 const PAGE_SIZE = 60;
 let filter = 'all';
 let query = '';
+let selectedMonth = '';
+let selectedYear = '';
 let todayOnly = initialView === 'today';
 let recommendedOnly = initialView === 'recommended';
 let visibleLimit = PAGE_SIZE;
@@ -24,8 +28,9 @@ const sourcePriority = new Map([
   ['de-cactus', 1],
   ['fc-twente', 2],
   ['oogst', 3],
+  ['bijzonder', 4],
 ]);
-const allowedSources = new Set(['metropool', 'de-cactus', 'fc-twente', 'oogst', 'hengelo', 'feestdagen']);
+const allowedSources = new Set(['metropool', 'de-cactus', 'fc-twente', 'oogst', 'hengelo', 'feestdagen', 'persoonlijk', 'bijzonder']);
 let suggestionToken = '';
 
 document.documentElement.classList.remove('no-js');
@@ -122,8 +127,65 @@ function downloadEvent(event) {
   URL.revokeObjectURL(url);
 }
 
+function setShareFeedback(button, label, title = label) {
+  const originalLabel = button.dataset.originalLabel || button.textContent;
+  button.dataset.originalLabel = originalLabel;
+  button.textContent = label;
+  button.title = title;
+  button.disabled = true;
+  window.setTimeout(() => {
+    button.textContent = originalLabel;
+    button.title = 'Deel de informatielink';
+    button.disabled = false;
+  }, 1_800);
+}
+
+async function copyShareLink(url) {
+  if (navigator.clipboard?.writeText && window.isSecureContext) {
+    await navigator.clipboard.writeText(url);
+    return;
+  }
+  const field = document.createElement('textarea');
+  field.value = url;
+  field.setAttribute('readonly', '');
+  field.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+  document.body.append(field);
+  field.select();
+  field.setSelectionRange(0, field.value.length);
+  const copied = document.execCommand('copy');
+  field.remove();
+  if (!copied) throw new Error('copy unavailable');
+}
+
+async function shareEvent(event, button) {
+  if (!event.url) return;
+  // Safari's Web Share implementation is more reliable with its minimal data set.
+  const shareData = { title: event.name, url: event.url };
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+      setShareFeedback(button, 'Gedeeld');
+      return;
+    }
+  } catch (error) {
+    if (error?.name === 'AbortError') return;
+    // Some Safari versions expose Web Share but reject it for this context.
+  }
+  try {
+    await copyShareLink(event.url);
+    setShareFeedback(button, 'Link gekopieerd');
+  } catch {
+    // A system prompt is deliberately the final fallback: it works in iOS
+    // browsers that block both Web Share and programmatic clipboard access.
+    window.prompt('Kopieer deze link:', event.url);
+    setShareFeedback(button, 'Link tonen', 'De link is geopend om te kopiëren');
+  }
+}
+
 function venueLabel(event) {
   if (event.source === 'feestdagen') return '🇳🇱 Feestdag';
+  if (event.source === 'persoonlijk') return '🎂 Persoonlijk';
+  if (event.source === 'bijzonder') return '✦ Bijzonder';
   if (event.source === 'fc-twente') return '⚽ FC Twente';
   if (event.source === 'de-cactus') return '🌵 DE CACTUS';
   if (event.source === 'oogst') return '🌾 Oogst';
@@ -153,9 +215,19 @@ function eventElement(event) {
   const links = element('p', 'event-links');
   const infoLabel = event.source === 'fc-twente' ? 'Wedstrijd ↗' : event.source === 'feestdagen' ? 'Rijksoverheid ↗' : 'Info ↗';
   const infoLink = externalLink(event.url, infoLabel);
-  const ticketLink = event.ticketUrl !== event.url ? externalLink(event.ticketUrl, 'Tickets ↗', 'tickets') : null;
+  const ticketLink = event.ticketUrl && (event.ticketUrl !== event.url || event.source === 'de-cactus')
+    ? externalLink(event.ticketUrl, 'Tickets ↗', 'tickets')
+    : null;
   if (infoLink) links.append(infoLink);
   if (ticketLink) links.append(ticketLink);
+  if (event.url) {
+    const shareButton = element('button', 'event-share-button', 'Delen');
+    shareButton.type = 'button';
+    shareButton.dataset.eventShare = JSON.stringify(event);
+    shareButton.setAttribute('aria-label', `Deel ${event.name}`);
+    shareButton.title = 'Deel de informatielink';
+    links.append(shareButton);
+  }
   const calendarButton = element('button', 'event-calendar-button', '🗓');
   calendarButton.type = 'button';
   calendarButton.dataset.eventCalendar = JSON.stringify(event);
@@ -176,6 +248,30 @@ function twenteDateKey(date = new Date()) {
 
 function eventDateKey(event) {
   return event.startDate.length === 10 ? event.startDate : twenteDateKey(new Date(event.startDate));
+}
+
+function eventMonthKey(event) {
+  return eventDateKey(event).slice(0, 7);
+}
+
+function populateDateFilters(events) {
+  const months = [...new Set(events.map(eventMonthKey))].sort();
+  const years = [...new Set(months.map(month => month.slice(0, 4)))];
+  const label = new Intl.DateTimeFormat('nl-NL', { month: 'long', year: 'numeric' });
+  monthFilter.replaceChildren(element('option', '', 'Alle maanden'));
+  monthFilter.firstElementChild.value = '';
+  months.forEach(month => {
+    const option = element('option', '', label.format(new Date(`${month}-01T12:00:00`)));
+    option.value = month;
+    monthFilter.append(option);
+  });
+  yearFilter.replaceChildren(element('option', '', 'Alle jaren'));
+  yearFilter.firstElementChild.value = '';
+  years.forEach(year => {
+    const option = element('option', '', year);
+    option.value = year;
+    yearFilter.append(option);
+  });
 }
 
 function dateKeyAfter(dateKey, days) {
@@ -212,7 +308,7 @@ function syncLoadMore(visibleCount, totalCount) {
 }
 
 function render(events) {
-  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && filter === 'all' && !todayOnly && !recommendedOnly && !query) {
+  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && filter === 'all' && !todayOnly && !recommendedOnly && !query && !selectedMonth && !selectedYear) {
     const visibleCount = Math.min(PAGE_SIZE, events.length);
     status.dataset.state = 'ready';
     status.textContent = `${visibleCount} van ${events.length} plannen zichtbaar`;
@@ -224,6 +320,8 @@ function render(events) {
     (filter === 'all' || event.source === filter)
     && (!recommendedOnly || event.recommended === true)
     && (!todayOnly || eventDateKey(event) === today)
+    && (!selectedMonth || eventMonthKey(event) === selectedMonth)
+    && (!selectedYear || eventDateKey(event).startsWith(`${selectedYear}-`))
     && (!query || `${event.name} ${event.location} ${event.genre} ${event.source}`.toLowerCase().includes(query)));
   const shown = matching.slice(0, visibleLimit);
   const groups = Object.groupBy(shown, eventDateKey);
@@ -274,6 +372,7 @@ try {
   const parsedEvents = JSON.parse(document.querySelector('#event-data').textContent);
   if (!Array.isArray(parsedEvents)) throw new TypeError('Event feed must be an array');
   const events = parsedEvents.map(normalizeEvent).filter(Boolean);
+  populateDateFilters(events);
   const refreshSummary = () => updateAgendaSummary(events);
   if ('requestIdleCallback' in window) window.requestIdleCallback(refreshSummary, { timeout: 2_000 });
   else window.setTimeout(refreshSummary, 0);
@@ -295,7 +394,12 @@ try {
   });
   agenda.addEventListener('click', event => {
     const button = event.target.closest('[data-event-calendar]');
-    if (button) downloadEvent(JSON.parse(button.dataset.eventCalendar));
+    if (button) {
+      downloadEvent(JSON.parse(button.dataset.eventCalendar));
+      return;
+    }
+    const shareButton = event.target.closest('[data-event-share]');
+    if (shareButton) shareEvent(JSON.parse(shareButton.dataset.eventShare), shareButton);
   });
   document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
     document.querySelector('[data-filter].active').classList.remove('active');
@@ -318,6 +422,18 @@ try {
     render(events);
   });
   search.addEventListener('input', event => { query = event.target.value.toLowerCase(); visibleLimit = PAGE_SIZE; render(events); });
+  monthFilter.addEventListener('change', event => {
+    selectedMonth = event.target.value;
+    if (selectedMonth) { selectedYear = selectedMonth.slice(0, 4); yearFilter.value = selectedYear; }
+    visibleLimit = PAGE_SIZE;
+    render(events);
+  });
+  yearFilter.addEventListener('change', event => {
+    selectedYear = event.target.value;
+    if (selectedMonth && !selectedMonth.startsWith(`${selectedYear}-`)) { selectedMonth = ''; monthFilter.value = ''; }
+    visibleLimit = PAGE_SIZE;
+    render(events);
+  });
 } catch {
   showStatusError('De agenda kon niet worden geladen.');
 }

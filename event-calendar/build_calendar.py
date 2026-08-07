@@ -125,7 +125,7 @@ def json_for_script(value: object) -> str:
 
 WEEKDAYS = ("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag")
 MONTHS = ("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december")
-SOURCE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3}
+SOURCE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3, "bijzonder": 4}
 
 
 def safe_external_url(value: object) -> str:
@@ -142,6 +142,10 @@ def venue_label(event: dict[str, object]) -> str:
     source = event.get("source")
     if source == "feestdagen":
         return "🇳🇱 Feestdag"
+    if source == "persoonlijk":
+        return "🎂 Persoonlijk"
+    if source == "bijzonder":
+        return "✦ Bijzonder"
     if source == "fc-twente":
         return "⚽ FC Twente"
     if source == "de-cactus":
@@ -180,7 +184,7 @@ def local_date_key(value: object) -> str:
 def prerender_event(event: dict[str, object]) -> str:
     """Render scraped fields as escaped text so initial HTML is safe and crawlable."""
     source = str(event.get("source") or "hengelo")
-    source_class = source if source in {"metropool", "de-cactus", "fc-twente", "oogst", "hengelo", "feestdagen"} else "hengelo"
+    source_class = source if source in {"metropool", "de-cactus", "fc-twente", "oogst", "hengelo", "feestdagen", "persoonlijk", "bijzonder"} else "hengelo"
     classes = f"event {source_class}{' fc-home' if event.get('isHome') is True else ''}"
     name = html_module.escape(str(event.get("name") or "Onbekend evenement"))
     location_raw = str(event.get("location") or "").strip()
@@ -207,11 +211,13 @@ def prerender_event(event: dict[str, object]) -> str:
     if info_url:
         label = "Wedstrijd" if source == "fc-twente" else "Rijksoverheid" if source == "feestdagen" else "Info"
         links.append(f'<a href="{html_module.escape(info_url, quote=True)}" target="_blank" rel="noopener noreferrer">{label} ↗</a>')
-    if ticket_url and ticket_url != info_url:
+    if ticket_url and (ticket_url != info_url or source == "de-cactus"):
         links.append(f'<a class="tickets" href="{html_module.escape(ticket_url, quote=True)}" target="_blank" rel="noopener noreferrer">Tickets ↗</a>')
     serialized_event = {**event, "url": info_url, "ticketUrl": ticket_url}
     event_json = html_module.escape(json.dumps(serialized_event, ensure_ascii=False, separators=(",", ":")), quote=True)
     aria_name = html_module.escape(str(event.get("name") or "dit evenement"), quote=True)
+    if info_url:
+        links.append(f'<button class="event-share-button" type="button" data-event-share="{event_json}" aria-label="Deel {aria_name}" title="Deel de informatielink">Delen</button>')
     links.append(f'<button class="event-calendar-button" type="button" data-event-calendar="{event_json}" aria-label="Voeg {aria_name} toe aan agenda" title="Voeg toe aan agenda">🗓</button>')
     return (
         f'<article class="{classes}"><p class="event-time">{html_module.escape(event_time(event))}</p>'
@@ -338,6 +344,31 @@ def update_disclaimer(processed_at: datetime) -> None:
     INDEX.write_text(index, encoding="utf-8")
 
 
+def personal_events(year: int) -> list[dict[str, object]]:
+    """Return deliberately maintained personal and noteworthy dates for the agenda."""
+    events = [
+        {
+            "@type": "Event",
+            "name": "Oktoberfest München",
+            "startDate": "2026-09-19",
+            "endDate": "2026-10-04",
+            "location": "Theresienwiese, München",
+            "genre": "Oktoberfeest",
+            "url": "https://www.oktoberfest.de/en/information/oktoberfest-opening-times/opening-hours-munich-oktoberfest",
+            "source": "bijzonder",
+        },
+    ] if year == 2026 else []
+    events.append({
+        "@type": "Event",
+        "name": "Verjaardag Ronald",
+        "startDate": f"{year}-11-02",
+        "location": "",
+        "genre": "Geboren 2 november 1969",
+        "source": "persoonlijk",
+    })
+    return events
+
+
 def main() -> None:
     sources = (
         ("decactus_events.py", "de-cactus"),
@@ -356,6 +387,9 @@ def main() -> None:
             event["source"] = source
             normalize_event_times(event)
             events.append(event)
+    current_year = datetime.now(ZoneInfo("Europe/Amsterdam")).year
+    for year in range(current_year, current_year + 3):
+        events.extend(personal_events(year))
     events = deduplicate_events(future_events(events))
     for event in events:
         reason = taste_recommendation(event)

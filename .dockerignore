@@ -1,0 +1,14 @@
+# The image only needs the scraper helpers and this application.
+**
+!scripts/
+!scripts/**
+!event-calendar/
+!event-calendar/**
+event-calendar/.env
+event-calendar/.playwright-mcp/
+event-calendar/.playwright-mcp/**
+event-calendar/iTunesXML/
+event-calendar/iTunesXML/**
+event-calendar/__pycache__/
+event-calendar/**/*.py[cod]
+event-calendar/.DS_Store

@@ -67,11 +67,12 @@ def authorized(header: str | None) -> bool:
 
 
 def build_and_send() -> int:
-    """Refresh all sources, then send the current seven-day digest once."""
+    """Refresh all sources, then send the current two-month digest once."""
     with BUILD_LOCK:
         build_calendar.main()
         events = personal_digest.upcoming_events()
-        personal_digest.send_email(personal_digest.html_digest(events))
+        logo_cid = personal_digest.make_msgid()[1:-1]
+        personal_digest.send_email(personal_digest.html_digest(events, logo_cid), logo_cid)
     return len(events)
 
 

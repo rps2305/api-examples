@@ -1,0 +1,5 @@
+Contact: mailto:ronald.punt@mac.com
+Preferred-Languages: nl, en
+Canonical: https://event-calendar.puntuale.nl/.well-known/security.txt
+Policy: https://event-calendar.puntuale.nl/technical.html
+Expires: 2027-08-06T00:00:00.000Z

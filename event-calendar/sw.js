@@ -35,7 +35,7 @@ const APP_SHELL = [
   '/assets/logo-uit-in-hengelo.svg',
   '/assets/venues/metropool-640.webp',
   '/assets/venues/de-cactus-640.webp',
-  '/assets/venues/oogst-640.webp',
+  '/assets/venues/oogst-official-640.webp',
   '/assets/venues/uit-in-hengelo-640.webp',
   '/assets/venues/grolsch-veste-640.webp',
 ];
