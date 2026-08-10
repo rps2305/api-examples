@@ -7,21 +7,22 @@
     <meta name="description" content="Hoe Uit Vandaag Twente groeide van een persoonlijke agenda naar een automatisch ververste, beveiligde uitagenda met e-maildigest." />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#111827" />
-    <script src="theme.js?v=20260802-3"></script>
+    <script src="theme.js?v=20260810-menu-1"></script>
     <link rel="canonical" href="https://event-calendar.puntuale.nl/technical.html" />
     <link rel="preconnect" href="https://matomo.puntuale.nl" crossorigin />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="preload" href="assets/fonts/archivo-narrow-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="styles.css?v=20260806-1" />
+    <link rel="stylesheet" href="styles.css?v=20260810-menu-1" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Ga naar inhoud</a>
     <header class="legal-header">
       <div><p class="eyebrow">UIT VANDAAG · TECHNIEK</p><h1>Een agenda die bleef groeien</h1></div>
-      <div class="legal-actions"><button id="theme-toggle" class="legal-theme-toggle" type="button" aria-label="Gebruik donkere modus" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span data-theme-label>Donker</span></button><a href="index.html">← Terug naar de agenda</a></div>
+      <div class="legal-actions"><button id="theme-toggle" class="legal-theme-toggle" type="button" aria-label="Gebruik donkere modus" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span data-theme-label>Donker</span></button><nav class="site-menu" aria-label="Hoofdnavigatie"><button class="site-menu-toggle" type="button" data-menu-toggle aria-controls="site-menu-panel" aria-expanded="false"><span class="site-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button><div class="site-menu-panel" id="site-menu-panel" hidden><a href="index.html">Agenda</a><a href="about.html">Muzieksmaak</a><a href="technical.html">Techniek</a><a href="disclaimer.html">Disclaimer</a><a href="privacy.html">Privacy</a></div></nav><a href="index.html">← Terug naar de agenda</a></div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="editorial-scope" aria-labelledby="technical-intro">
         <div class="scope-intro"><p class="eyebrow">VAN PERSOONLIJKE VRAAG NAAR DAGELIJKSE TOOL</p><h2 id="technical-intro">Niet dubbel boeken, wel alles zien.</h2><p>Uit Vandaag begon als een praktische oplossing voor een herkenbaar probleem: concerten, lokale evenementen en FC Twente-wedstrijden stonden verspreid over verschillende agenda’s. De eerste versie bracht die informatie samen voor Ronald Punt. Daarna kwam er bijna dagelijks iets bij, telkens vanuit een concrete vraag die tijdens het gebruik ontstond.</p></div>
         <dl class="scope-facts">
@@ -35,15 +36,16 @@
         <p class="eyebrow">KORTE GESCHIEDENIS</p>
         <h2 id="history-title">Elke gebruiksdag leverde een volgend detail op</h2>
         <p>De eerste bouw bracht de evenementenbronnen, de agendaweergave en de iCalendar-download samen. Kort daarna kwamen betere filtering, een suggestieformulier, privacy-instellingen en een progressieve agenda die niet alles in één keer hoeft te laden.</p>
-        <p>Daarna werd de app steeds persoonlijker én robuuster: muzieksmaaktips uit een lokale bibliotheek, ticketlinks, een mobiele scrollervaring, maand- en jaarselectie, een tweetalige-vrije Nederlandse e-maildigest en duidelijke podiumkleuren voor Metropool, De Cactus, Oogst en FC Twente.</p>
-        <p>De nieuwste laag zit vooral onder de motorkap: containerhardening, een beperkte Docker-buildcontext, een niet-rootproces, content-security-headers en begrensde, tokenbeveiligde formulier- en webhookroutes. De app blijft klein, maar niet achteloos.</p>
+        <p>Daarna werd de app steeds persoonlijker én robuuster: muzieksmaaktips uit een lokale bibliotheek, ticketlinks, een mobiele scrollervaring, maand- en jaarselectie, een Nederlandstalige e-maildigest en duidelijke podiumkleuren voor Metropool, De Cactus, Oogst en FC Twente.</p>
+        <p>Op 9 augustus 2026 kwam een praktische gebruikslaag erbij: deelbare filters in de URL, duidelijke agenda-acties voor één evenement en voor de volledige feed, een privacyverklaring, een pauzeknop voor de locatiecarrousel en een skiplink. Ook zijn de datums en tijden expliciet op <code>Europe/Amsterdam</code> afgestemd; importeurs bewaren echte UTC-tijden en behandelen bron-tijden niet stilzwijgend als UTC.</p>
         <h2>De technische opbouw</h2>
         <ul>
           <li><strong>Python 3.12</strong> verzamelt, normaliseert en dedupliceert de evenementgegevens, bouwt de iCalendar-feed en verstuurt de digest.</li>
-          <li><strong>Standaard HTML, CSS en JavaScript</strong> vormen de snelle, frameworkvrije interface. De agenda is vooraf gerenderd voor vindbaarheid en wordt daarna interactief gefilterd in de browser.</li>
+          <li><strong>Standaard HTML, CSS en JavaScript</strong> vormen de snelle, frameworkvrije interface. De agenda is vooraf gerenderd voor vindbaarheid en wordt daarna interactief gefilterd in de browser; zoekopdrachten en filters blijven deelbaar via de URL.</li>
           <li><strong>Bronspecifieke scrapers</strong> lezen openbare informatie van Metropool, De Cactus, Oogst, Uit in Hengelo, officiële feestdagen en FC Twente. Onbetrouwbare of tijdelijk onbereikbare bronnen breken de laatst bekende agenda niet.</li>
-          <li><strong>JSON en iCalendar</strong> zijn de twee uitgangen: de browser gebruikt de ingebedde JSON-feed, agenda-apps kunnen zich abonneren via <a href="events.ics">events.ics</a>.</li>
+          <li><strong>JSON en iCalendar</strong> zijn de twee uitgangen: de browser gebruikt de ingebedde JSON-feed, agenda-apps kunnen zich abonneren via <a href="events.ics">events.ics</a>. De feed wordt als <code>text/calendar; charset=utf-8</code> geleverd, met ETag en korte conditionele cache.</li>
           <li><strong>Docker Compose</strong> verpakt de app. Nginx behandelt publiek HTTPS-verkeer; de Python-service luistert alleen lokaal op de host.</li>
+          <li><strong>Cache en compressie</strong> houden de site licht: versiegebonden assets zijn langdurig immutable gecachet, HTML wordt kort gecachet met revalidatie, en de publieke proxy levert Brotli waar de browser dat ondersteunt.</li>
           <li><strong>SMTP via Gmail</strong> verzorgt de digest. Het wachtwoord komt uit een omgevingsvariabele in productie of uit de macOS-sleutelhanger lokaal, nooit uit de broncode.</li>
         </ul>
         <div class="tech-stack" aria-label="Gebruikte techniek">
@@ -55,10 +57,25 @@
         <h2>Veiligheid en betrouwbaarheid</h2>
         <p>Externe links worden beperkt tot HTTP(S), gescrapete tekst wordt als tekst gerenderd en de server stuurt onder meer CSP-, HSTS-, anti-framing- en no-sniff-headers. Het suggestieformulier valideert invoer, origin, tokens en aantallen. De verzendwebhook vereist een Bearer-token. De container draait als een eigen, niet-rootgebruiker.</p>
         <p>Een kleine persoonlijke app hoeft niet zwaar te voelen. Wel moet hij veilig genoeg zijn om elke dag zonder gedoe zijn werk te doen.</p>
+        <h2>Controle op 9 augustus 2026</h2>
+        <p>Na de productie-uitrol is de publieke homepage getest met Lighthouse op een mobiel profiel: performance 99, toegankelijkheid 100, best practices 100 en SEO 100. SEOmator beoordeelde de technische basis en core SEO beide met 100; de totaalscore was 97 door optimalisatiekansen rond de grote vooraf gerenderde agenda, DOM-omvang en LCP-hints. De pagina is daarnaast geopend in Chrome op een Pixel 9-emulator met Android API 35.</p>
         <h2>Hulp bij het bouwen</h2>
         <p>Deze app is gebouwd en doorontwikkeld door Ronald Punt, met hulp van <strong>OpenAI Codex 5.6</strong>. Voor de interfaceontwikkeling is ook gebruikgemaakt van de open-source <a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener noreferrer">Impeccable-designguidance van Paul Bakus ↗</a>. De keuzes over inhoud, functionaliteit en publicatie blijven bij Ronald.</p>
         <h2>Dit document blijft meebewegen</h2>
         <p>Bij elke wezenlijke wijziging aan functies, architectuur, databronnen, e-mail, deployment of beveiliging wordt deze pagina bijgewerkt. Zo blijft niet alleen de agenda actueel, maar ook het verhaal achter de techniek.</p>
+      </section>
+      <section class="release-history" aria-labelledby="release-history-title">
+        <p class="eyebrow">VERSIEGESCHIEDENIS</p>
+        <h2 id="release-history-title">Wat er veranderde</h2>
+        <ol>
+          <li><time datetime="2026-08-09">9 augustus 2026</time><div><h3>Betere planning, toegankelijkheid en prestaties</h3><p>Filters zijn deelbaar via de URL, de volledige iCalendar-feed kreeg duidelijke download- en abonnementsacties, en tijden worden consequent in de tijdzone van Amsterdam getoond. Er kwamen een privacyverklaring, skiplink en een pauzeknop voor de locatiecarrousel. Assets en HTML kregen passende cacheheaders en ETags; de ICS-feed gebruikt nu het juiste kalender-contenttype. De publieke site is gecontroleerd met Lighthouse, SEOmator en Chrome op Android.</p></div></li>
+          <li><time datetime="2026-08-07">7 augustus 2026</time><div><h3>Muzieksmaak, leesbaarheid en navigatie</h3><p>De muzieksmaak is aangevuld met Live, Rage Against the Machine, Moloko, Faithless en klassieke rockacts. 074 is gecorrigeerd naar de voormalige Hengelose discotheek, niet een band. Actie- en deelknoppen kregen betere contrasten op gekleurde agenda-items. Ook is een toegankelijke hoofdmenu-knop toegevoegd. Duitse schlagers zijn als expliciete uitzondering toegevoegd vanwege het vierde Oktoberfest-bezoek in München. De overbodige teruglink is verwijderd nu het hoofdmenu overal beschikbaar is.</p></div></li>
+          <li><time datetime="2026-08-06">6 augustus 2026</time><div><h3>Persoonlijke context en vindbaarheid</h3><p>De pagina Muzieksmaak kreeg een duidelijke toelichting op de concerttips. De agenda werd vooraf gerenderd voor betere vindbaarheid, terwijl filters en persoonlijke aanbevelingen interactief bleven.</p></div></li>
+          <li><time datetime="2026-08-04">4 augustus 2026</time><div><h3>Betere service en robuustere verwerking</h3><p>De wekelijkse digest, suggesties en foutafhandeling zijn aangescherpt. De agenda behoudt bij tijdelijke bronproblemen de laatst bekende, bruikbare gegevens.</p></div></li>
+          <li><time datetime="2026-08-02">2 augustus 2026</time><div><h3>Privacy en vertrouwen</h3><p>Privacy-instellingen, toestemming voor statistieken, disclaimer, beveiligingsinformatie en toegankelijke hulpteksten zijn toegevoegd. Daarmee werd de persoonlijke agenda ook transparanter in gebruik.</p></div></li>
+          <li><time datetime="2026-08-01">1 augustus 2026</time><div><h3>Plannen en personaliseren</h3><p>Zoeken, datum- en maandfilters, iCalendar-downloads, thema-voorkeuren en de mobiele agendaweergave maakten de eerste versie praktischer voor dagelijks gebruik.</p></div></li>
+          <li><time datetime="2026-07-31">31 juli 2026</time><div><h3>De eerste agenda</h3><p>Uit Vandaag Twente ging van start als persoonlijke agenda voor concerten, lokale evenementen, feestdagen en FC Twente. Bronnen werden samengebracht in één tijdlijn, met een iCalendar-feed om afspraken niet dubbel te plannen.</p></div></li>
+        </ol>
       </section>
     </main>
     <footer class="site-footer"><section class="footer-about"><h2>Uit Vandaag Twente</h2><p>Een persoonlijke agenda van <a href="https://www.ronaldpunt.nl" target="_blank" rel="noopener noreferrer">Ronald Punt</a> voor muziek, evenementen en FC Twente.</p></section><p class="footer-meta"><a href="index.html">Agenda</a> · <a href="about.html">Muzieksmaak</a> · <a href="technical.html" aria-current="page">Techniek</a> · <a href="disclaimer.html">Disclaimer</a> · <a href="privacy.html">Privacy</a> · <button class="privacy-settings" type="button" data-privacy-settings>Privacy-instellingen</button></p></footer>

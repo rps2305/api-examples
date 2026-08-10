@@ -26,6 +26,21 @@
     });
   }
 
+  function setupMenu() {
+    const menu = document.querySelector('.site-menu');
+    const toggle = document.querySelector('[data-menu-toggle]');
+    const panel = document.querySelector('#site-menu-panel');
+    if (!menu || !toggle || !panel) return;
+    const close = () => { panel.hidden = true; toggle.setAttribute('aria-expanded', 'false'); };
+    toggle.addEventListener('click', () => {
+      const open = panel.hidden;
+      panel.hidden = !open;
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', event => { if (!menu.contains(event.target)) close(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') close(); });
+  }
+
   document.documentElement.classList.remove('no-js');
   let preference = '';
   try {
@@ -37,6 +52,7 @@
     ? preference
     : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   applyTheme(theme);
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setupToggle, { once: true });
-  else setupToggle();
+  const setup = () => { setupToggle(); setupMenu(); };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup, { once: true });
+  else setup();
 })();

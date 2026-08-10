@@ -196,6 +196,7 @@ class CalendarHandler(SimpleHTTPRequestHandler):
         **SimpleHTTPRequestHandler.extensions_map,
         ".webp": "image/webp",
         ".woff2": "font/woff2",
+        ".ics": "text/calendar; charset=utf-8",
     }
 
     def __init__(self, *args: object, **kwargs: object) -> None:
@@ -206,11 +207,63 @@ class CalendarHandler(SimpleHTTPRequestHandler):
         for name, value in SECURITY_HEADERS.items():
             self.send_header(name, value)
         request = urlparse(self.path)
+        if request.path == "/events.ics":
+            self.send_header("Content-Disposition", 'attachment; filename="uit-vandaag-twente.ics"')
+        etag = self.static_etag(request.path)
+        if etag:
+            self.send_header("ETag", etag)
         if request.path.startswith("/assets/") or request.query:
             self.send_header("Cache-Control", "public, max-age=31536000, immutable")
+        elif request.path == "/events.ics":
+            self.send_header("Cache-Control", "public, max-age=300, must-revalidate")
+        elif request.path.endswith((".html", "/")) or request.path == "/":
+            self.send_header("Cache-Control", "public, max-age=300, stale-while-revalidate=3600")
         else:
-            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Cache-Control", "public, max-age=300, stale-while-revalidate=3600")
         super().end_headers()
+
+    def static_etag(self, request_path: str) -> str | None:
+        """Make static file validators stable until their contents change."""
+        path = Path(self.translate_path(request_path))
+        if path.is_dir():
+            path /= "index.html"
+        try:
+            stat = path.stat()
+        except OSError:
+            return None
+        return f'"{stat.st_mtime_ns:x}-{stat.st_size:x}"' if path.is_file() else None
+
+    def static_not_modified(self) -> bool:
+        """Honor an ETag validator before SimpleHTTPRequestHandler writes a body."""
+        etag = self.static_etag(urlparse(self.path).path)
+        return bool(etag and self.headers.get("If-None-Match") == etag)
+
+    def send_header(self, keyword: str, value: str) -> None:
+        """Declare UTF-8 for HTML documents, including custom error pages."""
+        if keyword.lower() == "content-type" and value.lower().startswith("text/html") and "charset=" not in value.lower():
+            value = f"{value}; charset=utf-8"
+        super().send_header(keyword, value)
+
+    def send_error(self, code: int, message: str | None = None, explain: str | None = None) -> None:
+        """Return a helpful, branded page for missing public URLs."""
+        if code != HTTPStatus.NOT_FOUND:
+            super().send_error(code, message, explain)
+            return
+        body = """<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagina niet gevonden – Uit Vandaag Twente</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="/styles.css"></head><body><a class="skip-link" href="#main-content">Ga naar inhoud</a>
+<header class="legal-header"><div><p class="eyebrow">FOUT 404</p><h1>Deze pagina bestaat niet.</h1></div>
+<div class="legal-actions"><a href="/">← Terug naar de agenda</a></div></header>
+<main id="main-content" class="legal-main" tabindex="-1"><h2>Even terug naar de agenda</h2>
+<p>De link is mogelijk verouderd of verkeerd overgenomen. In de agenda vind je alle actuele plannen, filters en bronnen.</p>
+<p><a class="taste-cta" href="/">Bekijk de agenda →</a></p></main></body></html>"""
+        encoded = body.encode("utf-8")
+        self.send_response(HTTPStatus.NOT_FOUND)
+        self.send_header("Content-Type", "text/html")
+        self.send_header("Content-Length", str(len(encoded)))
+        self.end_headers()
+        self.wfile.write(encoded)
 
     def json_response(self, status: HTTPStatus, payload: dict[str, object]) -> None:
         body = json.dumps(payload).encode()
@@ -225,7 +278,18 @@ class CalendarHandler(SimpleHTTPRequestHandler):
         if urlparse(self.path).path == SUGGESTION_TOKEN_PATH:
             self.json_response(HTTPStatus.OK, {"token": create_form_token()})
             return
+        if self.static_not_modified():
+            self.send_response(HTTPStatus.NOT_MODIFIED)
+            self.end_headers()
+            return
         super().do_GET()
+
+    def do_HEAD(self) -> None:  # noqa: N802
+        if self.static_not_modified():
+            self.send_response(HTTPStatus.NOT_MODIFIED)
+            self.end_headers()
+            return
+        super().do_HEAD()
 
     def client_identifier(self) -> str:
         """Use proxy forwarding only when the direct peer is local and trusted."""

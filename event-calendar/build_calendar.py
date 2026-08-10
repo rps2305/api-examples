@@ -10,6 +10,7 @@ import re
 import subprocess
 import sys
 from datetime import date, datetime, timedelta
+from difflib import SequenceMatcher
 from pathlib import Path
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
@@ -57,23 +58,56 @@ def future_events(
 
 
 def deduplicate_events(events: list[dict[str, object]]) -> list[dict[str, object]]:
-    """Recognize duplicates by normalized name, start, and—when known—place."""
+    """Remove duplicate events, retaining the preferred source where records overlap."""
     seen_exact: set[tuple[str, str]] = set()
     seen_at_place: set[tuple[str, str, str]] = set()
     result: list[dict[str, object]] = []
-    for event in events:
-        name = re.sub(r"[^a-z0-9]+", " ", str(event["name"]).casefold()).strip()
+    ordered_events = sorted(
+        events,
+        key=lambda event: (
+            SOURCE_PRIORITY.get(str(event.get("source")), 10),
+            str(event["startDate"]),
+            str(event.get("name", "")).casefold(),
+        ),
+    )
+    for event in ordered_events:
+        name = normalized_event_name(event.get("name"))
         start = str(event["startDate"])
         location = re.sub(r"[^a-z0-9]+", " ", str(event.get("location") or "").casefold()).strip()
         exact_identity = name, start
         place_identity = name, local_date_key(start), location
-        if exact_identity in seen_exact or (location and place_identity in seen_at_place):
+        is_lower_priority_duplicate = (
+            SOURCE_PRIORITY.get(str(event.get("source")), 10) > 1
+            and any(
+                existing.get("source") in {"metropool", "oogst"}
+                and SOURCE_PRIORITY.get(str(existing.get("source")), 10)
+                < SOURCE_PRIORITY.get(str(event.get("source")), 10)
+                and local_date_key(existing["startDate"]) == local_date_key(start)
+                and event_names_match(name, normalized_event_name(existing.get("name")))
+                for existing in result
+            )
+        )
+        if exact_identity in seen_exact or (location and place_identity in seen_at_place) or is_lower_priority_duplicate:
             continue
         seen_exact.add(exact_identity)
         if location:
             seen_at_place.add(place_identity)
         result.append(event)
     return result
+
+
+def normalized_event_name(value: object) -> str:
+    """Normalize an event title without making artist-name order significant."""
+    return re.sub(r"[^a-z0-9]+", " ", str(value or "").casefold()).strip()
+
+
+def event_names_match(first: str, second: str) -> bool:
+    """Match minor spelling/formatting differences in listings for the same event."""
+    if first == second:
+        return True
+    first_tokens, second_tokens = set(first.split()), set(second.split())
+    overlap = len(first_tokens & second_tokens) / max(len(first_tokens), len(second_tokens), 1)
+    return overlap >= 0.8 or SequenceMatcher(None, first, second).ratio() >= 0.88
 
 
 def calendar(events: list[dict[str, object]]) -> str:
@@ -125,7 +159,7 @@ def json_for_script(value: object) -> str:
 
 WEEKDAYS = ("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag")
 MONTHS = ("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december")
-SOURCE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3, "bijzonder": 4}
+SOURCE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3, "bijzonder": 4, "hengelo": 10}
 
 
 def safe_external_url(value: object) -> str:
@@ -141,21 +175,21 @@ def safe_external_url(value: object) -> str:
 def venue_label(event: dict[str, object]) -> str:
     source = event.get("source")
     if source == "feestdagen":
-        return "🇳🇱 Feestdag"
+        return "Feestdag"
     if source == "persoonlijk":
-        return "🎂 Persoonlijk"
+        return "Persoonlijk"
     if source == "bijzonder":
-        return "✦ Bijzonder"
+        return "Bijzonder"
     if source == "fc-twente":
-        return "⚽ FC Twente"
+        return "FC Twente"
     if source == "de-cactus":
-        return "🌵 DE CACTUS"
+        return "De Cactus"
     if source == "oogst":
-        return "🌾 Oogst"
+        return "Oogst"
     if source == "hengelo":
-        return "🏛️ Hengelo"
+        return "Hengelo"
     location = str(event.get("location") or "").strip()
-    return f"🎵 Metropool {location}".strip()
+    return f"Metropool {location}".strip()
 
 
 def event_time(event: dict[str, object]) -> str:
@@ -190,11 +224,11 @@ def prerender_event(event: dict[str, object]) -> str:
     location_raw = str(event.get("location") or "").strip()
     genre_raw = str(event.get("genre") or "").strip()
     if source == "feestdagen":
-        kind = "🇳🇱 Nationale feestdag"
+        kind = "Nationale feestdag"
     elif source == "fc-twente":
-        kind = "⚽ Voetbal"
+        kind = "Voetbal"
     else:
-        kind = f"🎵 {genre_raw}" if genre_raw else "🎤 Live"
+        kind = genre_raw or "Live"
     meta = kind + (f" · 📍 {location_raw}" if location_raw else "")
     badges = ""
     if event.get("recommended") is True or event.get("soldOut") is True:
@@ -217,12 +251,12 @@ def prerender_event(event: dict[str, object]) -> str:
     event_json = html_module.escape(json.dumps(serialized_event, ensure_ascii=False, separators=(",", ":")), quote=True)
     aria_name = html_module.escape(str(event.get("name") or "dit evenement"), quote=True)
     if info_url:
-        links.append(f'<button class="event-share-button" type="button" data-event-share="{event_json}" aria-label="Deel {aria_name}" title="Deel de informatielink">Delen</button>')
-    links.append(f'<button class="event-calendar-button" type="button" data-event-calendar="{event_json}" aria-label="Voeg {aria_name} toe aan agenda" title="Voeg toe aan agenda">🗓</button>')
+        links.append(f'<button class="event-share-button" type="button" data-event-share="{event_json}" aria-label="Delen: {aria_name}" title="Deel de informatielink">Delen</button>')
+    links.append(f'<button class="event-calendar-button" type="button" data-event-calendar="{event_json}" aria-label="Zet in agenda: {aria_name}" title="Download dit evenement als iCalendar-bestand">Zet in agenda</button>')
     return (
         f'<article class="{classes}"><p class="event-time">{html_module.escape(event_time(event))}</p>'
         f'<p class="venue">{html_module.escape(venue_label(event))}</p>{badges}<h3>{name}</h3>'
-        f'<p class="meta">{html_module.escape(meta)}</p><p class="event-links">{"".join(links)}</p></article>'
+        f'<p class="meta">{html_module.escape(meta)}</p><p class="event-links{" has-ticket" if ticket_url and (ticket_url != info_url or source == "de-cactus") else ""}">{"".join(links)}</p></article>'
     )
 
 

@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] / "event-calendar"
 sys.path.insert(0, str(ROOT))
 
-from build_calendar import calendar
+from build_calendar import calendar, deduplicate_events
 
 
 class CalendarExportTests(unittest.TestCase):
@@ -29,6 +29,18 @@ class CalendarExportTests(unittest.TestCase):
         exported = calendar([{"name": "Hele dag", "startDate": "2026-08-02"}])
         self.assertIn("DTSTART;VALUE=DATE:20260802", exported)
         self.assertNotIn("DTEND", exported)
+
+    def test_official_sources_win_over_uit_in_hengelo_duplicates(self) -> None:
+        events = [
+            {"name": "Oogst Live: Nana Adjoa + LUWTEN", "startDate": "2026-08-22T18:00:00Z", "source": "metropool", "location": "Hengelo"},
+            {"name": "Oogst live: Nana Adjoua + Luwten", "startDate": "2026-08-22T18:00:00Z", "source": "hengelo"},
+            {"name": "Classic Outdoor", "startDate": "2026-08-15", "source": "oogst", "location": "Broedplaats Oogst, Hengelo"},
+            {"name": "Classic Outdoor", "startDate": "2026-08-15T17:00:00Z", "source": "hengelo"},
+        ]
+
+        kept = deduplicate_events(events)
+
+        self.assertEqual([event["source"] for event in kept], ["metropool", "oogst"])
 
 
 if __name__ == "__main__":

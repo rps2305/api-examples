@@ -174,10 +174,10 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("Naam en e-mailadres zijn optioneel", index)
         self.assertIn("Categorie en suggestie zijn verplicht", index)
         self.assertEqual(index.count('class="required-label">Verplicht'), 2)
-        self.assertIn('href="privacy.html">Lees meer over privacy</a>', index)
-        self.assertIn("De website slaat je naam, e-mailadres en suggestie niet op in een database", privacy)
-        self.assertIn("Ronald Punt is verantwoordelijk voor deze verwerking", privacy)
-        self.assertIn("een afzonderlijk verzoek om verwijdering niet nodig", privacy)
+        self.assertIn('href="privacy.html">Lees hoe lang gegevens bewaard blijven en hoe je verwijdering vraagt</a>', index)
+        self.assertIn("niet op in een database", privacy)
+        self.assertIn("Ronald Punt is verwerkingsverantwoordelijke", privacy)
+        self.assertIn("inzage of verwijdering", privacy)
         self.assertIn("event-calendar/privacy.html", (ROOT / "Dockerfile").read_text(encoding="utf-8"))
         self.assertIn("/privacy.html", (ROOT / "sw.js").read_text(encoding="utf-8"))
 
@@ -215,7 +215,7 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("min-inline-size: 44px", styles)
         self.assertIn("overflow-wrap: anywhere", styles)
         self.assertIn('sizes="(max-width: 700px) 78vw, (max-width: 1409px) 44vw, 620px"', index)
-        self.assertIn('class="skip-link" href="#agenda-controls"', index)
+        self.assertIn('class="skip-link" href="#main">Ga direct naar de agenda</a>', index)
         self.assertIn('id="agenda-controls" class="controls" tabindex="-1"', index)
         self.assertIn("function setupToggle()", theme)
         for name in ("index.html", "about.html", "disclaimer.html", "privacy.html"):

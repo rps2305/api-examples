@@ -197,7 +197,7 @@ main { max-width: 1180px; margin: auto; padding: 0 var(--space-4) 5rem; }
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(190px, 1fr) minmax(9rem, 0.4fr) minmax(7rem, 0.3fr) auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-6);
   align-items: end;
   padding: var(--space-4) 0;
@@ -229,7 +229,34 @@ input {
   font: inherit;
 }
 
-.filters { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--space-1); }
+.filters {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: var(--space-1);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-bottom: 0.35rem;
+  scrollbar-width: thin;
+}
+
+.filters > * { flex: 0 0 auto; }
+
+.calendar-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+@media (max-width: 1200px) {
+  .filters {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+}
 
 button {
   padding: 0.55rem 0.8rem;
@@ -304,6 +331,10 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 }
 .venue-window:focus-within .venue-track { animation-play-state: paused; }
 @media (hover: hover) { .venue-window:hover .venue-track { animation-play-state: paused; } }
+.venue-window[data-paused="true"] .venue-track { animation-play-state: paused; }
+.venue-pause { position: absolute; z-index: 3; right: var(--space-2); bottom: var(--space-2); border-color: var(--color-ink-inverse); background: var(--color-masthead); color: var(--color-ink-inverse); }
+.venue-pause:hover { background: var(--color-ink-inverse); color: var(--color-masthead); }
+.masthead :focus-visible, .venue-stream :focus-visible { outline-color: var(--color-accent-warm); }
 .venue-card { position: relative; flex: 0 0 clamp(320px, 44vw, 620px); margin: 0; overflow: hidden; aspect-ratio: 8 / 5; background: #18202d; }
 .venue-card img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease-standard); }
 .venue-card a:focus-visible img,
@@ -436,7 +467,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 }
 
 .meta { overflow-wrap: anywhere; hyphens: auto; color: var(--color-muted); font-size: var(--text-sm); }
-.event-links { display: flex; gap: 0.85rem; margin-top: auto; padding-top: var(--space-3); }
+.event-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.85rem; margin-top: auto; padding-top: var(--space-3); }
 
 .event-links a,
 .event-share-button {
@@ -464,7 +495,8 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 }
 .event-share-button:hover { background: transparent; color: var(--color-accent-readable); }
 
-.event-calendar-button { min-block-size: 44px; min-inline-size: 44px; margin-left: auto; padding: 0.2rem 0.35rem; border-color: var(--color-border); font-size: 1rem; line-height: 1; }
+.event-calendar-button { min-block-size: 44px; min-inline-size: 44px; margin-left: auto; padding: 0.45rem 0.55rem; border-color: var(--color-border); font-size: var(--text-xs); line-height: 1; white-space: nowrap; }
+.event-links.has-ticket .event-calendar-button { flex-basis: 100%; justify-content: center; margin-left: 0; }
 .event.fc-home .event-calendar-button { border-color: color-mix(in srgb, var(--color-ink-inverse) 55%, transparent); color: var(--color-ink-inverse); }
 .event.fc-twente.fc-home .event-share-button { color: var(--color-ink-inverse); }
 
@@ -478,6 +510,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.metropool .event-time,
 .event.metropool .venue,
 .event.metropool .event-links a,
+.event.metropool .event-share-button,
 .event.metropool .event-calendar-button {
   color: var(--color-metropool-accent);
 }
@@ -493,6 +526,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.de-cactus .event-time,
 .event.de-cactus .meta,
 .event.de-cactus .event-links a,
+.event.de-cactus .event-share-button,
 .event.de-cactus .event-calendar-button {
   color: var(--color-masthead);
 }
@@ -508,6 +542,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.oogst .venue,
 .event.oogst .meta,
 .event.oogst .event-links a,
+.event.oogst .event-share-button,
 .event.oogst .event-calendar-button {
   color: var(--color-oogst-ink);
 }
@@ -522,6 +557,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.hengelo .event-time,
 .event.hengelo .venue,
 .event.hengelo .event-links a,
+.event.hengelo .event-share-button,
 .event.hengelo .event-calendar-button {
   color: var(--color-hengelo-accent);
 }
@@ -534,6 +570,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.feestdagen .venue,
 .event.feestdagen .meta,
 .event.feestdagen .event-links a,
+.event.feestdagen .event-share-button,
 .event.feestdagen .event-calendar-button { color: var(--color-holiday-ink); }
 .event.feestdagen .event-calendar-button { border-color: var(--color-holiday-ink); }
 .event.persoonlijk { background: #ffd6e5; color: #5a1637; }
@@ -634,6 +671,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .legal-main { max-width: 760px; padding-top: clamp(2.5rem, 7vw, 5rem); }
 .legal-main h2 { margin: var(--space-6) 0 var(--space-2); font: 600 2rem / 1 var(--font-display); }
 .legal-main p, .legal-main li { max-width: 68ch; }
+.legal-main .eyebrow, .release-history .eyebrow { color: var(--color-accent-readable); }
 .source-list { display: grid; gap: var(--space-2); padding: 0; list-style: none; }
 .source-list a { display: flex; gap: var(--space-3); align-items: center; min-height: 54px; padding: var(--space-2); border: 1px solid var(--color-border); color: var(--color-ink); text-decoration: none; }
 .source-list a:hover { border-color: var(--color-accent-readable); }
@@ -759,7 +797,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
   .legal-theme-toggle [data-theme-label] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .masthead::after { top: 8%; right: -35vw; width: 80vw; }
   .controls { grid-template-columns: 1fr 1fr; gap: var(--space-3); }
-  .controls > :first-child, .controls .filters { grid-column: 1 / -1; }
+  .controls > :first-child, .controls .filters, .controls .calendar-actions { grid-column: 1 / -1; }
   .filters { justify-content: flex-start; }
   .filters button { display: inline-flex; align-items: center; min-block-size: 44px; }
   .day { grid-template-columns: 1fr; gap: var(--space-3); padding: var(--space-5) 0; }
@@ -797,3 +835,15 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
   .venue-card:nth-child(n + 6) { display: none; }
   .venue-card img { transition: none; }
 }
+
+.site-menu { position: relative; z-index: 5; }
+.masthead .site-menu { position: absolute; top: calc(var(--space-4) + env(safe-area-inset-top, 0px)); right: max(var(--page-gutter), env(safe-area-inset-right, 0px)); }
+.site-menu-toggle { display: inline-flex; align-items: center; gap: var(--space-2); min-height: 44px; border-color: color-mix(in srgb, var(--color-ink-inverse) 55%, transparent); color: var(--color-ink-inverse); }
+.site-menu-toggle:hover, .site-menu-toggle[aria-expanded="true"] { border-color: var(--color-accent-warm); background: transparent; color: var(--color-accent-warm); }
+.site-menu-icon { display: grid; gap: 4px; width: 15px; }
+.site-menu-icon i { display: block; height: 1px; background: currentColor; }
+.site-menu-panel { position: absolute; top: calc(100% + var(--space-2)); right: 0; display: grid; min-width: 11rem; padding: var(--space-1); border: 1px solid var(--color-accent-warm); background: var(--color-masthead); box-shadow: 6px 6px 0 color-mix(in srgb, var(--color-accent) 70%, transparent); }
+.site-menu-panel[hidden] { display: none; }
+.site-menu-panel a { min-height: 44px; padding: var(--space-2) var(--space-3); color: var(--color-ink-inverse); font: 500 var(--text-sm) / var(--leading-ui) var(--font-ui); letter-spacing: 0.08em; text-decoration: none; text-transform: uppercase; }
+.site-menu-panel a:hover, .site-menu-panel a:focus-visible { background: var(--color-accent-warm); color: var(--color-masthead); outline: none; }
+@media (max-width: 640px) { .legal-header { padding-top: 4.75rem; } .legal-actions { flex-wrap: wrap; } .legal-actions > a { display: none; } .site-menu-panel { min-width: min(15rem, calc(100vw - 2 * var(--space-3))); } .masthead .site-menu { top: calc(var(--space-3) + env(safe-area-inset-top, 0px)); } .site-menu-toggle { min-width: 44px; padding-inline: var(--space-2); } .site-menu-toggle > span:last-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); } }
