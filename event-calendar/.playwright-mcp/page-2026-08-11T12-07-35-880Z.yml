@@ -1,0 +1,53 @@
+- generic [active] [ref=f28e1]:
+  - complementary [ref=f28e2]:
+    - paragraph [ref=f28e3]:
+      - strong [ref=f28e4]: Mag deze site gebruik meten?
+      - text: Matomo wordt pas na toestemming geladen en plaatst dan analytische cookies.
+      - link "Lees hoe dit werkt" [ref=f28e5] [cursor=pointer]:
+        - /url: /disclaimer.html#privacy
+      - text: .
+    - generic [ref=f28e6]:
+      - button "Niet toestaan" [ref=f28e7] [cursor=pointer]
+      - button "Toestaan" [ref=f28e8] [cursor=pointer]
+  - link "Ga naar inhoud" [ref=f28e9] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f28e10]:
+    - generic [ref=f28e11]:
+      - paragraph [ref=f28e12]: UIT VANDAAG · TWENTE
+      - heading "Privacy" [level=1] [ref=f28e13]
+    - generic [ref=f28e14]:
+      - navigation "Hoofdnavigatie" [ref=f28e15]:
+        - button "Menu" [ref=f28e16] [cursor=pointer]
+      - button "Gebruik lichte modus" [pressed] [ref=f28e22] [cursor=pointer]:
+        - generic [ref=f28e23]: ◐
+        - generic [ref=f28e24]: Licht
+      - img "Uit Vandaag Twente-logo" [ref=f28e25]
+  - main [ref=f28e26]:
+    - paragraph [ref=f28e27]: Via de ideeënbus kun je vrijwillig je naam en e-mailadres invullen. Deze gegevens worden uitsluitend gebruikt om je suggestie per e-mail aan Ronald Punt te sturen en, als je een e-mailadres invult, eventueel op je bericht te reageren.
+    - paragraph [ref=f28e28]: Ronald Punt is verwerkingsverantwoordelijke. De website slaat de velden niet op in een database. Ze gaan tijdens verzending wel mee in een e-mailbericht; dat bericht kan in de mailbox en technische serverlogboeken terechtkomen. Stuur daarom geen gevoelige informatie.
+    - paragraph [ref=f28e29]: Berichten worden bewaard zolang dat redelijk nodig is om de suggestie af te handelen en daarna verwijderd. Wil je inzage of verwijdering van een bericht, stuur dan via de ideeënbus een verzoek met voldoende gegevens om je bericht terug te vinden.
+    - heading "Matomo en cookies" [level=2] [ref=f28e30]
+    - paragraph [ref=f28e31]:
+      - text: Analytische gegevens worden alleen met toestemming verwerkt. Lees in de
+      - link "disclaimer" [ref=f28e32] [cursor=pointer]:
+        - /url: disclaimer.html#privacy
+      - text: hoe Matomo en de privacy-instellingen werken.
+  - contentinfo [ref=f28e33]:
+    - generic [ref=f28e34]:
+      - heading "Uit Vandaag Twente" [level=2] [ref=f28e35]
+      - paragraph [ref=f28e36]:
+        - text: Een persoonlijk initiatief van
+        - link "Ronald Punt" [ref=f28e37] [cursor=pointer]:
+          - /url: https://www.ronaldpunt.nl
+        - text: .
+    - paragraph [ref=f28e38]:
+      - link "Agenda" [ref=f28e39] [cursor=pointer]:
+        - /url: index.html
+      - text: ·
+      - link "Disclaimer" [ref=f28e40] [cursor=pointer]:
+        - /url: disclaimer.html
+      - text: ·
+      - link "Privacy" [ref=f28e41] [cursor=pointer]:
+        - /url: privacy.html
+      - text: ·
+      - button "Privacy-instellingen" [ref=f28e42] [cursor=pointer]

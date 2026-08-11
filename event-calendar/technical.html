@@ -7,20 +7,20 @@
     <meta name="description" content="Hoe Uit Vandaag Twente groeide van een persoonlijke agenda naar een automatisch ververste, beveiligde uitagenda met e-maildigest." />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#111827" />
-    <script src="theme.js?v=20260810-menu-1"></script>
+    <script src="theme.js?v=20260811-navigation-1"></script>
     <link rel="canonical" href="https://event-calendar.puntuale.nl/technical.html" />
     <link rel="preconnect" href="https://matomo.puntuale.nl" crossorigin />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
     <link rel="preload" href="assets/fonts/archivo-narrow-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="styles.css?v=20260810-menu-1" />
+    <link rel="stylesheet" href="styles.css?v=20260811-header-1" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Ga naar inhoud</a>
     <header class="legal-header">
       <div><p class="eyebrow">UIT VANDAAG · TECHNIEK</p><h1>Een agenda die bleef groeien</h1></div>
-      <div class="legal-actions"><button id="theme-toggle" class="legal-theme-toggle" type="button" aria-label="Gebruik donkere modus" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span data-theme-label>Donker</span></button><nav class="site-menu" aria-label="Hoofdnavigatie"><button class="site-menu-toggle" type="button" data-menu-toggle aria-controls="site-menu-panel" aria-expanded="false"><span class="site-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button><div class="site-menu-panel" id="site-menu-panel" hidden><a href="index.html">Agenda</a><a href="about.html">Muzieksmaak</a><a href="technical.html">Techniek</a><a href="disclaimer.html">Disclaimer</a><a href="privacy.html">Privacy</a></div></nav><a href="index.html">← Terug naar de agenda</a></div>
+      <div class="legal-actions"><nav class="site-menu" aria-label="Hoofdnavigatie"><button class="site-menu-toggle" type="button" data-menu-toggle aria-controls="site-menu-panel" aria-expanded="false"><span class="site-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button><div class="site-menu-panel" id="site-menu-panel" hidden><a href="index.html">Agenda</a><a href="about.html">Muzieksmaak</a><a href="technical.html">Techniek</a><a href="disclaimer.html">Disclaimer</a><a href="privacy.html">Privacy</a></div></nav><button id="theme-toggle" class="legal-theme-toggle" type="button" aria-label="Gebruik donkere modus" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span data-theme-label>Donker</span></button><img class="legal-brand-mark" src="assets/icon-96.webp" srcset="assets/icon-96.webp 1x, assets/icon-192.webp 2x" width="96" height="96" alt="Uit Vandaag Twente-logo" /></div>
     </header>
     <main id="main-content" tabindex="-1">
       <section class="editorial-scope" aria-labelledby="technical-intro">
@@ -49,10 +49,10 @@
           <li><strong>SMTP via Gmail</strong> verzorgt de digest. Het wachtwoord komt uit een omgevingsvariabele in productie of uit de macOS-sleutelhanger lokaal, nooit uit de broncode.</li>
         </ul>
         <div class="tech-stack" aria-label="Gebruikte techniek">
-          <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><img class="tech-logo" src="assets/tech/docker.svg" alt="" /><span>Docker</span></a>
+          <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"><img class="tech-logo" src="assets/tech/docker.svg" alt="Docker-logo" aria-hidden="true" /><span>Docker</span></a>
           <a href="https://www.oracle.com/cloud/" target="_blank" rel="noopener noreferrer"><span class="tech-mark oracle" aria-hidden="true">ORCL</span><span>Oracle Cloud</span></a>
           <a href="https://openai.com/codex/" target="_blank" rel="noopener noreferrer"><span class="tech-mark openai" aria-hidden="true">◌</span><span>OpenAI Codex</span></a>
-          <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><img class="tech-logo" src="assets/tech/python.svg" alt="" /><span>Python</span></a>
+          <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><img class="tech-logo" src="assets/tech/python.svg" alt="Python-logo" aria-hidden="true" /><span>Python</span></a>
         </div>
         <h2>Veiligheid en betrouwbaarheid</h2>
         <p>Externe links worden beperkt tot HTTP(S), gescrapete tekst wordt als tekst gerenderd en de server stuurt onder meer CSP-, HSTS-, anti-framing- en no-sniff-headers. Het suggestieformulier valideert invoer, origin, tokens en aantallen. De verzendwebhook vereist een Bearer-token. De container draait als een eigen, niet-rootgebruiker.</p>

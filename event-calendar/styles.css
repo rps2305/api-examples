@@ -54,12 +54,16 @@
   --color-sold-out-ink: #fff7ed;
   --color-taste: #ffd600;
   --color-taste-ink: #1f2937;
+  --color-personal: #ffd6e5;
+  --color-personal-ink: #5a1637;
+  --color-special: #e8e1ff;
+  --color-special-ink: #33225e;
 
   /* Lettertypen en typografische rollen */
   --font-display: "Archivo Narrow", Arial Narrow, sans-serif;
   --font-ui: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --text-xs: 0.68rem;
-  --text-sm: 0.72rem;
+  --text-sm: 0.8rem;
   --text-body: 0.94rem;
   --text-lede: clamp(1rem, 2vw, 1.3rem);
   --leading-ui: 1.45;
@@ -192,8 +196,24 @@ button {
   color: var(--color-accent-warm);
   font-weight: 500;
 }
+.hero-agenda-link {
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+  min-block-size: 44px;
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-accent-warm);
+  color: var(--color-accent-warm);
+  font: 500 var(--text-sm) / var(--leading-ui) var(--font-ui);
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hero-agenda-link:hover { background: var(--color-accent-warm); color: var(--color-masthead); }
 
 main { max-width: 1180px; margin: auto; padding: 0 var(--space-4) 5rem; }
+#agenda-controls { scroll-margin-top: var(--space-4); }
 
 .controls {
   display: grid;
@@ -496,11 +516,17 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event-share-button:hover { background: transparent; color: var(--color-accent-readable); }
 
 .event-calendar-button { min-block-size: 44px; min-inline-size: 44px; margin-left: auto; padding: 0.45rem 0.55rem; border-color: var(--color-border); font-size: var(--text-xs); line-height: 1; white-space: nowrap; }
-.event-links.has-ticket .event-calendar-button { flex-basis: 100%; justify-content: center; margin-left: 0; }
+.event-links.has-ticket .event-calendar-button { margin-left: 0; }
 .event.fc-home .event-calendar-button { border-color: color-mix(in srgb, var(--color-ink-inverse) 55%, transparent); color: var(--color-ink-inverse); }
 .event.fc-twente.fc-home .event-share-button { color: var(--color-ink-inverse); }
 
-.event-links .tickets { color: var(--color-accent-readable); font-weight: 500; }
+.event-links .tickets {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid currentColor;
+  color: var(--color-accent-readable);
+  font-weight: 500;
+  text-decoration: none;
+}
 
 .event.metropool {
   background: var(--color-metropool);
@@ -573,12 +599,12 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.feestdagen .event-share-button,
 .event.feestdagen .event-calendar-button { color: var(--color-holiday-ink); }
 .event.feestdagen .event-calendar-button { border-color: var(--color-holiday-ink); }
-.event.persoonlijk { background: #ffd6e5; color: #5a1637; }
-.event.persoonlijk .event-time, .event.persoonlijk .venue, .event.persoonlijk .meta, .event.persoonlijk .event-links a, .event.persoonlijk .event-share-button, .event.persoonlijk .event-calendar-button { color: #5a1637; }
-.event.persoonlijk .event-calendar-button { border-color: #5a1637; }
-.event.bijzonder { background: #e8e1ff; color: #33225e; }
-.event.bijzonder .event-time, .event.bijzonder .venue, .event.bijzonder .meta, .event.bijzonder .event-links a, .event.bijzonder .event-share-button, .event.bijzonder .event-calendar-button { color: #33225e; }
-.event.bijzonder .event-calendar-button { border-color: #33225e; }
+.event.persoonlijk { background: var(--color-personal); color: var(--color-personal-ink); }
+.event.persoonlijk .event-time, .event.persoonlijk .venue, .event.persoonlijk .meta, .event.persoonlijk .event-links a, .event.persoonlijk .event-share-button, .event.persoonlijk .event-calendar-button { color: var(--color-personal-ink); }
+.event.persoonlijk .event-calendar-button { border-color: var(--color-personal-ink); }
+.event.bijzonder { background: var(--color-special); color: var(--color-special-ink); }
+.event.bijzonder .event-time, .event.bijzonder .venue, .event.bijzonder .meta, .event.bijzonder .event-links a, .event.bijzonder .event-share-button, .event.bijzonder .event-calendar-button { color: var(--color-special-ink); }
+.event.bijzonder .event-calendar-button { border-color: var(--color-special-ink); }
 
 .event.fc-twente.fc-home :is(a, button):focus-visible { outline-color: var(--color-ink-inverse); }
 .event.metropool :is(a, button):focus-visible { outline-color: var(--color-metropool-accent); }
@@ -654,6 +680,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 }
 
 .legal-actions { display: flex; gap: var(--space-3); align-items: center; }
+.legal-brand-mark { width: 4rem; height: 4rem; object-fit: contain; }
 .legal-theme-toggle {
   display: inline-flex;
   gap: var(--space-1);
@@ -670,7 +697,14 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .legal-header a { color: var(--color-ink-inverse); }
 .legal-main { max-width: 760px; padding-top: clamp(2.5rem, 7vw, 5rem); }
 .legal-main h2 { margin: var(--space-6) 0 var(--space-2); font: 600 2rem / 1 var(--font-display); }
-.legal-main p, .legal-main li { max-width: 68ch; }
+.legal-main p, .legal-main li,
+.taste-context p, .taste-strand p, .taste-method p,
+.footer-about p, .footer-meta {
+  max-width: 68ch;
+  font-size: 1rem;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
 .legal-main .eyebrow, .release-history .eyebrow { color: var(--color-accent-readable); }
 .source-list { display: grid; gap: var(--space-2); padding: 0; list-style: none; }
 .source-list a { display: flex; gap: var(--space-3); align-items: center; min-height: 54px; padding: var(--space-2); border: 1px solid var(--color-border); color: var(--color-ink); text-decoration: none; }
@@ -837,7 +871,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 }
 
 .site-menu { position: relative; z-index: 5; }
-.masthead .site-menu { position: absolute; top: calc(var(--space-4) + env(safe-area-inset-top, 0px)); right: max(var(--page-gutter), env(safe-area-inset-right, 0px)); }
+.masthead .site-menu { position: absolute; top: calc(var(--space-4) + env(safe-area-inset-top, 0px)); right: calc(max(var(--page-gutter), env(safe-area-inset-right, 0px)) + clamp(10rem, 18vw, 13rem)); }
 .site-menu-toggle { display: inline-flex; align-items: center; gap: var(--space-2); min-height: 44px; border-color: color-mix(in srgb, var(--color-ink-inverse) 55%, transparent); color: var(--color-ink-inverse); }
 .site-menu-toggle:hover, .site-menu-toggle[aria-expanded="true"] { border-color: var(--color-accent-warm); background: transparent; color: var(--color-accent-warm); }
 .site-menu-icon { display: grid; gap: 4px; width: 15px; }
@@ -845,5 +879,6 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .site-menu-panel { position: absolute; top: calc(100% + var(--space-2)); right: 0; display: grid; min-width: 11rem; padding: var(--space-1); border: 1px solid var(--color-accent-warm); background: var(--color-masthead); box-shadow: 6px 6px 0 color-mix(in srgb, var(--color-accent) 70%, transparent); }
 .site-menu-panel[hidden] { display: none; }
 .site-menu-panel a { min-height: 44px; padding: var(--space-2) var(--space-3); color: var(--color-ink-inverse); font: 500 var(--text-sm) / var(--leading-ui) var(--font-ui); letter-spacing: 0.08em; text-decoration: none; text-transform: uppercase; }
+.site-menu-panel a[aria-current="page"] { background: color-mix(in srgb, var(--color-accent-warm) 22%, transparent); color: var(--color-accent-warm); }
 .site-menu-panel a:hover, .site-menu-panel a:focus-visible { background: var(--color-accent-warm); color: var(--color-masthead); outline: none; }
-@media (max-width: 640px) { .legal-header { padding-top: 4.75rem; } .legal-actions { flex-wrap: wrap; } .legal-actions > a { display: none; } .site-menu-panel { min-width: min(15rem, calc(100vw - 2 * var(--space-3))); } .masthead .site-menu { top: calc(var(--space-3) + env(safe-area-inset-top, 0px)); } .site-menu-toggle { min-width: 44px; padding-inline: var(--space-2); } .site-menu-toggle > span:last-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); } }
+@media (max-width: 640px) { .legal-header { padding-top: var(--space-4); } .legal-actions { flex-direction: row; flex-wrap: nowrap; gap: var(--space-2); } .legal-brand-mark { width: 2.75rem; height: 2.75rem; } .site-menu-panel { min-width: min(15rem, calc(100vw - 2 * var(--space-3))); } .masthead .site-menu { top: calc(var(--space-3) + env(safe-area-inset-top, 0px)); } .site-menu-toggle { min-width: 44px; padding-inline: var(--space-2); } .site-menu-toggle > span:last-child { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); } }

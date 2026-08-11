@@ -435,10 +435,12 @@ syncNetworkStatus();
 window.addEventListener('online', syncNetworkStatus);
 window.addEventListener('offline', syncNetworkStatus);
 
-try {
-  const parsedEvents = JSON.parse(document.querySelector('#event-data').textContent);
-  if (!Array.isArray(parsedEvents)) throw new TypeError('Event feed must be an array');
-  const events = parsedEvents.map(normalizeEvent).filter(Boolean);
+async function loadAgenda() {
+  try {
+  const fallbackEvents = JSON.parse(document.querySelector('#event-data').textContent);
+  if (!Array.isArray(fallbackEvents)) throw new TypeError('Event fallback must be an array');
+  let events = fallbackEvents.map(normalizeEvent).filter(Boolean);
+  if (!events.length) throw new TypeError('Event fallback is empty');
   populateDateFilters(events);
   applyUrlFilters(events);
   const refreshSummary = () => updateAgendaSummary(events);
@@ -519,9 +521,34 @@ try {
     visibleLimit = PAGE_SIZE;
     render(events);
   });
-} catch {
-  showStatusError('De agenda kon niet worden geladen.');
+  const loadFullFeed = async () => {
+    try {
+      const response = await fetch('/events.json', { cache: 'no-cache', credentials: 'same-origin' });
+      if (!response.ok) throw new Error('Event feed unavailable');
+      const parsedEvents = await response.json();
+      if (!Array.isArray(parsedEvents)) throw new TypeError('Event feed must be an array');
+      const fullEvents = parsedEvents.map(normalizeEvent).filter(Boolean);
+      if (!fullEvents.length) throw new TypeError('Event feed is empty');
+      events = fullEvents;
+      populateDateFilters(events);
+      applyUrlFilters(events);
+      updateAgendaSummary(events);
+      render(events);
+    } catch {
+      // The server-rendered first page remains fully usable when the full feed
+      // is unavailable; network status continues to explain offline state.
+    }
+  };
+  if (location.protocol !== 'file:') {
+    if ('requestIdleCallback' in window) window.requestIdleCallback(loadFullFeed, { timeout: 4_000 });
+    else window.setTimeout(loadFullFeed, 1_000);
+  }
+  } catch {
+    showStatusError('De agenda kon niet worden geladen.');
+  }
 }
+
+loadAgenda();
 
 async function refreshSuggestionToken() {
   const response = await fetch('/api/suggestions/token', { cache: 'no-store', credentials: 'same-origin' });
@@ -572,7 +599,7 @@ if (suggestionForm) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20260811-9', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });

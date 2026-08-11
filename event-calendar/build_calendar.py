@@ -355,9 +355,13 @@ def update_index(events: list[dict[str, object]], processed_at: datetime) -> Non
     index = INDEX.read_text(encoding="utf-8")
     script_start = index.index('<script id="event-data" type="application/json">')
     script_end = index.index("</script>", script_start) + len("</script>")
-    embedded = f'<script id="event-data" type="application/json">{json_for_script(events)}</script>'
+    # Keep the rendered first page available to file:// users and non-networked
+    # previews. Hosted pages fetch the complete feed after their first paint.
+    embedded = f'<script id="event-data" type="application/json">{json_for_script(events[:PRERENDER_LIMIT])}</script>'
     index = index[:script_start] + embedded + index[script_end:]
-    schema = f'<script id="event-schema" type="application/ld+json">{json_for_script(event_item_list(events))}</script>'
+    # Match structured data to the server-rendered first page. A page-sized list
+    # is useful to crawlers without turning the document head into the main payload.
+    schema = f'<script id="event-schema" type="application/ld+json">{json_for_script(event_item_list(events[:PRERENDER_LIMIT]))}</script>'
     index = replace_between(index, "<!-- EVENT_SCHEMA_START -->", "<!-- EVENT_SCHEMA_END -->", schema)
     index = replace_between(index, "<!-- EVENT_LIST_START -->", "<!-- EVENT_LIST_END -->", prerender_agenda(events))
     index = replace_between(index, "<!-- HERO_SUMMARY_START -->", "<!-- HERO_SUMMARY_END -->", agenda_summary(events, processed_at))

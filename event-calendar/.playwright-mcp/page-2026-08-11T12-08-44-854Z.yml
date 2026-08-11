@@ -1,0 +1,987 @@
+- generic [active] [ref=f29e1]:
+  - complementary [ref=f29e2]:
+    - paragraph [ref=f29e3]:
+      - strong [ref=f29e4]: Mag deze site gebruik meten?
+      - text: Matomo wordt pas na toestemming geladen en plaatst dan analytische cookies.
+      - link "Lees hoe dit werkt" [ref=f29e5] [cursor=pointer]:
+        - /url: /disclaimer.html#privacy
+      - text: .
+    - generic [ref=f29e6]:
+      - button "Niet toestaan" [ref=f29e7] [cursor=pointer]
+      - button "Toestaan" [ref=f29e8] [cursor=pointer]
+  - link "Ga direct naar de agenda" [ref=f29e9] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f29e10]:
+    - img "Uit Vandaag Twente-logo" [ref=f29e11]
+    - button "Gebruik lichte modus" [pressed] [ref=f29e12] [cursor=pointer]:
+      - generic [ref=f29e13]: ◐
+      - generic [ref=f29e14]: Licht
+    - navigation "Hoofdnavigatie" [ref=f29e15]:
+      - button "Menu" [ref=f29e16] [cursor=pointer]
+    - paragraph [ref=f29e22]: TWENTE · UITAGENDA
+    - heading [level=1] [ref=f29e23]:
+      - text: "Uitagenda Twente:"
+      - emphasis [ref=f29e24]: Concerten & FC Twente
+    - paragraph [ref=f29e25]: Eén agenda voor wedstrijden en de muziek waarvoor je van de bank komt. Zodat Ronald Punt niet meerdere afspraken op hetzelfde moment plant.
+    - paragraph [ref=f29e26]: Vandaag 1 evenement, deze week 27.
+    - link "Bekijk de agenda" [ref=f29e27] [cursor=pointer]:
+      - /url: "#agenda-controls"
+      - text: Bekijk de agenda
+      - generic [ref=f29e28]: ↓
+  - region [ref=f29e29]:
+    - generic [ref=f29e30]:
+      - paragraph [ref=f29e31]: DE PLEKKEN · DE STAD
+      - heading "Hier gebeurt het" [level=2] [ref=f29e32]
+      - paragraph [ref=f29e33]: "Van stadionlicht tot een kleine zaal: vijf Twentse plekken die de agenda kleur geven."
+    - generic [ref=f29e34]:
+      - button "Pauzeer bewegende locaties" [ref=f29e35] [cursor=pointer]
+      - generic [ref=f29e36]:
+        - figure [ref=f29e37]:
+          - link [ref=f29e38] [cursor=pointer]:
+            - /url: https://metropool.nl/
+            - img "Glazen voorgevel van Metropool in Hengelo" [ref=f29e39]
+            - generic: Metropool · Hengelo
+        - figure [ref=f29e40]:
+          - link [ref=f29e41] [cursor=pointer]:
+            - /url: https://www.decactus.nl/
+            - img "Liveband op het kleine podium van De Cactus" [ref=f29e42]
+            - generic: De Cactus · Hengelo
+        - figure [ref=f29e43]:
+          - link [ref=f29e44] [cursor=pointer]:
+            - /url: https://oogst.eu/
+            - img "Luchtfoto van bezoekers bij Broedplaats Oogst in Hengelo" [ref=f29e45]
+            - generic: Oogst · Hengelo
+        - figure [ref=f29e46]:
+          - link [ref=f29e47] [cursor=pointer]:
+            - /url: https://uitinhengelo.nl/
+            - img "Avond uit in het centrum van Hengelo" [ref=f29e48]
+            - generic: Uit in Hengelo
+        - figure [ref=f29e49]:
+          - link [ref=f29e50] [cursor=pointer]:
+            - /url: https://fctwente.nl/de-grolsch-veste
+            - img "Buitenzijde van De Grolsch Veste onder een rode lucht" [ref=f29e51]
+            - generic: De Grolsch Veste
+        - figure [ref=f29e52]:
+          - generic: Metropool · Hengelo
+        - figure [ref=f29e54]:
+          - generic: De Cactus · Hengelo
+        - figure [ref=f29e56]:
+          - generic: Oogst · Hengelo
+        - figure [ref=f29e58]:
+          - generic: Uit in Hengelo
+        - figure [ref=f29e60]:
+          - generic: De Grolsch Veste
+  - main [ref=f29e62]:
+    - region "Agenda filters" [ref=f29e63]:
+      - generic [ref=f29e64]:
+        - text: Zoek een avond
+        - searchbox "Zoek een avond" [ref=f29e65]
+      - generic [ref=f29e66]:
+        - text: Maand
+        - combobox "Kies een maand" [ref=f29e67]:
+          - option "Alle maanden" [selected]
+          - option "augustus 2026"
+      - generic [ref=f29e68]:
+        - text: Jaar
+        - combobox "Kies een jaar" [ref=f29e69]:
+          - option "Alle jaren" [selected]
+          - option "2026"
+      - generic [ref=f29e70]:
+        - text: Exacte datum
+        - textbox "Exacte datum" [ref=f29e71]
+      - generic [ref=f29e72]:
+        - text: Plaats
+        - combobox "Plaats" [ref=f29e73]:
+          - option "Alle plaatsen" [selected]
+          - option "Hengelo"
+          - option "Enschede"
+          - option "Almelo"
+      - generic [ref=f29e74]:
+        - text: Type
+        - searchbox "Type" [ref=f29e75]
+      - group "Agenda filteren" [ref=f29e76]:
+        - button "☀ Vandaag" [ref=f29e77] [cursor=pointer]
+        - button "★ Voor jou" [ref=f29e78] [cursor=pointer]
+        - button "Alles" [pressed] [ref=f29e79] [cursor=pointer]
+        - button "Metropool" [ref=f29e80] [cursor=pointer]
+        - button "De Cactus" [ref=f29e81] [cursor=pointer]
+        - button "FC Twente" [ref=f29e82] [cursor=pointer]
+        - button "Oogst" [ref=f29e83] [cursor=pointer]
+        - button "Hengelo" [ref=f29e84] [cursor=pointer]
+        - button "Feestdagen" [ref=f29e85] [cursor=pointer]
+      - generic "Agenda toevoegen" [ref=f29e86]:
+        - link "Download volledige agenda (.ics)" [ref=f29e87] [cursor=pointer]:
+          - /url: events.ics
+        - link "Abonneer op volledige agenda" [ref=f29e88] [cursor=pointer]:
+          - /url: webcal://event-calendar.puntuale.nl/events.ics
+    - paragraph [ref=f29e89]: 60 van 60 plannen zichtbaar
+    - generic [ref=f29e90]:
+      - generic [ref=f29e91]:
+        - generic [ref=f29e92]:
+          - heading "dinsdag 11 augustus 2026" [level=2] [ref=f29e93]:
+            - time [ref=f29e94]:
+              - text: dinsdag 11 augustus
+              - generic [ref=f29e95]: "2026"
+          - generic [ref=f29e96]: 1 plan
+        - article [ref=f29e98]:
+          - paragraph [ref=f29e99]: Tijd volgt
+          - paragraph [ref=f29e100]: Hengelo
+          - heading "Zomer Zandspeeltuin" [level=3] [ref=f29e101]
+          - paragraph [ref=f29e102]: Kinderen, Zomervakantie
+          - paragraph [ref=f29e103]:
+            - link "Info ↗" [ref=f29e104] [cursor=pointer]:
+              - /url: https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin
+            - 'button "Delen: Zomer Zandspeeltuin" [ref=f29e105] [cursor=pointer]': Delen
+            - 'button "Zet in agenda: Zomer Zandspeeltuin" [ref=f29e106] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e107]:
+        - generic [ref=f29e108]:
+          - heading "woensdag 12 augustus 2026" [level=2] [ref=f29e109]:
+            - time [ref=f29e110]:
+              - text: woensdag 12 augustus
+              - generic [ref=f29e111]: "2026"
+          - generic [ref=f29e112]: 4 plannen
+        - generic [ref=f29e113]:
+          - article [ref=f29e114]:
+            - paragraph [ref=f29e115]: 09:30
+            - paragraph [ref=f29e116]: Hengelo
+            - heading "Vakantiespelen De Hengelose Es" [level=3] [ref=f29e117]
+            - paragraph [ref=f29e118]: Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie
+            - paragraph [ref=f29e119]:
+              - link "Info ↗" [ref=f29e120] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
+              - 'button "Delen: Vakantiespelen De Hengelose Es" [ref=f29e121] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen De Hengelose Es" [ref=f29e122] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e123]:
+            - paragraph [ref=f29e124]: 09:30
+            - paragraph [ref=f29e125]: Hengelo
+            - heading "Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [level=3] [ref=f29e126]
+            - paragraph [ref=f29e127]: Kinderen, Vakantiespelen, Zomervakantie
+            - paragraph [ref=f29e128]:
+              - link "Info ↗" [ref=f29e129] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
+              - 'button "Delen: Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [ref=f29e130] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [ref=f29e131] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e132]:
+            - paragraph [ref=f29e133]: 10:00
+            - paragraph [ref=f29e134]: Hengelo
+            - heading "Vakantiekids Zomerfestijn 2026" [level=3] [ref=f29e135]
+            - paragraph [ref=f29e136]: Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie
+            - paragraph [ref=f29e137]:
+              - link "Info ↗" [ref=f29e138] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
+              - 'button "Delen: Vakantiekids Zomerfestijn 2026" [ref=f29e139] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiekids Zomerfestijn 2026" [ref=f29e140] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e141]:
+            - paragraph [ref=f29e142]: 10:00
+            - paragraph [ref=f29e143]: Hengelo
+            - heading "Zomerkunsten bij Oyfo Kunstenschool" [level=3] [ref=f29e144]
+            - paragraph [ref=f29e145]: Kinderen, Kunst & Cultuur, Vakantiespelen
+            - paragraph [ref=f29e146]:
+              - link "Info ↗" [ref=f29e147] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
+              - 'button "Delen: Zomerkunsten bij Oyfo Kunstenschool" [ref=f29e148] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Zomerkunsten bij Oyfo Kunstenschool" [ref=f29e149] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e150]:
+        - generic [ref=f29e151]:
+          - heading "donderdag 13 augustus 2026" [level=2] [ref=f29e152]:
+            - time [ref=f29e153]:
+              - text: donderdag 13 augustus
+              - generic [ref=f29e154]: "2026"
+          - generic [ref=f29e155]: 7 plannen
+        - generic [ref=f29e156]:
+          - article [ref=f29e157]:
+            - paragraph [ref=f29e158]: 19:00
+            - paragraph [ref=f29e159]: FC Twente
+            - heading "DAC Dunajská Streda - FC Twente" [level=3] [ref=f29e160]
+            - paragraph [ref=f29e161]: Voetbal
+            - paragraph [ref=f29e162]:
+              - 'button "Zet in agenda: DAC Dunajská Streda - FC Twente" [ref=f29e163] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e164]:
+            - paragraph [ref=f29e165]: 09:30
+            - paragraph [ref=f29e166]: Hengelo
+            - heading "Aan de slag met kunstmatige intelligentie!" [level=3] [ref=f29e167]
+            - paragraph [ref=f29e168]: Kinderen, Kunst & Cultuur, Jeugd / Familie
+            - paragraph [ref=f29e169]:
+              - link "Info ↗" [ref=f29e170] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/aan-de-slag-met-kunstmatige-intelligentie-10-t-m-14-jaar
+              - 'button "Delen: Aan de slag met kunstmatige intelligentie!" [ref=f29e171] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Aan de slag met kunstmatige intelligentie!" [ref=f29e172] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e173]:
+            - paragraph [ref=f29e174]: 09:30
+            - paragraph [ref=f29e175]: Hengelo
+            - heading "Vakantiespelen De Hengelose Es" [level=3] [ref=f29e176]
+            - paragraph [ref=f29e177]: Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie
+            - paragraph [ref=f29e178]:
+              - link "Info ↗" [ref=f29e179] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
+              - 'button "Delen: Vakantiespelen De Hengelose Es" [ref=f29e180] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen De Hengelose Es" [ref=f29e181] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e182]:
+            - paragraph [ref=f29e183]: 09:30
+            - paragraph [ref=f29e184]: Hengelo
+            - heading "Vakantiespelen De Tempel" [level=3] [ref=f29e185]
+            - paragraph [ref=f29e186]: Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie
+            - paragraph [ref=f29e187]:
+              - link "Info ↗" [ref=f29e188] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
+              - 'button "Delen: Vakantiespelen De Tempel" [ref=f29e189] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen De Tempel" [ref=f29e190] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e191]:
+            - paragraph [ref=f29e192]: 09:30
+            - paragraph [ref=f29e193]: Hengelo
+            - heading "Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [level=3] [ref=f29e194]
+            - paragraph [ref=f29e195]: Kinderen, Vakantiespelen, Zomervakantie
+            - paragraph [ref=f29e196]:
+              - link "Info ↗" [ref=f29e197] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
+              - 'button "Delen: Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [ref=f29e198] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [ref=f29e199] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e200]:
+            - paragraph [ref=f29e201]: 10:00
+            - paragraph [ref=f29e202]: Hengelo
+            - heading "Vakantiekids Zomerfestijn 2026" [level=3] [ref=f29e203]
+            - paragraph [ref=f29e204]: Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie
+            - paragraph [ref=f29e205]:
+              - link "Info ↗" [ref=f29e206] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
+              - 'button "Delen: Vakantiekids Zomerfestijn 2026" [ref=f29e207] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiekids Zomerfestijn 2026" [ref=f29e208] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e209]:
+            - paragraph [ref=f29e210]: 10:00
+            - paragraph [ref=f29e211]: Hengelo
+            - heading "Zomerkunsten bij Oyfo Kunstenschool" [level=3] [ref=f29e212]
+            - paragraph [ref=f29e213]: Kinderen, Kunst & Cultuur, Vakantiespelen
+            - paragraph [ref=f29e214]:
+              - link "Info ↗" [ref=f29e215] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
+              - 'button "Delen: Zomerkunsten bij Oyfo Kunstenschool" [ref=f29e216] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Zomerkunsten bij Oyfo Kunstenschool" [ref=f29e217] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e218]:
+        - generic [ref=f29e219]:
+          - heading "vrijdag 14 augustus 2026" [level=2] [ref=f29e220]:
+            - time [ref=f29e221]:
+              - text: vrijdag 14 augustus
+              - generic [ref=f29e222]: "2026"
+          - generic [ref=f29e223]: 7 plannen
+        - generic [ref=f29e224]:
+          - article [ref=f29e225]:
+            - paragraph [ref=f29e226]: 20:30
+            - paragraph [ref=f29e227]: De Cactus
+            - heading "Abraxas (Santana Tribute, NL)" [level=3] [ref=f29e228]
+            - paragraph [ref=f29e229]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e230]:
+              - link "Info ↗" [ref=f29e231] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111638774
+              - link "Tickets ↗" [ref=f29e232] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111638774
+              - 'button "Delen: Abraxas (Santana Tribute, NL)" [ref=f29e233] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Abraxas (Santana Tribute, NL)" [ref=f29e234] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e235]:
+            - paragraph [ref=f29e236]: 19:00
+            - paragraph [ref=f29e237]: Oogst
+            - heading "Jordi Noire" [level=3] [ref=f29e238]
+            - paragraph [ref=f29e239]: DJ, Muziek, 19:00 · 📍 Broedplaats Oogst, Hengelo
+            - paragraph [ref=f29e240]:
+              - link "Info ↗" [ref=f29e241] [cursor=pointer]:
+                - /url: https://oogst.eu/agenda/
+              - 'button "Delen: Jordi Noire" [ref=f29e242] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Jordi Noire" [ref=f29e243] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e244]:
+            - paragraph [ref=f29e245]: 09:30
+            - paragraph [ref=f29e246]: Hengelo
+            - heading "Vakantiespelen De Hengelose Es" [level=3] [ref=f29e247]
+            - paragraph [ref=f29e248]: Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie
+            - paragraph [ref=f29e249]:
+              - link "Info ↗" [ref=f29e250] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
+              - 'button "Delen: Vakantiespelen De Hengelose Es" [ref=f29e251] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen De Hengelose Es" [ref=f29e252] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e253]:
+            - paragraph [ref=f29e254]: 09:30
+            - paragraph [ref=f29e255]: Hengelo
+            - heading "Vakantiespelen De Tempel" [level=3] [ref=f29e256]
+            - paragraph [ref=f29e257]: Kinderen, Sport & Spel, Vakantiespelen, Jeugd / Familie
+            - paragraph [ref=f29e258]:
+              - link "Info ↗" [ref=f29e259] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
+              - 'button "Delen: Vakantiespelen De Tempel" [ref=f29e260] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen De Tempel" [ref=f29e261] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e262]:
+            - paragraph [ref=f29e263]: 09:30
+            - paragraph [ref=f29e264]: Hengelo
+            - heading "Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [level=3] [ref=f29e265]
+            - paragraph [ref=f29e266]: Kinderen, Vakantiespelen, Zomervakantie
+            - paragraph [ref=f29e267]:
+              - link "Info ↗" [ref=f29e268] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
+              - 'button "Delen: Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [ref=f29e269] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiespelen Nijverheid & zomereditie Houtdorpweek" [ref=f29e270] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e271]:
+            - paragraph [ref=f29e272]: 10:00
+            - paragraph [ref=f29e273]: Hengelo
+            - heading "Vakantiekids Zomerfestijn 2026" [level=3] [ref=f29e274]
+            - paragraph [ref=f29e275]: Actief, Kinderen, Sport & Spel, Vakantiespelen, Zomervakantie
+            - paragraph [ref=f29e276]:
+              - link "Info ↗" [ref=f29e277] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
+              - 'button "Delen: Vakantiekids Zomerfestijn 2026" [ref=f29e278] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Vakantiekids Zomerfestijn 2026" [ref=f29e279] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e280]:
+            - paragraph [ref=f29e281]: 19:30
+            - paragraph [ref=f29e282]: Hengelo
+            - heading "Nightskate Twente" [level=3] [ref=f29e283]
+            - paragraph [ref=f29e284]: Actief, Diversen, Sport & Spel
+            - paragraph [ref=f29e285]:
+              - link "Info ↗" [ref=f29e286] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/nightskate-twente
+              - 'button "Delen: Nightskate Twente" [ref=f29e287] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Nightskate Twente" [ref=f29e288] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e289]:
+        - generic [ref=f29e290]:
+          - heading "zaterdag 15 augustus 2026" [level=2] [ref=f29e291]:
+            - time [ref=f29e292]:
+              - text: zaterdag 15 augustus
+              - generic [ref=f29e293]: "2026"
+          - generic [ref=f29e294]: 3 plannen
+        - generic [ref=f29e295]:
+          - article [ref=f29e296]:
+            - paragraph [ref=f29e297]: 20:30
+            - paragraph [ref=f29e298]: De Cactus
+            - heading "Johnny Bernhard Country Band (Country, Blues, NL)" [level=3] [ref=f29e299]
+            - paragraph [ref=f29e300]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e301]:
+              - link "Info ↗" [ref=f29e302] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111685394
+              - link "Tickets ↗" [ref=f29e303] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111685394
+              - 'button "Delen: Johnny Bernhard Country Band (Country, Blues, NL)" [ref=f29e304] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Johnny Bernhard Country Band (Country, Blues, NL)" [ref=f29e305] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e306]:
+            - paragraph [ref=f29e307]: Tijd volgt
+            - paragraph [ref=f29e308]: Oogst
+            - heading "Classic Outdoor" [level=3] [ref=f29e309]
+            - paragraph [ref=f29e310]: DJs · 📍 Broedplaats Oogst, Hengelo
+            - paragraph [ref=f29e311]:
+              - link "Info ↗" [ref=f29e312] [cursor=pointer]:
+                - /url: https://oogst.eu/agenda/
+              - 'button "Delen: Classic Outdoor" [ref=f29e313] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Classic Outdoor" [ref=f29e314] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e315]:
+            - paragraph [ref=f29e316]: 13:00
+            - paragraph [ref=f29e317]: Hengelo
+            - heading "Schaaktoernooi voor jongeren" [level=3] [ref=f29e318]
+            - paragraph [ref=f29e319]: Actief, Kinderen, Sport & Spel, Jeugd / Familie
+            - paragraph [ref=f29e320]:
+              - link "Info ↗" [ref=f29e321] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/schaaktoernooi-voor-jongeren-12
+              - 'button "Delen: Schaaktoernooi voor jongeren" [ref=f29e322] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Schaaktoernooi voor jongeren" [ref=f29e323] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e324]:
+        - generic [ref=f29e325]:
+          - heading "zondag 16 augustus 2026" [level=2] [ref=f29e326]:
+            - time [ref=f29e327]:
+              - text: zondag 16 augustus
+              - generic [ref=f29e328]: "2026"
+          - generic [ref=f29e329]: 5 plannen
+        - generic [ref=f29e330]:
+          - article [ref=f29e331]:
+            - paragraph [ref=f29e332]: 14:30
+            - paragraph [ref=f29e333]: FC Twente
+            - heading "FC Twente - PEC Zwolle" [level=3] [ref=f29e334]
+            - paragraph [ref=f29e335]: Voetbal
+            - paragraph [ref=f29e336]:
+              - 'button "Zet in agenda: FC Twente - PEC Zwolle" [ref=f29e337] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e338]:
+            - paragraph [ref=f29e339]: 13:00
+            - paragraph [ref=f29e340]: Hengelo
+            - heading "Open zondag watermolen Oele" [level=3] [ref=f29e341]
+            - paragraph [ref=f29e342]: Diversen
+            - paragraph [ref=f29e343]:
+              - link "Info ↗" [ref=f29e344] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele
+              - 'button "Delen: Open zondag watermolen Oele" [ref=f29e345] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Open zondag watermolen Oele" [ref=f29e346] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e347]:
+            - paragraph [ref=f29e348]: 13:00
+            - paragraph [ref=f29e349]: Hengelo
+            - heading "Open Zondagen Heemtuin" [level=3] [ref=f29e350]
+            - paragraph [ref=f29e351]: Actief, Diversen
+            - paragraph [ref=f29e352]:
+              - link "Info ↗" [ref=f29e353] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
+              - 'button "Delen: Open Zondagen Heemtuin" [ref=f29e354] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Open Zondagen Heemtuin" [ref=f29e355] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e356]:
+            - paragraph [ref=f29e357]: 14:00
+            - paragraph [ref=f29e358]: Hengelo
+            - heading "Clockwork" [level=3] [ref=f29e359]
+            - paragraph [ref=f29e360]: Actief, Muziek, Dans
+            - paragraph [ref=f29e361]:
+              - link "Info ↗" [ref=f29e362] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/clockwork
+              - 'button "Delen: Clockwork" [ref=f29e363] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Clockwork" [ref=f29e364] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e365]:
+            - paragraph [ref=f29e366]: 14:00
+            - paragraph [ref=f29e367]: Hengelo
+            - heading "Deventer Jazz Orkest" [level=3] [ref=f29e368]
+            - paragraph [ref=f29e369]: Actief, Muziek, Dans
+            - paragraph [ref=f29e370]:
+              - link "Info ↗" [ref=f29e371] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/deventer-jazz-orkest
+              - 'button "Delen: Deventer Jazz Orkest" [ref=f29e372] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Deventer Jazz Orkest" [ref=f29e373] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e374]:
+        - generic [ref=f29e375]:
+          - heading "dinsdag 18 augustus 2026" [level=2] [ref=f29e376]:
+            - time [ref=f29e377]:
+              - text: dinsdag 18 augustus
+              - generic [ref=f29e378]: "2026"
+          - generic [ref=f29e379]: 1 plan
+        - article [ref=f29e381]:
+          - paragraph [ref=f29e382]: 20:30
+          - paragraph [ref=f29e383]: Hengelo
+          - heading "Pubquiz @'t Pleintje" [level=3] [ref=f29e384]
+          - paragraph [ref=f29e385]: Diversen
+          - paragraph [ref=f29e386]:
+            - link "Info ↗" [ref=f29e387] [cursor=pointer]:
+              - /url: https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje
+            - 'button "Delen: Pubquiz @''t Pleintje" [ref=f29e388] [cursor=pointer]': Delen
+            - 'button "Zet in agenda: Pubquiz @''t Pleintje" [ref=f29e389] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e390]:
+        - generic [ref=f29e391]:
+          - heading "woensdag 19 augustus 2026" [level=2] [ref=f29e392]:
+            - time [ref=f29e393]:
+              - text: woensdag 19 augustus
+              - generic [ref=f29e394]: "2026"
+          - generic [ref=f29e395]: 1 plan
+        - article [ref=f29e397]:
+          - paragraph [ref=f29e398]: 20:30
+          - paragraph [ref=f29e399]: De Cactus
+          - heading "Muziek Bingo Hitster @ De Cactus (Pub Quiz)" [level=3] [ref=f29e400]
+          - paragraph [ref=f29e401]: Live · 📍 De Cactus, Hengelo
+          - paragraph [ref=f29e402]:
+            - link "Info ↗" [ref=f29e403] [cursor=pointer]:
+              - /url: https://decactus.stager.co/shop/default/events/111636999
+            - link "Tickets ↗" [ref=f29e404] [cursor=pointer]:
+              - /url: https://decactus.stager.co/shop/default/events/111636999
+            - 'button "Delen: Muziek Bingo Hitster @ De Cactus (Pub Quiz)" [ref=f29e405] [cursor=pointer]': Delen
+            - 'button "Zet in agenda: Muziek Bingo Hitster @ De Cactus (Pub Quiz)" [ref=f29e406] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e407]:
+        - generic [ref=f29e408]:
+          - heading "donderdag 20 augustus 2026" [level=2] [ref=f29e409]:
+            - time [ref=f29e410]:
+              - text: donderdag 20 augustus
+              - generic [ref=f29e411]: "2026"
+          - generic [ref=f29e412]: 3 plannen
+        - generic [ref=f29e413]:
+          - article [ref=f29e414]:
+            - paragraph [ref=f29e415]: 21:00
+            - paragraph [ref=f29e416]: Metropool Enschede
+            - paragraph [ref=f29e417]:
+              - generic "Sluit aan bij je voorkeur voor Tool." [ref=f29e418]: ★ Voor jou
+            - heading "The Tool Experience" [level=3] [ref=f29e419]
+            - paragraph [ref=f29e420]: Tribute · 📍 Enschede
+            - paragraph [ref=f29e421]:
+              - link "Info ↗" [ref=f29e422] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/the-tool-experience
+              - link "Tickets ↗" [ref=f29e423] [cursor=pointer]:
+                - /url: https://www.ticketmaster.nl/event/1392630051?CAMEFROM=METROPOOL&brand=nl_metropool
+              - 'button "Delen: The Tool Experience" [ref=f29e424] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: The Tool Experience" [ref=f29e425] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e426]:
+            - paragraph [ref=f29e427]: 21:30
+            - paragraph [ref=f29e428]: Metropool Hertme
+            - paragraph [ref=f29e429]:
+              - generic [ref=f29e430]: Uitverkocht
+            - heading "Racoon" [level=3] [ref=f29e431]
+            - paragraph [ref=f29e432]: Pop · 📍 Hertme
+            - paragraph [ref=f29e433]:
+              - link "Info ↗" [ref=f29e434] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/racoon
+              - link "Tickets ↗" [ref=f29e435] [cursor=pointer]:
+                - /url: https://www.ticketmaster.nl/event/1781886018?CAMEFROM=METROPOOL&brand=nl_metropool
+              - 'button "Delen: Racoon" [ref=f29e436] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Racoon" [ref=f29e437] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e438]:
+            - paragraph [ref=f29e439]: 20:30
+            - paragraph [ref=f29e440]: De Cactus
+            - heading "The Swamp Shakers (Rockabilly, Rock&Roll, Blues, LET)" [level=3] [ref=f29e441]
+            - paragraph [ref=f29e442]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e443]:
+              - link "Info ↗" [ref=f29e444] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111599147
+              - link "Tickets ↗" [ref=f29e445] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111599147
+              - 'button "Delen: The Swamp Shakers (Rockabilly, Rock&Roll, Blues, LET)" [ref=f29e446] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: The Swamp Shakers (Rockabilly, Rock&Roll, Blues, LET)" [ref=f29e447] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e448]:
+        - generic [ref=f29e449]:
+          - heading "vrijdag 21 augustus 2026" [level=2] [ref=f29e450]:
+            - time [ref=f29e451]:
+              - text: vrijdag 21 augustus
+              - generic [ref=f29e452]: "2026"
+          - generic [ref=f29e453]: 3 plannen
+        - generic [ref=f29e454]:
+          - article [ref=f29e455]:
+            - paragraph [ref=f29e456]: 21:30
+            - paragraph [ref=f29e457]: Metropool Hertme
+            - paragraph [ref=f29e458]:
+              - generic [ref=f29e459]: Uitverkocht
+            - heading "BLØF" [level=3] [ref=f29e460]
+            - paragraph [ref=f29e461]: Pop · 📍 Hertme
+            - paragraph [ref=f29e462]:
+              - link "Info ↗" [ref=f29e463] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/blof
+              - link "Tickets ↗" [ref=f29e464] [cursor=pointer]:
+                - /url: https://www.ticketmaster.nl/event/1737507367?CAMEFROM=METROPOOL&brand=nl_metropool
+              - 'button "Delen: BLØF" [ref=f29e465] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: BLØF" [ref=f29e466] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e467]:
+            - paragraph [ref=f29e468]: 20:30
+            - paragraph [ref=f29e469]: De Cactus
+            - heading "After Beat Club (Ska Tribute, NL)" [level=3] [ref=f29e470]
+            - paragraph [ref=f29e471]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e472]:
+              - link "Info ↗" [ref=f29e473] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111533546
+              - link "Tickets ↗" [ref=f29e474] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111533546
+              - 'button "Delen: After Beat Club (Ska Tribute, NL)" [ref=f29e475] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: After Beat Club (Ska Tribute, NL)" [ref=f29e476] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e477]:
+            - paragraph [ref=f29e478]: 19:30
+            - paragraph [ref=f29e479]: Hengelo
+            - heading "Nightskate Twente" [level=3] [ref=f29e480]
+            - paragraph [ref=f29e481]: Actief, Diversen, Sport & Spel
+            - paragraph [ref=f29e482]:
+              - link "Info ↗" [ref=f29e483] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/nightskate-twente
+              - 'button "Delen: Nightskate Twente" [ref=f29e484] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Nightskate Twente" [ref=f29e485] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e486]:
+        - generic [ref=f29e487]:
+          - heading "zaterdag 22 augustus 2026" [level=2] [ref=f29e488]:
+            - time [ref=f29e489]:
+              - text: zaterdag 22 augustus
+              - generic [ref=f29e490]: "2026"
+          - generic [ref=f29e491]: 6 plannen
+        - generic [ref=f29e492]:
+          - article [ref=f29e493]:
+            - paragraph [ref=f29e494]: 20:00
+            - paragraph [ref=f29e495]: Metropool Hengelo
+            - paragraph [ref=f29e496]:
+              - generic "Sluit aan bij je voorkeur voor Live." [ref=f29e497]: ★ Voor jou
+            - 'heading "Oogst Live: Nana Adjoa + LUWTEN" [level=3] [ref=f29e498]'
+            - paragraph [ref=f29e499]: Pop · 📍 Hengelo
+            - paragraph [ref=f29e500]:
+              - link "Info ↗" [ref=f29e501] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten
+              - 'button "Delen: Oogst Live: Nana Adjoa + LUWTEN" [ref=f29e502] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Oogst Live: Nana Adjoa + LUWTEN" [ref=f29e503] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e504]:
+            - paragraph [ref=f29e505]: 21:00
+            - paragraph [ref=f29e506]: Metropool Enschede
+            - paragraph [ref=f29e507]:
+              - generic "Past bij je smaak voor latin." [ref=f29e508]: ★ Voor jou
+            - heading "Rico Mambo" [level=3] [ref=f29e509]
+            - paragraph [ref=f29e510]: Latin · 📍 Enschede
+            - paragraph [ref=f29e511]:
+              - link "Info ↗" [ref=f29e512] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/rico-mambo
+              - 'button "Delen: Rico Mambo" [ref=f29e513] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Rico Mambo" [ref=f29e514] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e515]:
+            - paragraph [ref=f29e516]: 21:30
+            - paragraph [ref=f29e517]: Metropool Hertme
+            - paragraph [ref=f29e518]:
+              - generic [ref=f29e519]: Uitverkocht
+            - heading "Ilse DeLange" [level=3] [ref=f29e520]
+            - paragraph [ref=f29e521]: Pop · 📍 Hertme
+            - paragraph [ref=f29e522]:
+              - link "Info ↗" [ref=f29e523] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/ilse-delange
+              - link "Tickets ↗" [ref=f29e524] [cursor=pointer]:
+                - /url: https://www.ticketmaster.nl/event/195920358?CAMEFROM=METROPOOL&brand=nl_metropool
+              - 'button "Delen: Ilse DeLange" [ref=f29e525] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Ilse DeLange" [ref=f29e526] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e527]:
+            - paragraph [ref=f29e528]: 20:30
+            - paragraph [ref=f29e529]: De Cactus
+            - heading "The Loop (Classic Blues/Rock Revival, Covers, NL)" [level=3] [ref=f29e530]
+            - paragraph [ref=f29e531]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e532]:
+              - link "Info ↗" [ref=f29e533] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111655473
+              - link "Tickets ↗" [ref=f29e534] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111655473
+              - 'button "Delen: The Loop (Classic Blues/Rock Revival, Covers, NL)" [ref=f29e535] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: The Loop (Classic Blues/Rock Revival, Covers, NL)" [ref=f29e536] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e537]:
+            - paragraph [ref=f29e538]: 10:00
+            - paragraph [ref=f29e539]: Hengelo
+            - heading "ATC'65 MMT Bouw Top Tournament U11 & U12" [level=3] [ref=f29e540]
+            - paragraph [ref=f29e541]: Actief, Kinderen, Sport & Spel, Jeugd / Familie
+            - paragraph [ref=f29e542]:
+              - link "Info ↗" [ref=f29e543] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/atc65-mmt-bouw-top-tournament-u11-u12
+              - 'button "Delen: ATC''65 MMT Bouw Top Tournament U11 & U12" [ref=f29e544] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: ATC''65 MMT Bouw Top Tournament U11 & U12" [ref=f29e545] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e546]:
+            - paragraph [ref=f29e547]: 20:00
+            - paragraph [ref=f29e548]: Hengelo
+            - heading "Guess The Groove" [level=3] [ref=f29e549]
+            - paragraph [ref=f29e550]: Muziek
+            - paragraph [ref=f29e551]:
+              - link "Info ↗" [ref=f29e552] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/guess-the-groove
+              - 'button "Delen: Guess The Groove" [ref=f29e553] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Guess The Groove" [ref=f29e554] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e555]:
+        - generic [ref=f29e556]:
+          - heading "zondag 23 augustus 2026" [level=2] [ref=f29e557]:
+            - time [ref=f29e558]:
+              - text: zondag 23 augustus
+              - generic [ref=f29e559]: "2026"
+          - generic [ref=f29e560]: 4 plannen
+        - generic [ref=f29e561]:
+          - article [ref=f29e562]:
+            - paragraph [ref=f29e563]: 10:30
+            - paragraph [ref=f29e564]: Hengelo
+            - heading "Dansen in het park" [level=3] [ref=f29e565]
+            - paragraph [ref=f29e566]: Evenement
+            - paragraph [ref=f29e567]:
+              - link "Info ↗" [ref=f29e568] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/dansen-in-het-park
+              - 'button "Delen: Dansen in het park" [ref=f29e569] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Dansen in het park" [ref=f29e570] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e571]:
+            - paragraph [ref=f29e572]: 13:00
+            - paragraph [ref=f29e573]: Hengelo
+            - heading "Open Zondagen Heemtuin" [level=3] [ref=f29e574]
+            - paragraph [ref=f29e575]: Actief, Diversen
+            - paragraph [ref=f29e576]:
+              - link "Info ↗" [ref=f29e577] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
+              - 'button "Delen: Open Zondagen Heemtuin" [ref=f29e578] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Open Zondagen Heemtuin" [ref=f29e579] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e580]:
+            - paragraph [ref=f29e581]: 14:00
+            - paragraph [ref=f29e582]: Hengelo
+            - heading "ISLE" [level=3] [ref=f29e583]
+            - paragraph [ref=f29e584]: Muziek
+            - paragraph [ref=f29e585]:
+              - link "Info ↗" [ref=f29e586] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/isle
+              - 'button "Delen: ISLE" [ref=f29e587] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: ISLE" [ref=f29e588] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e589]:
+            - paragraph [ref=f29e590]: 14:00
+            - paragraph [ref=f29e591]: Hengelo
+            - heading "The DS Band" [level=3] [ref=f29e592]
+            - paragraph [ref=f29e593]: Actief, Diversen, Muziek
+            - paragraph [ref=f29e594]:
+              - link "Info ↗" [ref=f29e595] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/the-ds-band
+              - 'button "Delen: The DS Band" [ref=f29e596] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: The DS Band" [ref=f29e597] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e598]:
+        - generic [ref=f29e599]:
+          - heading "maandag 24 augustus 2026" [level=2] [ref=f29e600]:
+            - time [ref=f29e601]:
+              - text: maandag 24 augustus
+              - generic [ref=f29e602]: "2026"
+          - generic [ref=f29e603]: 2 plannen
+        - generic [ref=f29e604]:
+          - article [ref=f29e605]:
+            - paragraph [ref=f29e606]: 19:30
+            - paragraph [ref=f29e607]: Metropool Enschede
+            - heading "ArtEZ Afterglow" [level=3] [ref=f29e608]
+            - paragraph [ref=f29e609]: Pop · 📍 Enschede
+            - paragraph [ref=f29e610]:
+              - link "Info ↗" [ref=f29e611] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/artez-afterglow
+              - 'button "Delen: ArtEZ Afterglow" [ref=f29e612] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: ArtEZ Afterglow" [ref=f29e613] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e614]:
+            - paragraph [ref=f29e615]: 18:00
+            - paragraph [ref=f29e616]: Hengelo
+            - heading "Zwem Vier Daagse" [level=3] [ref=f29e617]
+            - paragraph [ref=f29e618]: Actief, Kinderen, Sport & Spel, Jeugd / Familie
+            - paragraph [ref=f29e619]:
+              - link "Info ↗" [ref=f29e620] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/zwem-vier-daagse
+              - 'button "Delen: Zwem Vier Daagse" [ref=f29e621] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Zwem Vier Daagse" [ref=f29e622] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e623]:
+        - generic [ref=f29e624]:
+          - heading "dinsdag 25 augustus 2026" [level=2] [ref=f29e625]:
+            - time [ref=f29e626]:
+              - text: dinsdag 25 augustus
+              - generic [ref=f29e627]: "2026"
+          - generic [ref=f29e628]: 2 plannen
+        - generic [ref=f29e629]:
+          - article [ref=f29e630]:
+            - paragraph [ref=f29e631]: 21:45
+            - paragraph [ref=f29e632]: Metropool Hengelo
+            - heading "Deadsquad" [level=3] [ref=f29e633]
+            - paragraph [ref=f29e634]: Metal · 📍 Hengelo
+            - paragraph [ref=f29e635]:
+              - link "Info ↗" [ref=f29e636] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/deadsquad
+              - link "Tickets ↗" [ref=f29e637] [cursor=pointer]:
+                - /url: https://www.ticketmaster.nl/event/1772445005?CAMEFROM=METROPOOL&brand=nl_metropool
+              - 'button "Delen: Deadsquad" [ref=f29e638] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Deadsquad" [ref=f29e639] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e640]:
+            - paragraph [ref=f29e641]: 19:30
+            - paragraph [ref=f29e642]: De Cactus
+            - heading "Besloten bijeenkomst (Broodfonds)" [level=3] [ref=f29e643]
+            - paragraph [ref=f29e644]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e645]:
+              - link "Info ↗" [ref=f29e646] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111579284
+              - link "Tickets ↗" [ref=f29e647] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111579284
+              - 'button "Delen: Besloten bijeenkomst (Broodfonds)" [ref=f29e648] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Besloten bijeenkomst (Broodfonds)" [ref=f29e649] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e650]:
+        - generic [ref=f29e651]:
+          - heading "woensdag 26 augustus 2026" [level=2] [ref=f29e652]:
+            - time [ref=f29e653]:
+              - text: woensdag 26 augustus
+              - generic [ref=f29e654]: "2026"
+          - generic [ref=f29e655]: 1 plan
+        - article [ref=f29e657]:
+          - paragraph [ref=f29e658]: 19:00
+          - paragraph [ref=f29e659]: Metropool Enschede
+          - heading "Introductieconcert" [level=3] [ref=f29e660]
+          - paragraph [ref=f29e661]: Pop · 📍 Enschede
+          - paragraph [ref=f29e662]:
+            - link "Info ↗" [ref=f29e663] [cursor=pointer]:
+              - /url: https://metropool.nl/agenda/introductieconcert
+            - 'button "Delen: Introductieconcert" [ref=f29e664] [cursor=pointer]': Delen
+            - 'button "Zet in agenda: Introductieconcert" [ref=f29e665] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e666]:
+        - generic [ref=f29e667]:
+          - heading "donderdag 27 augustus 2026" [level=2] [ref=f29e668]:
+            - time [ref=f29e669]:
+              - text: donderdag 27 augustus
+              - generic [ref=f29e670]: "2026"
+          - generic [ref=f29e671]: 2 plannen
+        - generic [ref=f29e672]:
+          - article [ref=f29e673]:
+            - paragraph [ref=f29e674]: 20:30
+            - paragraph [ref=f29e675]: De Cactus
+            - heading "Sean Webster Band (Blues, Rock, UK/NL)" [level=3] [ref=f29e676]
+            - paragraph [ref=f29e677]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e678]:
+              - link "Info ↗" [ref=f29e679] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111641185
+              - link "Tickets ↗" [ref=f29e680] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111641185
+              - 'button "Delen: Sean Webster Band (Blues, Rock, UK/NL)" [ref=f29e681] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Sean Webster Band (Blues, Rock, UK/NL)" [ref=f29e682] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e683]:
+            - paragraph [ref=f29e684]: 18:30
+            - paragraph [ref=f29e685]: Hengelo
+            - heading "Comic design (striptekenen) met Stefan Eenkhoorn" [level=3] [ref=f29e686]
+            - paragraph [ref=f29e687]: Actief, Kinderen, Kunst & Cultuur, Sport & Spel, Jeugd / Familie
+            - paragraph [ref=f29e688]:
+              - link "Info ↗" [ref=f29e689] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/comic-design-striptekenen-met-stefan-eenkhoorn-voor-12-t-m-15-jaar
+              - 'button "Delen: Comic design (striptekenen) met Stefan Eenkhoorn" [ref=f29e690] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Comic design (striptekenen) met Stefan Eenkhoorn" [ref=f29e691] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e692]:
+        - generic [ref=f29e693]:
+          - heading "vrijdag 28 augustus 2026" [level=2] [ref=f29e694]:
+            - time [ref=f29e695]:
+              - text: vrijdag 28 augustus
+              - generic [ref=f29e696]: "2026"
+          - generic [ref=f29e697]: 4 plannen
+        - generic [ref=f29e698]:
+          - article [ref=f29e699]:
+            - paragraph [ref=f29e700]: 20:30
+            - paragraph [ref=f29e701]: De Cactus
+            - heading "Besloten Sarah Feestje" [level=3] [ref=f29e702]
+            - paragraph [ref=f29e703]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e704]:
+              - link "Info ↗" [ref=f29e705] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111561650
+              - link "Tickets ↗" [ref=f29e706] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111561650
+              - 'button "Delen: Besloten Sarah Feestje" [ref=f29e707] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Besloten Sarah Feestje" [ref=f29e708] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e709]:
+            - paragraph [ref=f29e710]: Tijd volgt
+            - paragraph [ref=f29e711]: Hengelo
+            - heading "Volksfeesten Oele" [level=3] [ref=f29e712]
+            - paragraph [ref=f29e713]: Sport & Spel, Zomervakantie, Muziek
+            - paragraph [ref=f29e714]:
+              - link "Info ↗" [ref=f29e715] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/volksfeesten-oele
+              - 'button "Delen: Volksfeesten Oele" [ref=f29e716] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Volksfeesten Oele" [ref=f29e717] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e718]:
+            - paragraph [ref=f29e719]: 19:00
+            - paragraph [ref=f29e720]: Hengelo
+            - heading "Zomerdisco BS De Jeugd" [level=3] [ref=f29e721]
+            - paragraph [ref=f29e722]: Actief, Kinderen, Jeugd / Familie, Muziek
+            - paragraph [ref=f29e723]:
+              - link "Info ↗" [ref=f29e724] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/zomerdisco-bs-de-jeugd
+              - 'button "Delen: Zomerdisco BS De Jeugd" [ref=f29e725] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Zomerdisco BS De Jeugd" [ref=f29e726] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e727]:
+            - paragraph [ref=f29e728]: 19:30
+            - paragraph [ref=f29e729]: Hengelo
+            - heading "Nightskate Twente" [level=3] [ref=f29e730]
+            - paragraph [ref=f29e731]: Actief, Diversen, Sport & Spel
+            - paragraph [ref=f29e732]:
+              - link "Info ↗" [ref=f29e733] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/nightskate-twente
+              - 'button "Delen: Nightskate Twente" [ref=f29e734] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Nightskate Twente" [ref=f29e735] [cursor=pointer]': Zet in agenda
+      - generic [ref=f29e736]:
+        - generic [ref=f29e737]:
+          - heading "zaterdag 29 augustus 2026" [level=2] [ref=f29e738]:
+            - time [ref=f29e739]:
+              - text: zaterdag 29 augustus
+              - generic [ref=f29e740]: "2026"
+          - generic [ref=f29e741]: 4 plannen
+        - generic [ref=f29e742]:
+          - article [ref=f29e743]:
+            - paragraph [ref=f29e744]: 20:00
+            - paragraph [ref=f29e745]: Metropool Hengelo
+            - paragraph [ref=f29e746]:
+              - generic "Sluit aan bij je voorkeur voor Live." [ref=f29e747]: ★ Voor jou
+            - 'heading "Oogst Live: Ooostblok + Jeepers Creepers" [level=3] [ref=f29e748]'
+            - paragraph [ref=f29e749]: Overig · 📍 Hengelo
+            - paragraph [ref=f29e750]:
+              - link "Info ↗" [ref=f29e751] [cursor=pointer]:
+                - /url: https://metropool.nl/agenda/oogst-live-ooostblok-jeepers-creepers
+              - 'button "Delen: Oogst Live: Ooostblok + Jeepers Creepers" [ref=f29e752] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Oogst Live: Ooostblok + Jeepers Creepers" [ref=f29e753] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e754]:
+            - paragraph [ref=f29e755]: 20:30
+            - paragraph [ref=f29e756]: De Cactus
+            - heading "Besloten feestje" [level=3] [ref=f29e757]
+            - paragraph [ref=f29e758]: Live · 📍 De Cactus, Hengelo
+            - paragraph [ref=f29e759]:
+              - link "Info ↗" [ref=f29e760] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111513504
+              - link "Tickets ↗" [ref=f29e761] [cursor=pointer]:
+                - /url: https://decactus.stager.co/shop/default/events/111513504
+              - 'button "Delen: Besloten feestje" [ref=f29e762] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Besloten feestje" [ref=f29e763] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e764]:
+            - paragraph [ref=f29e765]: 10:00
+            - paragraph [ref=f29e766]: Hengelo
+            - heading "Kasbah Vintage/Brocantemarkt" [level=3] [ref=f29e767]
+            - paragraph [ref=f29e768]: Markten
+            - paragraph [ref=f29e769]:
+              - link "Info ↗" [ref=f29e770] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/kasbah-braderie
+              - 'button "Delen: Kasbah Vintage/Brocantemarkt" [ref=f29e771] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Kasbah Vintage/Brocantemarkt" [ref=f29e772] [cursor=pointer]': Zet in agenda
+          - article [ref=f29e773]:
+            - paragraph [ref=f29e774]: 11:00
+            - paragraph [ref=f29e775]: Hengelo
+            - heading "Kids@thePark (geannuleerd)" [level=3] [ref=f29e776]
+            - paragraph [ref=f29e777]: Actief, Eten & Drinken, Kinderen, Theater, Jeugd / Familie, Muziek, Dans
+            - paragraph [ref=f29e778]:
+              - link "Info ↗" [ref=f29e779] [cursor=pointer]:
+                - /url: https://uitinhengelo.nl/evenementen/kids-at-the-park
+              - 'button "Delen: Kids@thePark (geannuleerd)" [ref=f29e780] [cursor=pointer]': Delen
+              - 'button "Zet in agenda: Kids@thePark (geannuleerd)" [ref=f29e781] [cursor=pointer]': Zet in agenda
+  - region [ref=f29e783]:
+    - generic [ref=f29e784]:
+      - heading "Persoonlijk gekozen, niet compleet." [level=2] [ref=f29e785]
+      - paragraph [ref=f29e786]: "Deze uitagenda volgt Ronalds favoriete plekken in Hengelo, Almelo en Enschede, plus FC Twente. Het doel is eenvoudig: leuke plannen naast elkaar zien en geen dubbele afspraken maken. Vrienden en kennissen mogen hem natuurlijk ook gebruiken."
+    - generic [ref=f29e787]:
+      - generic [ref=f29e788]:
+        - term [ref=f29e789]: Dagelijkse bronnen
+        - definition [ref=f29e790]: Metropool, De Cactus, Oogst, FC Twente en Uit in Hengelo.
+      - generic [ref=f29e791]:
+        - term [ref=f29e792]: Binnenkort
+        - definition [ref=f29e793]:
+          - text: Evenementen van
+          - link "BAM! Festival" [ref=f29e794] [cursor=pointer]:
+            - /url: https://bamfestival.nl/
+          - text: worden later toegevoegd.
+      - generic [ref=f29e795]:
+        - term [ref=f29e796]: Verversing
+        - definition [ref=f29e797]:
+          - text: Bij het starten en daarna iedere zes uur.
+          - generic [ref=f29e798]: "Laatste succesvolle verwerking: dinsdag 11 augustus 2026 om 14:08."
+      - generic [ref=f29e799]:
+        - term [ref=f29e800]: Dubbele evenementen
+        - definition [ref=f29e801]: Herkenning gebeurt op genormaliseerde naam, aanvang en — als die beschikbaar is — locatie.
+      - generic [ref=f29e802]:
+        - term [ref=f29e803]: Bewuste selectie
+        - definition [ref=f29e804]: Geen totaaloverzicht van ieder theater, festival, podium of iedere bioscoop, maar Ronalds persoonlijke planningsagenda.
+  - region [ref=f29e805]:
+    - generic [ref=f29e806]:
+      - paragraph [ref=f29e807]: JOUW TIP · TWENTE
+      - heading "Mis je iets?" [level=2] [ref=f29e808]
+      - paragraph [ref=f29e809]: Een evenement gemist, een fout gezien of een goed idee? Laat het Ronald weten via de ideeënbus.
+    - generic [ref=f29e810]:
+      - paragraph [ref=f29e811]: Naam en e-mailadres zijn optioneel. Categorie en suggestie zijn verplicht.
+      - generic [ref=f29e812]:
+        - text: Naam
+        - textbox "Naam" [ref=f29e813]
+      - generic [ref=f29e814]:
+        - text: E-mail voor een reactie
+        - textbox "E-mail voor een reactie" [ref=f29e815]
+      - generic [ref=f29e816]:
+        - text: Waar gaat het over?
+        - generic [ref=f29e817]: Verplicht
+        - combobox "Waar gaat het over? Verplicht" [ref=f29e818]:
+          - option "Evenement" [selected]
+          - option "Correctie"
+          - option "Website"
+          - option "Anders"
+      - generic [ref=f29e819]:
+        - text: Suggestie
+        - generic [ref=f29e820]: Verplicht
+        - textbox "Suggestie Verplicht" [ref=f29e821]:
+          - /placeholder: Vertel wat er ontbreekt of beter kan…
+      - generic [ref=f29e822]:
+        - text: Website
+        - textbox [ref=f29e823]
+      - button "Verstuur suggestie" [ref=f29e825] [cursor=pointer]
+      - paragraph [ref=f29e826]:
+        - strong [ref=f29e827]: "Privacy:"
+        - text: Naam en e-mailadres zijn optioneel. Ze worden gebruikt om je bericht aan Ronald Punt te mailen en eventueel te reageren. Je bericht komt in zijn mailbox terecht; stuur geen gevoelige informatie.
+        - link "Lees hoe lang gegevens bewaard blijven en hoe je verwijdering vraagt" [ref=f29e828] [cursor=pointer]:
+          - /url: privacy.html
+        - text: .
+      - status [ref=f29e829]
+  - contentinfo [ref=f29e830]:
+    - region [ref=f29e831]:
+      - heading "Over deze agenda" [level=2] [ref=f29e832]
+      - paragraph [ref=f29e833]:
+        - link "Ronald Punt" [ref=f29e834] [cursor=pointer]:
+          - /url: https://www.ronaldpunt.nl
+        - text: bouwt en beheert deze persoonlijke Twentse uitagenda. Evenementen worden automatisch verzameld, samengevoegd en op datum gezet. Lees over
+        - link "Ronalds muzieksmaak" [ref=f29e835] [cursor=pointer]:
+          - /url: about.html
+        - text: en
+        - link "hoe de app is gebouwd" [ref=f29e836] [cursor=pointer]:
+          - /url: technical.html
+        - text: .
+    - paragraph [ref=f29e837]:
+      - text: Een evenement gemist? Gebruik de
+      - link "ideeënbus" [ref=f29e838] [cursor=pointer]:
+        - /url: "#suggestion-title"
+      - text: . De agenda gebruikt webscraping; gebruik op eigen risico.
+      - link "Disclaimer" [ref=f29e839] [cursor=pointer]:
+        - /url: disclaimer.html
+      - text: ·
+      - link "Privacy" [ref=f29e840] [cursor=pointer]:
+        - /url: privacy.html
+      - text: ·
+      - button "Privacy-instellingen" [ref=f29e841] [cursor=pointer]
+      - text: ·
+      - link "Weesjes bij De Twee Wezen ↗" [ref=f29e842] [cursor=pointer]:
+        - /url: https://www.detweewezen.nl/weesjes

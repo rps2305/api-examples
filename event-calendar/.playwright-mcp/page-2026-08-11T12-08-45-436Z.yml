@@ -1,0 +1,112 @@
+- generic [active] [ref=f30e1]:
+  - complementary [ref=f30e2]:
+    - paragraph [ref=f30e3]:
+      - strong [ref=f30e4]: Mag deze site gebruik meten?
+      - text: Matomo wordt pas na toestemming geladen en plaatst dan analytische cookies.
+      - link "Lees hoe dit werkt" [ref=f30e5] [cursor=pointer]:
+        - /url: /disclaimer.html#privacy
+      - text: .
+    - generic [ref=f30e6]:
+      - button "Niet toestaan" [ref=f30e7] [cursor=pointer]
+      - button "Toestaan" [ref=f30e8] [cursor=pointer]
+  - link "Ga naar inhoud" [ref=f30e9] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f30e10]:
+    - generic [ref=f30e11]:
+      - paragraph [ref=f30e12]: RONALD · LUISTERT
+      - heading "Mijn muzieksmaak" [level=1] [ref=f30e13]
+    - generic [ref=f30e14]:
+      - navigation "Hoofdnavigatie" [ref=f30e15]:
+        - button "Menu" [ref=f30e16] [cursor=pointer]
+      - button "Gebruik lichte modus" [pressed] [ref=f30e22] [cursor=pointer]:
+        - generic [ref=f30e23]: ◐
+        - generic [ref=f30e24]: Licht
+      - img "Uit Vandaag Twente-logo" [ref=f30e25]
+  - main [ref=f30e26]:
+    - region [ref=f30e27]:
+      - heading [level=2] [ref=f30e28]:
+        - text: Gitaarmuziek met rafelranden,
+        - emphasis [ref=f30e29]: post-punk en volume
+        - text: — plus ruimte voor een goede verrassing.
+      - generic [ref=f30e30]:
+        - paragraph [ref=f30e31]: "Ik ben Ronald Punt. Deze agenda begon omdat ik concerten en FC Twente-wedstrijden niet meer dubbel wilde plannen. De persoonlijke muziektips komen voort uit mijn eigen Music/iTunes-bibliotheek en uit tientallen festivalweekenden: Lowlands, Pinkpop, Torhout/Werchter, Waldrock en Dynamo Open Air."
+        - paragraph [ref=f30e32]: "Mijn band met de lokale muziekwereld gaat verder dan alleen bezoeken: ik ben al jarenlang vrijwilliger bij Metropool, BAM! Festival en Oogst. Deze agenda maak ik op persoonlijke titel."
+        - paragraph [ref=f30e33]: Het is geen dichtgetimmerd hokje. Een goede verrassing hoort juist bij een avond uit.
+    - region "De belangrijkste lijnen in mijn muzieksmaak" [ref=f30e34]:
+      - article [ref=f30e35]:
+        - paragraph [ref=f30e36]: 01 · DE KERN
+        - generic [ref=f30e37]:
+          - heading "Rock, alternative en art rock" [level=2] [ref=f30e38]
+          - paragraph [ref=f30e39]: The Beatles vormen een stevig beginpunt, met daaromheen onder anderen R.E.M., Nick Cave, Radiohead, Pixies, David Bowie, The Cure, Pink Floyd, U2, Florence + The Machine en Antimatter. Albums tellen, eigenzinnigheid telt en een lied mag best schuren.
+      - article [ref=f30e40]:
+        - paragraph [ref=f30e41]: 02 · DONKERE RAND
+        - generic [ref=f30e42]:
+          - heading "Post-punk, noise en intensiteit" [level=2] [ref=f30e43]
+          - paragraph [ref=f30e44]:
+            - text: "Joy Division, Editors, Björk, Claw Boys Claw en Paceshifters houden de rand scherp. Ook 074 — later De Nul — in Hengelo hoort bij die vorming: een legendarische alternatieve discotheek voor metal, punk en elektronica. De plek sloot na de laatste avond op 25 april 2026 vanwege woningbouw, maar blijft deel van de lokale muziekgeschiedenis."
+            - link "Lees het verhaal ↗" [ref=f30e45] [cursor=pointer]:
+              - /url: https://www.hengelosweekblad.nl/nieuws/nieuws/135743/einde-van-een-tijdperk-laatste-avond-bij-de-nul-op-25-april
+      - article [ref=f30e46]:
+        - paragraph [ref=f30e47]: 03 · THUIS OP LOWLANDS
+        - generic [ref=f30e48]:
+          - heading "Vierentwintig keer ontdekken" [level=2] [ref=f30e49]
+          - paragraph [ref=f30e50]: "Vanaf de tweede editie volgden 24 bezoeken aan Lowlands. Die geschiedenis verklaart de brede blik: alternative naast elektronica, hiphop naast wereldmuziek en ruimte voor een onbekende naam die live alles overtuigt."
+      - article [ref=f30e51]:
+        - paragraph [ref=f30e52]: 04 · HET ZWARE VELD
+        - generic [ref=f30e53]:
+          - heading "Pinkpop, Waldrock en Dynamo" [level=2] [ref=f30e54]
+          - paragraph [ref=f30e55]: "Twee keer Pinkpop en meerdere bezoeken aan Waldrock en Dynamo Open Air voegen metal, punk, hardcore en crossover toe. Een beroemd optreden maakt een band nog geen favoriet: Pearl Jam niet, Nirvana nadrukkelijk wel."
+      - article [ref=f30e56]:
+        - paragraph [ref=f30e57]: 05 · LIVE-DNA
+        - generic [ref=f30e58]:
+          - heading "Van Torhout naar Werchter" [level=2] [ref=f30e59]
+          - paragraph [ref=f30e60]: "De festivaljaren 1990–2019 voegen een Europese live-as toe: Foo Fighters, Metallica, Tool, Massive Attack, New Order, The Prodigy, Muse, Oasis en andere acts die een groot veld kunnen dragen zonder hun karakter te verliezen."
+      - article [ref=f30e61]:
+        - paragraph [ref=f30e62]: 06 · NEDERPOP MET RAND
+        - generic [ref=f30e63]:
+          - heading "Taal is geen genre" [level=2] [ref=f30e64]
+          - paragraph [ref=f30e65]: Doe Maar, Drukwerk, Het Goede Doel, Normaal, Fratsen en 074 bewijzen dat Nederlandstalig prima past wanneer er karakter, een goede band en een echt lied achter zit.
+      - article [ref=f30e66]:
+        - paragraph [ref=f30e67]: 07 · DE ZIJWEG
+        - generic [ref=f30e68]:
+          - heading "Latin, tropisch en reggae" [level=2] [ref=f30e69]
+          - paragraph [ref=f30e70]: "Maite Hontelé, Manu Chao, Buena Vista Social Club en Celia Cruz laten een tweede lijn horen: koper, groove, cumbia, salsa en warmte. Geen voetnoot bij de rocksmaak, maar een volwaardig deel ervan."
+      - article [ref=f30e71]:
+        - paragraph [ref=f30e72]: 08 · DE CROSSOVER
+        - generic [ref=f30e73]:
+          - heading "Balkanbeats en old-school hiphop" [level=2] [ref=f30e74]
+          - paragraph [ref=f30e75]: Shantel en Ooostblok brengen de Balkanenergie; Arrested Development, Public Enemy, Body Count, De La Soul en Delinquent Habits voegen old-school hiphop, Latin invloeden en rapmetal toe. Ritme, maatschappelijk geluid en een stevige live-uitstraling komen hier samen.
+      - article [ref=f30e76]:
+        - paragraph [ref=f30e77]: 09 · LIEVER NIET
+        - generic [ref=f30e78]:
+          - heading "Geen jazz, disco of Casio-volkspop" [level=2] [ref=f30e79]
+          - paragraph [ref=f30e80]: Jazz en disco slaan zelden aan. Hetzelfde geldt voor Nederlandstalige volkszangers, schlagers, levensliederen en feestmuziek die op een Casio-deuntje leunt. Dat is geen oordeel — alleen geen aanbeveling voor mij.
+    - generic [ref=f30e81]:
+      - paragraph [ref=f30e82]: HOE DE TIPS WERKEN
+      - heading "Herkenning, geen glazen bol" [level=2] [ref=f30e83]
+      - paragraph [ref=f30e84]:
+        - text: Een evenement krijgt het label
+        - strong [ref=f30e85]: ★ Voor jou
+        - text: wanneer de artiest rechtstreeks aansluit op deze voorkeuren of wanneer meerdere genrekenmerken samen een sterke match vormen. Alleen “rock” is niet genoeg, en een expliciete afkeer weegt zwaarder dan een genreovereenkomst. De selectie wordt tijdens het bouwen van de agenda gemaakt; persoonlijke luistergegevens worden niet naar podia of ticketaanbieders gestuurd.
+      - paragraph [ref=f30e86]: Een aanbeveling is inspiratie, geen oordeel. Controleer voor programma en tickets altijd de oorspronkelijke aanbieder.
+      - link "Bekijk aanbevelingen →" [ref=f30e87] [cursor=pointer]:
+        - /url: index.html?view=recommended
+  - contentinfo [ref=f30e88]:
+    - generic [ref=f30e89]:
+      - heading "Uit Vandaag Twente" [level=2] [ref=f30e90]
+      - paragraph [ref=f30e91]:
+        - text: Een persoonlijke agenda van
+        - link "Ronald Punt" [ref=f30e92] [cursor=pointer]:
+          - /url: https://www.ronaldpunt.nl
+        - text: voor muziek, evenementen en FC Twente.
+    - paragraph [ref=f30e93]:
+      - link "Agenda" [ref=f30e94] [cursor=pointer]:
+        - /url: index.html
+      - text: ·
+      - link "Disclaimer" [ref=f30e95] [cursor=pointer]:
+        - /url: disclaimer.html
+      - text: ·
+      - link "Privacy" [ref=f30e96] [cursor=pointer]:
+        - /url: privacy.html
+      - text: ·
+      - button "Privacy-instellingen" [ref=f30e97] [cursor=pointer]

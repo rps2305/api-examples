@@ -41,6 +41,14 @@
     document.addEventListener('keydown', event => { if (event.key === 'Escape') close(); });
   }
 
+  function markCurrentPage() {
+    const currentPath = location.pathname.replace(/\/$/, '/index.html');
+    document.querySelectorAll('a[href]').forEach(link => {
+      const target = new URL(link.href, location.href);
+      if (target.origin === location.origin && target.pathname === currentPath) link.setAttribute('aria-current', 'page');
+    });
+  }
+
   document.documentElement.classList.remove('no-js');
   let preference = '';
   try {
@@ -52,7 +60,7 @@
     ? preference
     : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   applyTheme(theme);
-  const setup = () => { setupToggle(); setupMenu(); };
+  const setup = () => { setupToggle(); setupMenu(); markCurrentPage(); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup, { once: true });
   else setup();
 })();
