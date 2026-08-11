@@ -1,0 +1,170 @@
+- generic [active] [ref=f2e1]:
+  - complementary [ref=f2e2]:
+    - paragraph [ref=f2e3]:
+      - strong [ref=f2e4]: Mag deze site gebruik meten?
+      - text: Matomo wordt pas na toestemming geladen en plaatst dan analytische cookies.
+      - link "Lees hoe dit werkt" [ref=f2e5] [cursor=pointer]:
+        - /url: /disclaimer.html#privacy
+      - text: .
+    - generic [ref=f2e6]:
+      - button "Niet toestaan" [ref=f2e7] [cursor=pointer]
+      - button "Toestaan" [ref=f2e8] [cursor=pointer]
+  - link "Ga naar inhoud" [ref=f2e9] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f2e10]:
+    - generic [ref=f2e11]:
+      - paragraph [ref=f2e12]: UIT VANDAAG · TECHNIEK
+      - heading "Een agenda die bleef groeien" [level=1] [ref=f2e13]
+    - generic [ref=f2e14]:
+      - navigation "Hoofdnavigatie" [ref=f2e15]:
+        - button "Menu" [ref=f2e16] [cursor=pointer]
+      - button "Gebruik lichte modus" [pressed] [ref=f2e22] [cursor=pointer]:
+        - generic [ref=f2e23]: ◐
+        - generic [ref=f2e24]: Licht
+      - img "Uit Vandaag Twente-logo" [ref=f2e25]
+  - main [ref=f2e26]:
+    - region [ref=f2e27]:
+      - generic [ref=f2e28]:
+        - paragraph [ref=f2e29]: VAN PERSOONLIJKE VRAAG NAAR DAGELIJKSE TOOL
+        - heading "Niet dubbel boeken, wel alles zien." [level=2] [ref=f2e30]
+        - paragraph [ref=f2e31]: "Uit Vandaag begon als een praktische oplossing voor een herkenbaar probleem: concerten, lokale evenementen en FC Twente-wedstrijden stonden verspreid over verschillende agenda’s. De eerste versie bracht die informatie samen voor Ronald Punt. Daarna kwam er bijna dagelijks iets bij, telkens vanuit een concrete vraag die tijdens het gebruik ontstond."
+      - generic [ref=f2e32]:
+        - generic [ref=f2e33]:
+          - term [ref=f2e34]: Start
+          - definition [ref=f2e35]: 31 juli 2026, als persoonlijke Twentse uitagenda.
+        - generic [ref=f2e36]:
+          - term [ref=f2e37]: Ritme
+          - definition [ref=f2e38]: Automatische vernieuwing iedere zes uur, plus een wekelijkse e-maildigest.
+        - generic [ref=f2e39]:
+          - term [ref=f2e40]: Bereik
+          - definition [ref=f2e41]: Concerten, cultuur, lokale evenementen, feestdagen en FC Twente in één tijdlijn.
+        - generic [ref=f2e42]:
+          - term [ref=f2e43]: Principe
+          - definition [ref=f2e44]: Bronnen blijven leidend. Deze app helpt kiezen en plannen, niet gokken.
+    - region [ref=f2e45]:
+      - paragraph [ref=f2e46]: KORTE GESCHIEDENIS
+      - heading "Elke gebruiksdag leverde een volgend detail op" [level=2] [ref=f2e47]
+      - paragraph [ref=f2e48]: De eerste bouw bracht de evenementenbronnen, de agendaweergave en de iCalendar-download samen. Kort daarna kwamen betere filtering, een suggestieformulier, privacy-instellingen en een progressieve agenda die niet alles in één keer hoeft te laden.
+      - paragraph [ref=f2e49]: "Daarna werd de app steeds persoonlijker én robuuster: muzieksmaaktips uit een lokale bibliotheek, ticketlinks, een mobiele scrollervaring, maand- en jaarselectie, een Nederlandstalige e-maildigest en duidelijke podiumkleuren voor Metropool, De Cactus, Oogst en FC Twente."
+      - paragraph [ref=f2e50]:
+        - text: "Op 9 augustus 2026 kwam een praktische gebruikslaag erbij: deelbare filters in de URL, duidelijke agenda-acties voor één evenement en voor de volledige feed, een privacyverklaring, een pauzeknop voor de locatiecarrousel en een skiplink. Ook zijn de datums en tijden expliciet op"
+        - code [ref=f2e51]: Europe/Amsterdam
+        - text: afgestemd; importeurs bewaren echte UTC-tijden en behandelen bron-tijden niet stilzwijgend als UTC.
+      - heading "De technische opbouw" [level=2] [ref=f2e52]
+      - list [ref=f2e53]:
+        - listitem [ref=f2e54]:
+          - strong [ref=f2e55]: Python 3.12
+          - text: verzamelt, normaliseert en dedupliceert de evenementgegevens, bouwt de iCalendar-feed en verstuurt de digest.
+        - listitem [ref=f2e56]:
+          - strong [ref=f2e57]: Standaard HTML, CSS en JavaScript
+          - text: vormen de snelle, frameworkvrije interface. De agenda is vooraf gerenderd voor vindbaarheid en wordt daarna interactief gefilterd in de browser; zoekopdrachten en filters blijven deelbaar via de URL.
+        - listitem [ref=f2e58]:
+          - strong [ref=f2e59]: Bronspecifieke scrapers
+          - text: lezen openbare informatie van Metropool, De Cactus, Oogst, Uit in Hengelo, officiële feestdagen en FC Twente. Onbetrouwbare of tijdelijk onbereikbare bronnen breken de laatst bekende agenda niet.
+        - listitem [ref=f2e60]:
+          - strong [ref=f2e61]: JSON en iCalendar
+          - text: "zijn de twee uitgangen: de browser gebruikt de ingebedde JSON-feed, agenda-apps kunnen zich abonneren via"
+          - link "events.ics" [ref=f2e62] [cursor=pointer]:
+            - /url: events.ics
+          - text: . De feed wordt als
+          - code [ref=f2e63]: text/calendar; charset=utf-8
+          - text: geleverd, met ETag en korte conditionele cache.
+        - listitem [ref=f2e64]:
+          - strong [ref=f2e65]: Docker Compose
+          - text: verpakt de app. Nginx behandelt publiek HTTPS-verkeer; de Python-service luistert alleen lokaal op de host.
+        - listitem [ref=f2e66]:
+          - strong [ref=f2e67]: Cache en compressie
+          - text: "houden de site licht: versiegebonden assets zijn langdurig immutable gecachet, HTML wordt kort gecachet met revalidatie, en de publieke proxy levert Brotli waar de browser dat ondersteunt."
+        - listitem [ref=f2e68]:
+          - strong [ref=f2e69]: SMTP via Gmail
+          - text: verzorgt de digest. Het wachtwoord komt uit een omgevingsvariabele in productie of uit de macOS-sleutelhanger lokaal, nooit uit de broncode.
+      - generic "Gebruikte techniek" [ref=f2e70]:
+        - link "Docker" [ref=f2e71] [cursor=pointer]:
+          - /url: https://www.docker.com/
+        - link "Oracle Cloud" [ref=f2e74] [cursor=pointer]:
+          - /url: https://www.oracle.com/cloud/
+          - generic [ref=f2e75]: ORCL
+        - link "OpenAI Codex" [ref=f2e77] [cursor=pointer]:
+          - /url: https://openai.com/codex/
+          - generic [ref=f2e78]: ◌
+        - link "Python" [ref=f2e80] [cursor=pointer]:
+          - /url: https://www.python.org/
+      - heading "Veiligheid en betrouwbaarheid" [level=2] [ref=f2e83]
+      - paragraph [ref=f2e84]: Externe links worden beperkt tot HTTP(S), gescrapete tekst wordt als tekst gerenderd en de server stuurt onder meer CSP-, HSTS-, anti-framing- en no-sniff-headers. Het suggestieformulier valideert invoer, origin, tokens en aantallen. De verzendwebhook vereist een Bearer-token. De container draait als een eigen, niet-rootgebruiker.
+      - paragraph [ref=f2e85]: Een kleine persoonlijke app hoeft niet zwaar te voelen. Wel moet hij veilig genoeg zijn om elke dag zonder gedoe zijn werk te doen.
+      - heading "Controle op 9 augustus 2026" [level=2] [ref=f2e86]
+      - paragraph [ref=f2e87]: "Na de productie-uitrol is de publieke homepage getest met Lighthouse op een mobiel profiel: performance 99, toegankelijkheid 100, best practices 100 en SEO 100. SEOmator beoordeelde de technische basis en core SEO beide met 100; de totaalscore was 97 door optimalisatiekansen rond de grote vooraf gerenderde agenda, DOM-omvang en LCP-hints. De pagina is daarnaast geopend in Chrome op een Pixel 9-emulator met Android API 35."
+      - heading "Hulp bij het bouwen" [level=2] [ref=f2e88]
+      - paragraph [ref=f2e89]:
+        - text: Deze app is gebouwd en doorontwikkeld door Ronald Punt, met hulp van
+        - strong [ref=f2e90]: OpenAI Codex 5.6
+        - text: . Voor de interfaceontwikkeling is ook gebruikgemaakt van de open-source
+        - link "Impeccable-designguidance van Paul Bakus ↗" [ref=f2e91] [cursor=pointer]:
+          - /url: https://github.com/pbakaus/impeccable
+        - text: . De keuzes over inhoud, functionaliteit en publicatie blijven bij Ronald.
+      - heading "Dit document blijft meebewegen" [level=2] [ref=f2e92]
+      - paragraph [ref=f2e93]: Bij elke wezenlijke wijziging aan functies, architectuur, databronnen, e-mail, deployment of beveiliging wordt deze pagina bijgewerkt. Zo blijft niet alleen de agenda actueel, maar ook het verhaal achter de techniek.
+    - region [ref=f2e94]:
+      - paragraph [ref=f2e95]: VERSIEGESCHIEDENIS
+      - heading "Wat er veranderde" [level=2] [ref=f2e96]
+      - list [ref=f2e97]:
+        - listitem [ref=f2e98]:
+          - time [ref=f2e99]: 9 augustus 2026
+          - generic [ref=f2e100]:
+            - heading "Betere planning, toegankelijkheid en prestaties" [level=3] [ref=f2e101]
+            - paragraph [ref=f2e102]: Filters zijn deelbaar via de URL, de volledige iCalendar-feed kreeg duidelijke download- en abonnementsacties, en tijden worden consequent in de tijdzone van Amsterdam getoond. Er kwamen een privacyverklaring, skiplink en een pauzeknop voor de locatiecarrousel. Assets en HTML kregen passende cacheheaders en ETags; de ICS-feed gebruikt nu het juiste kalender-contenttype. De publieke site is gecontroleerd met Lighthouse, SEOmator en Chrome op Android.
+        - listitem [ref=f2e103]:
+          - time [ref=f2e104]: 7 augustus 2026
+          - generic [ref=f2e105]:
+            - heading "Muzieksmaak, leesbaarheid en navigatie" [level=3] [ref=f2e106]
+            - paragraph [ref=f2e107]: De muzieksmaak is aangevuld met Live, Rage Against the Machine, Moloko, Faithless en klassieke rockacts. 074 is gecorrigeerd naar de voormalige Hengelose discotheek, niet een band. Actie- en deelknoppen kregen betere contrasten op gekleurde agenda-items. Ook is een toegankelijke hoofdmenu-knop toegevoegd. Duitse schlagers zijn als expliciete uitzondering toegevoegd vanwege het vierde Oktoberfest-bezoek in München. De overbodige teruglink is verwijderd nu het hoofdmenu overal beschikbaar is.
+        - listitem [ref=f2e108]:
+          - time [ref=f2e109]: 6 augustus 2026
+          - generic [ref=f2e110]:
+            - heading "Persoonlijke context en vindbaarheid" [level=3] [ref=f2e111]
+            - paragraph [ref=f2e112]: De pagina Muzieksmaak kreeg een duidelijke toelichting op de concerttips. De agenda werd vooraf gerenderd voor betere vindbaarheid, terwijl filters en persoonlijke aanbevelingen interactief bleven.
+        - listitem [ref=f2e113]:
+          - time [ref=f2e114]: 4 augustus 2026
+          - generic [ref=f2e115]:
+            - heading "Betere service en robuustere verwerking" [level=3] [ref=f2e116]
+            - paragraph [ref=f2e117]: De wekelijkse digest, suggesties en foutafhandeling zijn aangescherpt. De agenda behoudt bij tijdelijke bronproblemen de laatst bekende, bruikbare gegevens.
+        - listitem [ref=f2e118]:
+          - time [ref=f2e119]: 2 augustus 2026
+          - generic [ref=f2e120]:
+            - heading "Privacy en vertrouwen" [level=3] [ref=f2e121]
+            - paragraph [ref=f2e122]: Privacy-instellingen, toestemming voor statistieken, disclaimer, beveiligingsinformatie en toegankelijke hulpteksten zijn toegevoegd. Daarmee werd de persoonlijke agenda ook transparanter in gebruik.
+        - listitem [ref=f2e123]:
+          - time [ref=f2e124]: 1 augustus 2026
+          - generic [ref=f2e125]:
+            - heading "Plannen en personaliseren" [level=3] [ref=f2e126]
+            - paragraph [ref=f2e127]: Zoeken, datum- en maandfilters, iCalendar-downloads, thema-voorkeuren en de mobiele agendaweergave maakten de eerste versie praktischer voor dagelijks gebruik.
+        - listitem [ref=f2e128]:
+          - time [ref=f2e129]: 31 juli 2026
+          - generic [ref=f2e130]:
+            - heading "De eerste agenda" [level=3] [ref=f2e131]
+            - paragraph [ref=f2e132]: Uit Vandaag Twente ging van start als persoonlijke agenda voor concerten, lokale evenementen, feestdagen en FC Twente. Bronnen werden samengebracht in één tijdlijn, met een iCalendar-feed om afspraken niet dubbel te plannen.
+  - contentinfo [ref=f2e133]:
+    - generic [ref=f2e134]:
+      - heading "Uit Vandaag Twente" [level=2] [ref=f2e135]
+      - paragraph [ref=f2e136]:
+        - text: Een persoonlijke agenda van
+        - link "Ronald Punt" [ref=f2e137] [cursor=pointer]:
+          - /url: https://www.ronaldpunt.nl
+        - text: voor muziek, evenementen en FC Twente.
+    - paragraph [ref=f2e138]:
+      - link "Agenda" [ref=f2e139] [cursor=pointer]:
+        - /url: index.html
+      - text: ·
+      - link "Muzieksmaak" [ref=f2e140] [cursor=pointer]:
+        - /url: about.html
+      - text: ·
+      - link "Techniek" [ref=f2e141] [cursor=pointer]:
+        - /url: technical.html
+      - text: ·
+      - link "Disclaimer" [ref=f2e142] [cursor=pointer]:
+        - /url: disclaimer.html
+      - text: ·
+      - link "Privacy" [ref=f2e143] [cursor=pointer]:
+        - /url: privacy.html
+      - text: ·
+      - button "Privacy-instellingen" [ref=f2e144] [cursor=pointer]

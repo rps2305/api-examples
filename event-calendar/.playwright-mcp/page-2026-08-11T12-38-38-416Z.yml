@@ -1,0 +1,118 @@
+- generic [active] [ref=f3e1]:
+  - complementary [ref=f3e2]:
+    - paragraph [ref=f3e3]:
+      - strong [ref=f3e4]: Mag deze site gebruik meten?
+      - text: Matomo wordt pas na toestemming geladen en plaatst dan analytische cookies.
+      - link "Lees hoe dit werkt" [ref=f3e5] [cursor=pointer]:
+        - /url: /disclaimer.html#privacy
+      - text: .
+    - generic [ref=f3e6]:
+      - button "Niet toestaan" [ref=f3e7] [cursor=pointer]
+      - button "Toestaan" [ref=f3e8] [cursor=pointer]
+  - link "Ga naar inhoud" [ref=f3e9] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f3e10]:
+    - generic [ref=f3e11]:
+      - paragraph [ref=f3e12]: UIT VANDAAG · TWENTE
+      - heading "Disclaimer" [level=1] [ref=f3e13]
+    - generic [ref=f3e14]:
+      - navigation "Hoofdnavigatie" [ref=f3e15]:
+        - button "Menu" [ref=f3e16] [cursor=pointer]
+      - button "Gebruik lichte modus" [pressed] [ref=f3e22] [cursor=pointer]:
+        - generic [ref=f3e23]: ◐
+        - generic [ref=f3e24]: Licht
+      - img "Uit Vandaag Twente-logo" [ref=f3e25]
+  - main [ref=f3e26]:
+    - paragraph [ref=f3e27]: Uit Vandaag Twente is een persoonlijke, onafhankelijke planningsagenda. Ronald Punt gebruikt hem om favoriete concerten, evenementen en FC Twente-wedstrijden naast elkaar te zien — en zo niet per ongeluk twee afspraken op hetzelfde moment te maken. Vrienden en kennissen mogen de agenda gebruiken als zij hem handig vinden.
+    - heading "Redactionele scope" [level=2] [ref=f3e28]
+    - paragraph [ref=f3e29]: De selectie richt zich op Ronalds favoriete plekken in Hengelo, Almelo en Enschede en op wedstrijden van FC Twente. Het is bewust geen compleet overzicht van alle theaters, bioscopen, festivals en podia in Twente.
+    - paragraph [ref=f3e30]:
+      - text: Evenementen van
+      - link "bamfestival.nl" [ref=f3e31] [cursor=pointer]:
+        - /url: https://bamfestival.nl/
+      - text: zijn nog niet opgenomen en worden later toegevoegd.
+    - paragraph [ref=f3e32]:
+      - text: Metropool, De Cactus, Oogst, FC Twente en Uit in Hengelo worden bij het starten en daarna iedere zes uur opgehaald. Evenementen met dezelfde genormaliseerde naam en aanvang worden samengevoegd; een bekende locatie helpt om dezelfde gebeurtenis ook bij kleine tijdverschillen te herkennen.
+      - generic [ref=f3e33]: "Laatste succesvolle verwerking van alle bronnen: dinsdag 11 augustus 2026 om 14:38."
+    - heading "Bronnen en tickets" [level=2] [ref=f3e34]
+    - paragraph [ref=f3e35]: De agenda verzamelt publiek beschikbare informatie van onderstaande organisaties. Controleer voor tijden, beschikbaarheid, toegang en tickets altijd de oorspronkelijke aanbieder.
+    - list [ref=f3e36]:
+      - listitem [ref=f3e37]:
+        - link [ref=f3e38] [cursor=pointer]:
+          - /url: https://metropool.nl
+          - img "Metropool" [ref=f3e39]
+          - text: Metropool
+      - listitem [ref=f3e40]:
+        - link [ref=f3e41] [cursor=pointer]:
+          - /url: https://decactus.nl
+          - img "De Cactus" [ref=f3e42]
+          - text: De Cactus
+      - listitem [ref=f3e43]:
+        - link [ref=f3e44] [cursor=pointer]:
+          - /url: https://fctwente.nl/wedstrijden/eerste-selectie
+          - img "FC Twente" [ref=f3e45]
+          - text: FC Twente
+      - listitem [ref=f3e46]:
+        - link [ref=f3e47] [cursor=pointer]:
+          - /url: https://oogst.eu/
+          - img "Broedplaats Oogst" [ref=f3e48]
+          - text: Oogst
+      - listitem [ref=f3e49]:
+        - link [ref=f3e50] [cursor=pointer]:
+          - /url: https://uitinhengelo.nl/agenda
+          - img "Uit in Hengelo" [ref=f3e51]
+          - text: Uit in Hengelo
+      - listitem [ref=f3e52]:
+        - link "Rijksoverheid — officiële feestdagen" [ref=f3e53] [cursor=pointer]:
+          - /url: https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/officiele-feestdagen
+          - generic [ref=f3e54]: 🇳🇱
+          - text: Rijksoverheid — officiële feestdagen
+    - heading "Webscraping en juistheid" [level=2] [ref=f3e55]
+    - paragraph [ref=f3e56]: Deze website gebruikt webscraping om openbare agenda-informatie te verzamelen. Gegevens kunnen onvolledig, vertraagd of gewijzigd zijn. Uit Vandaag Twente geeft geen garantie op de juistheid, volledigheid of beschikbaarheid van de informatie en is niet verantwoordelijk voor wijzigingen, afgelaste evenementen, ticketverkoop of externe websites.
+    - heading "Privacy en Matomo" [level=2] [ref=f3e57]
+    - paragraph [ref=f3e58]:
+      - text: Uit Vandaag Twente gebruikt de zelf beheerde Matomo-installatie op
+      - link "matomo.puntuale.nl" [ref=f3e59] [cursor=pointer]:
+        - /url: https://matomo.puntuale.nl/
+      - text: (site-ID 15) om te begrijpen welke pagina’s en links worden gebruikt. Matomo wordt pas geladen nadat een bezoeker daar uitdrukkelijk toestemming voor geeft. Zonder toestemming gaan er geen analyticsgegevens naar Matomo en worden er geen analytische cookies geplaatst.
+    - paragraph [ref=f3e60]: Na toestemming verwerkt Matomo onder meer de bezochte pagina, het tijdstip, de verwijzende pagina en technische browser- en apparaatgegevens. De server ontvangt daarbij ook het IP-adres dat nodig is om de verbinding af te handelen. Er worden geen advertentienetwerken, gebruikers-ID’s, heatmaps of sessie-opnamen gebruikt.
+    - paragraph [ref=f3e61]:
+      - text: Matomo kan first-party cookies plaatsen, waaronder
+      - code [ref=f3e62]: _pk_id
+      - text: voor het herkennen van een terugkerend bezoek (standaard maximaal 13 maanden),
+      - code [ref=f3e63]: _pk_ses
+      - text: voor de huidige sessie (standaard 30 minuten) en
+      - code [ref=f3e64]: _pk_ref
+      - text: voor herkomstinformatie (standaard maximaal 6 maanden). De keuze zelf wordt als noodzakelijke privacyvoorkeur in de lokale browseropslag bewaard.
+    - paragraph [ref=f3e65]:
+      - text: Toestemming is vrijwillig en kan altijd worden gewijzigd via
+      - button "Privacy-instellingen" [ref=f3e66] [cursor=pointer]
+      - text: . Bij intrekken worden bekende Matomo-cookies verwijderd en wordt Matomo bij volgende bezoeken niet geladen. Gebruik voor vragen of een privacyverzoek de
+      - link "ideeënbus" [ref=f3e67] [cursor=pointer]:
+        - /url: index.html#suggestion-title
+      - text: .
+    - heading "AI" [level=2] [ref=f3e68]
+    - paragraph [ref=f3e69]: Deze website is ontwikkeld met hulp van AI, waaronder OpenAI Codex. AI is gebruikt als hulpmiddel bij ontwerp en ontwikkeling; de agenda-informatie zelf komt uit de hierboven genoemde openbare bronnen.
+    - heading "Persoonlijk en onafhankelijk" [level=2] [ref=f3e70]
+    - paragraph [ref=f3e71]: "Ronald Punt is al jarenlang vrijwilliger bij Metropool, BAM! Festival en Oogst. Hij maakt deze agenda op persoonlijke titel: de website is geen officiële publicatie van, wordt niet gesponsord door en spreekt niet namens deze of andere genoemde organisaties. Merknamen en logo’s blijven eigendom van hun respectieve rechthebbenden en worden uitsluitend gebruikt ter bronvermelding."
+    - heading "Gebruik op eigen risico" [level=2] [ref=f3e72]
+    - paragraph [ref=f3e73]: Gebruik deze agenda als inspiratie en controleer altijd de originele evenementpagina. Door de website te gebruiken, doe je dat op eigen risico.
+  - contentinfo [ref=f3e74]:
+    - generic [ref=f3e75]:
+      - heading "Uit Vandaag Twente" [level=2] [ref=f3e76]
+      - paragraph [ref=f3e77]:
+        - text: Een persoonlijk initiatief van
+        - link "Ronald Punt" [ref=f3e78] [cursor=pointer]:
+          - /url: https://www.ronaldpunt.nl
+        - text: . Deze agenda gebruikt webscraping; gebruik op eigen risico.
+    - paragraph [ref=f3e79]:
+      - link "Agenda" [ref=f3e80] [cursor=pointer]:
+        - /url: index.html
+      - text: ·
+      - link "Disclaimer" [ref=f3e81] [cursor=pointer]:
+        - /url: disclaimer.html
+      - text: ·
+      - link "Privacy" [ref=f3e82] [cursor=pointer]:
+        - /url: privacy.html
+      - text: ·
+      - button "Privacy-instellingen" [ref=f3e83] [cursor=pointer]

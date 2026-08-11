@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'uit-vandaag-';
-const STATIC_CACHE = `${CACHE_PREFIX}static-20260811-9`;
-const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-20260811-9`;
+const STATIC_CACHE = `${CACHE_PREFIX}static-20260811-10`;
+const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-20260811-10`;
 
 const APP_SHELL = [
   '/',
@@ -9,7 +9,7 @@ const APP_SHELL = [
   '/disclaimer.html',
   '/privacy.html',
   '/styles.css?v=20260811-header-1',
-  '/app.js?v=20260811-feed-2',
+  '/app.js?v=20260811-feed-3',
   '/back-to-top.js?v=20260802-2',
   '/analytics-consent.js?v=20260802-2',
   '/theme.js?v=20260811-navigation-1',

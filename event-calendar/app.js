@@ -599,7 +599,7 @@ if (suggestionForm) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20260811-9', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20260811-10', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });
