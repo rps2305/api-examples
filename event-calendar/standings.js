@@ -40,7 +40,7 @@
         position.scope = 'row';
         position.textContent = stat(entry, 'rank');
         tr.append(position);
-        for (const value of [entry.team?.displayName ?? '', stat(entry, 'gamesPlayed'), stat(entry, 'wins'), stat(entry, 'ties'), stat(entry, 'losses'), stat(entry, 'points')]) {
+        for (const value of [entry.team?.displayName ?? '', stat(entry, 'gamesPlayed'), stat(entry, 'wins'), stat(entry, 'ties'), stat(entry, 'losses'), stat(entry, 'points'), stat(entry, 'pointsFor'), stat(entry, 'pointsAgainst')]) {
           const cell = document.createElement('td');
           cell.textContent = value;
           tr.append(cell);

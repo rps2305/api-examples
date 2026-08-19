@@ -14,7 +14,7 @@ const APP_SHELL = [
   '/analytics-consent.js?v=20260802-2',
   '/theme.js?v=20260811-navigation-1',
   '/weather.js?v=20260819-1',
-  '/standings.js?v=20260819-4',
+  '/standings.js?v=20260819-5',
   '/loading-watchdog.js?v=20260801-1',
   '/site.webmanifest',
   '/events.json',
