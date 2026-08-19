@@ -1,7 +1,7 @@
 (function () {
   const panel = document.querySelector('#standings-panel');
-  const container = document.querySelector('#standings');
-  if (!panel || !container) return;
+  const containers = [document.querySelector('#standings-a'), document.querySelector('#standings-b')];
+  if (!panel || containers.some(container => !container)) return;
 
   const stat = (entry, name) => {
     const item = entry.stats?.find(candidate => candidate.name === name);
@@ -29,7 +29,7 @@
         if (tableHref) fullTableLink.href = tableHref;
       }
 
-      const rows = entries.map(entry => {
+      const buildRow = entry => {
         const isTwente = entry.team?.displayName === 'FC Twente' || String(entry.team?.id) === '152';
         const tr = document.createElement('tr');
         if (isTwente) {
@@ -46,8 +46,11 @@
           tr.append(cell);
         }
         return tr;
-      });
-      container.replaceChildren(...rows);
+      };
+
+      const halfway = Math.ceil(entries.length / 2);
+      containers[0].replaceChildren(...entries.slice(0, halfway).map(buildRow));
+      containers[1].replaceChildren(...entries.slice(halfway).map(buildRow));
       panel.hidden = false;
     } catch {
       panel.hidden = true;

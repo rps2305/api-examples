@@ -382,7 +382,8 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .standings-head .eyebrow { margin: 0; }
 .standings-head h2 { margin: var(--space-1) 0 0; font: 700 clamp(1.8rem, 4vw, 2.8rem) / 0.95 var(--font-display); text-transform: uppercase; }
 .standings-head a { align-self: start; color: var(--color-accent-readable); font: 500 var(--text-sm) / var(--leading-ui) var(--font-ui); text-decoration-thickness: 1px; text-underline-offset: 4px; }
-.standings-table-wrap { margin-top: var(--space-4); overflow-x: auto; }
+.standings-table-wrap { margin-top: var(--space-4); }
+.standings-cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); align-items: start; }
 .standings-table { width: 100%; border-collapse: collapse; font: var(--text-sm) / var(--leading-ui) var(--font-ui); }
 .standings-table th,
 .standings-table td { padding: 0.5rem 0.6rem; text-align: right; white-space: nowrap; border-block-end: 1px solid var(--color-border); }
@@ -396,6 +397,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .standings-current td { font-weight: 700; color: var(--color-ink); }
 @media (max-width: 700px) {
   .standings-head { grid-template-columns: 1fr; align-items: start; }
+  .standings-cols { grid-template-columns: 1fr; gap: var(--space-3); }
   .standings-table th,
   .standings-table td { padding: 0.45rem 0.5rem; }
 }
