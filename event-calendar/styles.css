@@ -358,33 +358,51 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .venue-window {
   position: relative;
   align-self: center;
-  overflow: hidden;
-  isolation: isolate;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--color-ink-inverse) 40%, transparent) transparent;
 }
-.venue-window::before,
-.venue-window::after {
-  position: absolute;
-  z-index: 2;
-  inset-block: 0;
-  width: 9%;
-  content: "";
-  pointer-events: none;
-}
-.venue-window::before { left: 0; background: linear-gradient(90deg, var(--color-masthead), transparent); }
-.venue-window::after { right: 0; background: linear-gradient(270deg, var(--color-masthead), transparent); }
+.venue-window::-webkit-scrollbar { height: 8px; }
+.venue-window::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--color-ink-inverse) 40%, transparent); border-radius: 999px; }
 .venue-track {
   display: flex;
   width: max-content;
   gap: var(--space-3);
-  animation: venue-scroll 36s linear infinite;
-  will-change: transform;
 }
-.venue-window:focus-within .venue-track { animation-play-state: paused; }
-@media (hover: hover) { .venue-window:hover .venue-track { animation-play-state: paused; } }
-.venue-window[data-paused="true"] .venue-track { animation-play-state: paused; }
-.venue-pause { position: absolute; z-index: 3; right: var(--space-2); bottom: var(--space-2); border-color: var(--color-ink-inverse); background: var(--color-masthead); color: var(--color-ink-inverse); }
-.venue-pause:hover { background: var(--color-ink-inverse); color: var(--color-masthead); }
 .masthead :focus-visible, .venue-stream :focus-visible { outline-color: var(--color-accent-warm); }
+
+.standings-panel {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.52fr) minmax(0, 1.48fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+  padding: clamp(2rem, 5vw, 4rem) var(--page-gutter);
+  border-block: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+.standings-panel[hidden] { display: none; }
+.standings-head { display: grid; gap: var(--space-1); }
+.standings-head h2 { margin: 0; font: 700 clamp(1.8rem, 4vw, 3rem) / 0.9 var(--font-display); text-transform: uppercase; }
+.standings-head a { justify-self: start; margin-top: var(--space-2); color: var(--color-accent-readable); font: 500 var(--text-sm) / var(--leading-ui) var(--font-ui); text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.standings-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-2);
+  margin: 0;
+}
+.standings-row div {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+}
+.standings-row dt { color: var(--color-muted); font-size: var(--text-xs); letter-spacing: 0.06em; text-transform: uppercase; }
+.standings-row dd { margin: 0; font: 700 1.6rem / 1 var(--font-display); }
+@media (max-width: 700px) {
+  .standings-panel { grid-template-columns: 1fr; gap: var(--space-4); }
+  .standings-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 .venue-card { position: relative; flex: 0 0 clamp(320px, 44vw, 620px); margin: 0; overflow: hidden; aspect-ratio: 8 / 5; background: #18202d; }
 .venue-card img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease-standard); }
 .venue-card a:focus-visible img,
@@ -400,10 +418,6 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
   pointer-events: none;
 }
 .venue-card a { display: block; width: 100%; height: 100%; color: inherit; }
-
-@keyframes venue-scroll {
-  to { transform: translate3d(calc(-50% - 0.5rem), 0, 0); }
-}
 
 .status { margin: 1.3rem 0; color: var(--color-muted); font-size: var(--text-sm); }
 .status[data-state="error"] { color: var(--color-accent-readable); }
@@ -496,7 +510,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.fc-twente { background: var(--color-surface-sport); }
 .event.fc-twente.fc-home { background: var(--color-fc-twente-home); color: var(--color-ink-inverse); }
 .event.fc-twente.fc-home .event-time, .event.fc-twente.fc-home .event-links .tickets { color: var(--color-fc-home-muted); }
-.event.fc-twente.fc-home .meta, .event.fc-twente.fc-home .event-links a { color: var(--color-ink-inverse); }
+.event.fc-twente.fc-home .meta, .event.fc-twente.fc-home .event-links a, .event.fc-twente.fc-home .event-favorite-button { color: var(--color-ink-inverse); }
 .event:hover { transform: translateY(-5px); }
 .event-time, .venue, .meta, .event-links { margin: 0; }
 .event-time { color: var(--color-accent-readable); font-weight: 500; }
@@ -551,10 +565,31 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 }
 .event-share-button:hover { background: transparent; color: var(--color-accent-readable); }
 
+.event-favorite-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-block-size: 44px;
+  padding: 0.2rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-ink);
+  font: inherit;
+  font-size: var(--text-sm);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-transform: none;
+}
+.event-favorite-button svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.event-favorite-button:hover { background: transparent; color: var(--color-accent-readable); }
+.event-favorite-button[aria-pressed="true"] { color: var(--color-accent-warm); text-decoration-thickness: 2px; }
+.event-favorite-button[aria-pressed="true"] svg { fill: var(--color-accent-warm); stroke: var(--color-accent-warm); }
+
 .event-calendar-button { min-block-size: 44px; min-inline-size: 44px; margin-left: auto; padding: 0.45rem 0.55rem; border-color: var(--color-border); font-size: var(--text-xs); line-height: 1; white-space: nowrap; }
 .event-links.has-ticket .event-calendar-button { margin-left: 0; }
 .event.fc-home .event-calendar-button { border-color: color-mix(in srgb, var(--color-ink-inverse) 55%, transparent); color: var(--color-ink-inverse); }
-.event.fc-twente.fc-home .event-share-button { color: var(--color-ink-inverse); }
+.event.fc-twente.fc-home .event-share-button, .event.fc-twente.fc-home .event-favorite-button { color: var(--color-ink-inverse); }
 
 .event-links .tickets {
   padding: 0.35rem 0.55rem;
@@ -573,6 +608,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.metropool .venue,
 .event.metropool .event-links a,
 .event.metropool .event-share-button,
+.event.metropool .event-favorite-button,
 .event.metropool .event-calendar-button {
   color: var(--color-metropool-accent);
 }
@@ -589,6 +625,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.de-cactus .meta,
 .event.de-cactus .event-links a,
 .event.de-cactus .event-share-button,
+.event.de-cactus .event-favorite-button,
 .event.de-cactus .event-calendar-button {
   color: var(--color-masthead);
 }
@@ -605,6 +642,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.oogst .meta,
 .event.oogst .event-links a,
 .event.oogst .event-share-button,
+.event.oogst .event-favorite-button,
 .event.oogst .event-calendar-button {
   color: var(--color-oogst-ink);
 }
@@ -620,6 +658,7 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.hengelo .venue,
 .event.hengelo .event-links a,
 .event.hengelo .event-share-button,
+.event.hengelo .event-favorite-button,
 .event.hengelo .event-calendar-button {
   color: var(--color-hengelo-accent);
 }
@@ -633,13 +672,14 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event.feestdagen .meta,
 .event.feestdagen .event-links a,
 .event.feestdagen .event-share-button,
+.event.feestdagen .event-favorite-button,
 .event.feestdagen .event-calendar-button { color: var(--color-holiday-ink); }
 .event.feestdagen .event-calendar-button { border-color: var(--color-holiday-ink); }
 .event.persoonlijk { background: var(--color-personal); color: var(--color-personal-ink); }
-.event.persoonlijk .event-time, .event.persoonlijk .venue, .event.persoonlijk .meta, .event.persoonlijk .event-links a, .event.persoonlijk .event-share-button, .event.persoonlijk .event-calendar-button { color: var(--color-personal-ink); }
+.event.persoonlijk .event-time, .event.persoonlijk .venue, .event.persoonlijk .meta, .event.persoonlijk .event-links a, .event.persoonlijk .event-share-button, .event.persoonlijk .event-favorite-button, .event.persoonlijk .event-calendar-button { color: var(--color-personal-ink); }
 .event.persoonlijk .event-calendar-button { border-color: var(--color-personal-ink); }
 .event.bijzonder { background: var(--color-special); color: var(--color-special-ink); }
-.event.bijzonder .event-time, .event.bijzonder .venue, .event.bijzonder .meta, .event.bijzonder .event-links a, .event.bijzonder .event-share-button, .event.bijzonder .event-calendar-button { color: var(--color-special-ink); }
+.event.bijzonder .event-time, .event.bijzonder .venue, .event.bijzonder .meta, .event.bijzonder .event-links a, .event.bijzonder .event-share-button, .event.bijzonder .event-favorite-button, .event.bijzonder .event-calendar-button { color: var(--color-special-ink); }
 .event.bijzonder .event-calendar-button { border-color: var(--color-special-ink); }
 
 .event.fc-twente.fc-home :is(a, button):focus-visible { outline-color: var(--color-ink-inverse); }
@@ -866,7 +906,6 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
   .venue-stream { grid-template-columns: 1fr; min-height: 0; }
   .venue-intro h2 { max-width: 11ch; }
   .venue-card { flex-basis: min(78vw, 360px); }
-  .venue-track { animation-duration: 24s; }
   .suggestion-box { grid-template-columns: 1fr; }
   .editorial-scope { grid-template-columns: 1fr; }
   .scope-facts div { grid-template-columns: 1fr; gap: var(--space-1); }
@@ -886,12 +925,6 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 @media (prefers-reduced-motion: reduce) {
   .event { transition: none; }
   .event:hover { transform: none; }
-  .venue-track { animation: none; transform: none; will-change: auto; }
-  .venue-window { overflow-x: auto; scroll-snap-type: x mandatory; }
-  .venue-window::before,
-  .venue-window::after { display: none; }
-  .venue-card { scroll-snap-align: start; }
-  .venue-card:nth-child(n + 6) { display: none; }
   .venue-card img { transition: none; }
   .site-menu-panel { animation: none; }
   .site-menu-icon path { transition: none; }

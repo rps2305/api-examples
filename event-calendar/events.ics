@@ -4,415 +4,24 @@ PRODID:-//Uit Vandaag Twente//NL
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Uit Vandaag — Twente
 BEGIN:VEVENT
-UID:db499af4618c1d46fc03c398@event-calendar.puntuale.nl
-DTSTART;VALUE=DATE:20260806
+UID:763cdc15279b4d8a87eba2c0@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20260819
 SUMMARY:Zomer Zandspeeltuin
 DTEND;VALUE=DATE:20260830
 URL:https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin
 END:VEVENT
 BEGIN:VEVENT
-UID:1b5a310c2ea2f890610e3eb7@event-calendar.puntuale.nl
-DTSTART:20260806T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260806T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
+UID:d2f55e7bcad384b259871bfb@event-calendar.puntuale.nl
+DTSTART:20260820T170000Z
+SUMMARY:SchouwArt presenteert: De Machine
+DTEND:20260820T190000Z
+URL:https://uitinhengelo.nl/evenementen/schouwart-presenteert-de-machine
 END:VEVENT
 BEGIN:VEVENT
-UID:89c65fd645236d4d779e20ad@event-calendar.puntuale.nl
-DTSTART:20260806T080000Z
-SUMMARY:Rabobank Beach Courts Hengelo
-DTEND:20260830T200000Z
-URL:https://uitinhengelo.nl/evenementen/rabobank-beach-courts
-END:VEVENT
-BEGIN:VEVENT
-UID:9b47e398c16906a2e2e7f6d1@event-calendar.puntuale.nl
-DTSTART:20260806T090000Z
-SUMMARY:Maak 't bij Oyfo
-DTEND:20260806T110000Z
-URL:https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo
-END:VEVENT
-BEGIN:VEVENT
-UID:40a4a3dddbd3064304273063@event-calendar.puntuale.nl
-DTSTART:20260806T090000Z
-SUMMARY:Vakantiespelen BS De Jeugd
-DTEND:20260813T123000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-bs-de-jeugd
-END:VEVENT
-BEGIN:VEVENT
-UID:1bce2014eaf82a889f5af408@event-calendar.puntuale.nl
-DTSTART:20260806T180000Z
-SUMMARY:FC Twente - DAC Dunajská Streda
-DTEND:20260806T200000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:995b4076197e3be92efb9714@event-calendar.puntuale.nl
-DTSTART:20260807T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260807T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:b8ef36c94f8aab34fdd67d97@event-calendar.puntuale.nl
-DTSTART:20260807T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260807T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:11c989e3373a6bc9ae897bd2@event-calendar.puntuale.nl
-DTSTART:20260807T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260807T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:1e791d19766771b68c5d6ca6@event-calendar.puntuale.nl
-DTSTART:20260807T090000Z
-SUMMARY:Maak 't bij Oyfo
-DTEND:20260807T110000Z
-URL:https://uitinhengelo.nl/evenementen/maak-t-bij-oyfo
-END:VEVENT
-BEGIN:VEVENT
-UID:ecbc112cc8ecdc5e06ec130e@event-calendar.puntuale.nl
-DTSTART:20260807T170000Z
-SUMMARY:DJ Castello
-DTEND:20260807T190000Z
-LOCATION:Broedplaats Oogst\, Hengelo
-URL:https://oogst.eu/agenda/
-END:VEVENT
-BEGIN:VEVENT
-UID:dfb43f23675be525bcabd2a7@event-calendar.puntuale.nl
-DTSTART:20260807T183000Z
-SUMMARY:The Orange Blossoms & Robert Weston (Singer/Songwriter\, Country\, 
- NL)
-DTEND:20260807T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111660968
-END:VEVENT
-BEGIN:VEVENT
-UID:618ea80bc4f92dbc1fcaa7da@event-calendar.puntuale.nl
-DTSTART;VALUE=DATE:20260808
-SUMMARY:Bella
-LOCATION:Broedplaats Oogst\, Hengelo
-URL:https://oogst.eu/agenda/
-END:VEVENT
-BEGIN:VEVENT
-UID:777236aa4ae39275f4a48f2a@event-calendar.puntuale.nl
-DTSTART:20260808T070000Z
-SUMMARY:Kidswarenmarkt Hengelo
-DTEND:20260808T090000Z
-URL:https://uitinhengelo.nl/evenementen/kidswarenmarkt-hengelo
-END:VEVENT
-BEGIN:VEVENT
-UID:840cdd6212761d2a547ed972@event-calendar.puntuale.nl
-DTSTART:20260808T100000Z
-SUMMARY:De Mollerwerf: Danya Weevers\, artist in residence
-DTEND:20260821T150000Z
-URL:https://uitinhengelo.nl/evenementen/danya-weevers-artist-in-residence
-END:VEVENT
-BEGIN:VEVENT
-UID:98ab42b435a4e7abe4a7902e@event-calendar.puntuale.nl
-DTSTART:20260808T173000Z
-SUMMARY:Donderse Pubquiz
-DTEND:20260808T193000Z
-URL:https://uitinhengelo.nl/evenementen/donderse-pubquiz-10
-END:VEVENT
-BEGIN:VEVENT
-UID:2d9fe58c8799b2ccae68d853@event-calendar.puntuale.nl
-DTSTART:20260808T183000Z
-SUMMARY:The Raunchy's (Mersey Beat meets rock-’n-roll\, NL)
-DTEND:20260808T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111655327
-END:VEVENT
-BEGIN:VEVENT
-UID:bd6c6a28666c4669200ba811@event-calendar.puntuale.nl
-DTSTART:20260809T110000Z
-SUMMARY:Open Zondagen Heemtuin
-DTEND:20260809T130000Z
-URL:https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
-END:VEVENT
-BEGIN:VEVENT
-UID:21ff338c50b2927d6f272165@event-calendar.puntuale.nl
-DTSTART:20260809T120000Z
-SUMMARY:The Days After
-DTEND:20260809T140000Z
-URL:https://uitinhengelo.nl/evenementen/the-days-after
-END:VEVENT
-BEGIN:VEVENT
-UID:ce5af1f4acab50df95a81abe@event-calendar.puntuale.nl
-DTSTART:20260809T120000Z
-SUMMARY:The Shadolds
-DTEND:20260809T140000Z
-URL:https://uitinhengelo.nl/evenementen/the-shadolds
-END:VEVENT
-BEGIN:VEVENT
-UID:a4988b9063afa92d120dee94@event-calendar.puntuale.nl
-DTSTART:20260809T144500Z
-SUMMARY:Heerenveen - FC Twente
-DTEND:20260809T164500Z
-END:VEVENT
-BEGIN:VEVENT
-UID:929a3e719bec9c69a883ef30@event-calendar.puntuale.nl
-DTSTART:20260810T073000Z
-SUMMARY:Vakantiespelen De Tempel
-DTEND:20260810T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
-END:VEVENT
-BEGIN:VEVENT
-UID:1fb4d80c92028eb0dc142ce1@event-calendar.puntuale.nl
-DTSTART:20260810T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260810T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:d095234dd3c777dfb4334423@event-calendar.puntuale.nl
-DTSTART:20260810T080000Z
-SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
-DTEND:20260810T100000Z
-URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
-END:VEVENT
-BEGIN:VEVENT
-UID:b3b2231b21058a0e5246ca01@event-calendar.puntuale.nl
-DTSTART:20260810T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260810T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:01f7fbbc06ad5f7f9fccad86@event-calendar.puntuale.nl
-DTSTART:20260811T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260811T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:df5a603a36b9a7460e281645@event-calendar.puntuale.nl
-DTSTART:20260811T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260811T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:c21a7fafc24b52bb01aa3080@event-calendar.puntuale.nl
-DTSTART:20260811T080000Z
-SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
-DTEND:20260811T100000Z
-URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
-END:VEVENT
-BEGIN:VEVENT
-UID:f096f74a3a9cc75d96014939@event-calendar.puntuale.nl
-DTSTART:20260811T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260811T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:4eaf820220b0cccc6c10955e@event-calendar.puntuale.nl
-DTSTART:20260812T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260812T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:5d60d7f499a50177c91a80af@event-calendar.puntuale.nl
-DTSTART:20260812T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260812T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:3cc18cc1ef7d7b042086d485@event-calendar.puntuale.nl
-DTSTART:20260812T080000Z
-SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
-DTEND:20260812T100000Z
-URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
-END:VEVENT
-BEGIN:VEVENT
-UID:453470e9674fd4d20b611dbd@event-calendar.puntuale.nl
-DTSTART:20260812T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260812T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:7301f8af10a0683faf0c2612@event-calendar.puntuale.nl
-DTSTART:20260813T073000Z
-SUMMARY:Aan de slag met kunstmatige intelligentie!
-DTEND:20260813T093000Z
-URL:https://uitinhengelo.nl/evenementen/aan-de-slag-met-kunstmatige-intelli
- gentie-10-t-m-14-jaar
-END:VEVENT
-BEGIN:VEVENT
-UID:b16497afb948c4ecd9582ce1@event-calendar.puntuale.nl
-DTSTART:20260813T073000Z
-SUMMARY:Vakantiespelen De Tempel
-DTEND:20260813T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
-END:VEVENT
-BEGIN:VEVENT
-UID:53e3d405f4654d727195b1d5@event-calendar.puntuale.nl
-DTSTART:20260813T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260813T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:e1033f8f60854c0013010c00@event-calendar.puntuale.nl
-DTSTART:20260813T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260813T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:83591090c4467e497e4a5428@event-calendar.puntuale.nl
-DTSTART:20260813T080000Z
-SUMMARY:Zomerkunsten bij Oyfo Kunstenschool
-DTEND:20260813T100000Z
-URL:https://uitinhengelo.nl/evenementen/zomerkunsten-bij-oyfo-kunstenschool
-END:VEVENT
-BEGIN:VEVENT
-UID:c083ff28b7ef8e8e5f490893@event-calendar.puntuale.nl
-DTSTART:20260813T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260813T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:e4bf0fd4ad2ba4b31326fece@event-calendar.puntuale.nl
-DTSTART:20260813T170000Z
-SUMMARY:DAC Dunajská Streda - FC Twente
-DTEND:20260813T190000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:191989a02295884816d5f576@event-calendar.puntuale.nl
-DTSTART:20260814T073000Z
-SUMMARY:Vakantiespelen De Tempel
-DTEND:20260814T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-tempel-2
-END:VEVENT
-BEGIN:VEVENT
-UID:b06b0c2e1152fb5798dc3c1b@event-calendar.puntuale.nl
-DTSTART:20260814T073000Z
-SUMMARY:Vakantiespelen De Hengelose Es
-DTEND:20260814T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-de-hengelose-es
-END:VEVENT
-BEGIN:VEVENT
-UID:c3691ea3d4418e121ba8ca1b@event-calendar.puntuale.nl
-DTSTART:20260814T073000Z
-SUMMARY:Vakantiespelen Nijverheid & zomereditie Houtdorpweek
-DTEND:20260814T093000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiespelen-nijverheid
-END:VEVENT
-BEGIN:VEVENT
-UID:da1f2248556e57f094a96cff@event-calendar.puntuale.nl
-DTSTART:20260814T080000Z
-SUMMARY:Vakantiekids Zomerfestijn 2026
-DTEND:20260814T100000Z
-URL:https://uitinhengelo.nl/evenementen/vakantiekids-zomerfestijn-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:b19ac9c7d04d9d16bab249eb@event-calendar.puntuale.nl
-DTSTART:20260814T170000Z
-SUMMARY:Jordi Noire
-DTEND:20260814T190000Z
-LOCATION:Broedplaats Oogst\, Hengelo
-URL:https://oogst.eu/agenda/
-END:VEVENT
-BEGIN:VEVENT
-UID:7b96ddad3377e43aa8b2c8de@event-calendar.puntuale.nl
-DTSTART:20260814T173000Z
-SUMMARY:Nightskate Twente
-DTEND:20260814T193000Z
-URL:https://uitinhengelo.nl/evenementen/nightskate-twente
-END:VEVENT
-BEGIN:VEVENT
-UID:2119b98460b1634fa7be8474@event-calendar.puntuale.nl
-DTSTART:20260814T183000Z
-SUMMARY:Abraxas (Santana Tribute\, NL)
-DTEND:20260814T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111638774
-END:VEVENT
-BEGIN:VEVENT
-UID:a15ec825ea9eff3cba819bbe@event-calendar.puntuale.nl
-DTSTART;VALUE=DATE:20260815
-SUMMARY:Classic Outdoor
-LOCATION:Broedplaats Oogst\, Hengelo
-URL:https://oogst.eu/agenda/
-END:VEVENT
-BEGIN:VEVENT
-UID:b8abb003a0d2bb627da8fd55@event-calendar.puntuale.nl
-DTSTART:20260815T110000Z
-SUMMARY:Schaaktoernooi voor jongeren
-DTEND:20260815T130000Z
-URL:https://uitinhengelo.nl/evenementen/schaaktoernooi-voor-jongeren-12
-END:VEVENT
-BEGIN:VEVENT
-UID:05a54fee4e55b99002ea8afa@event-calendar.puntuale.nl
-DTSTART:20260815T170000Z
-SUMMARY:Classic Outdoor
-DTEND:20260815T190000Z
-URL:https://uitinhengelo.nl/evenementen/classic-outdoor
-END:VEVENT
-BEGIN:VEVENT
-UID:9d359575b3e0f3e468d12718@event-calendar.puntuale.nl
-DTSTART:20260815T183000Z
-SUMMARY:Johnny Bernhard Country Band (Country\, Blues\, NL)
-DTEND:20260815T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111685394
-END:VEVENT
-BEGIN:VEVENT
-UID:7d5aaf0e04a56c2f01aeb68f@event-calendar.puntuale.nl
-DTSTART:20260816T110000Z
-SUMMARY:Open Zondagen Heemtuin
-DTEND:20260816T130000Z
-URL:https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
-END:VEVENT
-BEGIN:VEVENT
-UID:1f1d0b1b8b87483d6245856e@event-calendar.puntuale.nl
-DTSTART:20260816T110000Z
-SUMMARY:Open zondag watermolen Oele
-DTEND:20260816T130000Z
-URL:https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele
-END:VEVENT
-BEGIN:VEVENT
-UID:842a5f627f3552ce34081b13@event-calendar.puntuale.nl
-DTSTART:20260816T120000Z
-SUMMARY:Deventer Jazz Orkest
-DTEND:20260816T140000Z
-URL:https://uitinhengelo.nl/evenementen/deventer-jazz-orkest
-END:VEVENT
-BEGIN:VEVENT
-UID:e09f565400f4ab6b107d804f@event-calendar.puntuale.nl
-DTSTART:20260816T120000Z
-SUMMARY:Clockwork
-DTEND:20260816T140000Z
-URL:https://uitinhengelo.nl/evenementen/clockwork
-END:VEVENT
-BEGIN:VEVENT
-UID:ec85688f100814d4b8ad56c3@event-calendar.puntuale.nl
-DTSTART:20260816T123000Z
-SUMMARY:FC Twente - PEC Zwolle
-DTEND:20260816T143000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:3f561f4b7a3f1faf0b29c24f@event-calendar.puntuale.nl
-DTSTART:20260818T183000Z
-SUMMARY:Pubquiz @'t Pleintje
-DTEND:20260818T203000Z
-URL:https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje
-END:VEVENT
-BEGIN:VEVENT
-UID:872b6befa71bcd11c7982c9f@event-calendar.puntuale.nl
-DTSTART:20260819T183000Z
-SUMMARY:Muziek Bingo Hitster @ De Cactus (Pub Quiz)
-DTEND:20260819T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111636999
+UID:0b5d0155bcdd429a613a5640@event-calendar.puntuale.nl
+DTSTART:20260820T180000Z
+SUMMARY:FC Twente - Qarabağ
+DTEND:20260820T200000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:d79ebea4934b78716c9c5afe@event-calendar.puntuale.nl
@@ -462,12 +71,12 @@ LOCATION:Hertme
 URL:https://metropool.nl/agenda/blof
 END:VEVENT
 BEGIN:VEVENT
-UID:7c4a0610ae1e39da5bd34aa9@event-calendar.puntuale.nl
-DTSTART:20260822T170000Z
-SUMMARY:Oogst live: Nana Adjoua + Luwten
-DTEND:20260822T190000Z
-LOCATION:Broedplaats Oogst\, Hengelo
-URL:https://oogst.eu/agenda/
+UID:f7d5c1f00893e15b00598f54@event-calendar.puntuale.nl
+DTSTART:20260822T080000Z
+SUMMARY:ATC'65 MMT Bouw Top Tournament U11 & U12
+DTEND:20260823T150000Z
+URL:https://uitinhengelo.nl/evenementen/atc65-mmt-bouw-top-tournament-u11-u
+ 12
 END:VEVENT
 BEGIN:VEVENT
 UID:442e029842c5c0aaf7bedd36@event-calendar.puntuale.nl
@@ -476,13 +85,6 @@ SUMMARY:Oogst Live: Nana Adjoa + LUWTEN
 DTEND:20260822T200000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten
-END:VEVENT
-BEGIN:VEVENT
-UID:521e63ae936ef9476db6ad7a@event-calendar.puntuale.nl
-DTSTART:20260822T180000Z
-SUMMARY:Oogst live: Nana Adjoua + Luwten
-DTEND:20260822T200000Z
-URL:https://uitinhengelo.nl/evenementen/oogst-live-nana-adjoua-luwten
 END:VEVENT
 BEGIN:VEVENT
 UID:60c3a91e8e9e7566c471a79d@event-calendar.puntuale.nl
@@ -530,18 +132,18 @@ DTEND:20260823T130000Z
 URL:https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin
 END:VEVENT
 BEGIN:VEVENT
-UID:5f8e543796c9f9f1b8577426@event-calendar.puntuale.nl
-DTSTART:20260823T120000Z
-SUMMARY:The DS Band
-DTEND:20260823T140000Z
-URL:https://uitinhengelo.nl/evenementen/the-ds-band
-END:VEVENT
-BEGIN:VEVENT
 UID:e105376f88ae7ae31d60bcbf@event-calendar.puntuale.nl
 DTSTART:20260823T120000Z
 SUMMARY:ISLE
 DTEND:20260823T140000Z
 URL:https://uitinhengelo.nl/evenementen/isle
+END:VEVENT
+BEGIN:VEVENT
+UID:5f8e543796c9f9f1b8577426@event-calendar.puntuale.nl
+DTSTART:20260823T120000Z
+SUMMARY:The DS Band
+DTEND:20260823T140000Z
+URL:https://uitinhengelo.nl/evenementen/the-ds-band
 END:VEVENT
 BEGIN:VEVENT
 UID:7bed6289811e2ba2344e0aa1@event-calendar.puntuale.nl
@@ -551,12 +153,26 @@ DTEND:20260828T173000Z
 URL:https://uitinhengelo.nl/evenementen/zwem-vier-daagse
 END:VEVENT
 BEGIN:VEVENT
+UID:ecb03ed4f9120e2ef0ee0146@event-calendar.puntuale.nl
+DTSTART:20260824T171500Z
+SUMMARY:Open Dagen met gratis Zumba les
+DTEND:20260830T100000Z
+URL:https://uitinhengelo.nl/evenementen/open-dagen-met-gratis-zumba-les
+END:VEVENT
+BEGIN:VEVENT
 UID:34c1ce7d1aa83e666b14b169@event-calendar.puntuale.nl
 DTSTART:20260824T173000Z
 SUMMARY:ArtEZ Afterglow
 DTEND:20260824T193000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/artez-afterglow
+END:VEVENT
+BEGIN:VEVENT
+UID:a85c2532bc39d3bc062dd761@event-calendar.puntuale.nl
+DTSTART:20260825T170000Z
+SUMMARY:Blood on the Clocktower
+DTEND:20260825T190000Z
+URL:https://uitinhengelo.nl/evenementen/blood-on-the-clocktower
 END:VEVENT
 BEGIN:VEVENT
 UID:8b9f9cefade5ff48b75ca05f@event-calendar.puntuale.nl
@@ -581,6 +197,12 @@ SUMMARY:Introductieconcert
 DTEND:20260826T190000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/introductieconcert
+END:VEVENT
+BEGIN:VEVENT
+UID:b790d1597bc1249aa612868e@event-calendar.puntuale.nl
+DTSTART:20260827T160000Z
+SUMMARY:Qarabağ - FC Twente
+DTEND:20260827T180000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:d01182b22ddc78f7c6205f4b@event-calendar.puntuale.nl
@@ -628,19 +250,12 @@ LOCATION:De Cactus\, Hengelo
 URL:https://decactus.stager.co/shop/default/events/111561650
 END:VEVENT
 BEGIN:VEVENT
-UID:83093f989ab87a80f2e916d7@event-calendar.puntuale.nl
+UID:631b164f5d5cdf98dbf7cbc3@event-calendar.puntuale.nl
 DTSTART:20260829T080000Z
-SUMMARY:Oogst live: Ooostblok + Jeepers Creepers
+SUMMARY:Kasbah Markt – The Vintage Plus Edition
 DTEND:20260829T100000Z
-URL:https://uitinhengelo.nl/evenementen/oogst-live-ooostblok-jeepers-creepe
- rs
-END:VEVENT
-BEGIN:VEVENT
-UID:880836d44ca4d299b907671e@event-calendar.puntuale.nl
-DTSTART:20260829T080000Z
-SUMMARY:Kasbah Vintage/Brocantemarkt
-DTEND:20260829T100000Z
-URL:https://uitinhengelo.nl/evenementen/kasbah-braderie
+URL:https://uitinhengelo.nl/evenementen/kasbah-markt-the-vintage-plus-editi
+ on
 END:VEVENT
 BEGIN:VEVENT
 UID:f0ca042936a4c907809dff21@event-calendar.puntuale.nl
@@ -681,11 +296,25 @@ URL:https://uitinhengelo.nl/evenementen/clownerie-workshop-2-de-clown-ontwa
  akt
 END:VEVENT
 BEGIN:VEVENT
+UID:2a07c9a284234561424c2532@event-calendar.puntuale.nl
+DTSTART:20260830T100000Z
+SUMMARY:Italian Lunch op het marktplein
+DTEND:20260830T120000Z
+URL:https://uitinhengelo.nl/evenementen/italian-lunch-op-het-marktplein-2
+END:VEVENT
+BEGIN:VEVENT
 UID:eb6d36c5dd5578c0d2588e98@event-calendar.puntuale.nl
 DTSTART:20260830T100000Z
 SUMMARY:Koopzondag binnenstad Hengelo
 DTEND:20260830T120000Z
 URL:https://uitinhengelo.nl/evenementen/koopzondag-binnenstad-hengelo
+END:VEVENT
+BEGIN:VEVENT
+UID:a9d25f81059cea5531411bb4@event-calendar.puntuale.nl
+DTSTART:20260830T110000Z
+SUMMARY:Beweeg! in het park
+DTEND:20260830T130000Z
+URL:https://uitinhengelo.nl/evenementen/beweeg-in-het-park
 END:VEVENT
 BEGIN:VEVENT
 UID:10479b2cf4d5139f807b9c20@event-calendar.puntuale.nl
@@ -746,6 +375,14 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/monkeyjam-2-sep
 END:VEVENT
 BEGIN:VEVENT
+UID:546fefab9fa68ae650cf16ce@event-calendar.puntuale.nl
+DTSTART:20260902T183000Z
+SUMMARY:Akoestische Sessie 2 september 2026
+DTEND:20260902T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111652275
+END:VEVENT
+BEGIN:VEVENT
 UID:aca4f9ce6e206ea21bfedf17@event-calendar.puntuale.nl
 DTSTART:20260903T160000Z
 SUMMARY:Jeugdfonds Let's Dance
@@ -767,13 +404,6 @@ SUMMARY:Don Diego Trio (Rockabilly\, Surf\, Rock&Roll\, Italië)
 DTEND:20260903T213000Z
 LOCATION:De Cactus\, Hengelo
 URL:https://decactus.stager.co/shop/default/events/111671831
-END:VEVENT
-BEGIN:VEVENT
-UID:25a8fa4686afb4f07af99c98@event-calendar.puntuale.nl
-DTSTART:20260903T190000Z
-SUMMARY:Antimatter & Sleeping Pulse
-DTEND:20260903T210000Z
-URL:https://uitinhengelo.nl/evenementen/antimatter-sleeping-pulse
 END:VEVENT
 BEGIN:VEVENT
 UID:83d634ea426baf5f83fa841c@event-calendar.puntuale.nl
@@ -881,18 +511,18 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/the-rushians-a-tribute-to-rush
 END:VEVENT
 BEGIN:VEVENT
-UID:a1297141249fe6b36a5d41ba@event-calendar.puntuale.nl
-DTSTART:20260906T080000Z
-SUMMARY:Wijkfeest Hengelose Es
-DTEND:20260906T100000Z
-URL:https://uitinhengelo.nl/evenementen/wijkfeest-hengelose-es-2
-END:VEVENT
-BEGIN:VEVENT
 UID:c05691de2ee4fb2e1b391908@event-calendar.puntuale.nl
 DTSTART:20260906T080000Z
 SUMMARY:Glas-in-loodmuseum Hengelo geopend!
 DTEND:20260906T100000Z
 URL:https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend
+END:VEVENT
+BEGIN:VEVENT
+UID:a1297141249fe6b36a5d41ba@event-calendar.puntuale.nl
+DTSTART:20260906T080000Z
+SUMMARY:Wijkfeest Hengelose Es
+DTEND:20260906T100000Z
+URL:https://uitinhengelo.nl/evenementen/wijkfeest-hengelose-es-2
 END:VEVENT
 BEGIN:VEVENT
 UID:a583643ff797d55265ce1528@event-calendar.puntuale.nl
@@ -901,19 +531,19 @@ SUMMARY:Groningen - FC Twente
 DTEND:20260906T121500Z
 END:VEVENT
 BEGIN:VEVENT
-UID:e9f8b5b04af50f2e085f8b5e@event-calendar.puntuale.nl
-DTSTART:20260906T110000Z
-SUMMARY:Open zondag watermolen Oele
-DTEND:20260906T130000Z
-URL:https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele
-END:VEVENT
-BEGIN:VEVENT
 UID:c5428bc669fa3ac7b62a9e99@event-calendar.puntuale.nl
 DTSTART:20260906T110000Z
 SUMMARY:Drumfanfare: (mars)muziek festival
 DTEND:20260906T130000Z
 URL:https://uitinhengelo.nl/evenementen/drumfanfare-hengelo-presenteert-mar
  smuziek-festival-ter-ere-van-diamanten-jubileum
+END:VEVENT
+BEGIN:VEVENT
+UID:e9f8b5b04af50f2e085f8b5e@event-calendar.puntuale.nl
+DTSTART:20260906T110000Z
+SUMMARY:Open zondag watermolen Oele
+DTEND:20260906T130000Z
+URL:https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele
 END:VEVENT
 BEGIN:VEVENT
 UID:4cb150569145963802c09d6a@event-calendar.puntuale.nl
@@ -1050,19 +680,19 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/beerland
 END:VEVENT
 BEGIN:VEVENT
+UID:0b199bf7f87a0f41556f60f0@event-calendar.puntuale.nl
+DTSTART:20260912T130000Z
+SUMMARY:Euwe & Sybolt de Jong
+DTEND:20260912T150000Z
+URL:https://uitinhengelo.nl/evenementen/euwe-amp-sybolt-de-jong
+END:VEVENT
+BEGIN:VEVENT
 UID:2b9806d705823e15a0766158@event-calendar.puntuale.nl
 DTSTART:20260912T130000Z
 SUMMARY:Orgelconcert: Euwe en Sybolt de Jong
 DTEND:20260912T150000Z
 URL:https://uitinhengelo.nl/evenementen/vier-handen-twee-broers-en-één-br
  ein-op-kofferharmoniums-en-orgel-lambertusbasiliek
-END:VEVENT
-BEGIN:VEVENT
-UID:0b199bf7f87a0f41556f60f0@event-calendar.puntuale.nl
-DTSTART:20260912T130000Z
-SUMMARY:Euwe & Sybolt de Jong
-DTEND:20260912T150000Z
-URL:https://uitinhengelo.nl/evenementen/euwe-amp-sybolt-de-jong
 END:VEVENT
 BEGIN:VEVENT
 UID:f2c257a819b0a0397e77429f@event-calendar.puntuale.nl
@@ -1138,6 +768,14 @@ DTEND:20260913T110000Z
 URL:https://uitinhengelo.nl/evenementen/de-ridder-zonder-billen-3
 END:VEVENT
 BEGIN:VEVENT
+UID:119828bc3d35b10d4fee72d8@event-calendar.puntuale.nl
+DTSTART:20260913T103000Z
+SUMMARY:Henglore Dungeons& Dragons
+DTEND:20260913T123000Z
+LOCATION:Broedplaats Oogst\, Hengelo
+URL:https://oogst.eu/agenda/
+END:VEVENT
+BEGIN:VEVENT
 UID:0fc7c82840e233f21ae74c3e@event-calendar.puntuale.nl
 DTSTART:20260913T103000Z
 SUMMARY:Hengelore "Een IJzer-Stork verhaal"
@@ -1210,11 +848,27 @@ SUMMARY:Lambertuskermis
 URL:https://uitinhengelo.nl/evenementen/lambertuskermis
 END:VEVENT
 BEGIN:VEVENT
+UID:e2167830b53c24e9c9d9583e@event-calendar.puntuale.nl
+DTSTART:20260916T170000Z
+SUMMARY:STUDIO15 JAMSESSIE x RADJE DRAAI'N EDITIE
+DTEND:20260916T190000Z
+URL:https://uitinhengelo.nl/evenementen/studio15-jamsessie-x-radje-draain-e
+ ditie
+END:VEVENT
+BEGIN:VEVENT
 UID:0c2f27111c8c7c26d77b3ba4@event-calendar.puntuale.nl
 DTSTART:20260916T180000Z
 SUMMARY:As I Left My Father’s House
 DTEND:20260916T200000Z
 URL:https://uitinhengelo.nl/evenementen/as-i-left-my-fathers-house
+END:VEVENT
+BEGIN:VEVENT
+UID:0aa2ae0c1c5db9b35752b1c3@event-calendar.puntuale.nl
+DTSTART:20260916T183000Z
+SUMMARY:Muziek Bingo Hitster @ De Cactus (Pub Quiz)
+DTEND:20260916T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111638769
 END:VEVENT
 BEGIN:VEVENT
 UID:c532ecbc417d023a8ae24f18@event-calendar.puntuale.nl
@@ -1273,14 +927,6 @@ DTEND:20260918T200000Z
 URL:https://uitinhengelo.nl/evenementen/patrick-laureij
 END:VEVENT
 BEGIN:VEVENT
-UID:bf782309a46f3e595226a41b@event-calendar.puntuale.nl
-DTSTART:20260918T183000Z
-SUMMARY:Besloten Feestje
-DTEND:20260918T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111637714
-END:VEVENT
-BEGIN:VEVENT
 UID:0c7290cbd358d7b948cdfec1@event-calendar.puntuale.nl
 DTSTART:20260918T183000Z
 SUMMARY:Nu-Metal Night
@@ -1295,6 +941,14 @@ SUMMARY:Prof Nomad Sessies: Neil Young
 DTEND:20260918T203000Z
 LOCATION:Almelo
 URL:https://metropool.nl/agenda/prof-nomad-sessies-neil-young
+END:VEVENT
+BEGIN:VEVENT
+UID:bf782309a46f3e595226a41b@event-calendar.puntuale.nl
+DTSTART:20260918T183000Z
+SUMMARY:Besloten Feestje
+DTEND:20260918T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111637714
 END:VEVENT
 BEGIN:VEVENT
 UID:6abecec74e593b7eb57f7084@event-calendar.puntuale.nl
@@ -1313,12 +967,6 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/emma-annelie-ep-release
 END:VEVENT
 BEGIN:VEVENT
-UID:c300d00bcbd14cb1daf09f70@event-calendar.puntuale.nl
-DTSTART;VALUE=DATE:20260919
-SUMMARY:Lambertuskermis
-URL:https://uitinhengelo.nl/evenementen/lambertuskermis
-END:VEVENT
-BEGIN:VEVENT
 UID:6572c63fa51026b3e60d7e10@event-calendar.puntuale.nl
 DTSTART;VALUE=DATE:20260919
 SUMMARY:Oktoberfest München
@@ -1326,6 +974,12 @@ DTEND;VALUE=DATE:20261004
 LOCATION:Theresienwiese\, München
 URL:https://www.oktoberfest.de/en/information/oktoberfest-opening-times/ope
  ning-hours-munich-oktoberfest
+END:VEVENT
+BEGIN:VEVENT
+UID:c300d00bcbd14cb1daf09f70@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20260919
+SUMMARY:Lambertuskermis
+URL:https://uitinhengelo.nl/evenementen/lambertuskermis
 END:VEVENT
 BEGIN:VEVENT
 UID:7d8e4a870c2a82034a2b526a@event-calendar.puntuale.nl
@@ -1351,27 +1005,11 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta
 END:VEVENT
 BEGIN:VEVENT
-UID:1c46a026cb1128dc05211a84@event-calendar.puntuale.nl
-DTSTART:20260919T180000Z
-SUMMARY:Oogst live: Loe + Jenta + Marije Bruinsma
-DTEND:20260919T200000Z
-URL:https://uitinhengelo.nl/evenementen/oogst-live-loe-jenta-marije-bruinsm
- a
-END:VEVENT
-BEGIN:VEVENT
 UID:1d6bc18e1542a7a351dc75c0@event-calendar.puntuale.nl
 DTSTART:20260919T180000Z
 SUMMARY:Patrick Laureij
 DTEND:20260919T200000Z
 URL:https://uitinhengelo.nl/evenementen/kintsugi
-END:VEVENT
-BEGIN:VEVENT
-UID:458e78b1617242b76a58d34b@event-calendar.puntuale.nl
-DTSTART:20260919T183000Z
-SUMMARY:Good Times (Pop\, Soul\, Funk\, Covers\, NL)
-DTEND:20260919T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111653781
 END:VEVENT
 BEGIN:VEVENT
 UID:3a57b779821995adff869a49@event-calendar.puntuale.nl
@@ -1380,6 +1018,14 @@ SUMMARY:Postmen
 DTEND:20260919T203000Z
 LOCATION:Almelo
 URL:https://metropool.nl/agenda/postmen
+END:VEVENT
+BEGIN:VEVENT
+UID:458e78b1617242b76a58d34b@event-calendar.puntuale.nl
+DTSTART:20260919T183000Z
+SUMMARY:Good Times (Pop\, Soul\, Funk\, Covers\, NL)
+DTEND:20260919T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111653781
 END:VEVENT
 BEGIN:VEVENT
 UID:c873357f80c1e7f9afe862ad@event-calendar.puntuale.nl
@@ -1424,10 +1070,10 @@ SUMMARY:FC Twente - PSV
 DTEND:20260920T164500Z
 END:VEVENT
 BEGIN:VEVENT
-UID:395d35db820efd407b6c1b53@event-calendar.puntuale.nl
-DTSTART:20260920T183000Z
+UID:23abc12473cb69fa833778c7@event-calendar.puntuale.nl
+DTSTART:20260920T193000Z
 SUMMARY:Cory Hanson
-DTEND:20260920T203000Z
+DTEND:20260920T213000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/cory-hanson
 END:VEVENT
@@ -1477,20 +1123,20 @@ DTEND:20260925T200000Z
 URL:https://uitinhengelo.nl/evenementen/ja-leuk-reprise
 END:VEVENT
 BEGIN:VEVENT
-UID:ef25a3e207b5e8df7335a338@event-calendar.puntuale.nl
-DTSTART:20260925T183000Z
-SUMMARY:Besloten feestje
-DTEND:20260925T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111594814
-END:VEVENT
-BEGIN:VEVENT
 UID:c147843c0629ba34a78797dc@event-calendar.puntuale.nl
 DTSTART:20260925T183000Z
 SUMMARY:Donna's Hot Stuff
 DTEND:20260925T203000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/donnas-hot-stuff
+END:VEVENT
+BEGIN:VEVENT
+UID:ef25a3e207b5e8df7335a338@event-calendar.puntuale.nl
+DTSTART:20260925T183000Z
+SUMMARY:Besloten feestje
+DTEND:20260925T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111594814
 END:VEVENT
 BEGIN:VEVENT
 UID:475e8edd3f6b404e946f48f6@event-calendar.puntuale.nl
@@ -1545,20 +1191,20 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/never-too-late
 END:VEVENT
 BEGIN:VEVENT
-UID:c0e80c45962774404ffdfaa7@event-calendar.puntuale.nl
-DTSTART:20260926T183000Z
-SUMMARY:Besloten Sarah Feestje
-DTEND:20260926T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111622652
-END:VEVENT
-BEGIN:VEVENT
 UID:61522088d394190cf466a5d6@event-calendar.puntuale.nl
 DTSTART:20260926T183000Z
 SUMMARY:The Chicago Funk - Earth\, Wind & Fire Tribute
 DTEND:20260926T203000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/the-chicago-funk-earth-wind-fire-tribute
+END:VEVENT
+BEGIN:VEVENT
+UID:c0e80c45962774404ffdfaa7@event-calendar.puntuale.nl
+DTSTART:20260926T183000Z
+SUMMARY:Besloten Sarah Feestje
+DTEND:20260926T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111622652
 END:VEVENT
 BEGIN:VEVENT
 UID:e3a7fcf6b6dab02d8aed123c@event-calendar.puntuale.nl
@@ -1626,6 +1272,13 @@ DTSTART:20260927T180000Z
 SUMMARY:Danny Vera
 DTEND:20260927T200000Z
 URL:https://uitinhengelo.nl/evenementen/danny-vera
+END:VEVENT
+BEGIN:VEVENT
+UID:e34f4c2545c0f2fe79681847@event-calendar.puntuale.nl
+DTSTART:20260929T170000Z
+SUMMARY:Blood on the Clocktower
+DTEND:20260929T190000Z
+URL:https://uitinhengelo.nl/evenementen/blood-on-the-clocktower-2
 END:VEVENT
 BEGIN:VEVENT
 UID:6b7cc66f2d26a6430609e738@event-calendar.puntuale.nl
@@ -1696,12 +1349,12 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/polyphonic
 END:VEVENT
 BEGIN:VEVENT
-UID:a6e30e692f6f70ce69485ad9@event-calendar.puntuale.nl
-DTSTART:20261002T190000Z
-SUMMARY:Emo Night Mainland
-DTEND:20261002T210000Z
-LOCATION:Enschede
-URL:https://metropool.nl/agenda/emo-night-mainland
+UID:f739215f245e184c8b4f5cb0@event-calendar.puntuale.nl
+DTSTART:20261002T183000Z
+SUMMARY:After Ten (Top 2000\, Feestje\, Covers\, NL)
+DTEND:20261002T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111599540
 END:VEVENT
 BEGIN:VEVENT
 UID:e9f9b52ee8b1357541ebb249@event-calendar.puntuale.nl
@@ -1710,6 +1363,14 @@ SUMMARY:De Boetners + Kiek Now Us
 DTEND:20261002T210000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/de-boetners-kiek-now-us
+END:VEVENT
+BEGIN:VEVENT
+UID:a6e30e692f6f70ce69485ad9@event-calendar.puntuale.nl
+DTSTART:20261002T190000Z
+SUMMARY:Emo Night Mainland
+DTEND:20261002T210000Z
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/emo-night-mainland
 END:VEVENT
 BEGIN:VEVENT
 UID:7077821246b6066584b83d42@event-calendar.puntuale.nl
@@ -1742,13 +1403,6 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/tenside-aurorawave
 END:VEVENT
 BEGIN:VEVENT
-UID:6efec24bc33eab63cf3d322e@event-calendar.puntuale.nl
-DTSTART:20261003T180000Z
-SUMMARY:Harmonieorkest Concordia Hengelo
-DTEND:20261003T200000Z
-URL:https://uitinhengelo.nl/evenementen/harmonieorkest-concordia-hengelo
-END:VEVENT
-BEGIN:VEVENT
 UID:5ce52b0ee90e7520317fefd8@event-calendar.puntuale.nl
 DTSTART:20261003T180000Z
 SUMMARY:Echo's van 25 jaar
@@ -1756,20 +1410,11 @@ DTEND:20261003T200000Z
 URL:https://uitinhengelo.nl/evenementen/echo-039-s-van-25-jaar
 END:VEVENT
 BEGIN:VEVENT
-UID:7d20696cfe39afdc411f2abd@event-calendar.puntuale.nl
-DTSTART:20261003T183000Z
-SUMMARY:Old School New Wave Dance Party @ De Cactus
-DTEND:20261003T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111581670
-END:VEVENT
-BEGIN:VEVENT
-UID:0e6d04c1f8dccb38c88651b0@event-calendar.puntuale.nl
-DTSTART:20261003T183000Z
-SUMMARY:The Dublin Legends
-DTEND:20261003T203000Z
-LOCATION:Enschede
-URL:https://metropool.nl/agenda/the-dublin-legends
+UID:6efec24bc33eab63cf3d322e@event-calendar.puntuale.nl
+DTSTART:20261003T180000Z
+SUMMARY:Harmonieorkest Concordia Hengelo
+DTEND:20261003T200000Z
+URL:https://uitinhengelo.nl/evenementen/harmonieorkest-concordia-hengelo
 END:VEVENT
 BEGIN:VEVENT
 UID:eef221b2e75384d528f4e6d5@event-calendar.puntuale.nl
@@ -1778,6 +1423,14 @@ SUMMARY:Beach Boys' Best
 DTEND:20261003T203000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/beach-boys-best
+END:VEVENT
+BEGIN:VEVENT
+UID:0e6d04c1f8dccb38c88651b0@event-calendar.puntuale.nl
+DTSTART:20261003T183000Z
+SUMMARY:The Dublin Legends
+DTEND:20261003T203000Z
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/the-dublin-legends
 END:VEVENT
 BEGIN:VEVENT
 UID:cafd91b73c3231826c948105@event-calendar.puntuale.nl
@@ -1877,20 +1530,20 @@ DTEND:20261008T200000Z
 URL:https://uitinhengelo.nl/evenementen/berit-companjen
 END:VEVENT
 BEGIN:VEVENT
-UID:d1ad5dcc978b98b12bc40fd1@event-calendar.puntuale.nl
-DTSTART:20261008T183000Z
-SUMMARY:Tristan (Jazz\, Funk & Soul\, NL)
-DTEND:20261008T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111597605
-END:VEVENT
-BEGIN:VEVENT
 UID:7ef4c292025b854d431a94f9@event-calendar.puntuale.nl
 DTSTART:20261008T183000Z
 SUMMARY:Nona
 DTEND:20261008T203000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/nona
+END:VEVENT
+BEGIN:VEVENT
+UID:d1ad5dcc978b98b12bc40fd1@event-calendar.puntuale.nl
+DTSTART:20261008T183000Z
+SUMMARY:Tristan (Jazz\, Funk & Soul\, NL)
+DTEND:20261008T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111597605
 END:VEVENT
 BEGIN:VEVENT
 UID:2e54769ae107cfaa5d951e89@event-calendar.puntuale.nl
@@ -1900,12 +1553,11 @@ DTEND:20261011T200000Z
 URL:https://uitinhengelo.nl/evenementen/bokbierdag
 END:VEVENT
 BEGIN:VEVENT
-UID:92bff57c467263c905b81d88@event-calendar.puntuale.nl
-DTSTART:20261009T183000Z
-SUMMARY:Besloten feestje
-DTEND:20261009T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111628067
+UID:bdf044b8d9e63287674aa601@event-calendar.puntuale.nl
+DTSTART:20261009T180000Z
+SUMMARY:Paarse vrijdag Bandnight
+DTEND:20261009T200000Z
+URL:https://uitinhengelo.nl/evenementen/paarse-vrijdag-bandnight
 END:VEVENT
 BEGIN:VEVENT
 UID:8c080383089f48d75768fccb@event-calendar.puntuale.nl
@@ -1914,6 +1566,14 @@ SUMMARY:Rowwen Hèze
 DTEND:20261009T203000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/rowwen-heze
+END:VEVENT
+BEGIN:VEVENT
+UID:92bff57c467263c905b81d88@event-calendar.puntuale.nl
+DTSTART:20261009T183000Z
+SUMMARY:Besloten feestje
+DTEND:20261009T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111628067
 END:VEVENT
 BEGIN:VEVENT
 UID:793097858a72abd15449c214@event-calendar.puntuale.nl
@@ -1959,19 +1619,18 @@ DTEND:20261011T200000Z
 URL:https://uitinhengelo.nl/evenementen/boktober-festival
 END:VEVENT
 BEGIN:VEVENT
+UID:02d0d809f99f20728f33f186@event-calendar.puntuale.nl
+DTSTART:20261010T173000Z
+SUMMARY:Donderse Pubquiz
+DTEND:20261010T193000Z
+URL:https://uitinhengelo.nl/evenementen/donderse-pubquiz-12
+END:VEVENT
+BEGIN:VEVENT
 UID:31dd445330d50dc8491d6fa7@event-calendar.puntuale.nl
 DTSTART:20261010T180000Z
 SUMMARY:Queen Must Go On
 DTEND:20261010T200000Z
 URL:https://uitinhengelo.nl/evenementen/queen-must-go-on
-END:VEVENT
-BEGIN:VEVENT
-UID:6d0c34674d243c86b4cb6f63@event-calendar.puntuale.nl
-DTSTART:20261010T183000Z
-SUMMARY:Kisjeskearls (Een ode aan Normaal\, dialect\, NL)
-DTEND:20261010T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111578875
 END:VEVENT
 BEGIN:VEVENT
 UID:be367cfa6a61bd0b70d30bbb@event-calendar.puntuale.nl
@@ -1982,17 +1641,19 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/ios
 END:VEVENT
 BEGIN:VEVENT
+UID:6d0c34674d243c86b4cb6f63@event-calendar.puntuale.nl
+DTSTART:20261010T183000Z
+SUMMARY:Kisjeskearls (Een ode aan Normaal\, dialect\, NL)
+DTEND:20261010T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111578875
+END:VEVENT
+BEGIN:VEVENT
 UID:52365a1798c5139f19931f0c@event-calendar.puntuale.nl
 DTSTART:20261010T183000Z
 SUMMARY:Jörgen Raymann
 DTEND:20261010T203000Z
 URL:https://uitinhengelo.nl/evenementen/jörgen-raymann
-END:VEVENT
-BEGIN:VEVENT
-UID:f70a82c7f90604029d900bc6@event-calendar.puntuale.nl
-DTSTART:20261010T190000Z
-SUMMARY:Fortuna Sittard - FC Twente
-DTEND:20261010T210000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:6e24a07fd1f6df12147b2a74@event-calendar.puntuale.nl
@@ -2001,6 +1662,12 @@ SUMMARY:New Wave Generation
 DTEND:20261010T210000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/new-wave-generation-10-okt
+END:VEVENT
+BEGIN:VEVENT
+UID:f70a82c7f90604029d900bc6@event-calendar.puntuale.nl
+DTSTART:20261010T190000Z
+SUMMARY:Fortuna Sittard - FC Twente
+DTEND:20261010T210000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:7b0b288b616c32bd88a1a21f@event-calendar.puntuale.nl
@@ -2034,19 +1701,19 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/khemmis
 END:VEVENT
 BEGIN:VEVENT
+UID:ff60780a571ffa2706b0021d@event-calendar.puntuale.nl
+DTSTART:20261013T180000Z
+SUMMARY:EUS
+DTEND:20261013T200000Z
+URL:https://uitinhengelo.nl/evenementen/eus
+END:VEVENT
+BEGIN:VEVENT
 UID:e9d01a0d3eb1a1e6c09cdb89@event-calendar.puntuale.nl
 DTSTART:20261013T180000Z
 SUMMARY:Lezing Marco Krijnsen: De Hippiemoord
 DTEND:20261013T200000Z
 URL:https://uitinhengelo.nl/evenementen/lezing-marco-krijnsen-de-hippiemoor
  d
-END:VEVENT
-BEGIN:VEVENT
-UID:ff60780a571ffa2706b0021d@event-calendar.puntuale.nl
-DTSTART:20261013T180000Z
-SUMMARY:EUS
-DTEND:20261013T200000Z
-URL:https://uitinhengelo.nl/evenementen/eus
 END:VEVENT
 BEGIN:VEVENT
 UID:826bdfa786d6cc29c2336f77@event-calendar.puntuale.nl
@@ -2123,20 +1790,20 @@ DTEND:20261016T200000Z
 URL:https://uitinhengelo.nl/evenementen/wat-039-n-gedoo
 END:VEVENT
 BEGIN:VEVENT
-UID:4a71989fa297e3adfd30207c@event-calendar.puntuale.nl
-DTSTART:20261016T183000Z
-SUMMARY:Dan Patlansky & Band (Blues\, Bluesrock\, SA)
-DTEND:20261016T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111583121
-END:VEVENT
-BEGIN:VEVENT
 UID:18ca7a6d226480b9628f47d1@event-calendar.puntuale.nl
 DTSTART:20261016T183000Z
 SUMMARY:Frank Boeijen
 DTEND:20261016T203000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/frank-boeijen
+END:VEVENT
+BEGIN:VEVENT
+UID:4a71989fa297e3adfd30207c@event-calendar.puntuale.nl
+DTSTART:20261016T183000Z
+SUMMARY:Dan Patlansky & Band (Blues\, Bluesrock\, SA)
+DTEND:20261016T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111583121
 END:VEVENT
 BEGIN:VEVENT
 UID:f8a6989dbf60ac53537c8d9f@event-calendar.puntuale.nl
@@ -2146,20 +1813,20 @@ DTEND:20261016T203000Z
 URL:https://uitinhengelo.nl/evenementen/an-evening-with-dominic-seldis
 END:VEVENT
 BEGIN:VEVENT
-UID:5f4f437edea2569757dbca63@event-calendar.puntuale.nl
-DTSTART:20261016T190000Z
-SUMMARY:Limehouse Lizzy
-DTEND:20261016T210000Z
-LOCATION:Enschede
-URL:https://metropool.nl/agenda/limehouse-lizzy
-END:VEVENT
-BEGIN:VEVENT
 UID:8daa146502cba932f69b79cf@event-calendar.puntuale.nl
 DTSTART:20261016T190000Z
 SUMMARY:Cavolo Nero
 DTEND:20261016T210000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/cavolo-nero
+END:VEVENT
+BEGIN:VEVENT
+UID:5f4f437edea2569757dbca63@event-calendar.puntuale.nl
+DTSTART:20261016T190000Z
+SUMMARY:Limehouse Lizzy
+DTEND:20261016T210000Z
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/limehouse-lizzy
 END:VEVENT
 BEGIN:VEVENT
 UID:196408c6b13d324a03686eb4@event-calendar.puntuale.nl
@@ -2197,6 +1864,14 @@ DTSTART:20261017T180000Z
 SUMMARY:Boban Braspenning
 DTEND:20261017T200000Z
 URL:https://uitinhengelo.nl/evenementen/boban-braspenning
+END:VEVENT
+BEGIN:VEVENT
+UID:cda2cd9aa622a60f5db88db0@event-calendar.puntuale.nl
+DTSTART:20261017T183000Z
+SUMMARY:Amy's Legacy (Tribute to Amy Winehouse\, NL)
+DTEND:20261017T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111654550
 END:VEVENT
 BEGIN:VEVENT
 UID:55ddaca65ff45ea285904f79@event-calendar.puntuale.nl
@@ -2309,14 +1984,6 @@ DTEND:20261023T200000Z
 URL:https://uitinhengelo.nl/evenementen/thijs-kemperink-2
 END:VEVENT
 BEGIN:VEVENT
-UID:96f1a5ee2d24542d01ea2b7f@event-calendar.puntuale.nl
-DTSTART:20261023T183000Z
-SUMMARY:EightySeven (Eighties covers\, Disco\, NL)
-DTEND:20261023T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111617734
-END:VEVENT
-BEGIN:VEVENT
 UID:4e61f88a529807ac7a2110f4@event-calendar.puntuale.nl
 DTSTART:20261023T183000Z
 SUMMARY:ACinDC
@@ -2331,6 +1998,14 @@ SUMMARY:Ploegendienst
 DTEND:20261023T203000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/ploegendienst
+END:VEVENT
+BEGIN:VEVENT
+UID:96f1a5ee2d24542d01ea2b7f@event-calendar.puntuale.nl
+DTSTART:20261023T183000Z
+SUMMARY:EightySeven (Eighties covers\, Disco\, NL)
+DTEND:20261023T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111617734
 END:VEVENT
 BEGIN:VEVENT
 UID:5a5704d054611b1d15468b61@event-calendar.puntuale.nl
@@ -2369,20 +2044,12 @@ URL:https://uitinhengelo.nl/evenementen/koninklijk-hengelo-039-s-mannenkoor
  -e-v-a
 END:VEVENT
 BEGIN:VEVENT
-UID:f9e9b9b3aa8e263b9d8cb957@event-calendar.puntuale.nl
+UID:771e7ccd78929f6aaa58d059@event-calendar.puntuale.nl
 DTSTART:20261024T183000Z
-SUMMARY:EightySeven (Eighties covers\, Disco\, NL)
-DTEND:20261024T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111617735
-END:VEVENT
-BEGIN:VEVENT
-UID:3d944ff1acb17799eada2116@event-calendar.puntuale.nl
-DTSTART:20261024T183000Z
-SUMMARY:Loïs Lane
+SUMMARY:IDA
 DTEND:20261024T203000Z
-LOCATION:Hengelo
-URL:https://metropool.nl/agenda/lois-lane
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/ida
 END:VEVENT
 BEGIN:VEVENT
 UID:e01526bc7d1738948136ccc2@event-calendar.puntuale.nl
@@ -2393,12 +2060,20 @@ LOCATION:Almelo
 URL:https://metropool.nl/agenda/leif-de-leeuw-band
 END:VEVENT
 BEGIN:VEVENT
-UID:771e7ccd78929f6aaa58d059@event-calendar.puntuale.nl
+UID:3d944ff1acb17799eada2116@event-calendar.puntuale.nl
 DTSTART:20261024T183000Z
-SUMMARY:IDA
+SUMMARY:Loïs Lane
 DTEND:20261024T203000Z
-LOCATION:Enschede
-URL:https://metropool.nl/agenda/ida
+LOCATION:Hengelo
+URL:https://metropool.nl/agenda/lois-lane
+END:VEVENT
+BEGIN:VEVENT
+UID:f9e9b9b3aa8e263b9d8cb957@event-calendar.puntuale.nl
+DTSTART:20261024T183000Z
+SUMMARY:EightySeven (Eighties covers\, Disco\, NL)
+DTEND:20261024T213000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111617735
 END:VEVENT
 BEGIN:VEVENT
 UID:6523fd71b50937f75d2fbf76@event-calendar.puntuale.nl
@@ -2420,6 +2095,13 @@ UID:a121dc8ecdc1adebff048f33@event-calendar.puntuale.nl
 DTSTART;VALUE=DATE:20261025
 SUMMARY:ROCAR-TECH Twente Rally﻿
 URL:https://uitinhengelo.nl/evenementen/rocar-tech-twente-rally
+END:VEVENT
+BEGIN:VEVENT
+UID:2020ddbf332fd88016ed8c57@event-calendar.puntuale.nl
+DTSTART:20261025T080000Z
+SUMMARY:Gaming Universe retro game beurs
+DTEND:20261025T100000Z
+URL:https://uitinhengelo.nl/evenementen/gaming-universe-retro-game-beurs
 END:VEVENT
 BEGIN:VEVENT
 UID:fb92327a974eb5173146616a@event-calendar.puntuale.nl
@@ -2523,20 +2205,20 @@ DTEND:20261030T210000Z
 URL:https://uitinhengelo.nl/evenementen/dolly-dots-de-musical-2
 END:VEVENT
 BEGIN:VEVENT
-UID:9b67b5dd2955320bacfbdf3a@event-calendar.puntuale.nl
-DTSTART:20261030T193000Z
-SUMMARY:Kingdom of Toto (Toto Tribute\, NL)
-DTEND:20261030T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111578426
-END:VEVENT
-BEGIN:VEVENT
 UID:f5ffb2f86e9d55e541a741d2@event-calendar.puntuale.nl
 DTSTART:20261030T193000Z
 SUMMARY:Bökkers
 DTEND:20261030T213000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/bokkers-30-okt
+END:VEVENT
+BEGIN:VEVENT
+UID:9b67b5dd2955320bacfbdf3a@event-calendar.puntuale.nl
+DTSTART:20261030T193000Z
+SUMMARY:Kingdom of Toto (Toto Tribute\, NL)
+DTEND:20261030T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111578426
 END:VEVENT
 BEGIN:VEVENT
 UID:b2ce104f952a5148a5f24384@event-calendar.puntuale.nl
@@ -2576,14 +2258,6 @@ DTEND:20261031T210000Z
 URL:https://uitinhengelo.nl/evenementen/rob-lamberti
 END:VEVENT
 BEGIN:VEVENT
-UID:b376472a31fd30b7e4740142@event-calendar.puntuale.nl
-DTSTART:20261031T193000Z
-SUMMARY:Besloten Abraham feestje
-DTEND:20261031T233000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111625797
-END:VEVENT
-BEGIN:VEVENT
 UID:17a7bf51ca722d12b79f788f@event-calendar.puntuale.nl
 DTSTART:20261031T193000Z
 SUMMARY:Bökkers
@@ -2598,6 +2272,14 @@ SUMMARY:Wende
 DTEND:20261031T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/wende
+END:VEVENT
+BEGIN:VEVENT
+UID:b376472a31fd30b7e4740142@event-calendar.puntuale.nl
+DTSTART:20261031T193000Z
+SUMMARY:Besloten Abraham feestje
+DTEND:20261031T233000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111625797
 END:VEVENT
 BEGIN:VEVENT
 UID:b69056654d2520ce067d99a4@event-calendar.puntuale.nl
@@ -2621,20 +2303,20 @@ SUMMARY:Excelsior - FC Twente
 DTEND:20261101T153000Z
 END:VEVENT
 BEGIN:VEVENT
-UID:99d9f6fa054df0228e5088e9@event-calendar.puntuale.nl
-DTSTART:20261101T140000Z
-SUMMARY:Besloten feestje
-DTEND:20261101T180000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111610278
-END:VEVENT
-BEGIN:VEVENT
 UID:55cc617344a66ff0409649f0@event-calendar.puntuale.nl
 DTSTART:20261101T140000Z
 SUMMARY:JazzRock Café - Erly Thornton
 DTEND:20261101T160000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/jazzrock-cafe-erly-thornton
+END:VEVENT
+BEGIN:VEVENT
+UID:99d9f6fa054df0228e5088e9@event-calendar.puntuale.nl
+DTSTART:20261101T140000Z
+SUMMARY:Besloten feestje
+DTEND:20261101T180000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111610278
 END:VEVENT
 BEGIN:VEVENT
 UID:e5c6b5c31028645510baf3b0@event-calendar.puntuale.nl
@@ -2692,20 +2374,20 @@ DTEND:20261105T210000Z
 URL:https://uitinhengelo.nl/evenementen/supertribute
 END:VEVENT
 BEGIN:VEVENT
-UID:b6299a1af92568d97ffff5e2@event-calendar.puntuale.nl
-DTSTART:20261105T193000Z
-SUMMARY:Jeremy Pinnell & Band (Americana\, Country\, USA)
-DTEND:20261105T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111645559
-END:VEVENT
-BEGIN:VEVENT
 UID:5b8e22677ecc5a61b6d05329@event-calendar.puntuale.nl
 DTSTART:20261105T193000Z
 SUMMARY:The Dire Straits Experience
 DTEND:20261105T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/the-dire-straits-experience
+END:VEVENT
+BEGIN:VEVENT
+UID:b6299a1af92568d97ffff5e2@event-calendar.puntuale.nl
+DTSTART:20261105T193000Z
+SUMMARY:Jeremy Pinnell & Band (Americana\, Country\, USA)
+DTEND:20261105T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111645559
 END:VEVENT
 BEGIN:VEVENT
 UID:2a277d628fef294e54c4407b@event-calendar.puntuale.nl
@@ -2775,20 +2457,20 @@ DTEND:20261107T210000Z
 URL:https://uitinhengelo.nl/evenementen/theaterconcert
 END:VEVENT
 BEGIN:VEVENT
-UID:b8fa22a1b7c895ca480702e5@event-calendar.puntuale.nl
-DTSTART:20261107T193000Z
-SUMMARY:Dansmaar: Lady's Night
-DTEND:20261108T000000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111625805
-END:VEVENT
-BEGIN:VEVENT
 UID:a064c0b9dedd54ff97a86028@event-calendar.puntuale.nl
 DTSTART:20261107T193000Z
 SUMMARY:Eek-a-Mouse
 DTEND:20261107T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/eek-a-mouse
+END:VEVENT
+BEGIN:VEVENT
+UID:3355f082d03fec99adfbef2e@event-calendar.puntuale.nl
+DTSTART:20261107T193000Z
+SUMMARY:Time Bandits
+DTEND:20261107T213000Z
+LOCATION:Almelo
+URL:https://metropool.nl/agenda/time-bandits
 END:VEVENT
 BEGIN:VEVENT
 UID:e2a5c696dc0db1c186309e1a@event-calendar.puntuale.nl
@@ -2799,12 +2481,12 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/wies
 END:VEVENT
 BEGIN:VEVENT
-UID:3355f082d03fec99adfbef2e@event-calendar.puntuale.nl
+UID:b8fa22a1b7c895ca480702e5@event-calendar.puntuale.nl
 DTSTART:20261107T193000Z
-SUMMARY:Time Bandits
-DTEND:20261107T213000Z
-LOCATION:Almelo
-URL:https://metropool.nl/agenda/time-bandits
+SUMMARY:Dansmaar: Lady's Night
+DTEND:20261108T000000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111625805
 END:VEVENT
 BEGIN:VEVENT
 UID:e72476e0273e7ea7f573d948@event-calendar.puntuale.nl
@@ -2894,20 +2576,20 @@ DTEND:20261112T210000Z
 URL:https://uitinhengelo.nl/evenementen/rob-scheepers
 END:VEVENT
 BEGIN:VEVENT
-UID:ef11dd96f52ed7bda32bbe2b@event-calendar.puntuale.nl
-DTSTART:20261112T193000Z
-SUMMARY:Tribute Aan De Dijk (Tribute\, NL)
-DTEND:20261112T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111615459
-END:VEVENT
-BEGIN:VEVENT
 UID:9d5e7ecde4455ec8fbecf1e2@event-calendar.puntuale.nl
 DTSTART:20261112T193000Z
 SUMMARY:Gavin James
 DTEND:20261112T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/gavin-james
+END:VEVENT
+BEGIN:VEVENT
+UID:ef11dd96f52ed7bda32bbe2b@event-calendar.puntuale.nl
+DTSTART:20261112T193000Z
+SUMMARY:Tribute Aan De Dijk (Tribute\, NL)
+DTEND:20261112T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111615459
 END:VEVENT
 BEGIN:VEVENT
 UID:8aaf99ab3655252ae7220f68@event-calendar.puntuale.nl
@@ -2932,14 +2614,6 @@ DTEND:20261113T210000Z
 URL:https://uitinhengelo.nl/evenementen/krezip
 END:VEVENT
 BEGIN:VEVENT
-UID:c756f16a9e2a8f687e48b79e@event-calendar.puntuale.nl
-DTSTART:20261113T193000Z
-SUMMARY:Tribute Aan De Dijk (Extra Show\, Tribute\, NL)
-DTEND:20261113T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111615460
-END:VEVENT
-BEGIN:VEVENT
 UID:6590539a7c9a898af02290fa@event-calendar.puntuale.nl
 DTSTART:20261113T193000Z
 SUMMARY:Gruppo Sportivo
@@ -2948,19 +2622,19 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/gruppo-sportivo
 END:VEVENT
 BEGIN:VEVENT
+UID:c756f16a9e2a8f687e48b79e@event-calendar.puntuale.nl
+DTSTART:20261113T193000Z
+SUMMARY:Tribute Aan De Dijk (Extra Show\, Tribute\, NL)
+DTEND:20261113T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111615460
+END:VEVENT
+BEGIN:VEVENT
 UID:8812d4329b9d705efee01fcf@event-calendar.puntuale.nl
 DTSTART:20261113T193000Z
 SUMMARY:Cruise Control
 DTEND:20261113T213000Z
 URL:https://uitinhengelo.nl/evenementen/cruise-control-2
-END:VEVENT
-BEGIN:VEVENT
-UID:d1eada7849a2b97f797ac4db@event-calendar.puntuale.nl
-DTSTART:20261113T200000Z
-SUMMARY:Thijs Veldhuis
-DTEND:20261113T220000Z
-LOCATION:Hengelo
-URL:https://metropool.nl/agenda/thijs-veldhuis
 END:VEVENT
 BEGIN:VEVENT
 UID:80103f8581625005c7ddc50d@event-calendar.puntuale.nl
@@ -2971,11 +2645,26 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/queens-pleasure
 END:VEVENT
 BEGIN:VEVENT
+UID:d1eada7849a2b97f797ac4db@event-calendar.puntuale.nl
+DTSTART:20261113T200000Z
+SUMMARY:Thijs Veldhuis
+DTEND:20261113T220000Z
+LOCATION:Hengelo
+URL:https://metropool.nl/agenda/thijs-veldhuis
+END:VEVENT
+BEGIN:VEVENT
 UID:48dca12fc375d2bbabc607f6@event-calendar.puntuale.nl
 DTSTART:20261114T130000Z
 SUMMARY:Sinterklaas Intocht
 DTEND:20261114T150000Z
 URL:https://uitinhengelo.nl/evenementen/sinterklaas-intocht
+END:VEVENT
+BEGIN:VEVENT
+UID:5a7bfed6192928088ef1d978@event-calendar.puntuale.nl
+DTSTART:20261114T183000Z
+SUMMARY:Donderse Pubquiz
+DTEND:20261114T203000Z
+URL:https://uitinhengelo.nl/evenementen/donderse-pubquiz-13
 END:VEVENT
 BEGIN:VEVENT
 UID:4c713566d0065fe8e454419f@event-calendar.puntuale.nl
@@ -3099,12 +2788,12 @@ DTEND:20261120T210000Z
 URL:https://uitinhengelo.nl/evenementen/the-young-analogues
 END:VEVENT
 BEGIN:VEVENT
-UID:3402375512bd6f2335245564@event-calendar.puntuale.nl
+UID:6e1020465ea33059a7c4c474@event-calendar.puntuale.nl
 DTSTART:20261120T193000Z
-SUMMARY:Besloten Feestje
-DTEND:20261120T233000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111681761
+SUMMARY:Electric Six
+DTEND:20261120T213000Z
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/electric-six
 END:VEVENT
 BEGIN:VEVENT
 UID:65863206fe11642002dde3a2@event-calendar.puntuale.nl
@@ -3115,12 +2804,12 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/niels-geusebroek-sings-coldplay
 END:VEVENT
 BEGIN:VEVENT
-UID:6e1020465ea33059a7c4c474@event-calendar.puntuale.nl
+UID:3402375512bd6f2335245564@event-calendar.puntuale.nl
 DTSTART:20261120T193000Z
-SUMMARY:Electric Six
-DTEND:20261120T213000Z
-LOCATION:Enschede
-URL:https://metropool.nl/agenda/electric-six
+SUMMARY:Besloten Feestje
+DTEND:20261120T233000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111681761
 END:VEVENT
 BEGIN:VEVENT
 UID:90c9922fe93aea0108cc5ecb@event-calendar.puntuale.nl
@@ -3181,14 +2870,6 @@ DTEND:20261121T210000Z
 URL:https://uitinhengelo.nl/evenementen/reflections
 END:VEVENT
 BEGIN:VEVENT
-UID:32641f8345f847d3c37e0935@event-calendar.puntuale.nl
-DTSTART:20261121T193000Z
-SUMMARY:Besloten Sarah Feestje
-DTEND:20261121T233000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111653206
-END:VEVENT
-BEGIN:VEVENT
 UID:b8a6de6a9c2a79f47b853809@event-calendar.puntuale.nl
 DTSTART:20261121T193000Z
 SUMMARY:De Kift
@@ -3203,6 +2884,14 @@ SUMMARY:Noah Derksen
 DTEND:20261121T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/noah-derksen
+END:VEVENT
+BEGIN:VEVENT
+UID:32641f8345f847d3c37e0935@event-calendar.puntuale.nl
+DTSTART:20261121T193000Z
+SUMMARY:Besloten Sarah Feestje
+DTEND:20261121T233000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111653206
 END:VEVENT
 BEGIN:VEVENT
 UID:c32d91d338debac1b2c1494c@event-calendar.puntuale.nl
@@ -3284,12 +2973,12 @@ DTEND:20261127T203000Z
 URL:https://uitinhengelo.nl/evenementen/samar-en-de-bange-koning-8
 END:VEVENT
 BEGIN:VEVENT
-UID:ea1cc13852d6e3a5bce11218@event-calendar.puntuale.nl
+UID:98dfcf4970af9c6e2d7bfc60@event-calendar.puntuale.nl
 DTSTART:20261127T193000Z
-SUMMARY:Rasta Pasta extra show! (A tribute to reggae & ska\, NL)
-DTEND:20261127T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111625763
+SUMMARY:FEUERENGEL - A Tribute To Rammstein
+DTEND:20261127T213000Z
+LOCATION:Hengelo
+URL:https://metropool.nl/agenda/feuerengel-a-tribute-to-rammstein
 END:VEVENT
 BEGIN:VEVENT
 UID:03d17346b8c66727c82684eb@event-calendar.puntuale.nl
@@ -3300,12 +2989,12 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/snelle
 END:VEVENT
 BEGIN:VEVENT
-UID:98dfcf4970af9c6e2d7bfc60@event-calendar.puntuale.nl
+UID:ea1cc13852d6e3a5bce11218@event-calendar.puntuale.nl
 DTSTART:20261127T193000Z
-SUMMARY:FEUERENGEL - A Tribute To Rammstein
-DTEND:20261127T213000Z
-LOCATION:Hengelo
-URL:https://metropool.nl/agenda/feuerengel-a-tribute-to-rammstein
+SUMMARY:Rasta Pasta extra show! (A tribute to reggae & ska\, NL)
+DTEND:20261127T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111625763
 END:VEVENT
 BEGIN:VEVENT
 UID:0f47c51f2fed2cf80ea81d0a@event-calendar.puntuale.nl
@@ -3336,20 +3025,20 @@ DTEND:20261128T210000Z
 URL:https://uitinhengelo.nl/evenementen/jochen-otten
 END:VEVENT
 BEGIN:VEVENT
-UID:9f40b28e81c50300a90be912@event-calendar.puntuale.nl
-DTSTART:20261128T193000Z
-SUMMARY:Rasta Pasta (A tribute to reggae & ska\, NL)
-DTEND:20261128T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111625762
-END:VEVENT
-BEGIN:VEVENT
 UID:eaccb989d668179eae78b7e7@event-calendar.puntuale.nl
 DTSTART:20261128T193000Z
 SUMMARY:FEUERENGEL - A Tribute To Rammstein
 DTEND:20261128T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/feuerengel-a-tribute-to-rammstein-28-nov
+END:VEVENT
+BEGIN:VEVENT
+UID:9f40b28e81c50300a90be912@event-calendar.puntuale.nl
+DTSTART:20261128T193000Z
+SUMMARY:Rasta Pasta (A tribute to reggae & ska\, NL)
+DTEND:20261128T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111625762
 END:VEVENT
 BEGIN:VEVENT
 UID:0f896d88d0fd95ce464dd9cc@event-calendar.puntuale.nl
@@ -3426,6 +3115,14 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/qmusic-the-party-4-uur-fout
 END:VEVENT
 BEGIN:VEVENT
+UID:38f8742d3cb37e2b0854e4cc@event-calendar.puntuale.nl
+DTSTART:20261204T193000Z
+SUMMARY:The Dirty Daddies
+DTEND:20261204T213000Z
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/the-dirty-daddies-4-dec
+END:VEVENT
+BEGIN:VEVENT
 UID:80533ce8f7d647ceec3fcfb8@event-calendar.puntuale.nl
 DTSTART:20261204T193000Z
 SUMMARY:PennyLeen & Band (Blues\, Soul\, Funk\, NL)
@@ -3434,12 +3131,12 @@ LOCATION:De Cactus\, Hengelo
 URL:https://decactus.stager.co/shop/default/events/111559369
 END:VEVENT
 BEGIN:VEVENT
-UID:38f8742d3cb37e2b0854e4cc@event-calendar.puntuale.nl
-DTSTART:20261204T193000Z
-SUMMARY:The Dirty Daddies
-DTEND:20261204T213000Z
-LOCATION:Enschede
-URL:https://metropool.nl/agenda/the-dirty-daddies-4-dec
+UID:f3f45a2b8bfd777c90846170@event-calendar.puntuale.nl
+DTSTART:20261204T200000Z
+SUMMARY:Roundabouts - EP release
+DTEND:20261204T220000Z
+LOCATION:Hengelo
+URL:https://metropool.nl/agenda/roundabouts-ep-release
 END:VEVENT
 BEGIN:VEVENT
 UID:c5b60003a0ae48a190660854@event-calendar.puntuale.nl
@@ -3515,13 +3212,6 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/haevn
 END:VEVENT
 BEGIN:VEVENT
-UID:d701e055393dad3ff11b7fa0@event-calendar.puntuale.nl
-DTSTART:20261211T190000Z
-SUMMARY:Lebbis
-DTEND:20261211T210000Z
-URL:https://uitinhengelo.nl/evenementen/lebbis
-END:VEVENT
-BEGIN:VEVENT
 UID:5dc994a621e3dbc911c9d8f3@event-calendar.puntuale.nl
 DTSTART:20261211T190000Z
 SUMMARY:A Tribute to Pink Floyd
@@ -3529,12 +3219,11 @@ DTEND:20261211T210000Z
 URL:https://uitinhengelo.nl/evenementen/a-tribute-to-pink-floyd
 END:VEVENT
 BEGIN:VEVENT
-UID:cac0d95143f792f3ce96ab1d@event-calendar.puntuale.nl
-DTSTART:20261211T193000Z
-SUMMARY:Dilana & Band (Kerstshow\, SA/NL)
-DTEND:20261211T223000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111599536
+UID:d701e055393dad3ff11b7fa0@event-calendar.puntuale.nl
+DTSTART:20261211T190000Z
+SUMMARY:Lebbis
+DTEND:20261211T210000Z
+URL:https://uitinhengelo.nl/evenementen/lebbis
 END:VEVENT
 BEGIN:VEVENT
 UID:75828b77d689b893aebb4402@event-calendar.puntuale.nl
@@ -3543,6 +3232,14 @@ SUMMARY:The Fortunate Sons – A Tribute To CCR
 DTEND:20261211T213000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/the-fortunate-sons-a-tribute-to-ccr-11-dec
+END:VEVENT
+BEGIN:VEVENT
+UID:cac0d95143f792f3ce96ab1d@event-calendar.puntuale.nl
+DTSTART:20261211T193000Z
+SUMMARY:Dilana & Band (Kerstshow\, SA/NL)
+DTEND:20261211T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111599536
 END:VEVENT
 BEGIN:VEVENT
 UID:d873e55ba2742cc5c28860cf@event-calendar.puntuale.nl
@@ -3558,6 +3255,13 @@ DTSTART;VALUE=DATE:20261212
 SUMMARY:FC Twente - Sparta Rotterdam
 END:VEVENT
 BEGIN:VEVENT
+UID:dbe458151848ad2bd591888b@event-calendar.puntuale.nl
+DTSTART:20261212T183000Z
+SUMMARY:Donderse Pubquiz
+DTEND:20261212T203000Z
+URL:https://uitinhengelo.nl/evenementen/donderse-pubquiz-14
+END:VEVENT
+BEGIN:VEVENT
 UID:d72a69e914efaedbae4cf61e@event-calendar.puntuale.nl
 DTSTART:20261212T190000Z
 SUMMARY:Sjors van der Panne
@@ -3571,6 +3275,14 @@ SUMMARY:Jett Rebel
 DTEND:20261212T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/jett-rebel
+END:VEVENT
+BEGIN:VEVENT
+UID:350b7a44d339c68e8d918156@event-calendar.puntuale.nl
+DTSTART:20261212T193000Z
+SUMMARY:Dilana & Band (Extra Kerst Show\, SA/NL)
+DTEND:20261212T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111599534
 END:VEVENT
 BEGIN:VEVENT
 UID:d5659e72033a14f1dff3653e@event-calendar.puntuale.nl
@@ -3828,6 +3540,14 @@ DTEND:20270102T203000Z
 URL:https://uitinhengelo.nl/evenementen/nu-is-het-nog-rustig-8
 END:VEVENT
 BEGIN:VEVENT
+UID:f6c872557a6100dd10fcae95@event-calendar.puntuale.nl
+DTSTART:20270103T140000Z
+SUMMARY:Old Ni-js @ De Cactus 3/01/2027 (Dialect\, Rock\, NL)
+DTEND:20270103T163000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111645928
+END:VEVENT
+BEGIN:VEVENT
 UID:2a077f41512110afb81f7226@event-calendar.puntuale.nl
 DTSTART:20270106T190000Z
 SUMMARY:Dolf Jansen
@@ -3912,6 +3632,14 @@ DTEND:20270115T210000Z
 URL:https://uitinhengelo.nl/evenementen/50-years-of-rumours
 END:VEVENT
 BEGIN:VEVENT
+UID:3dd4ca2fa2842279d88055a7@event-calendar.puntuale.nl
+DTSTART:20270115T193000Z
+SUMMARY:Jazzalike - 15th anniversary
+DTEND:20270115T213000Z
+LOCATION:Hengelo
+URL:https://metropool.nl/agenda/jazzalike-15th-anniversary
+END:VEVENT
+BEGIN:VEVENT
 UID:fded5e2f398f6dc9a81dcbb1@event-calendar.puntuale.nl
 DTSTART:20270115T193000Z
 SUMMARY:Ten Years After
@@ -3920,12 +3648,12 @@ LOCATION:Enschede
 URL:https://metropool.nl/agenda/ten-years-after
 END:VEVENT
 BEGIN:VEVENT
-UID:3dd4ca2fa2842279d88055a7@event-calendar.puntuale.nl
+UID:91473b396255c71877ef883f@event-calendar.puntuale.nl
 DTSTART:20270115T193000Z
-SUMMARY:Jazzalike - 15th anniversary
-DTEND:20270115T213000Z
-LOCATION:Hengelo
-URL:https://metropool.nl/agenda/jazzalike-15th-anniversary
+SUMMARY:Monkey King (Rock\, Covers\, NL)
+DTEND:20270115T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111686977
 END:VEVENT
 BEGIN:VEVENT
 UID:68795365f0903fe846536324@event-calendar.puntuale.nl
@@ -3948,20 +3676,20 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/daredevils-zing-nederlands-met-me-16-jan
 END:VEVENT
 BEGIN:VEVENT
-UID:738411787aa78ad530e64eeb@event-calendar.puntuale.nl
-DTSTART:20270116T193000Z
-SUMMARY:Made in Purple
-DTEND:20270116T213000Z
-LOCATION:Almelo
-URL:https://metropool.nl/agenda/made-in-purple
-END:VEVENT
-BEGIN:VEVENT
 UID:7e12040d66b46f1982e94bc0@event-calendar.puntuale.nl
 DTSTART:20270116T193000Z
 SUMMARY:Fleddy Melculy
 DTEND:20270116T213000Z
 LOCATION:Enschede
 URL:https://metropool.nl/agenda/fleddy-melculy
+END:VEVENT
+BEGIN:VEVENT
+UID:738411787aa78ad530e64eeb@event-calendar.puntuale.nl
+DTSTART:20270116T193000Z
+SUMMARY:Made in Purple
+DTEND:20270116T213000Z
+LOCATION:Almelo
+URL:https://metropool.nl/agenda/made-in-purple
 END:VEVENT
 BEGIN:VEVENT
 UID:516bd0be0254ec7421153548@event-calendar.puntuale.nl
@@ -4063,6 +3791,14 @@ SUMMARY:New Cool Collective
 DTEND:20270123T213000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/new-cool-collective
+END:VEVENT
+BEGIN:VEVENT
+UID:90a8c916dce40921fc3ba6ac@event-calendar.puntuale.nl
+DTSTART:20270123T193000Z
+SUMMARY:Just Nobody (De Soulvolle Groove band uit Twente!)
+DTEND:20270123T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111688382
 END:VEVENT
 BEGIN:VEVENT
 UID:eeb6ba471fe44cb487d24450@event-calendar.puntuale.nl
@@ -4214,12 +3950,12 @@ DTEND:20270206T210000Z
 URL:https://uitinhengelo.nl/evenementen/rayen-panday
 END:VEVENT
 BEGIN:VEVENT
-UID:2f59c01c570b5886d574f775@event-calendar.puntuale.nl
-DTSTART:20270207T140000Z
-SUMMARY:Blue Grass Boogiemen & Pieternel (Metropool Presents @ De Cactus)
-DTEND:20270207T163000Z
+UID:6380daa7ad96e5b8d549f4b2@event-calendar.puntuale.nl
+DTSTART:20270206T193000Z
+SUMMARY:Old School New Wave Dance Party @ De Cactus
+DTEND:20270207T000000Z
 LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111627858
+URL:https://decactus.stager.co/shop/default/events/111581670
 END:VEVENT
 BEGIN:VEVENT
 UID:04022a12f7cc554973b23776@event-calendar.puntuale.nl
@@ -4227,6 +3963,14 @@ DTSTART:20270207T140000Z
 SUMMARY:Blue Grass Boogiemen & Pieternel
 DTEND:20270207T160000Z
 URL:https://metropool.nl/agenda/blue-grass-boogiemen-pieternel
+END:VEVENT
+BEGIN:VEVENT
+UID:2f59c01c570b5886d574f775@event-calendar.puntuale.nl
+DTSTART:20270207T140000Z
+SUMMARY:Blue Grass Boogiemen & Pieternel (Metropool Presents @ De Cactus)
+DTEND:20270207T163000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111627858
 END:VEVENT
 BEGIN:VEVENT
 UID:3b450f3e3c33af1e1cada33e@event-calendar.puntuale.nl
@@ -4357,6 +4101,14 @@ LOCATION:Hengelo
 URL:https://metropool.nl/agenda/the-dirty-daddies-19-feb
 END:VEVENT
 BEGIN:VEVENT
+UID:ccfd5920df53654778013bb2@event-calendar.puntuale.nl
+DTSTART:20270219T193000Z
+SUMMARY:U2ONE (U2 Tribute\, NL)
+DTEND:20270219T223000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111688186
+END:VEVENT
+BEGIN:VEVENT
 UID:bf72e90d0af8985c390ee41d@event-calendar.puntuale.nl
 DTSTART;VALUE=DATE:20270220
 SUMMARY:FC Twente - Excelsior
@@ -4482,6 +4234,14 @@ DTEND:20270228T143000Z
 URL:https://uitinhengelo.nl/evenementen/pippi-en-de-piraten-6
 END:VEVENT
 BEGIN:VEVENT
+UID:f8169a839ac972b935488cf5@event-calendar.puntuale.nl
+DTSTART:20270228T140000Z
+SUMMARY:A Tribute to Dutch Pop & Rock (Tribute\, NL)
+DTEND:20270228T163000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111668483
+END:VEVENT
+BEGIN:VEVENT
 UID:d80babd845e454e0aed95d5c@event-calendar.puntuale.nl
 DTSTART:20270228T143000Z
 SUMMARY:Heb je mijn zusje gezien? (2\,5+)
@@ -4556,6 +4316,14 @@ DTSTART:20270306T190000Z
 SUMMARY:Opvoeden\, hoe dan...!?
 DTEND:20270306T210000Z
 URL:https://uitinhengelo.nl/evenementen/opvoeden-hoe-dan
+END:VEVENT
+BEGIN:VEVENT
+UID:cbed3436987f74283dfb5b5b@event-calendar.puntuale.nl
+DTSTART:20270306T193000Z
+SUMMARY:Dansmaar: De Cactus Reünie
+DTEND:20270307T000000Z
+LOCATION:De Cactus\, Hengelo
+URL:https://decactus.stager.co/shop/default/events/111625809
 END:VEVENT
 BEGIN:VEVENT
 UID:fc5ecf435d6b53c0fa9de5cb@event-calendar.puntuale.nl
@@ -4655,18 +4423,18 @@ DTEND:20270317T213000Z
 URL:https://uitinhengelo.nl/evenementen/what-we-leave-behind
 END:VEVENT
 BEGIN:VEVENT
-UID:a37600029f2c334404bb695a@event-calendar.puntuale.nl
-DTSTART:20270318T193000Z
-SUMMARY:The Indian Queen
-DTEND:20270318T213000Z
-URL:https://uitinhengelo.nl/evenementen/the-indian-queen
-END:VEVENT
-BEGIN:VEVENT
 UID:be49133706882e0940dbfa52@event-calendar.puntuale.nl
 DTSTART:20270318T193000Z
 SUMMARY:Leo en Marius Blokhuis
 DTEND:20270318T213000Z
 URL:https://uitinhengelo.nl/evenementen/leo-en-marius-blokhuis
+END:VEVENT
+BEGIN:VEVENT
+UID:a37600029f2c334404bb695a@event-calendar.puntuale.nl
+DTSTART:20270318T193000Z
+SUMMARY:The Indian Queen
+DTEND:20270318T213000Z
+URL:https://uitinhengelo.nl/evenementen/the-indian-queen
 END:VEVENT
 BEGIN:VEVENT
 UID:762b0658cca8af30cf6ebd08@event-calendar.puntuale.nl
@@ -5456,6 +5224,14 @@ DTSTART:20270710T140000Z
 SUMMARY:Titus & Fien De Revue
 DTEND:20270710T160000Z
 URL:https://uitinhengelo.nl/evenementen/vooruit-nog-één-keertje-dan-4
+END:VEVENT
+BEGIN:VEVENT
+UID:9c32ece2a6687b5dfa03b835@event-calendar.puntuale.nl
+DTSTART:20270910T183000Z
+SUMMARY:Fäaschtbänkler
+DTEND:20270910T203000Z
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/faaschtbankler
 END:VEVENT
 BEGIN:VEVENT
 UID:cc9fee2388691ebd5cddbd33@event-calendar.puntuale.nl

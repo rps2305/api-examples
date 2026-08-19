@@ -252,6 +252,7 @@ def prerender_event(event: dict[str, object]) -> str:
     aria_name = html_module.escape(str(event.get("name") or "dit evenement"), quote=True)
     if info_url:
         links.append(f'<button class="event-share-button" type="button" data-event-share="{event_json}" aria-label="Delen: {aria_name}" title="Deel de informatielink">Delen</button>')
+    links.append(f'<button class="event-favorite-button" type="button" data-event-favorite="{event_json}" aria-pressed="false" aria-label="Favoriet: {aria_name}" title="Bewaar dit plan als favoriet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Favoriet</span></button>')
     links.append(f'<button class="event-calendar-button" type="button" data-event-calendar="{event_json}" aria-label="Zet in agenda: {aria_name}" title="Download dit evenement als iCalendar-bestand">Zet in agenda</button>')
     return (
         f'<article class="{classes}"><p class="event-time">{html_module.escape(event_time(event))}</p>'

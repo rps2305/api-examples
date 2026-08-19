@@ -3,21 +3,27 @@
 
 from __future__ import annotations
 
+import hashlib
 import hmac
 import ipaddress
 import json
 import os
 import secrets
+import shutil
+import subprocess
 import threading
 import time
+import urllib.request
 from collections import defaultdict, deque
 from datetime import datetime
 from email.headerregistry import Address
 from email.errors import HeaderParseError
+from email.utils import format_datetime
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote_plus, urlparse
+from xml.sax.saxutils import escape
 from zoneinfo import ZoneInfo
 
 import build_calendar
@@ -27,6 +33,13 @@ CALENDAR_DIR = Path(__file__).resolve().parent
 SEND_PATH = "/webhook/send"
 SUGGESTION_PATH = "/api/suggestions"
 SUGGESTION_TOKEN_PATH = "/api/suggestions/token"
+RSS_PATH = "/feeds/agenda.xml"
+RSS_FEED_ITEMS = 100
+STANDINGS_PATH = "/api/standings"
+STANDINGS_URL = "https://site.api.espn.com/apis/v2/sports/soccer/ned.1/standings"
+STANDINGS_TTL_SECONDS = 600
+STANDINGS_LOCK = threading.Lock()
+_standings_cache: tuple[float, bytes | None] = (0.0, None)
 BUILD_LOCK = threading.Lock()
 SCHEDULE_TIMEZONE = ZoneInfo("Europe/Amsterdam")
 FORM_SECRET = secrets.token_bytes(32)
@@ -274,9 +287,116 @@ class CalendarHandler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def fetch_standings(self) -> bytes:
+        """Fetch the standings with the request signature ESPN accepts."""
+        if shutil.which("curl"):
+            completed = subprocess.run(
+                ["curl", "-sS", "--fail", "--http2", STANDINGS_URL],
+                capture_output=True,
+                timeout=15,
+            )
+            if completed.returncode == 0:
+                return completed.stdout
+        request = urllib.request.Request(
+            STANDINGS_URL,
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; Uit-Vandaag-Twente/1.0)",
+                "Accept": "application/json",
+            },
+        )
+        with urllib.request.urlopen(request, timeout=12) as response:
+            return response.read()
+
+    def serve_standings(self) -> None:
+        """Relay the Eredivisie standings, cached, so browsers bypass ESPN CORS."""
+        global _standings_cache
+        cached_at, cached_body = _standings_cache
+        if cached_body is None or time.monotonic() - cached_at >= STANDINGS_TTL_SECONDS:
+            try:
+                body = self.fetch_standings()
+            except Exception:
+                self.log_error("Could not refresh the Eredivisie standings")
+                self.send_error(HTTPStatus.BAD_GATEWAY)
+                return
+            with STANDINGS_LOCK:
+                _standings_cache = (time.monotonic(), body)
+            cached_body = body
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(cached_body)))
+        self.send_header("Cache-Control", "public, max-age=300, stale-while-revalidate=600")
+        self.end_headers()
+        self.wfile.write(cached_body)
+
+    def serve_feed(self) -> None:
+        """Publish the upcoming agenda as a well-formed RSS 2.0 document."""
+        try:
+            events = json.loads((CALENDAR_DIR / "events.json").read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            self.send_error(HTTPStatus.SERVICE_UNAVAILABLE)
+            return
+        today = datetime.now(ZoneInfo("Europe/Amsterdam")).date().isoformat()
+        upcoming = sorted(
+            (event for event in events if isinstance(event, dict) and str(event.get("startDate", "")) >= today),
+            key=lambda event: str(event.get("startDate")),
+        )[:RSS_FEED_ITEMS]
+        items: list[str] = []
+        for event in upcoming:
+            name = str(event.get("name") or "Onbekend evenement")
+            link = str(event.get("url") or "").strip() or f"https://event-calendar.puntuale.nl/?q={quote_plus(name)}"
+            venue = str(event.get("location") or "").strip()
+            genre = str(event.get("genre") or "").strip()
+            description = " · ".join(part for part in (venue, genre) if part) or "Uit Vandaag Twente"
+            guid = str(event.get("url") or "").strip() or hashlib.sha256(f"{name}-{event.get('startDate')}".encode()).hexdigest()[:16]
+            item_date = str(event.get("startDate"))
+            if item_date[:10] == today:
+                published = format_datetime(datetime.now(ZoneInfo("Europe/Amsterdam")))
+            else:
+                try:
+                    parsed = datetime.fromisoformat(item_date.replace("Z", "+00:00"))
+                    if parsed.tzinfo is None:
+                        parsed = parsed.replace(tzinfo=ZoneInfo("Europe/Amsterdam"))
+                    published = format_datetime(parsed.astimezone(ZoneInfo("Europe/Amsterdam")))
+                except ValueError:
+                    published = format_datetime(datetime.now(ZoneInfo("Europe/Amsterdam")))
+            items.append(
+                "<item>"
+                f"<title>{escape(name)}</title>"
+                f"<link>{escape(link)}</link>"
+                f"<guid isPermaLink=\"false\">{escape(guid)}</guid>"
+                f"<description>{escape(description)}</description>"
+                f"<pubDate>{escape(published)}</pubDate>"
+                "</item>"
+            )
+        body = (
+            "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
+            "<rss version=\"2.0\"><channel>"
+            "<title>Uitagenda Twente</title>"
+            "<link>https://event-calendar.puntuale.nl/</link>"
+            "<description>Concertagenda, evenementen en FC Twente in Hengelo, Enschede en de rest van Twente.</description>"
+            "<language>nl-nl</language>"
+            f"<lastBuildDate>{format_datetime(datetime.now(ZoneInfo('Europe/Amsterdam')))}</lastBuildDate>"
+            + "".join(items)
+            + "</channel></rss>\n"
+        )
+        encoded = body.encode("utf-8")
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", "application/rss+xml; charset=utf-8")
+        self.send_header("Content-Length", str(len(encoded)))
+        self.send_header("Cache-Control", "public, max-age=300, stale-while-revalidate=3600")
+        self.end_headers()
+        self.wfile.write(encoded)
+
     def do_GET(self) -> None:  # noqa: N802
-        if urlparse(self.path).path == SUGGESTION_TOKEN_PATH:
+        request_path = urlparse(self.path).path
+        if request_path == SUGGESTION_TOKEN_PATH:
             self.json_response(HTTPStatus.OK, {"token": create_form_token()})
+            return
+        if request_path == RSS_PATH:
+            self.serve_feed()
+            return
+        if request_path == STANDINGS_PATH:
+            self.serve_standings()
             return
         if self.static_not_modified():
             self.send_response(HTTPStatus.NOT_MODIFIED)

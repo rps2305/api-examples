@@ -22,6 +22,10 @@ let selectedMonth = '';
 let selectedYear = '';
 let todayOnly = initialParams.get('today') === '1' || initialView === 'today';
 let recommendedOnly = initialParams.get('recommended') === '1' || initialView === 'recommended';
+let eveningOnly = initialParams.get('evening') === '1';
+let favoritesOnly = initialParams.get('favorites') === '1';
+const FAVORITES_STORAGE_KEY = 'uit-vandaag-favorites';
+let favoriteKeys = loadFavorites();
 let visibleLimit = PAGE_SIZE;
 let hasPrerenderedAgenda = agenda.dataset.prerendered === 'true';
 const DEFAULT_EVENT_DURATION_MINUTES = 120;
@@ -237,6 +241,20 @@ function eventElement(event) {
     shareButton.title = 'Deel de informatielink';
     links.append(shareButton);
   }
+  const favoriteButton = element('button', 'event-favorite-button');
+  favoriteButton.type = 'button';
+  favoriteButton.dataset.eventFavorite = JSON.stringify(event);
+  favoriteButton.setAttribute('aria-pressed', String(favoriteKeys.has(eventFavoriteKey(event))));
+  favoriteButton.setAttribute('aria-label', `Favoriet: ${event.name}`);
+  favoriteButton.title = 'Bewaar dit plan als favoriet';
+  const favoriteStar = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  favoriteStar.setAttribute('viewBox', '0 0 24 24');
+  favoriteStar.setAttribute('aria-hidden', 'true');
+  const starPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  starPath.setAttribute('d', 'M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3 1.2-6.5L2.5 9.4l6.6-.9z');
+  favoriteStar.append(starPath);
+  favoriteButton.append(favoriteStar, element('span', '', 'Favoriet'));
+  links.append(favoriteButton);
   const calendarButton = element('button', 'event-calendar-button', 'Zet in agenda');
   calendarButton.type = 'button';
   calendarButton.dataset.eventCalendar = JSON.stringify(event);
@@ -261,6 +279,39 @@ function eventDateKey(event) {
 
 function eventMonthKey(event) {
   return eventDateKey(event).slice(0, 7);
+}
+
+function loadFavorites() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(FAVORITES_STORAGE_KEY) || '[]');
+    return new Set(Array.isArray(stored) ? stored.filter(key => typeof key === 'string') : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveFavorites() {
+  localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify([...favoriteKeys]));
+}
+
+function eventFavoriteKey(event) {
+  return event.url || `${event.source}:${event.startDate}:${event.name}`;
+}
+
+function syncFavoriteButtons() {
+  document.querySelectorAll('[data-event-favorite]').forEach(button => {
+    try {
+      button.setAttribute('aria-pressed', String(favoriteKeys.has(eventFavoriteKey(JSON.parse(button.dataset.eventFavorite)))));
+    } catch {
+      // A malformed serialized event never blocks the rest of the agenda.
+    }
+  });
+}
+
+function isEveningEvent(event) {
+  if (eventDateKey(event) !== twenteDateKey() || event.startDate.length === 10) return false;
+  const hour = Number(timeFormat.format(new Date(event.startDate)).slice(0, 2));
+  return hour >= 18;
 }
 
 function populateDateFilters(events) {
@@ -300,6 +351,8 @@ function applyUrlFilters(events) {
   const legacyView = params.get('view');
   todayOnly = params.get('today') === '1' || legacyView === 'today';
   recommendedOnly = params.get('recommended') === '1' || legacyView === 'recommended';
+  eveningOnly = params.get('evening') === '1';
+  favoritesOnly = params.get('favorites') === '1';
   selectedDate = /^\d{4}-\d{2}-\d{2}$/.test(params.get('date') || '') ? params.get('date') : '';
   selectedCity = (params.get('city') || '').toLowerCase();
   selectedType = (params.get('type') || '').toLowerCase();
@@ -320,11 +373,21 @@ function applyUrlFilters(events) {
   const recommendedButton = document.querySelector('[data-recommended-filter]');
   recommendedButton.classList.toggle('active', recommendedOnly);
   recommendedButton.setAttribute('aria-pressed', String(recommendedOnly));
+  const eveningButton = document.querySelector('[data-evening-filter]');
+  if (eveningButton) {
+    eveningButton.classList.toggle('active', eveningOnly);
+    eveningButton.setAttribute('aria-pressed', String(eveningOnly));
+  }
+  const favoritesButton = document.querySelector('[data-favorites-filter]');
+  if (favoritesButton) {
+    favoritesButton.classList.toggle('active', favoritesOnly);
+    favoritesButton.setAttribute('aria-pressed', String(favoritesOnly));
+  }
 }
 
 function syncFiltersToUrl({ replace = false } = {}) {
   const url = new URL(location.href);
-  ['source', 'q', 'month', 'year', 'date', 'city', 'type', 'today', 'recommended', 'view'].forEach(name => url.searchParams.delete(name));
+  ['source', 'q', 'month', 'year', 'date', 'city', 'type', 'today', 'recommended', 'evening', 'favorites', 'view'].forEach(name => url.searchParams.delete(name));
   if (selectedSources.size) url.searchParams.set('source', [...selectedSources].join(','));
   if (search.value) url.searchParams.set('q', search.value);
   if (selectedMonth) url.searchParams.set('month', selectedMonth);
@@ -334,6 +397,8 @@ function syncFiltersToUrl({ replace = false } = {}) {
   if (selectedType) url.searchParams.set('type', selectedType);
   if (todayOnly) url.searchParams.set('today', '1');
   if (recommendedOnly) url.searchParams.set('recommended', '1');
+  if (eveningOnly) url.searchParams.set('evening', '1');
+  if (favoritesOnly) url.searchParams.set('favorites', '1');
   if (`${url.pathname}${url.search}${url.hash}` === `${location.pathname}${location.search}${location.hash}`) return;
   history[replace ? 'replaceState' : 'pushState']({}, '', url);
 }
@@ -372,7 +437,7 @@ function syncLoadMore(visibleCount, totalCount) {
 }
 
 function render(events) {
-  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && selectedSources.size === 0 && !todayOnly && !recommendedOnly && !query && !selectedMonth && !selectedYear && !selectedDate && !selectedCity && !selectedType) {
+  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && selectedSources.size === 0 && !todayOnly && !recommendedOnly && !eveningOnly && !favoritesOnly && !query && !selectedMonth && !selectedYear && !selectedDate && !selectedCity && !selectedType) {
     const visibleCount = Math.min(PAGE_SIZE, events.length);
     status.dataset.state = 'ready';
     status.textContent = `${visibleCount} van ${events.length} plannen zichtbaar`;
@@ -384,6 +449,8 @@ function render(events) {
     (!selectedSources.size || selectedSources.has(event.source))
     && (!recommendedOnly || event.recommended === true)
     && (!todayOnly || eventDateKey(event) === today)
+    && (!eveningOnly || isEveningEvent(event))
+    && (!favoritesOnly || favoriteKeys.has(eventFavoriteKey(event)))
     && (!selectedMonth || eventMonthKey(event) === selectedMonth)
     && (!selectedYear || eventDateKey(event).startsWith(`${selectedYear}-`))
     && (!selectedDate || eventDateKey(event) === selectedDate)
@@ -393,10 +460,11 @@ function render(events) {
   const shown = matching.slice(0, visibleLimit);
   const groups = Object.groupBy(shown, eventDateKey);
   status.dataset.state = 'ready';
+  const scope = eveningOnly ? ' vanavond' : todayOnly ? ' vandaag' : favoritesOnly ? ' bewaard' : ' in de agenda';
   status.textContent = matching.length > shown.length
     ? `${shown.length} van ${matching.length} plannen zichtbaar${recommendedOnly ? ' voor jou' : ''}`
-    : `${matching.length} ${matching.length === 1 ? 'plan' : 'plannen'}${todayOnly ? ' vandaag' : ' in de agenda'}${recommendedOnly ? ' voor jou' : ''}`;
-  const emptyMessage = recommendedOnly ? 'Geen sterke muziekmatches in deze selectie. Bekijk de volledige agenda.' : todayOnly ? 'Vandaag staat er niets in deze selectie. Bekijk de volledige agenda.' : 'Geen plannen gevonden. Probeer een andere zoekterm.';
+    : `${matching.length} ${matching.length === 1 ? 'plan' : 'plannen'}${scope}${recommendedOnly ? ' voor jou' : ''}`;
+  const emptyMessage = favoritesOnly ? 'Geen bewaarde favorieten in deze selectie. Voeg plannen toe met het sterretje op een kaart.' : eveningOnly ? 'Vanavond staat er niets in deze selectie. Bekijk de volledige agenda.' : recommendedOnly ? 'Geen sterke muziekmatches in deze selectie. Bekijk de volledige agenda.' : todayOnly ? 'Vandaag staat er niets in deze selectie. Bekijk de volledige agenda.' : 'Geen plannen gevonden. Probeer een andere zoekterm.';
   hasPrerenderedAgenda = false;
   agenda.dataset.prerendered = 'false';
   const content = document.createDocumentFragment();
@@ -448,6 +516,7 @@ async function loadAgenda() {
   if ('requestIdleCallback' in window) window.requestIdleCallback(refreshSummary, { timeout: 2_000 });
   else window.setTimeout(refreshSummary, 0);
   render(events);
+  syncFavoriteButtons();
   loadMoreButton?.addEventListener('click', () => {
     visibleLimit += PAGE_SIZE;
     hasPrerenderedAgenda = false;
@@ -461,6 +530,15 @@ async function loadAgenda() {
     }
     const shareButton = event.target.closest('[data-event-share]');
     if (shareButton) shareEvent(JSON.parse(shareButton.dataset.eventShare), shareButton);
+    const favoriteButton = event.target.closest('[data-event-favorite]');
+    if (favoriteButton) {
+      const favoriteKey = eventFavoriteKey(JSON.parse(favoriteButton.dataset.eventFavorite));
+      if (favoriteKeys.has(favoriteKey)) favoriteKeys.delete(favoriteKey);
+      else favoriteKeys.add(favoriteKey);
+      saveFavorites();
+      favoriteButton.setAttribute('aria-pressed', String(favoriteKeys.has(favoriteKey)));
+      if (favoritesOnly) { visibleLimit = PAGE_SIZE; render(events); }
+    }
   });
   document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
     if (button.dataset.filter === 'all') selectedSources.clear();
@@ -488,6 +566,24 @@ async function loadAgenda() {
     visibleLimit = PAGE_SIZE;
     event.currentTarget.classList.toggle('active', recommendedOnly);
     event.currentTarget.setAttribute('aria-pressed', String(recommendedOnly));
+    render(events);
+    syncFiltersToUrl();
+  });
+  const eveningButton = document.querySelector('[data-evening-filter]');
+  if (eveningButton) eveningButton.addEventListener('click', event => {
+    eveningOnly = !eveningOnly;
+    visibleLimit = PAGE_SIZE;
+    event.currentTarget.classList.toggle('active', eveningOnly);
+    event.currentTarget.setAttribute('aria-pressed', String(eveningOnly));
+    render(events);
+    syncFiltersToUrl();
+  });
+  const favoritesButton = document.querySelector('[data-favorites-filter]');
+  if (favoritesButton) favoritesButton.addEventListener('click', event => {
+    favoritesOnly = !favoritesOnly;
+    visibleLimit = PAGE_SIZE;
+    event.currentTarget.classList.toggle('active', favoritesOnly);
+    event.currentTarget.setAttribute('aria-pressed', String(favoritesOnly));
     render(events);
     syncFiltersToUrl();
   });
@@ -600,7 +696,7 @@ if (suggestionForm) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20260819-2', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20260819-3', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });
