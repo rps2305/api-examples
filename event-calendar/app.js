@@ -421,6 +421,7 @@ function render(events) {
   if (!matching.length) content.append(element('p', 'empty', emptyMessage));
   agenda.replaceChildren(content);
   syncLoadMore(shown.length, matching.length);
+  document.dispatchEvent(new CustomEvent('uitagenda:rendered'));
 }
 
 function syncNetworkStatus() {
@@ -599,7 +600,7 @@ if (suggestionForm) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20260811-10', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20260819-2', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });

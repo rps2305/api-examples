@@ -5,3 +5,4 @@ __pycache__/
 .venv/
 *.ics
 event-calendar/.env
+event-calendar/.playwright-mcp/

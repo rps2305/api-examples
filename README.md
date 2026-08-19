@@ -695,6 +695,12 @@ python -m unittest discover -s tests -v
       <td><a href="docs/ns.md">docs/ns.md</a></td>
     </tr>
     <tr>
+      <td>Open-Meteo</td>
+      <td>Free weather forecast APIs without a key.</td>
+      <td>No</td>
+      <td><a href="docs/open-meteo.md">docs/open-meteo.md</a></td>
+    </tr>
+    <tr>
       <td>OpenWeather</td>
       <td>Weather data APIs.</td>
       <td>Yes</td>
