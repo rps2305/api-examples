@@ -8,7 +8,7 @@ const APP_SHELL = [
   '/about.html',
   '/disclaimer.html',
   '/privacy.html',
-  '/styles.css?v=20260819-fav-6',
+  '/styles.css?v=20260819-fav-7',
   '/app.js?v=20260819-fav-2',
   '/back-to-top.js?v=20260802-2',
   '/analytics-consent.js?v=20260802-2',
