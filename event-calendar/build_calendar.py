@@ -79,7 +79,7 @@ def deduplicate_events(events: list[dict[str, object]]) -> list[dict[str, object
         is_lower_priority_duplicate = (
             SOURCE_PRIORITY.get(str(event.get("source")), 10) > 1
             and any(
-                existing.get("source") in {"metropool", "oogst"}
+                existing.get("source") in {"metropool", "de-cactus", "oogst"}
                 and SOURCE_PRIORITY.get(str(existing.get("source")), 10)
                 < SOURCE_PRIORITY.get(str(event.get("source")), 10)
                 and local_date_key(existing["startDate"]) == local_date_key(start)
@@ -159,7 +159,7 @@ def json_for_script(value: object) -> str:
 
 WEEKDAYS = ("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag")
 MONTHS = ("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december")
-SOURCE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3, "bijzonder": 4, "hengelo": 10}
+SOURCE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3, "feestdagen": 4, "bijzonder": 10, "hengelo": 10}
 
 
 def safe_external_url(value: object) -> str:
@@ -215,6 +215,18 @@ def local_date_key(value: object) -> str:
     return parsed.astimezone(ZoneInfo("Europe/Amsterdam")).date().isoformat()
 
 
+def display_date_keys(event: dict[str, object]) -> list[str]:
+    """Return every agenda day for all-day events, respecting exclusive end dates."""
+    start = str(event["startDate"])
+    end = str(event.get("endDate") or "")
+    if len(start) != 10 or len(end) != 10:
+        return [local_date_key(start)]
+    first, final = date.fromisoformat(start), date.fromisoformat(end)
+    if final <= first:
+        return [start]
+    return [(first + timedelta(days=offset)).isoformat() for offset in range((final - first).days)]
+
+
 def prerender_event(event: dict[str, object]) -> str:
     """Render scraped fields as escaped text so initial HTML is safe and crawlable."""
     source = str(event.get("source") or "hengelo")
@@ -223,13 +235,14 @@ def prerender_event(event: dict[str, object]) -> str:
     name = html_module.escape(str(event.get("name") or "Onbekend evenement"))
     location_raw = str(event.get("location") or "").strip()
     genre_raw = str(event.get("genre") or "").strip()
+    stage_raw = str(event.get("stage") or "").strip()
     if source == "feestdagen":
         kind = "Nationale feestdag"
     elif source == "fc-twente":
         kind = "Voetbal"
     else:
         kind = genre_raw or "Live"
-    meta = kind + (f" · 📍 {location_raw}" if location_raw else "")
+    meta = kind + (f" · {stage_raw}" if stage_raw else f" · 📍 {location_raw}" if location_raw else "")
     badges = ""
     if event.get("recommended") is True or event.get("soldOut") is True:
         parts: list[str] = []
@@ -241,23 +254,25 @@ def prerender_event(event: dict[str, object]) -> str:
         badges = f'<p class="event-badges">{"".join(parts)}</p>'
     info_url = safe_external_url(event.get("url"))
     ticket_url = safe_external_url(event.get("ticketUrl"))
-    links: list[str] = []
+    primary_links: list[str] = []
     if info_url:
         label = "Wedstrijd" if source == "fc-twente" else "Rijksoverheid" if source == "feestdagen" else "Info"
-        links.append(f'<a href="{html_module.escape(info_url, quote=True)}" target="_blank" rel="noopener noreferrer">{label} ↗</a>')
+        primary_links.append(f'<a class="event-info-link" href="{html_module.escape(info_url, quote=True)}" target="_blank" rel="noopener noreferrer">{label} ↗</a>')
     if ticket_url and (ticket_url != info_url or source == "de-cactus"):
-        links.append(f'<a class="tickets" href="{html_module.escape(ticket_url, quote=True)}" target="_blank" rel="noopener noreferrer">Tickets ↗</a>')
+        primary_links.append(f'<a class="tickets" href="{html_module.escape(ticket_url, quote=True)}" target="_blank" rel="noopener noreferrer">Tickets ↗</a>')
     serialized_event = {**event, "url": info_url, "ticketUrl": ticket_url}
     event_json = html_module.escape(json.dumps(serialized_event, ensure_ascii=False, separators=(",", ":")), quote=True)
     aria_name = html_module.escape(str(event.get("name") or "dit evenement"), quote=True)
+    utility_links: list[str] = []
     if info_url:
-        links.append(f'<button class="event-share-button" type="button" data-event-share="{event_json}" aria-label="Delen: {aria_name}" title="Deel de informatielink">Delen</button>')
-    links.append(f'<button class="event-favorite-button" type="button" data-event-favorite="{event_json}" aria-pressed="false" aria-label="Favoriet: {aria_name}" title="Bewaar dit plan als favoriet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Favoriet</span></button>')
-    links.append(f'<button class="event-calendar-button" type="button" data-event-calendar="{event_json}" aria-label="Zet in agenda: {aria_name}" title="Download dit evenement als iCalendar-bestand">Zet in agenda</button>')
+        utility_links.append(f'<button class="event-share-button" type="button" data-event-share="{event_json}" aria-label="Delen: {aria_name}" title="Deel de informatielink">Delen</button>')
+    utility_links.append(f'<button class="event-favorite-button" type="button" data-event-favorite="{event_json}" aria-pressed="false" aria-label="Favoriet: {aria_name}" title="Bewaar dit plan als favoriet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Favoriet</span></button>')
+    utility_links.append(f'<button class="event-calendar-button" type="button" data-event-calendar="{event_json}" aria-label="Zet in agenda: {aria_name}" title="Download dit evenement als iCalendar-bestand">Agenda</button>')
+    actions = f'<div class="event-primary-actions">{"".join(primary_links)}</div><div class="event-utility-actions">{"".join(utility_links)}</div>'
     return (
         f'<article class="{classes}"><p class="event-time">{html_module.escape(event_time(event))}</p>'
         f'<p class="venue">{html_module.escape(venue_label(event))}</p>{badges}<h3>{name}</h3>'
-        f'<p class="meta">{html_module.escape(meta)}</p><p class="event-links{" has-ticket" if ticket_url and (ticket_url != info_url or source == "de-cactus") else ""}">{"".join(links)}</p></article>'
+        f'<p class="meta">{html_module.escape(meta)}</p><div class="event-links">{actions}</div></article>'
     )
 
 
@@ -265,7 +280,8 @@ def prerender_agenda(events: list[dict[str, object]]) -> str:
     """Build an initial semantic agenda page; JavaScript progressively reveals the rest."""
     groups: dict[str, list[dict[str, object]]] = {}
     for event in events[:PRERENDER_LIMIT]:
-        groups.setdefault(local_date_key(event["startDate"]), []).append(event)
+        for day_key in display_date_keys(event):
+            groups.setdefault(day_key, []).append(event)
     sections: list[str] = []
     for day_key, items in groups.items():
         current = date.fromisoformat(day_key)
@@ -354,6 +370,10 @@ def refresh_label(processed_at: datetime) -> str:
 def update_index(events: list[dict[str, object]], processed_at: datetime) -> None:
     """Embed data, structured data and prerendered HTML in one deterministic build step."""
     index = INDEX.read_text(encoding="utf-8")
+    index = index.replace(
+        '<img class="brand-mark" src="assets/icon-96.webp" srcset="assets/icon-96.webp 1x, assets/icon-192.webp 2x" width="96" height="96" alt="Uit Vandaag Twente-logo" />',
+        '<a class="brand-mark" href="index.html" aria-label="Naar de agenda"><img src="assets/icon-96.webp" srcset="assets/icon-96.webp 1x, assets/icon-192.webp 2x" width="96" height="96" alt="" /></a>',
+    )
     script_start = index.index('<script id="event-data" type="application/json">')
     script_end = index.index("</script>", script_start) + len("</script>")
     # Keep the rendered first page available to file:// users and non-networked
@@ -390,13 +410,39 @@ def personal_events(year: int) -> list[dict[str, object]]:
             "@type": "Event",
             "name": "Oktoberfest München",
             "startDate": "2026-09-19",
-            "endDate": "2026-10-04",
+            # iCalendar all-day DTEND is exclusive, so this includes 4 October.
+            "endDate": "2026-10-05",
             "location": "Theresienwiese, München",
             "genre": "Oktoberfeest",
             "url": "https://www.oktoberfest.de/en/information/oktoberfest-opening-times/opening-hours-munich-oktoberfest",
             "source": "bijzonder",
         },
     ] if year == 2026 else []
+    if year == 2027:
+        events.extend(
+            [
+                {
+                "@type": "Event",
+                "name": "Lowlands",
+                "startDate": "2027-08-20",
+                "endDate": "2027-08-23",
+                "location": "Evenemententerrein Walibi Holland, Biddinghuizen",
+                "genre": "Muziek, cultuur en campingfestival",
+                "url": "https://lowlands.nl/",
+                "source": "bijzonder",
+                },
+                {
+                    "@type": "Event",
+                    "name": "Zwarte Cross",
+                    "startDate": "2027-07-15",
+                    "endDate": "2027-07-19",
+                    "location": "Lichtenvoorde",
+                    "genre": "Muziek, motorcross en campingfestival",
+                    "url": "https://www.zwartecross.nl/veelgestelde-vragen/",
+                    "source": "bijzonder",
+                },
+            ]
+        )
     events.append({
         "@type": "Event",
         "name": "Verjaardag Ronald",

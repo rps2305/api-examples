@@ -5,10 +5,20 @@ const monthFilter = document.querySelector('#month-filter');
 const yearFilter = document.querySelector('#year-filter');
 const dateFilter = document.querySelector('#date-filter');
 const cityFilter = document.querySelector('#city-filter');
-const typeFilter = document.querySelector('#type-filter');
 const networkStatus = document.querySelector('#network-status');
 const agendaSummary = document.querySelector('#agenda-summary');
 const loadMoreButton = document.querySelector('[data-load-more]');
+const brandMark = document.querySelector('.masthead > .brand-mark');
+
+if (brandMark instanceof HTMLImageElement) {
+  const agendaLink = document.createElement('a');
+  agendaLink.href = 'index.html';
+  agendaLink.className = 'brand-mark';
+  agendaLink.setAttribute('aria-label', 'Naar de agenda');
+  brandMark.classList.remove('brand-mark');
+  brandMark.before(agendaLink);
+  agendaLink.append(brandMark);
+}
 const initialParams = new URLSearchParams(location.search);
 const initialView = initialParams.get('view');
 const PAGE_SIZE = 60;
@@ -17,7 +27,6 @@ let selectedSources = new Set();
 let query = '';
 let selectedDate = '';
 let selectedCity = '';
-let selectedType = '';
 let selectedMonth = '';
 let selectedYear = '';
 let todayOnly = initialParams.get('today') === '1' || initialView === 'today';
@@ -40,7 +49,8 @@ const sourcePriority = new Map([
   ['de-cactus', 1],
   ['fc-twente', 2],
   ['oogst', 3],
-  ['bijzonder', 4],
+  ['feestdagen', 4],
+  ['bijzonder', 10],
 ]);
 const allowedSources = new Set(['metropool', 'de-cactus', 'fc-twente', 'oogst', 'hengelo', 'feestdagen', 'persoonlijk', 'bijzonder']);
 let suggestionToken = '';
@@ -78,6 +88,7 @@ function normalizeEvent(value) {
     startDate,
     endDate,
     location: plainText(value.location, 300),
+    stage: plainText(value.stage, 300),
     genre: plainText(value.genre, 200),
     url: safeUrl(value.url),
     ticketUrl: safeUrl(value.ticketUrl),
@@ -223,23 +234,24 @@ function eventElement(event) {
   }
 
   article.append(element('h3', '', event.name));
-  article.append(element('p', 'meta', `${kind}${event.location ? ` · 📍 ${event.location}` : ''}`));
-  const links = element('p', 'event-links');
+  article.append(element('p', 'meta', `${kind}${event.stage ? ` · ${event.stage}` : event.location ? ` · 📍 ${event.location}` : ''}`));
+  const links = element('div', 'event-links');
+  const primaryActions = element('div', 'event-primary-actions');
+  const utilityActions = element('div', 'event-utility-actions');
   const infoLabel = event.source === 'fc-twente' ? 'Wedstrijd ↗' : event.source === 'feestdagen' ? 'Rijksoverheid ↗' : 'Info ↗';
-  const infoLink = externalLink(event.url, infoLabel);
+  const infoLink = externalLink(event.url, infoLabel, 'event-info-link');
   const ticketLink = event.ticketUrl && (event.ticketUrl !== event.url || event.source === 'de-cactus')
     ? externalLink(event.ticketUrl, 'Tickets ↗', 'tickets')
     : null;
-  if (infoLink) links.append(infoLink);
-  if (ticketLink) links.append(ticketLink);
-  if (ticketLink) links.classList.add('has-ticket');
+  if (infoLink) primaryActions.append(infoLink);
+  if (ticketLink) primaryActions.append(ticketLink);
   if (event.url) {
     const shareButton = element('button', 'event-share-button', 'Delen');
     shareButton.type = 'button';
     shareButton.dataset.eventShare = JSON.stringify(event);
     shareButton.setAttribute('aria-label', `Delen: ${event.name}`);
     shareButton.title = 'Deel de informatielink';
-    links.append(shareButton);
+    utilityActions.append(shareButton);
   }
   const favoriteButton = element('button', 'event-favorite-button');
   favoriteButton.type = 'button';
@@ -254,13 +266,15 @@ function eventElement(event) {
   starPath.setAttribute('d', 'M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3 1.2-6.5L2.5 9.4l6.6-.9z');
   favoriteStar.append(starPath);
   favoriteButton.append(favoriteStar, element('span', '', 'Favoriet'));
-  links.append(favoriteButton);
-  const calendarButton = element('button', 'event-calendar-button', 'Zet in agenda');
+  utilityActions.append(favoriteButton);
+  const calendarButton = element('button', 'event-calendar-button', 'Agenda');
   calendarButton.type = 'button';
   calendarButton.dataset.eventCalendar = JSON.stringify(event);
   calendarButton.setAttribute('aria-label', `Zet in agenda: ${event.name}`);
   calendarButton.title = 'Download dit evenement als iCalendar-bestand';
-  links.append(calendarButton);
+  utilityActions.append(calendarButton);
+  if (primaryActions.childElementCount) links.append(primaryActions);
+  links.append(utilityActions);
   article.append(links);
   return article;
 }
@@ -274,11 +288,22 @@ function twenteDateKey(date = new Date()) {
 }
 
 function eventDateKey(event) {
-  return event.startDate.length === 10 ? event.startDate : twenteDateKey(new Date(event.startDate));
+  return event.displayDate || (event.startDate.length === 10 ? event.startDate : twenteDateKey(new Date(event.startDate)));
 }
 
 function eventMonthKey(event) {
   return eventDateKey(event).slice(0, 7);
+}
+
+function expandMultiDayEvents(events) {
+  return events.flatMap(event => {
+    if (event.startDate.length !== 10 || event.endDate.length !== 10 || event.endDate <= event.startDate) return [event];
+    const days = [];
+    for (let day = event.startDate; day < event.endDate; day = dateKeyAfter(day, 1)) {
+      days.push({ ...event, displayDate: day });
+    }
+    return days;
+  });
 }
 
 function loadFavorites() {
@@ -355,13 +380,11 @@ function applyUrlFilters(events) {
   favoritesOnly = params.get('favorites') === '1';
   selectedDate = /^\d{4}-\d{2}-\d{2}$/.test(params.get('date') || '') ? params.get('date') : '';
   selectedCity = (params.get('city') || '').toLowerCase();
-  selectedType = (params.get('type') || '').toLowerCase();
 
   monthFilter.value = selectedMonth;
   yearFilter.value = selectedYear;
   dateFilter.value = selectedDate;
   cityFilter.value = [...cityFilter.options].some(option => option.value === selectedCity) ? selectedCity : '';
-  typeFilter.value = selectedType;
   document.querySelectorAll('[data-filter]').forEach(button => {
     const active = button.dataset.filter === 'all' ? selectedSources.size === 0 : selectedSources.has(button.dataset.filter);
     button.classList.toggle('active', active);
@@ -394,7 +417,6 @@ function syncFiltersToUrl({ replace = false } = {}) {
   if (selectedYear) url.searchParams.set('year', selectedYear);
   if (selectedDate) url.searchParams.set('date', selectedDate);
   if (selectedCity) url.searchParams.set('city', selectedCity);
-  if (selectedType) url.searchParams.set('type', selectedType);
   if (todayOnly) url.searchParams.set('today', '1');
   if (recommendedOnly) url.searchParams.set('recommended', '1');
   if (eveningOnly) url.searchParams.set('evening', '1');
@@ -437,7 +459,7 @@ function syncLoadMore(visibleCount, totalCount) {
 }
 
 function render(events) {
-  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && selectedSources.size === 0 && !todayOnly && !recommendedOnly && !eveningOnly && !favoritesOnly && !query && !selectedMonth && !selectedYear && !selectedDate && !selectedCity && !selectedType) {
+  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && selectedSources.size === 0 && !todayOnly && !recommendedOnly && !eveningOnly && !favoritesOnly && !query && !selectedMonth && !selectedYear && !selectedDate && !selectedCity) {
     const visibleCount = Math.min(PAGE_SIZE, events.length);
     status.dataset.state = 'ready';
     status.textContent = `${visibleCount} van ${events.length} plannen zichtbaar`;
@@ -455,7 +477,6 @@ function render(events) {
     && (!selectedYear || eventDateKey(event).startsWith(`${selectedYear}-`))
     && (!selectedDate || eventDateKey(event) === selectedDate)
     && (!selectedCity || `${event.location} ${venueLabel(event)}`.toLowerCase().includes(selectedCity))
-    && (!selectedType || `${event.genre} ${event.name}`.toLowerCase().includes(selectedType))
     && (!query || `${event.name} ${event.location} ${event.genre} ${event.source}`.toLowerCase().includes(query)));
   const shown = matching.slice(0, visibleLimit);
   const groups = Object.groupBy(shown, eventDateKey);
@@ -508,7 +529,7 @@ async function loadAgenda() {
   try {
   const fallbackEvents = JSON.parse(document.querySelector('#event-data').textContent);
   if (!Array.isArray(fallbackEvents)) throw new TypeError('Event fallback must be an array');
-  let events = fallbackEvents.map(normalizeEvent).filter(Boolean);
+  let events = expandMultiDayEvents(fallbackEvents.map(normalizeEvent).filter(Boolean));
   if (!events.length) throw new TypeError('Event fallback is empty');
   populateDateFilters(events);
   applyUrlFilters(events);
@@ -612,7 +633,6 @@ async function loadAgenda() {
   });
   dateFilter.addEventListener('change', event => { selectedDate = event.target.value; visibleLimit = PAGE_SIZE; render(events); syncFiltersToUrl(); });
   cityFilter.addEventListener('change', event => { selectedCity = event.target.value; visibleLimit = PAGE_SIZE; render(events); syncFiltersToUrl(); });
-  typeFilter.addEventListener('input', event => { selectedType = event.target.value.toLowerCase(); visibleLimit = PAGE_SIZE; render(events); syncFiltersToUrl(); });
   window.addEventListener('popstate', () => {
     applyUrlFilters(events);
     visibleLimit = PAGE_SIZE;
@@ -624,7 +644,7 @@ async function loadAgenda() {
       if (!response.ok) throw new Error('Event feed unavailable');
       const parsedEvents = await response.json();
       if (!Array.isArray(parsedEvents)) throw new TypeError('Event feed must be an array');
-      const fullEvents = parsedEvents.map(normalizeEvent).filter(Boolean);
+      const fullEvents = expandMultiDayEvents(parsedEvents.map(normalizeEvent).filter(Boolean));
       if (!fullEvents.length) throw new TypeError('Event feed is empty');
       events = fullEvents;
       populateDateFilters(events);
@@ -696,7 +716,7 @@ if (suggestionForm) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20260819-3', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20260827-multiday-days-1', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });

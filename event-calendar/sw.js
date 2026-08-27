@@ -1,18 +1,19 @@
 const CACHE_PREFIX = 'uit-vandaag-';
-const STATIC_CACHE = `${CACHE_PREFIX}static-20260819-3`;
-const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-20260819-3`;
+const STATIC_CACHE = `${CACHE_PREFIX}static-20260827-multiday-days-1`;
+const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-20260827-multiday-days-1`;
 
 const APP_SHELL = [
   '/',
   '/index.html',
   '/about.html',
+  '/technical.html',
   '/disclaimer.html',
   '/privacy.html',
-  '/styles.css?v=20260819-fav-7',
-  '/app.js?v=20260819-fav-2',
+  '/styles.css?v=20260821-agenda-link-1',
+  '/app.js?v=20260827-multiday-days-1',
   '/back-to-top.js?v=20260802-2',
   '/analytics-consent.js?v=20260802-2',
-  '/theme.js?v=20260811-navigation-1',
+  '/theme.js?v=20260821-logo-links-1',
   '/weather.js?v=20260819-1',
   '/standings.js?v=20260819-5',
   '/loading-watchdog.js?v=20260801-1',

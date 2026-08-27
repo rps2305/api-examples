@@ -172,6 +172,7 @@ a:focus-visible {
   height: clamp(3.5rem, 8vw, 6rem);
   object-fit: contain;
 }
+.brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
 .eyebrow,
 .controls label,
@@ -260,30 +261,19 @@ input {
 .filters {
   grid-column: 1 / -1;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: var(--space-1);
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  padding-bottom: 0.35rem;
-  scrollbar-width: thin;
 }
 
 .filters > * { flex: 0 0 auto; }
+.filters button { padding-inline: 0.5rem; }
 
 .calendar-actions {
   grid-column: 1 / -1;
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-}
-
-@media (max-width: 1200px) {
-  .filters {
-    flex-wrap: wrap;
-    overflow-x: visible;
-    padding-bottom: 0;
-  }
 }
 
 button {
@@ -545,7 +535,10 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 }
 
 .meta { overflow-wrap: anywhere; hyphens: auto; color: var(--color-muted); font-size: var(--text-sm); }
-.event-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.85rem; margin-top: auto; padding-top: var(--space-3); }
+.event-links { display: grid; gap: var(--space-2); margin-top: auto; padding-top: var(--space-3); }
+.event-primary-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.45rem; }
+.event-primary-actions:has(:only-child) { grid-template-columns: minmax(0, 1fr); }
+.event-utility-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.85rem; }
 
 .event-links a,
 .event-share-button {
@@ -557,6 +550,8 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
+.event-primary-actions a { justify-content: center; padding: 0.35rem 0.5rem; border: 1px solid currentColor; font-weight: 500; text-decoration: none; }
+.event-primary-actions .event-info-link { border-color: color-mix(in srgb, currentColor 52%, transparent); }
 
 .event-share-button {
   min-block-size: 44px;
@@ -594,18 +589,11 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
 .event-favorite-button[aria-pressed="true"] { color: var(--color-accent-warm); text-decoration-thickness: 2px; }
 .event-favorite-button[aria-pressed="true"] svg { fill: var(--color-accent-warm); stroke: var(--color-accent-warm); }
 
-.event-calendar-button { min-block-size: 44px; min-inline-size: 44px; margin-left: auto; padding: 0.45rem 0.55rem; border-color: var(--color-border); font-size: var(--text-xs); line-height: 1; white-space: nowrap; }
-.event-links.has-ticket .event-calendar-button { margin-left: 0; }
+.event-calendar-button { min-block-size: 44px; padding: 0.2rem 0; border: 0; background: transparent; color: var(--color-ink); font: inherit; font-size: var(--text-sm); line-height: 1; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-transform: none; white-space: nowrap; }
 .event.fc-home .event-calendar-button { border-color: color-mix(in srgb, var(--color-ink-inverse) 55%, transparent); color: var(--color-ink-inverse); }
 .event.fc-twente.fc-home .event-share-button, .event.fc-twente.fc-home .event-favorite-button { color: var(--color-ink-inverse); }
 
-.event-links .tickets {
-  padding: 0.35rem 0.55rem;
-  border: 1px solid currentColor;
-  color: var(--color-accent-readable);
-  font-weight: 500;
-  text-decoration: none;
-}
+.event-links .tickets { color: var(--color-accent-readable); }
 
 .event.metropool {
   background: var(--color-metropool);
@@ -777,6 +765,14 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
   font-size: 1rem;
   line-height: 1.65;
   letter-spacing: 0;
+}
+.technical-page .legal-main,
+.technical-page .release-history,
+.technical-page .scope-intro p,
+.technical-page .scope-facts {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-synthesis: none;
+  text-size-adjust: 100%;
 }
 .legal-main .eyebrow, .release-history .eyebrow { color: var(--color-accent-readable); }
 .source-list { display: grid; gap: var(--space-2); padding: 0; list-style: none; }

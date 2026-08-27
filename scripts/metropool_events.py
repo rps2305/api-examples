@@ -3,9 +3,11 @@
 
 import argparse
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from html import unescape
 from pathlib import Path
+from time import sleep
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
@@ -21,6 +23,17 @@ TIMEZONE = ZoneInfo("Europe/Amsterdam")
 
 def clean(value: str) -> str:
     return " ".join(unescape(re.sub(r"<[^>]+>", " ", value)).split())
+
+
+def scrape_stage(html: str) -> str:
+    """Extract the named stage from an individual Metropool event page."""
+    match = re.search(
+        r'<span>\s*Locatie\s*</span>\s*<span class="location">\s*<span>\s*'
+        r'(?:<a[^>]*>)?(.*?)(?:</a>)?\s*</span>',
+        html,
+        re.DOTALL | re.IGNORECASE,
+    )
+    return clean(match.group(1)) if match else ""
 
 
 def scrape_events(html: str) -> list[dict[str, object]]:
@@ -66,6 +79,33 @@ def scrape_events(html: str) -> list[dict[str, object]]:
     return events
 
 
+def add_stages(events: list[dict[str, object]]) -> None:
+    """Enrich agenda cards with their stage, available only on detail pages."""
+    def load_stage(event: dict[str, object]) -> str:
+        url = str(event.get("url") or "")
+        if not url:
+            return ""
+        for attempt in range(3):
+            try:
+                stage = scrape_stage(get_text(url))
+            except EventSourceError:
+                if attempt < 2:
+                    sleep(0.4 * (attempt + 1))
+                continue
+            if stage:
+                return stage
+            return ""
+        return ""
+
+    # Detail pages are independent; limited concurrency keeps a full refresh
+    # comfortably below the application start-up window without hammering Metropool.
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        stages = executor.map(load_stage, events)
+        for event, stage in zip(events, stages):
+            if stage:
+                event["stage"] = stage
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", default=DEFAULT_URL, help="Metropool agenda URL")
@@ -84,6 +124,7 @@ def main() -> None:
                 break
             events.extend(page_events)
             page += 1
+        add_stages(events)
     if not events:
         parser.error("no events found; check the agenda URL or page format")
     print_events(events)

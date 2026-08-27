@@ -10,9 +10,9 @@ De agenda verzamelt toekomstige openbare items van Metropool, De Cactus, Broedpl
 
 Controleer tijden, toegang en tickets altijd bij de oorspronkelijke aanbieder. Zie `disclaimer.html` voor bronlinks en de volledige disclaimer.
 
-## Todo
+## Onderhoud van festivaldata
 
-- Voeg Zwarte Cross toe zodra de organisator de datum van de editie 2027 officieel op [zwartecross.nl](https://www.zwartecross.nl/) publiceert. De editie van 2026 (16–19 juli) is voorbij; er is nog geen bevestigde datum voor 2027.
+De handmatig beheerde meerdaagse festivals staan in `personal_events()` in `build_calendar.py`. Controleer de officiële data van Lowlands, Zwarte Cross en Oktoberfest München minimaal eens per twee maanden en werk ze daar bij; gebruik altijd de officiële organisator als bron.
 
 ## Wekelijkse e-mail
 

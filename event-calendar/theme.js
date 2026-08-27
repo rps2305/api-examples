@@ -49,6 +49,16 @@
     });
   }
 
+  function linkBrandMarks() {
+    document.querySelectorAll('img.legal-brand-mark').forEach(mark => {
+      const link = document.createElement('a');
+      link.href = 'index.html';
+      link.setAttribute('aria-label', 'Naar de agenda');
+      mark.before(link);
+      link.append(mark);
+    });
+  }
+
   document.documentElement.classList.remove('no-js');
   let preference = '';
   try {
@@ -60,7 +70,7 @@
     ? preference
     : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   applyTheme(theme);
-  const setup = () => { setupToggle(); setupMenu(); markCurrentPage(); };
+  const setup = () => { setupToggle(); setupMenu(); linkBrandMarks(); markCurrentPage(); };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup, { once: true });
   else setup();
 })();

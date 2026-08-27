@@ -2,7 +2,7 @@
   {
     "@type": "Event",
     "name": "Zomer Zandspeeltuin",
-    "startDate": "2026-08-19",
+    "startDate": "2026-08-21",
     "location": "",
     "genre": "Kinderen, Zomervakantie",
     "url": "https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin",
@@ -11,54 +11,13 @@
   },
   {
     "@type": "Event",
-    "name": "SchouwArt presenteert: De Machine",
-    "startDate": "2026-08-20T17:00:00Z",
+    "name": "Rabobank Beach Courts Hengelo",
+    "startDate": "2026-08-21T08:00:00Z",
     "location": "",
-    "genre": "Theaterinstallatie",
-    "url": "https://uitinhengelo.nl/evenementen/schouwart-presenteert-de-machine",
+    "genre": "Sport & Spel",
+    "url": "https://uitinhengelo.nl/evenementen/rabobank-beach-courts",
+    "endDate": "2026-08-30T20:00:00Z",
     "source": "hengelo"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "FC Twente - Qarabağ",
-    "startDate": "2026-08-20T18:00:00Z",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "The Swamp Shakers (Rockabilly, Rock&Roll, Blues,  LET)",
-    "startDate": "2026-08-20T18:30:00Z",
-    "endDate": "2026-08-20T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111599147",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111599147",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "The Tool Experience",
-    "startDate": "2026-08-20T19:00:00Z",
-    "location": "Enschede",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/the-tool-experience",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1392630051?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Tool."
-  },
-  {
-    "@type": "Event",
-    "name": "Racoon",
-    "startDate": "2026-08-20T19:30:00Z",
-    "location": "Hertme",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/racoon",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1781886018?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -67,6 +26,15 @@
     "location": "",
     "genre": "Actief, Diversen, Sport & Spel",
     "url": "https://uitinhengelo.nl/evenementen/nightskate-twente",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "THELMA Themafilm over bankfraude",
+    "startDate": "2026-08-21T17:30:00Z",
+    "location": "",
+    "genre": "Film, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/thelma-themafilm-over-bankfraude",
     "source": "hengelo"
   },
   {
@@ -89,6 +57,7 @@
     "url": "https://metropool.nl/agenda/blof",
     "ticketUrl": "https://www.ticketmaster.nl/event/1737507367?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Openluchttheater, Hertme",
     "source": "metropool"
   },
   {
@@ -109,6 +78,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten",
     "ticketUrl": "https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten",
+    "stage": "OOGST, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Live."
@@ -141,6 +111,7 @@
     "genre": "Latin",
     "url": "https://metropool.nl/agenda/rico-mambo",
     "ticketUrl": "https://metropool.nl/agenda/rico-mambo",
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor latin."
@@ -154,6 +125,7 @@
     "url": "https://metropool.nl/agenda/ilse-delange",
     "ticketUrl": "https://www.ticketmaster.nl/event/195920358?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Openluchttheater, Hertme",
     "source": "metropool"
   },
   {
@@ -220,6 +192,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/artez-afterglow",
     "ticketUrl": "https://metropool.nl/agenda/artez-afterglow",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -250,6 +223,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/deadsquad",
     "ticketUrl": "https://www.ticketmaster.nl/event/1772445005?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Innocent, Hengelo",
     "source": "metropool"
   },
   {
@@ -260,6 +234,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/introductieconcert",
     "ticketUrl": "https://metropool.nl/agenda/introductieconcert",
+    "stage": "Oude Markt, Enschede",
     "source": "metropool"
   },
   {
@@ -277,6 +252,15 @@
     "location": "",
     "genre": "Actief, Kinderen, Kunst & Cultuur, Sport & Spel, Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/comic-design-striptekenen-met-stefan-eenkhoorn-voor-12-t-m-15-jaar",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "infoavond: Nepagenten en online criminaliteit Hengelo",
+    "startDate": "2026-08-27T17:30:00Z",
+    "location": "",
+    "genre": "Diversen, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/infoavond-nepagenten-en-online-criminaliteit-hengelo",
     "source": "hengelo"
   },
   {
@@ -356,6 +340,7 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/oogst-live-ooostblok-jeepers-creepers",
     "ticketUrl": "https://metropool.nl/agenda/oogst-live-ooostblok-jeepers-creepers",
+    "stage": "OOGST, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Live."
@@ -491,6 +476,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/monkeyjam-2-sep",
     "ticketUrl": "https://metropool.nl/agenda/monkeyjam-2-sep",
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool"
   },
   {
@@ -522,6 +508,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/antimatter-sleeping-pulse",
     "ticketUrl": "https://www.ticketmaster.nl/event/2045492797?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Antimatter."
@@ -582,6 +569,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/boogie-nights",
     "ticketUrl": "https://www.ticketmaster.nl/event/454388601?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -615,12 +603,22 @@
   },
   {
     "@type": "Event",
+    "name": "CREA- en HOBBYMARKT",
+    "startDate": "2026-09-05T09:00:00Z",
+    "location": "",
+    "genre": "Diversen, Kinderen, Markten, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/crea-en-hobbymarkt",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Red Roots x Street Art Festival",
     "startDate": "2026-09-05T10:00:00Z",
     "location": "Enschede",
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/red-roots-x-street-art-festival",
     "ticketUrl": "https://metropool.nl/agenda/red-roots-x-street-art-festival",
+    "stage": "Willem Wilminkplein, Enschede",
     "source": "metropool"
   },
   {
@@ -640,6 +638,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/hart-van-zuid-festival",
     "ticketUrl": "https://metropool.nl/agenda/hart-van-zuid-festival",
+    "stage": "OOGST, Hengelo",
     "source": "metropool"
   },
   {
@@ -670,6 +669,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/the-rushians-a-tribute-to-rush",
     "ticketUrl": "https://www.ticketmaster.nl/event/292478576?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -828,7 +828,17 @@
     "genre": "Blues",
     "url": "https://metropool.nl/agenda/whisky-music",
     "ticketUrl": "https://www.ticketmaster.nl/event/297909675?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Film; JOE SPEEDBOOT",
+    "startDate": "2026-09-11T17:30:00Z",
+    "location": "",
+    "genre": "Film, Kinderen, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/film-joe-speedboot",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -858,6 +868,7 @@
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/arrested-development",
     "ticketUrl": "https://www.ticketmaster.nl/event/1265200928?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Arrested Development."
@@ -870,6 +881,7 @@
     "genre": "Hardcore/Punk",
     "url": "https://metropool.nl/agenda/wine-lips",
     "ticketUrl": "https://www.ticketmaster.nl/event/1058663356?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor hardcore en punk."
@@ -892,6 +904,7 @@
     "url": "https://metropool.nl/agenda/beerland",
     "ticketUrl": "https://www.ticketmaster.nl/event/1487815556?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -946,6 +959,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/80s-verantwoord-12-sep",
     "ticketUrl": "http://www.ticketmaster.nl/event/726955793?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -956,6 +970,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/disco-celebration",
     "ticketUrl": "https://www.ticketmaster.nl/event/1128170802?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -1067,6 +1082,7 @@
     "genre": "Jazz",
     "url": "https://metropool.nl/agenda/jazzrock-cafe-rayn-bechoe-the-flavors-of-soul",
     "ticketUrl": "https://www.ticketmaster.nl/event/1783052812?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -1086,6 +1102,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/open-mic-15-sep",
     "ticketUrl": "https://metropool.nl/agenda/open-mic-15-sep",
+    "stage": "Vestzak, Enschede",
     "source": "metropool"
   },
   {
@@ -1152,6 +1169,7 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/popronde-enschede",
     "ticketUrl": "https://metropool.nl/agenda/popronde-enschede",
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool"
   },
   {
@@ -1218,6 +1236,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/nu-metal-night",
     "ticketUrl": "https://www.ticketmaster.nl/event/900607516?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1228,6 +1247,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/prof-nomad-sessies-neil-young",
     "ticketUrl": "https://www.ticketmaster.nl/event/563010005?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -1249,6 +1269,7 @@
     "genre": "Elektronisch",
     "url": "https://metropool.nl/agenda/colin-benders-amoral-twiena",
     "ticketUrl": "https://www.ticketmaster.nl/event/1654854731?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1259,6 +1280,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/emma-annelie-ep-release",
     "ticketUrl": "https://www.ticketmaster.nl/event/393425296?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1308,6 +1330,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta",
     "ticketUrl": "https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta",
+    "stage": "OOGST, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Live."
@@ -1329,6 +1352,7 @@
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/postmen",
     "ticketUrl": "https://www.ticketmaster.nl/event/936950475?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -1350,6 +1374,7 @@
     "genre": "Latin",
     "url": "https://metropool.nl/agenda/pina",
     "ticketUrl": "https://www.ticketmaster.nl/event/52026726?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor latin."
@@ -1408,6 +1433,7 @@
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/cory-hanson",
     "ticketUrl": "https://www.ticketmaster.nl/event/1591156607?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1477,6 +1503,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/donnas-hot-stuff",
     "ticketUrl": "https://www.ticketmaster.nl/event/39328718?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1498,6 +1525,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/naaz",
     "ticketUrl": "https://www.ticketmaster.nl/event/279264674?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1508,6 +1536,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/revester",
     "ticketUrl": "http://www.ticketmaster.nl/event/416711364?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1554,6 +1583,7 @@
     "genre": "Elektronisch",
     "url": "https://metropool.nl/agenda/never-too-late",
     "ticketUrl": "https://www.ticketmaster.nl/event/895145320?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1564,6 +1594,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/the-chicago-funk-earth-wind-fire-tribute",
     "ticketUrl": "https://www.ticketmaster.nl/event/919040560?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1585,6 +1616,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/tjolk-everything-80s-26-sep",
     "ticketUrl": "https://www.ticketmaster.nl/event/1355418505?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1595,6 +1627,7 @@
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/dilayda-ep-release",
     "ticketUrl": "https://www.ticketmaster.nl/event/2056920205?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -1689,6 +1722,7 @@
     "url": "https://metropool.nl/agenda/metropool-muziekquiz-enschede-30-sep",
     "ticketUrl": "https://www.ticketmaster.nl/event/333898700?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool"
   },
   {
@@ -1700,6 +1734,7 @@
     "url": "https://metropool.nl/agenda/metropool-muziekquiz-hengelo-30-sep",
     "ticketUrl": "https://www.ticketmaster.nl/event/1633704975?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -1739,6 +1774,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/boogie-nights-2-okt",
     "ticketUrl": "https://www.ticketmaster.nl/event/237777548?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -1758,6 +1794,7 @@
     "genre": "Elektronisch",
     "url": "https://metropool.nl/agenda/polyphonic",
     "ticketUrl": "https://www.ticketmaster.nl/event/polyphonic-tickets/584112125?CAMEFROM=METROPOOL&_gl=&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1779,6 +1816,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/de-boetners-kiek-now-us",
     "ticketUrl": "https://www.ticketmaster.nl/event/587419122?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1789,6 +1827,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/emo-night-mainland",
     "ticketUrl": "https://www.ticketmaster.nl/event/1051965397?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1799,6 +1838,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/belphegor-krisiun",
     "ticketUrl": "https://www.ticketmaster.nl/event/1303950526?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1827,6 +1867,7 @@
     "genre": "Hardcore/Punk",
     "url": "https://metropool.nl/agenda/tenside-aurorawave",
     "ticketUrl": "https://www.ticketmaster.nl/event/834155093?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor hardcore en punk."
@@ -1858,6 +1899,7 @@
     "url": "https://metropool.nl/agenda/beach-boys-best",
     "ticketUrl": "https://www.ticketmaster.nl/event/1614480324?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1868,6 +1910,7 @@
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/the-dublin-legends",
     "ticketUrl": "https://www.ticketmaster.nl/event/1290361263?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1878,6 +1921,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/the-obscure",
     "ticketUrl": "https://www.ticketmaster.nl/event/626561898?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -1888,6 +1932,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/90s-loves-00s-03-okt",
     "ticketUrl": "https://www.ticketmaster.nl/event/873945725?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1907,6 +1952,7 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/platenbeurs-enschede",
     "ticketUrl": "https://www.ticketmaster.nl/event/947367471?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -1935,6 +1981,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/the-mukherjee-development",
     "ticketUrl": "https://metropool.nl/agenda/the-mukherjee-development",
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool"
   },
   {
@@ -1955,6 +2002,7 @@
     "url": "https://metropool.nl/agenda/dotan",
     "ticketUrl": "https://www.ticketmaster.nl/event/2088917158?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -1974,6 +2022,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/monkeyjam-7-okt",
     "ticketUrl": "https://metropool.nl/agenda/monkeyjam-7-okt",
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool"
   },
   {
@@ -2002,6 +2051,7 @@
     "genre": "Soul/Funk",
     "url": "https://metropool.nl/agenda/nona",
     "ticketUrl": "https://www.ticketmaster.nl/event/1024482601?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2042,6 +2092,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/rowwen-heze",
     "ticketUrl": "https://www.ticketmaster.nl/event/765745521?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2072,6 +2123,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/waxing-crescent",
     "ticketUrl": "https://www.ticketmaster.nl/event/1772207428?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2139,6 +2191,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/ios",
     "ticketUrl": "http://www.ticketmaster.nl/event/1841133207?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2171,6 +2224,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/new-wave-generation-10-okt",
     "ticketUrl": "https://www.ticketmaster.nl/event/574879897?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor new wave."
@@ -2191,6 +2245,7 @@
     "genre": "Elektronisch",
     "url": "https://metropool.nl/agenda/paralysis",
     "ticketUrl": "https://www.ticketmaster.nl/event/1273841917?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2223,6 +2278,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/khemmis",
     "ticketUrl": "https://www.ticketmaster.nl/event/1936188908?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2279,6 +2335,7 @@
     "url": "https://metropool.nl/agenda/comedy-tunes-comedy-night-14-okt",
     "ticketUrl": "https://www.ticketmaster.nl/event/654896304?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -2289,6 +2346,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/mondo-drag-early-moods",
     "ticketUrl": "https://www.ticketmaster.nl/event/1116935402?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2308,6 +2366,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/ronde",
     "ticketUrl": "https://www.ticketmaster.nl/event/1463496258?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2327,6 +2386,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/firtan",
     "ticketUrl": "https://www.ticketmaster.nl/event/567230301?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2346,6 +2406,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/frank-boeijen",
     "ticketUrl": "https://www.ticketmaster.nl/event/1675781918?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2376,6 +2437,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/cavolo-nero",
     "ticketUrl": "https://www.ticketmaster.nl/event/920301648?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2386,6 +2448,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/limehouse-lizzy",
     "ticketUrl": "https://www.ticketmaster.nl/event/845433242?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2405,6 +2468,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/legends-of-rock-tribute-festival",
     "ticketUrl": "https://www.ticketmaster.nl/event/467592893?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2415,6 +2479,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/vroegzat-17-okt",
     "ticketUrl": "https://www.ticketmaster.nl/event/345730276?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2463,6 +2528,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/carl-verheyen",
     "ticketUrl": "https://www.ticketmaster.nl/event/1968018762?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -2473,6 +2539,7 @@
     "genre": "Jazz",
     "url": "https://metropool.nl/agenda/zuco-103",
     "ticketUrl": "https://www.ticketmaster.nl/event/1975267029?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2510,6 +2577,7 @@
     "url": "https://metropool.nl/agenda/marillion",
     "ticketUrl": "https://www.ticketmaster.nl/event/1572763065?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Muziekcentrum, Enschede",
     "source": "metropool"
   },
   {
@@ -2520,6 +2588,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/open-mic-20-okt",
     "ticketUrl": "https://metropool.nl/agenda/open-mic-20-okt",
+    "stage": "Vestzak, Enschede",
     "source": "metropool"
   },
   {
@@ -2557,6 +2626,7 @@
     "genre": "Hardcore/Punk",
     "url": "https://metropool.nl/agenda/codefendants",
     "ticketUrl": "https://www.ticketmaster.nl/event/1842241855?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor hardcore en punk."
@@ -2569,6 +2639,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/walk-off-the-earth",
     "ticketUrl": "https://www.ticketmaster.nl/event/844265154?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2597,6 +2668,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/acindc",
     "ticketUrl": "https://www.ticketmaster.nl/event/1772911150?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2607,6 +2679,7 @@
     "genre": "Hardcore/Punk",
     "url": "https://metropool.nl/agenda/ploegendienst",
     "ticketUrl": "https://www.ticketmaster.nl/event/1458931274?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor hardcore en punk."
@@ -2640,6 +2713,7 @@
     "url": "https://metropool.nl/agenda/ruben-hillen",
     "ticketUrl": "https://www.ticketmaster.nl/event/570293096?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2677,6 +2751,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/ida",
     "ticketUrl": "https://www.ticketmaster.nl/event/1483883385?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2687,6 +2762,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/leif-de-leeuw-band",
     "ticketUrl": "https://www.ticketmaster.nl/event/1829352569?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -2697,6 +2773,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/lois-lane",
     "ticketUrl": "https://www.ticketmaster.nl/event/416956979?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2727,6 +2804,7 @@
     "genre": "Blues",
     "url": "https://metropool.nl/agenda/foreign-affairs",
     "ticketUrl": "https://www.ticketmaster.nl/event/948163685?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2839,6 +2917,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/voorspel-nederlandstalig",
     "ticketUrl": "https://www.ticketmaster.nl/event/2008304197?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2887,6 +2966,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/bokkers-30-okt",
     "ticketUrl": "https://www.ticketmaster.nl/event/1847981325?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2908,6 +2988,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/drive-by-wire",
     "ticketUrl": "https://www.ticketmaster.nl/event/1078226066?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2918,6 +2999,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/qrush-halloween",
     "ticketUrl": "https://www.ticketmaster.nl/event/1533948046?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2955,6 +3037,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/bokkers-31-okt",
     "ticketUrl": "https://www.ticketmaster.nl/event/1569217638?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2965,6 +3048,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/wende",
     "ticketUrl": "https://www.ticketmaster.nl/event/542620620?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -2986,6 +3070,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/rem-by-the-40-watt-band",
     "ticketUrl": "https://www.ticketmaster.nl/event/1435144519?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor R.E.M."
@@ -3015,6 +3100,7 @@
     "genre": "Jazz",
     "url": "https://metropool.nl/agenda/jazzrock-cafe-erly-thornton",
     "ticketUrl": "https://www.ticketmaster.nl/event/417567421?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -3053,6 +3139,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/monkeyjam-4-nov",
     "ticketUrl": "https://metropool.nl/agenda/monkeyjam-4-nov",
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool"
   },
   {
@@ -3111,6 +3198,7 @@
     "url": "https://metropool.nl/agenda/the-dire-straits-experience",
     "ticketUrl": "https://www.ticketmaster.nl/event/1470254921?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Muziekcentrum, Enschede",
     "source": "metropool"
   },
   {
@@ -3141,6 +3229,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/k-otic",
     "ticketUrl": "https://www.ticketmaster.nl/event/204125551?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3151,6 +3240,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/wow-factor",
     "ticketUrl": "https://www.ticketmaster.nl/event/2069015297?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3170,6 +3260,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/de-baron",
     "ticketUrl": "https://www.ticketmaster.nl/event/2088471851?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3189,6 +3280,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/museumnacht-enschede",
     "ticketUrl": "https://tickets.concordia.nl/mtTicket/countdown/10025679?stlt=cncrd&_gl=1%2Apwqtpg%2A_gcl_au%2AMTI5NTAyNzM5NC4xNzgzMzM3Nzg4&brnd=cncrd",
+    "stage": "Extern",
     "source": "metropool"
   },
   {
@@ -3217,6 +3309,7 @@
     "genre": "Reggae/Ska",
     "url": "https://metropool.nl/agenda/eek-a-mouse",
     "ticketUrl": "https://www.ticketmaster.nl/event/1311397215?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor reggae en ska."
@@ -3230,6 +3323,7 @@
     "url": "https://metropool.nl/agenda/time-bandits",
     "ticketUrl": "https://www.ticketmaster.nl/event/1645549851?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -3240,6 +3334,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/wies",
     "ticketUrl": "https://www.ticketmaster.nl/event/744626559?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3270,6 +3365,7 @@
     "genre": "Blues",
     "url": "https://metropool.nl/agenda/cato-van-dijck-anton-goudsmit",
     "ticketUrl": "https://www.ticketmaster.nl/event/757255122?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3289,6 +3385,7 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/platenbeurs-hengelo",
     "ticketUrl": "https://www.ticketmaster.nl/event/2011838911?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3373,6 +3470,7 @@
     "url": "https://metropool.nl/agenda/gavin-james",
     "ticketUrl": "https://www.ticketmaster.nl/event/1219514665?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3403,6 +3501,7 @@
     "genre": "Blues",
     "url": "https://metropool.nl/agenda/thorbjrn-risager-the-black-tornado",
     "ticketUrl": "https://www.ticketmaster.nl/event/486492296?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3422,6 +3521,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/gruppo-sportivo",
     "ticketUrl": "https://www.ticketmaster.nl/event/1841179847?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3452,6 +3552,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/queens-pleasure",
     "ticketUrl": "https://www.ticketmaster.nl/event/494528105?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3463,6 +3564,7 @@
     "url": "https://metropool.nl/agenda/thijs-veldhuis",
     "ticketUrl": "https://www.ticketmaster.nl/event/1881173626?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3531,6 +3633,7 @@
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/deppie-idioot-ep-release",
     "ticketUrl": "https://www.ticketmaster.nl/event/660228469?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3568,6 +3671,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/the-elvis-concert",
     "ticketUrl": "https://www.ticketmaster.nl/event/459282454?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3578,6 +3682,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/open-mic-17-nov",
     "ticketUrl": "https://metropool.nl/agenda/open-mic-17-nov",
+    "stage": "Vestzak, Enschede",
     "source": "metropool"
   },
   {
@@ -3619,6 +3724,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/fleshcrawl-avulsed",
     "ticketUrl": "https://www.ticketmaster.nl/event/1980589855?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3647,6 +3753,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/electric-six",
     "ticketUrl": "https://www.ticketmaster.nl/event/679293266?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3657,6 +3764,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/niels-geusebroek-sings-coldplay",
     "ticketUrl": "https://www.ticketmaster.nl/event/1254544546?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3687,6 +3795,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/trixie-whitley",
     "ticketUrl": "https://www.ticketmaster.nl/event/1168083701?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3714,6 +3823,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/frank-meijer-kampvuuravond-experience",
     "ticketUrl": "https://shop.weeztix.com/df45e655-2d77-43e8-9ba8-06547cc16c0b/tickets",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3751,6 +3861,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/de-kift",
     "ticketUrl": "https://www.ticketmaster.nl/event/625367876?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -3761,6 +3872,7 @@
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/noah-derksen",
     "ticketUrl": "https://www.ticketmaster.nl/event/119515671?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Vestzak, Enschede",
     "source": "metropool"
   },
   {
@@ -3887,6 +3999,7 @@
     "url": "https://metropool.nl/agenda/feuerengel-a-tribute-to-rammstein",
     "ticketUrl": "https://www.ticketmaster.nl/event/121604247?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Rammstein."
@@ -3899,6 +4012,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/snelle",
     "ticketUrl": "https://www.ticketmaster.nl/event/675574627?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcentrum, Enschede",
     "source": "metropool"
   },
   {
@@ -3922,6 +4036,7 @@
     "genre": "Jazz",
     "url": "https://metropool.nl/agenda/kruidkoek-joost-oomen",
     "ticketUrl": "https://www.ticketmaster.nl/event/1821124593?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3940,6 +4055,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/no-barrier",
     "ticketUrl": "https://www.ticketmaster.nl/event/512524148?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3960,6 +4076,7 @@
     "url": "https://metropool.nl/agenda/feuerengel-a-tribute-to-rammstein-28-nov",
     "ticketUrl": "https://www.ticketmaster.nl/event/1675303713?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Rammstein."
@@ -3985,6 +4102,7 @@
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/classic-rb-hiphop-28-nov",
     "ticketUrl": "https://www.ticketmaster.nl/event/1644700527?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4007,12 +4125,22 @@
   },
   {
     "@type": "Event",
+    "name": "Esther van der Voort",
+    "startDate": "2026-12-01T19:00:00Z",
+    "location": "",
+    "genre": "Cabaret",
+    "url": "https://uitinhengelo.nl/evenementen/esther-van-der-voort-3",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Monkeyjam",
     "startDate": "2026-12-02T19:00:00Z",
     "location": "Enschede",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/monkeyjam-2-dec",
     "ticketUrl": "https://metropool.nl/agenda/monkeyjam-2-dec",
+    "stage": "Muziekcafé, Enschede",
     "source": "metropool"
   },
   {
@@ -4050,6 +4178,7 @@
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/steve-n-seagulls",
     "ticketUrl": "https://www.ticketmaster.nl/event/1891424359?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4069,6 +4198,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/qmusic-the-party-4-uur-fout",
     "ticketUrl": "https://www.ticketmaster.nl/event/538717564?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4079,6 +4209,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/the-dirty-daddies-4-dec",
     "ticketUrl": "https://www.ticketmaster.nl/event/299199048?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcentrum, Enschede",
     "source": "metropool"
   },
   {
@@ -4100,6 +4231,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/roundabouts-ep-release",
     "ticketUrl": "https://www.ticketmaster.nl/event/1348944853?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4127,6 +4259,7 @@
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/gotu-jim",
     "ticketUrl": "https://www.ticketmaster.nl/event/1819676797?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4146,6 +4279,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/mostly-autumn",
     "ticketUrl": "https://www.ticketmaster.nl/event/712534601?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4156,6 +4290,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/david-ellefson-bass-warrior",
     "ticketUrl": "https://www.ticketmaster.nl/event/1246083197?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4175,6 +4310,7 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/comedy-tunes-comedy-night-9-dec",
     "ticketUrl": "https://www.ticketmaster.nl/event/637602370?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -4194,6 +4330,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/haevn",
     "ticketUrl": "https://www.ticketmaster.nl/event/875521976?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcentrum, Enschede",
     "source": "metropool"
   },
   {
@@ -4224,6 +4361,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/the-fortunate-sons-a-tribute-to-ccr-11-dec",
     "ticketUrl": "https://www.ticketmaster.nl/event/2083957432?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor CCR."
@@ -4247,6 +4385,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/lezard",
     "ticketUrl": "https://www.ticketmaster.nl/event/2040451976?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4283,6 +4422,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/jett-rebel",
     "ticketUrl": "https://www.ticketmaster.nl/event/1368510767?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4304,6 +4444,7 @@
     "genre": "Latin",
     "url": "https://metropool.nl/agenda/maite-hontele",
     "ticketUrl": "https://www.ticketmaster.nl/event/1029409102?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Maite Hontelé."
@@ -4345,6 +4486,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/the-doors-alive",
     "ticketUrl": "https://www.ticketmaster.nl/event/1262145124?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor The Doors."
@@ -4395,6 +4537,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/abba-gold-europe-18-dec",
     "ticketUrl": "https://www.ticketmaster.nl/event/13299578?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4405,6 +4548,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/the-hillbilly-moonshiners",
     "ticketUrl": "https://www.ticketmaster.nl/event/712729965?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4423,6 +4567,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/legends-of-rock-tribute-festival-19-dec",
     "ticketUrl": "https://www.ticketmaster.nl/event/1346647336?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4462,6 +4607,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/call-it-off-plays-taylor-swift",
     "ticketUrl": "https://www.ticketmaster.nl/event/532043387?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4693,6 +4839,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/pink-floyd-project-20-years",
     "ticketUrl": "https://www.ticketmaster.nl/event/1009985224?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Pink Floyd."
@@ -4759,6 +4906,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/jazzalike-15th-anniversary",
     "ticketUrl": "https://www.ticketmaster.nl/event/478810363?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4769,6 +4917,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/ten-years-after",
     "ticketUrl": "https://www.ticketmaster.nl/event/1997715703?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Ten Years After."
@@ -4803,12 +4952,26 @@
   },
   {
     "@type": "Event",
+    "name": "Het Goede Doel met Henk Westbroek",
+    "startDate": "2027-01-16T19:00:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/het-goede-doel-met-henk-westbroek",
+    "ticketUrl": "https://www.ticketmaster.nl/event/822663806?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Het Goede Doel."
+  },
+  {
+    "@type": "Event",
     "name": "Daredevils - Zing Nederlands met Me",
     "startDate": "2027-01-16T19:30:00Z",
     "location": "Hengelo",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/daredevils-zing-nederlands-met-me-16-jan",
     "ticketUrl": "https://www.ticketmaster.nl/event/1198736043?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4819,6 +4982,7 @@
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/fleddy-melculy",
     "ticketUrl": "https://www.ticketmaster.nl/event/290381113?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4829,6 +4993,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/made-in-purple",
     "ticketUrl": "https://www.ticketmaster.nl/event/1065430308?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
     "source": "metropool"
   },
   {
@@ -4902,6 +5067,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/physical-graffiti-performing-led-zeppelin",
     "ticketUrl": "https://www.ticketmaster.nl/event/1006380407?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -4930,6 +5096,7 @@
     "genre": "Blues",
     "url": "https://metropool.nl/agenda/the-steepwater-band",
     "ticketUrl": "https://www.ticketmaster.nl/event/210056894?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4957,6 +5124,7 @@
     "genre": "Jazz",
     "url": "https://metropool.nl/agenda/new-cool-collective",
     "ticketUrl": "https://www.ticketmaster.nl/event/182673558?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -5005,6 +5173,7 @@
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/david-ramirez",
     "ticketUrl": "https://www.ticketmaster.nl/event/532070519?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -5060,6 +5229,7 @@
     "url": "https://metropool.nl/agenda/bouke-the-elvismatters-band-30-jan",
     "ticketUrl": "https://www.ticketmaster.nl/event/1518060091?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -5070,6 +5240,7 @@
     "genre": "Hardcore/Punk",
     "url": "https://metropool.nl/agenda/state-power",
     "ticketUrl": "https://www.ticketmaster.nl/event/1414950007?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor hardcore en punk."
@@ -5187,6 +5358,7 @@
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/blue-grass-boogiemen-pieternel",
     "ticketUrl": "https://www.ticketmaster.nl/event/726939247?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Extern",
     "source": "metropool"
   },
   {
@@ -5226,6 +5398,7 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/comedy-tunes-comedy-night-11-feb",
     "ticketUrl": "https://www.ticketmaster.nl/event/399428793?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -5262,6 +5435,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/drukwerk",
     "ticketUrl": "https://www.ticketmaster.nl/event/1750450312?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Drukwerk."
@@ -5364,6 +5538,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/the-dirty-daddies-19-feb",
     "ticketUrl": "https://www.ticketmaster.nl/event/158426918?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -5395,6 +5570,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/the-dirty-daddies-20-feb",
     "ticketUrl": "https://www.ticketmaster.nl/event/12642694?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -5494,6 +5670,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/dikkie-dik-en-dirk-scheele-2-show-1",
     "ticketUrl": "https://www.ticketmaster.nl/event/1367849297?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -5504,6 +5681,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/dikkie-dik-en-dirk-scheele-2-show-2",
     "ticketUrl": "https://www.ticketmaster.nl/event/1056473448?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -5727,6 +5905,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/ozzyfied-in-memory-of-ozzy-osbourne",
     "ticketUrl": "https://www.ticketmaster.nl/event/1336220761?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -5954,6 +6133,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/copperhead-county",
     "ticketUrl": "https://www.ticketmaster.nl/event/363374876?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -6142,6 +6322,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/kim-wilde",
     "ticketUrl": "https://www.ticketmaster.nl/event/754088643?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -6224,6 +6405,7 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/comedy-tunes-comedy-night-15-apr",
     "ticketUrl": "https://www.ticketmaster.nl/event/1639871647?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -6397,6 +6579,7 @@
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/bettie-serveert",
     "ticketUrl": "https://www.ticketmaster.nl/event/1178978110?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -6479,6 +6662,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/rumours-of-fleetwood-mac",
     "ticketUrl": "https://www.ticketmaster.nl/event/1939403543?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcentrum, Enschede",
     "source": "metropool"
   },
   {
@@ -6515,6 +6699,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/ruben-hillen-1-mei",
     "ticketUrl": "https://www.ticketmaster.nl/event/1087094289?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -6668,6 +6853,7 @@
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/rory-gallagher-project",
     "ticketUrl": "https://www.ticketmaster.nl/event/1009625598?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -6829,6 +7015,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/faaschtbankler",
     "ticketUrl": "https://www.ticketmaster.nl/event/2092292305?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcentrum, Enschede",
     "source": "metropool"
   },
   {

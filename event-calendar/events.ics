@@ -4,48 +4,18 @@ PRODID:-//Uit Vandaag Twente//NL
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Uit Vandaag — Twente
 BEGIN:VEVENT
-UID:763cdc15279b4d8a87eba2c0@event-calendar.puntuale.nl
-DTSTART;VALUE=DATE:20260819
+UID:02d32b2095bc6dd515e95edb@event-calendar.puntuale.nl
+DTSTART;VALUE=DATE:20260821
 SUMMARY:Zomer Zandspeeltuin
 DTEND;VALUE=DATE:20260830
 URL:https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin
 END:VEVENT
 BEGIN:VEVENT
-UID:d2f55e7bcad384b259871bfb@event-calendar.puntuale.nl
-DTSTART:20260820T170000Z
-SUMMARY:SchouwArt presenteert: De Machine
-DTEND:20260820T190000Z
-URL:https://uitinhengelo.nl/evenementen/schouwart-presenteert-de-machine
-END:VEVENT
-BEGIN:VEVENT
-UID:0b5d0155bcdd429a613a5640@event-calendar.puntuale.nl
-DTSTART:20260820T180000Z
-SUMMARY:FC Twente - Qarabağ
-DTEND:20260820T200000Z
-END:VEVENT
-BEGIN:VEVENT
-UID:d79ebea4934b78716c9c5afe@event-calendar.puntuale.nl
-DTSTART:20260820T183000Z
-SUMMARY:The Swamp Shakers (Rockabilly\, Rock&Roll\, Blues\,  LET)
-DTEND:20260820T213000Z
-LOCATION:De Cactus\, Hengelo
-URL:https://decactus.stager.co/shop/default/events/111599147
-END:VEVENT
-BEGIN:VEVENT
-UID:5220ef378f6a6cdcf0abb1fd@event-calendar.puntuale.nl
-DTSTART:20260820T190000Z
-SUMMARY:The Tool Experience
-DTEND:20260820T210000Z
-LOCATION:Enschede
-URL:https://metropool.nl/agenda/the-tool-experience
-END:VEVENT
-BEGIN:VEVENT
-UID:b08800bd671202be522c4258@event-calendar.puntuale.nl
-DTSTART:20260820T193000Z
-SUMMARY:Racoon
-DTEND:20260820T213000Z
-LOCATION:Hertme
-URL:https://metropool.nl/agenda/racoon
+UID:b68381d27ac7124c152f33e6@event-calendar.puntuale.nl
+DTSTART:20260821T080000Z
+SUMMARY:Rabobank Beach Courts Hengelo
+DTEND:20260830T200000Z
+URL:https://uitinhengelo.nl/evenementen/rabobank-beach-courts
 END:VEVENT
 BEGIN:VEVENT
 UID:c715fd6ad709b92bb616fea5@event-calendar.puntuale.nl
@@ -53,6 +23,13 @@ DTSTART:20260821T173000Z
 SUMMARY:Nightskate Twente
 DTEND:20260821T193000Z
 URL:https://uitinhengelo.nl/evenementen/nightskate-twente
+END:VEVENT
+BEGIN:VEVENT
+UID:c436fe1c69c6929b5c904286@event-calendar.puntuale.nl
+DTSTART:20260821T173000Z
+SUMMARY:THELMA Themafilm over bankfraude
+DTEND:20260821T193000Z
+URL:https://uitinhengelo.nl/evenementen/thelma-themafilm-over-bankfraude
 END:VEVENT
 BEGIN:VEVENT
 UID:937d8d5bef94f0b2fd73b86f@event-calendar.puntuale.nl
@@ -211,6 +188,14 @@ SUMMARY:Comic design (striptekenen) met Stefan Eenkhoorn
 DTEND:20260827T183000Z
 URL:https://uitinhengelo.nl/evenementen/comic-design-striptekenen-met-stefa
  n-eenkhoorn-voor-12-t-m-15-jaar
+END:VEVENT
+BEGIN:VEVENT
+UID:a7c18b55554a645083d0782c@event-calendar.puntuale.nl
+DTSTART:20260827T173000Z
+SUMMARY:infoavond: Nepagenten en online criminaliteit Hengelo
+DTEND:20260827T193000Z
+URL:https://uitinhengelo.nl/evenementen/infoavond-nepagenten-en-online-crim
+ inaliteit-hengelo
 END:VEVENT
 BEGIN:VEVENT
 UID:a48022003cd25500f22a3f1d@event-calendar.puntuale.nl
@@ -465,6 +450,13 @@ DTEND:20260905T100000Z
 URL:https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend
 END:VEVENT
 BEGIN:VEVENT
+UID:298eb342133d8928970a7682@event-calendar.puntuale.nl
+DTSTART:20260905T090000Z
+SUMMARY:CREA- en HOBBYMARKT
+DTEND:20260905T110000Z
+URL:https://uitinhengelo.nl/evenementen/crea-en-hobbymarkt
+END:VEVENT
+BEGIN:VEVENT
 UID:6f5d5680e6da477dcb50b5a6@event-calendar.puntuale.nl
 DTSTART:20260905T100000Z
 SUMMARY:Red Roots x Street Art Festival
@@ -632,6 +624,13 @@ SUMMARY:Whisky & Music
 DTEND:20260911T190000Z
 LOCATION:Hengelo
 URL:https://metropool.nl/agenda/whisky-music
+END:VEVENT
+BEGIN:VEVENT
+UID:9a8638d373fb96fb3727acba@event-calendar.puntuale.nl
+DTSTART:20260911T173000Z
+SUMMARY:Film\; JOE SPEEDBOOT
+DTEND:20260911T193000Z
+URL:https://uitinhengelo.nl/evenementen/film-joe-speedboot
 END:VEVENT
 BEGIN:VEVENT
 UID:daa7a759d632b07c9fde2639@event-calendar.puntuale.nl
@@ -3063,6 +3062,13 @@ DTEND:20261129T210000Z
 URL:https://uitinhengelo.nl/evenementen/oudejaarsconference-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:333c3ec2e9899bf304d2aac4@event-calendar.puntuale.nl
+DTSTART:20261201T190000Z
+SUMMARY:Esther van der Voort
+DTEND:20261201T210000Z
+URL:https://uitinhengelo.nl/evenementen/esther-van-der-voort-3
+END:VEVENT
+BEGIN:VEVENT
 UID:883905c4ed14e406052853c5@event-calendar.puntuale.nl
 DTSTART:20261202T190000Z
 SUMMARY:Monkeyjam
@@ -3666,6 +3672,14 @@ BEGIN:VEVENT
 UID:c0cae4dc3e62bdc39d8d2da4@event-calendar.puntuale.nl
 DTSTART;VALUE=DATE:20270116
 SUMMARY:FC Utrecht - FC Twente
+END:VEVENT
+BEGIN:VEVENT
+UID:58104bd37100174130c3fd9f@event-calendar.puntuale.nl
+DTSTART:20270116T190000Z
+SUMMARY:Het Goede Doel met Henk Westbroek
+DTEND:20270116T210000Z
+LOCATION:Enschede
+URL:https://metropool.nl/agenda/het-goede-doel-met-henk-westbroek
 END:VEVENT
 BEGIN:VEVENT
 UID:c8345795436b2d7e334fa06d@event-calendar.puntuale.nl
