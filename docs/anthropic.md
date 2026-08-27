@@ -15,7 +15,7 @@ headers = {
 }
 
 payload = {
-    "model": "claude-3-5-sonnet-20240620",
+    "model": "claude-opus-5",
     "max_tokens": 256,
     "messages": [{"role": "user", "content": "Hello from the API"}],
 }
@@ -33,7 +33,7 @@ $headers = @{
   "content-type" = "application/json"
 }
 $body = @{
-  model = "claude-3-5-sonnet-20240620"
+  model = "claude-opus-5"
   max_tokens = 256
   messages = @(@{ role = "user"; content = "Hello from the API" })
 } | ConvertTo-Json -Depth 5
@@ -46,8 +46,8 @@ curl https://api.anthropic.com/v1/messages \
   -H "x-api-key: ANTHROPIC_API_KEY" \
   -H "anthropic-version: 2023-06-01" \
   -H "content-type: application/json" \
-  -d '{"model":"claude-3-5-sonnet-20240620","max_tokens":256,"messages":[{"role":"user","content":"Hello from the API"}]}'
+  -d '{"model":"claude-opus-5","max_tokens":256,"messages":[{"role":"user","content":"Hello from the API"}]}'
 ```
 
 ## Docs
-- https://docs.anthropic.com/claude/docs
+- https://platform.claude.com/docs

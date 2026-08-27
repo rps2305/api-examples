@@ -6,7 +6,13 @@ import json
 from pathlib import Path
 from urllib.request import Request, urlopen
 
-from event_sources import EventSourceError, json_ld_events, load_text, normalize_datetime, print_events
+from event_sources import (
+    EventSourceError,
+    json_ld_events,
+    load_text,
+    normalize_datetime,
+    print_events,
+)
 
 DEFAULT_URL = "https://www.decactus.nl/"
 STAGER_BASE_URL = "https://decactus.stager.co"

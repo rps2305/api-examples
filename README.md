@@ -384,7 +384,7 @@ python -m unittest discover -s tests -v
   <tbody>
     <tr>
       <td>Dutch events and FC Twente calendar</td>
-      <td>Metropool and De Cactus event exports plus an FC Twente iCalendar generator.</td>
+      <td>Metropool, De Cactus, Oogst, Hengelo, and Dutch holiday event exports plus an FC Twente iCalendar generator.</td>
       <td>No</td>
       <td><a href="docs/dutch-events.md">docs/dutch-events.md</a></td>
     </tr>

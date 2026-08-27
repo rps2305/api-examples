@@ -12,7 +12,6 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
-
 LOCAL_TIMEZONE = ZoneInfo("Europe/Amsterdam")
 
 
@@ -148,4 +147,5 @@ def ical_datetime(value: object) -> str:
         else:
             return f";VALUE=DATE:{raw.replace('-', '')}"
     normalized = normalize_datetime(raw)
-    return f":{datetime.fromisoformat(normalized.replace('Z', '+00:00')).strftime('%Y%m%dT%H%M%SZ')}"
+    instant = datetime.fromisoformat(normalized.replace("Z", "+00:00"))
+    return f":{instant.strftime('%Y%m%dT%H%M%SZ')}"

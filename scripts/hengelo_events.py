@@ -164,12 +164,14 @@ def scrape_events(html: str, now: datetime | None = None) -> list[dict[str, obje
         clocks = re.findall(r"\b\d{1,2}:\d{2}\b", str(card.get("details", "")))
         start = local_datetime(start_day, clocks[0]) if clocks else start_day.isoformat()
         categories = card.get("categories")
+        has_categories = isinstance(categories, list) and categories
+        genre = ", ".join(categories) if has_categories else "Evenement"
         event: dict[str, object] = {
             "@type": "Event",
             "name": str(card["name"]),
             "startDate": start,
             "location": "",
-            "genre": ", ".join(categories) if isinstance(categories, list) and categories else "Evenement",
+            "genre": genre,
             "url": str(card["url"]),
         }
         if end_day is not None:
