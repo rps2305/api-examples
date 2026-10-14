@@ -1,6 +1,7 @@
 (function () {
   const panel = document.querySelector('#standings-panel');
   const containers = [document.querySelector('#standings-a'), document.querySelector('#standings-b')];
+  const statusLine = document.querySelector('#standings-status');
   if (!panel || containers.some(container => !container)) return;
 
   const stat = (entry, name) => {
@@ -52,8 +53,12 @@
       containers[0].replaceChildren(...entries.slice(0, halfway).map(buildRow));
       containers[1].replaceChildren(...entries.slice(halfway).map(buildRow));
       panel.hidden = false;
+      if (statusLine) statusLine.hidden = true;
     } catch {
-      panel.hidden = true;
+      if (statusLine) {
+        statusLine.dataset.state = 'error';
+        statusLine.textContent = 'De stand kon niet worden geladen. Bekijk de volledige stand via de link hierboven.';
+      }
     }
   }
 

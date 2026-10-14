@@ -20,6 +20,7 @@ SCRIPTS = ROOT / "scripts"
 OUTPUT = Path(__file__).with_name("events.json")
 ICAL = Path(__file__).with_name("events.ics")
 INDEX = Path(__file__).with_name("index.html")
+CONTACT = Path(__file__).with_name("contact.html")
 DISCLAIMER = Path(__file__).with_name("disclaimer.html")
 PRERENDER_LIMIT = 60
 sys.path.insert(0, str(SCRIPTS))
@@ -398,9 +399,9 @@ def update_disclaimer(processed_at: datetime) -> None:
     document = replace_between(document, "<!-- DISCLAIMER_REFRESH_START -->", "<!-- DISCLAIMER_REFRESH_END -->", disclaimer_status)
     DISCLAIMER.write_text(document, encoding="utf-8")
 
-    index = INDEX.read_text(encoding="utf-8")
-    index = replace_between(index, "<!-- LAST_REFRESH_START -->", "<!-- LAST_REFRESH_END -->", homepage_status)
-    INDEX.write_text(index, encoding="utf-8")
+    contact = CONTACT.read_text(encoding="utf-8")
+    contact = replace_between(contact, "<!-- LAST_REFRESH_START -->", "<!-- LAST_REFRESH_END -->", homepage_status)
+    CONTACT.write_text(contact, encoding="utf-8")
 
 
 def personal_events(year: int) -> list[dict[str, object]]:

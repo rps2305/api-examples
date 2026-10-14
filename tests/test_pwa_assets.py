@@ -26,7 +26,7 @@ class PwaAssetsTests(unittest.TestCase):
 
     def test_offline_shell_contains_current_generated_files(self) -> None:
         worker = (ROOT / "sw.js").read_text(encoding="utf-8")
-        for asset in ("/", "/about.html", "/privacy.html", "/events.json", "/events.ics", "/site.webmanifest"):
+        for asset in ("/", "/about.html", "/privacy.html", "/contact.html", "/standings.html", "/events.json", "/events.ics", "/site.webmanifest"):
             self.assertIn(f"'{asset}'", worker)
 
     def test_homepage_has_semantic_agenda_heading_structure(self) -> None:
@@ -47,15 +47,16 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn('alt="Uit Vandaag Twente-logo"', index)
 
     def test_homepage_explains_the_calendar_and_search_examples(self) -> None:
+        contact = (ROOT / "contact.html").read_text(encoding="utf-8")
         index = (ROOT / "index.html").read_text(encoding="utf-8")
-        self.assertIn('id="footer-about-title">Over deze agenda</h2>', index)
-        self.assertIn("Ronald Punt</a> bouwt en beheert", index)
+        self.assertIn('id="footer-about-title">Over deze agenda</h2>', contact)
+        self.assertIn("Ronald Punt</a> bouwt en beheert", contact)
         self.assertIn('placeholder="Zoek op Metropool, rock of FC Twente"', index)
         self.assertIn('id="agenda-summary"', index)
-        self.assertIn('id="scope-title">Persoonlijk gekozen, niet compleet.', index)
-        self.assertIn("Hengelo, Almelo en Enschede", index)
-        self.assertIn("iedere zes uur", index)
-        self.assertIn("genormaliseerde naam, aanvang", index)
+        self.assertIn('id="scope-title">Persoonlijk gekozen, niet compleet.', contact)
+        self.assertIn("Hengelo, Almelo en Enschede", contact)
+        self.assertIn("iedere zes uur", contact)
+        self.assertIn("genormaliseerde naam, aanvang", contact)
 
     def test_disclaimer_uses_branded_source_marks(self) -> None:
         disclaimer = (ROOT / "disclaimer.html").read_text(encoding="utf-8")
@@ -81,10 +82,11 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("requestIdleCallback", analytics)
         self.assertIn("deleteMatomoCookies", analytics)
         self.assertIn("event-calendar/analytics-consent.js", (ROOT / "Dockerfile").read_text(encoding="utf-8"))
-        for name in ("index.html", "about.html", "disclaimer.html", "privacy.html"):
+        for name in ("index.html", "about.html", "disclaimer.html", "privacy.html", "contact.html", "standings.html"):
             page = (ROOT / name).read_text(encoding="utf-8")
             self.assertIn('analytics-consent.js?v=20260802-2', page)
-            self.assertIn('data-privacy-settings', page)
+            if name != "index.html":
+                self.assertIn('data-privacy-settings', page)
         self.assertIn("document.body.prepend(notice)", analytics)
 
     def test_disclaimer_explains_matomo_and_cookie_durations(self) -> None:
@@ -103,10 +105,11 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("de persoonlijke basis voor concerttips en aanbevelingen in Uitagenda Twente", about)
 
     def test_bam_is_announced_and_volunteer_context_is_clear(self) -> None:
+        contact = (ROOT / "contact.html").read_text(encoding="utf-8")
         index = (ROOT / "index.html").read_text(encoding="utf-8")
         about = (ROOT / "about.html").read_text(encoding="utf-8")
         disclaimer = (ROOT / "disclaimer.html").read_text(encoding="utf-8")
-        self.assertIn("BAM! Festival</a> worden later toegevoegd", index)
+        self.assertIn("BAM! Festival</a> worden later toegevoegd", contact)
         self.assertIn("al jarenlang vrijwilliger bij Metropool, BAM! Festival en Oogst", about)
         self.assertIn("al jarenlang vrijwilliger bij Metropool, BAM! Festival en Oogst", disclaimer)
         self.assertIn("Deze agenda maak ik op persoonlijke titel", about)
@@ -168,7 +171,7 @@ class PwaAssetsTests(unittest.TestCase):
             self.assertIn('back-to-top.js?v=20260802-2', page)
 
     def test_suggestion_privacy_copy_and_page_are_complete(self) -> None:
-        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        index = (ROOT / "contact.html").read_text(encoding="utf-8")
         privacy = (ROOT / "privacy.html").read_text(encoding="utf-8")
         self.assertIn('class="form-privacy form-wide"', index)
         self.assertIn("Naam en e-mailadres zijn optioneel", index)
@@ -182,7 +185,7 @@ class PwaAssetsTests(unittest.TestCase):
         self.assertIn("/privacy.html", (ROOT / "sw.js").read_text(encoding="utf-8"))
 
     def test_homepage_footer_links_to_de_twee_wezen_weesjes(self) -> None:
-        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        index = (ROOT / "contact.html").read_text(encoding="utf-8")
         self.assertIn('href="https://www.detweewezen.nl/weesjes"', index)
         self.assertIn("Weesjes bij De Twee Wezen ↗", index)
 
@@ -235,7 +238,7 @@ class PwaAssetsTests(unittest.TestCase):
         about = (ROOT / "about.html").read_text(encoding="utf-8")
         app = (ROOT / "app.js").read_text(encoding="utf-8")
         self.assertIn('data-recommended-filter', index)
-        self.assertIn('href="about.html">Ronalds muzieksmaak</a>', index)
+        self.assertIn('href="about.html">Ronalds muzieksmaak</a>', (ROOT / "contact.html").read_text(encoding="utf-8"))
         self.assertIn("Mijn muzieksmaak", about)
         self.assertIn("Balkanbeats en old-school hiphop", about)
         self.assertIn("24 bezoeken aan Lowlands", about)

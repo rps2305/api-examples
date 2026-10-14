@@ -42,8 +42,6 @@ const dateFormat = new Intl.DateTimeFormat('nl-NL', { weekday: 'long', day: 'num
 const timeFormat = new Intl.DateTimeFormat('nl-NL', {
   hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam',
 });
-const suggestionForm = document.querySelector('#suggestion-form');
-const suggestionStatus = document.querySelector('#suggestion-status');
 const sourcePriority = new Map([
   ['metropool', 0],
   ['de-cactus', 1],
@@ -53,7 +51,6 @@ const sourcePriority = new Map([
   ['bijzonder', 10],
 ]);
 const allowedSources = new Set(['metropool', 'de-cactus', 'fc-twente', 'oogst', 'hengelo', 'feestdagen', 'persoonlijk', 'bijzonder']);
-let suggestionToken = '';
 
 document.documentElement.classList.remove('no-js');
 
@@ -667,56 +664,9 @@ async function loadAgenda() {
 
 loadAgenda();
 
-async function refreshSuggestionToken() {
-  const response = await fetch('/api/suggestions/token', { cache: 'no-store', credentials: 'same-origin' });
-  if (!response.ok) throw new Error('token unavailable');
-  suggestionToken = (await response.json()).token;
-}
-
-if (suggestionForm) {
-  refreshSuggestionToken().catch(() => {
-    suggestionStatus.textContent = 'De ideeënbus is tijdelijk niet beschikbaar.';
-  });
-  suggestionForm.addEventListener('submit', async event => {
-    event.preventDefault();
-    const submitButton = suggestionForm.querySelector('button[type="submit"]');
-    const fields = new FormData(suggestionForm);
-    submitButton.disabled = true;
-    suggestionStatus.textContent = 'Suggestie versturen…';
-    try {
-      if (!suggestionToken) await refreshSuggestionToken();
-      const response = await fetch('/api/suggestions', {
-        method: 'POST',
-        credentials: 'same-origin',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          token: suggestionToken,
-          name: fields.get('name'),
-          email: fields.get('email'),
-          category: fields.get('category'),
-          message: fields.get('message'),
-          website: fields.get('website'),
-        }),
-      });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error || 'Versturen mislukt.');
-      suggestionForm.reset();
-      suggestionStatus.textContent = 'Bedankt! Je suggestie is naar Ronald verstuurd.';
-      suggestionToken = '';
-      await refreshSuggestionToken();
-    } catch (error) {
-      suggestionStatus.textContent = error.message || 'Versturen mislukt. Probeer het later opnieuw.';
-      suggestionToken = '';
-      refreshSuggestionToken().catch(() => {});
-    } finally {
-      submitButton.disabled = false;
-    }
-  });
-}
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20260827-multiday-days-1', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20261014-pages-1', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });
