@@ -459,7 +459,7 @@ function render(events) {
   if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && selectedSources.size === 0 && !todayOnly && !recommendedOnly && !eveningOnly && !favoritesOnly && !query && !selectedMonth && !selectedYear && !selectedDate && !selectedCity) {
     const visibleCount = Math.min(PAGE_SIZE, events.length);
     status.dataset.state = 'ready';
-    status.textContent = `${visibleCount} van ${events.length} plannen zichtbaar`;
+    status.textContent = `${visibleCount} van ${events.length} plannen zichtbaar${events.length > visibleCount ? ' · scroll door voor meer' : ''}`;
     syncLoadMore(visibleCount, events.length);
     return;
   }
@@ -480,7 +480,7 @@ function render(events) {
   status.dataset.state = 'ready';
   const scope = eveningOnly ? ' vanavond' : todayOnly ? ' vandaag' : favoritesOnly ? ' bewaard' : ' in de agenda';
   status.textContent = matching.length > shown.length
-    ? `${shown.length} van ${matching.length} plannen zichtbaar${recommendedOnly ? ' voor jou' : ''}`
+    ? `${shown.length} van ${matching.length} plannen zichtbaar${recommendedOnly ? ' voor jou' : ''} · scroll door voor meer`
     : `${matching.length} ${matching.length === 1 ? 'plan' : 'plannen'}${scope}${recommendedOnly ? ' voor jou' : ''}`;
   const emptyMessage = favoritesOnly ? 'Geen bewaarde favorieten in deze selectie. Voeg plannen toe met het sterretje op een kaart.' : eveningOnly ? 'Vanavond staat er niets in deze selectie. Bekijk de volledige agenda.' : recommendedOnly ? 'Geen sterke muziekmatches in deze selectie. Bekijk de volledige agenda.' : todayOnly ? 'Vandaag staat er niets in deze selectie. Bekijk de volledige agenda.' : 'Geen plannen gevonden. Probeer een andere zoekterm.';
   hasPrerenderedAgenda = false;
@@ -540,6 +540,19 @@ async function loadAgenda() {
     hasPrerenderedAgenda = false;
     render(events);
   });
+  // Load the next page automatically when the visitor scrolls near the end;
+  // the button stays as the fallback for browsers without IntersectionObserver.
+  if (loadMoreButton && 'IntersectionObserver' in window) {
+    const nearEnd = new IntersectionObserver(entries => {
+      if (!loadMoreButton.hidden && entries.some(entry => entry.isIntersecting)) loadMoreButton.click();
+    }, { rootMargin: '900px 0px' });
+    nearEnd.observe(loadMoreButton);
+    // Re-observe after each render so a tall viewport keeps loading until it is filled.
+    document.addEventListener('uitagenda:rendered', () => {
+      nearEnd.unobserve(loadMoreButton);
+      nearEnd.observe(loadMoreButton);
+    });
+  }
   agenda.addEventListener('click', event => {
     const button = event.target.closest('[data-event-calendar]');
     if (button) {
@@ -666,7 +679,7 @@ loadAgenda();
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20261014-pages-4', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20261014-pages-6', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });

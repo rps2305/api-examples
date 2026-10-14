@@ -68,7 +68,7 @@ PHOTOS = [
      "AC/DC-tribute door een all-female band uit Oekraïne in Café De Cactus, Hengelo, 16 oktober 2021",
      "Vier vrouwelijke muzikanten in leer op het kleine podium van Café De Cactus onder discoballen"),
     ("cactus-sweethearts-2025", "cafe-cactus-biiter-sweethearts-from-usa.jpeg",
-     "Biiter Sweethearts uit de VS in Café De Cactus, Hengelo, 3 april 2025",
+     "Bitter Sweethearts uit de VS in Café De Cactus, Hengelo, 3 april 2025",
      "Een blonde zangeres in een glinsterend jurkje en een band in het gezellige Café De Cactus"),
     ("de-nul-2026", "alternatief-obscuur-maar-ook-geliefd-bij-een-hoop-hengeloers-bar-de-nul-aan-de-beekstraat.jpeg",
      "Alternatief, obscuur, maar ook geliefd bij een hoop Hengeloërs: bar De Nul aan de Beekstraat, maart 2026",
