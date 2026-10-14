@@ -20,7 +20,7 @@ QUALITY = "76"
 # slug, original file, caption (place and date from the file name / EXIF), alt text
 PHOTOS = [
     ("simple-minds-amsterdamse-bos", "eerste-grote-concert-simple-minds-amsterdamse-bos.jpeg",
-     "Mijn eerste grote concert: Simple Minds in het Amsterdamse Bos, 1986",
+     "Mijn eerste grote concert: Simple Minds in het Amsterdamse Bos, 10 juni 1986",
      "Het podium van Simple Minds met een duif op het backdrop en publiek op de voorgrond"),
     ("sony-stereotoren-den-haag", "sony-stereotoren-kamer-denhaag-1991.jpeg",
      "Mijn kamer in Den Haag met Sony-stereotoren, 1991",

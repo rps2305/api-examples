@@ -39,7 +39,7 @@
     image.sizes = '96vw';
     image.src = item.href;
     image.alt = item.alt;
-    if (item.width && item.height) { image.width = item.width; image.height = item.height; }
+    for (const offset of [1, -1]) new Image().src = gallery[(index + offset + gallery.length) % gallery.length].href;
     caption.textContent = item.caption;
     count.textContent = `${index + 1} van ${gallery.length}`;
   }
@@ -58,6 +58,19 @@
     if (event.target.closest('.lightbox-close')) dialog.close();
     if (event.target.closest('.lightbox-prev')) show(index - 1);
     if (event.target.closest('.lightbox-next')) show(index + 1);
+  });
+  // Swipe left/right on touch screens to move through the album.
+  let touchStart = null;
+  dialog.addEventListener('touchstart', event => {
+    touchStart = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+  }, { passive: true });
+  dialog.addEventListener('touchend', event => {
+    if (!touchStart) return;
+    const touch = event.changedTouches[0];
+    const dx = touch.clientX - touchStart.x;
+    const dy = touch.clientY - touchStart.y;
+    touchStart = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) show(index + (dx < 0 ? 1 : -1));
   });
   dialog.addEventListener('keydown', event => {
     if (event.key === 'ArrowLeft') show(index - 1);
