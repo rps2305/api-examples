@@ -12,3 +12,4 @@ event-calendar/iTunesXML/**
 event-calendar/__pycache__/
 event-calendar/**/*.py[cod]
 event-calendar/.DS_Store
+event-calendar/IMAGES/

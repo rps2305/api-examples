@@ -666,7 +666,7 @@ loadAgenda();
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20261014-pages-3', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20261014-pages-4', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });
