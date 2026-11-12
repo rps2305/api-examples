@@ -1,2640 +1,37 @@
 [
   {
     "@type": "Event",
-    "name": "Zomer Zandspeeltuin",
-    "startDate": "2026-08-21",
+    "name": "Thijs Kemperink",
+    "startDate": "2026-10-22T18:00:00Z",
     "location": "",
-    "genre": "Kinderen, Zomervakantie",
-    "url": "https://uitinhengelo.nl/evenementen/zomer-zandspeeltuin",
-    "endDate": "2026-08-30",
+    "genre": "Cabaret",
+    "url": "https://uitinhengelo.nl/evenementen/thijs-kemperink",
     "source": "hengelo"
   },
   {
     "@type": "Event",
-    "name": "Rabobank Beach Courts Hengelo",
-    "startDate": "2026-08-21T08:00:00Z",
-    "location": "",
-    "genre": "Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/rabobank-beach-courts",
-    "endDate": "2026-08-30T20:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Nightskate Twente",
-    "startDate": "2026-08-21T17:30:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/nightskate-twente",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "THELMA Themafilm over bankfraude",
-    "startDate": "2026-08-21T17:30:00Z",
-    "location": "",
-    "genre": "Film, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/thelma-themafilm-over-bankfraude",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "After Beat Club (Ska Tribute, NL)",
-    "startDate": "2026-08-21T18:30:00Z",
-    "endDate": "2026-08-21T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111533546",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111533546",
-    "soldOut": true,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "BLØF",
-    "startDate": "2026-08-21T19:30:00Z",
-    "location": "Hertme",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/blof",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1737507367?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Openluchttheater, Hertme",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "ATC'65 MMT Bouw Top Tournament U11 & U12",
-    "startDate": "2026-08-22T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Sport & Spel, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/atc65-mmt-bouw-top-tournament-u11-u12",
-    "endDate": "2026-08-23T15:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Oogst Live: Nana Adjoa + LUWTEN",
-    "startDate": "2026-08-22T18:00:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten",
-    "ticketUrl": "https://metropool.nl/agenda/oogst-live-nana-adjoa-luwten",
-    "stage": "OOGST, Hengelo",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Live."
-  },
-  {
-    "@type": "Event",
-    "name": "Guess The Groove",
-    "startDate": "2026-08-22T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/guess-the-groove",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "The Loop  (Classic Blues/Rock Revival, Covers, NL)",
-    "startDate": "2026-08-22T18:30:00Z",
-    "endDate": "2026-08-22T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111655473",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111655473",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Rico Mambo",
-    "startDate": "2026-08-22T19:00:00Z",
-    "location": "Enschede",
-    "genre": "Latin",
-    "url": "https://metropool.nl/agenda/rico-mambo",
-    "ticketUrl": "https://metropool.nl/agenda/rico-mambo",
-    "stage": "Muziekcafé, Enschede",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor latin."
-  },
-  {
-    "@type": "Event",
-    "name": "Ilse DeLange",
-    "startDate": "2026-08-22T19:30:00Z",
-    "location": "Hertme",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/ilse-delange",
-    "ticketUrl": "https://www.ticketmaster.nl/event/195920358?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Openluchttheater, Hertme",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Dansen in het park",
-    "startDate": "2026-08-23T08:30:00Z",
-    "location": "",
-    "genre": "Evenement",
-    "url": "https://uitinhengelo.nl/evenementen/dansen-in-het-park",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Zondagen Heemtuin",
-    "startDate": "2026-08-23T11:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "ISLE",
-    "startDate": "2026-08-23T12:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/isle",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "The DS Band",
-    "startDate": "2026-08-23T12:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/the-ds-band",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Zwem Vier Daagse",
-    "startDate": "2026-08-24T16:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Sport & Spel, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/zwem-vier-daagse",
-    "endDate": "2026-08-28T17:30:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Dagen met gratis Zumba les",
-    "startDate": "2026-08-24T17:15:00Z",
-    "location": "",
-    "genre": "Muziek, Dans",
-    "url": "https://uitinhengelo.nl/evenementen/open-dagen-met-gratis-zumba-les",
-    "endDate": "2026-08-30T10:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "ArtEZ Afterglow",
-    "startDate": "2026-08-24T17:30:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/artez-afterglow",
-    "ticketUrl": "https://metropool.nl/agenda/artez-afterglow",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Blood on the Clocktower",
-    "startDate": "2026-08-25T17:00:00Z",
-    "location": "",
-    "genre": "Diversen, Kinderen, Sport & Spel, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/blood-on-the-clocktower",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten bijeenkomst (Broodfonds)",
-    "startDate": "2026-08-25T17:30:00Z",
-    "endDate": "2026-08-25T19:00:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111579284",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111579284",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Deadsquad",
-    "startDate": "2026-08-25T19:45:00Z",
-    "location": "Hengelo",
-    "genre": "Metal",
-    "url": "https://metropool.nl/agenda/deadsquad",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1772445005?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Innocent, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Introductieconcert",
-    "startDate": "2026-08-26T17:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/introductieconcert",
-    "ticketUrl": "https://metropool.nl/agenda/introductieconcert",
-    "stage": "Oude Markt, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "Qarabağ - FC Twente",
-    "startDate": "2026-08-27T16:00:00Z",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Comic design (striptekenen) met Stefan Eenkhoorn",
-    "startDate": "2026-08-27T16:30:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Kunst & Cultuur, Sport & Spel, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/comic-design-striptekenen-met-stefan-eenkhoorn-voor-12-t-m-15-jaar",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "infoavond: Nepagenten en online criminaliteit Hengelo",
-    "startDate": "2026-08-27T17:30:00Z",
-    "location": "",
-    "genre": "Diversen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/infoavond-nepagenten-en-online-criminaliteit-hengelo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Sean Webster Band (Blues, Rock, UK/NL)",
-    "startDate": "2026-08-27T18:30:00Z",
-    "endDate": "2026-08-27T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111641185",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111641185",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Volksfeesten Oele",
-    "startDate": "2026-08-28",
-    "location": "",
-    "genre": "Sport & Spel, Zomervakantie, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/volksfeesten-oele",
-    "endDate": "2026-08-30",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Zomerdisco BS De Jeugd",
-    "startDate": "2026-08-28T17:00:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Jeugd / Familie, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/zomerdisco-bs-de-jeugd",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Nightskate Twente",
-    "startDate": "2026-08-28T17:30:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/nightskate-twente",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten Sarah Feestje",
-    "startDate": "2026-08-28T18:30:00Z",
-    "endDate": "2026-08-28T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111561650",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111561650",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Kasbah Markt – The Vintage Plus Edition",
-    "startDate": "2026-08-29T08:00:00Z",
-    "location": "",
-    "genre": "Markten",
-    "url": "https://uitinhengelo.nl/evenementen/kasbah-markt-the-vintage-plus-edition",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Kids@thePark (geannuleerd)",
-    "startDate": "2026-08-29T09:00:00Z",
-    "location": "",
-    "genre": "Actief, Eten & Drinken, Kinderen, Theater, Jeugd / Familie, Muziek, Dans",
-    "url": "https://uitinhengelo.nl/evenementen/kids-at-the-park",
-    "endDate": "2026-08-30T15:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Oogst Live: Ooostblok + Jeepers Creepers",
-    "startDate": "2026-08-29T18:00:00Z",
-    "location": "Hengelo",
-    "genre": "Overig",
-    "url": "https://metropool.nl/agenda/oogst-live-ooostblok-jeepers-creepers",
-    "ticketUrl": "https://metropool.nl/agenda/oogst-live-ooostblok-jeepers-creepers",
-    "stage": "OOGST, Hengelo",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Live."
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten feestje",
-    "startDate": "2026-08-29T18:30:00Z",
-    "endDate": "2026-08-29T22:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111513504",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111513504",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Gratis Buitenfilm: Sideways",
-    "startDate": "2026-08-29T18:30:00Z",
+    "name": "Filmhuis Hengelo - The invite",
+    "startDate": "2026-10-22T18:15:00Z",
     "location": "",
     "genre": "Film, Filmhuis",
-    "url": "https://uitinhengelo.nl/evenementen/gratis-buitenfilm-sideways",
+    "url": "https://uitinhengelo.nl/evenementen/filmhuis-hengelo-the-invite",
     "source": "hengelo"
   },
   {
     "@type": "Event",
-    "name": "Clownerie-workshop 2. De clown ontwaakt",
-    "startDate": "2026-08-30T07:30:00Z",
-    "location": "",
-    "genre": "Actief, Kinderen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/clownerie-workshop-2-de-clown-ontwaakt",
-    "endDate": "2026-09-20T10:30:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Italian Lunch op het marktplein",
-    "startDate": "2026-08-30T10:00:00Z",
-    "location": "",
-    "genre": "Eten & Drinken, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/italian-lunch-op-het-marktplein-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Koopzondag binnenstad Hengelo",
-    "startDate": "2026-08-30T10:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/koopzondag-binnenstad-hengelo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Beweeg! in het park",
-    "startDate": "2026-08-30T11:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Kinderen, Sport & Spel, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/beweeg-in-het-park",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Zondagen Heemtuin",
-    "startDate": "2026-08-30T11:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondagen-heemtuin",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "@Jo's",
-    "startDate": "2026-08-30T12:00:00Z",
-    "location": "",
-    "genre": "Actief, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/jos",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Luc Mats",
-    "startDate": "2026-08-30T12:00:00Z",
-    "location": "",
-    "genre": "Actief, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/luc-mats",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Old Ni-js @ De Cactus 30/08/2026 (Dialect, Rock, NL)",
-    "startDate": "2026-08-30T13:30:00Z",
-    "endDate": "2026-08-30T16:00:00Z",
+    "name": "Marlon Pichel Solo (Soul, Blues, Songwriter, NL)",
+    "startDate": "2026-10-22T18:30:00Z",
+    "endDate": "2026-10-22T21:30:00Z",
     "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111609428",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111609428",
-    "soldOut": true,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "SC Cambuur - FC Twente",
-    "startDate": "2026-08-30T18:00:00Z",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Josh Smith & Band (Blues, Rock, Jazz, USA)",
-    "startDate": "2026-09-01T18:30:00Z",
-    "endDate": "2026-09-01T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111643662",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111643662",
-    "soldOut": true,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Pubquiz @'t Pleintje",
-    "startDate": "2026-09-01T18:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Monkeyjam",
-    "startDate": "2026-09-02T18:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/monkeyjam-2-sep",
-    "ticketUrl": "https://metropool.nl/agenda/monkeyjam-2-sep",
-    "stage": "Muziekcafé, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Akoestische Sessie 2 september 2026",
-    "startDate": "2026-09-02T18:30:00Z",
-    "endDate": "2026-09-02T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111652275",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111652275",
+    "url": "https://decactus.stager.co/shop/default/events/111689117",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111689117",
     "soldOut": false,
     "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Jeugdfonds Let's Dance",
-    "startDate": "2026-09-03T16:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Jeugd / Familie, Muziek, Dans",
-    "url": "https://uitinhengelo.nl/evenementen/jeugdfonds-lets-dance",
-    "endDate": "2026-10-01T17:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Antimatter & Sleeping Pulse",
-    "startDate": "2026-09-03T18:00:00Z",
-    "location": "Hengelo",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/antimatter-sleeping-pulse",
-    "ticketUrl": "https://www.ticketmaster.nl/event/2045492797?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Antimatter."
-  },
-  {
-    "@type": "Event",
-    "name": "Don Diego Trio (Rockabilly, Surf, Rock&Roll, Italië)",
-    "startDate": "2026-09-03T18:30:00Z",
-    "endDate": "2026-09-03T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111671831",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111671831",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Clownproeverij met Clownerie",
-    "startDate": "2026-09-04T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Kinderen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/clownproeverij-met-clownerie",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Jeu de Boules Stadstoernooi",
-    "startDate": "2026-09-04T14:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/stadstoernooi-hengelo-jeu-de-boules",
-    "endDate": "2026-09-06T18:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Sjonniepatat",
-    "startDate": "2026-09-04T17:00:00Z",
-    "location": "Broedplaats Oogst, Hengelo",
-    "genre": "DJ, Muziek, 19:00",
-    "url": "https://oogst.eu/agenda/",
-    "source": "oogst"
-  },
-  {
-    "@type": "Event",
-    "name": "Nightskate Twente",
-    "startDate": "2026-09-04T17:30:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/nightskate-twente",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Boogie Nights",
-    "startDate": "2026-09-04T18:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/boogie-nights",
-    "ticketUrl": "https://www.ticketmaster.nl/event/454388601?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Dilana Smith",
-    "startDate": "2026-09-04T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/dilana-smith",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Jon Amor Trio (Original Blues, Funk, Rock, UK)",
-    "startDate": "2026-09-04T18:30:00Z",
-    "endDate": "2026-09-04T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111502542",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111502542",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-09-05T08:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "CREA- en HOBBYMARKT",
-    "startDate": "2026-09-05T09:00:00Z",
-    "location": "",
-    "genre": "Diversen, Kinderen, Markten, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/crea-en-hobbymarkt",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Red Roots x Street Art Festival",
-    "startDate": "2026-09-05T10:00:00Z",
-    "location": "Enschede",
-    "genre": "Folk/Country",
-    "url": "https://metropool.nl/agenda/red-roots-x-street-art-festival",
-    "ticketUrl": "https://metropool.nl/agenda/red-roots-x-street-art-festival",
-    "stage": "Willem Wilminkplein, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Pak het Podium: Dansen op de Markt",
-    "startDate": "2026-09-05T11:30:00Z",
-    "location": "",
-    "genre": "Muziek, Dans",
-    "url": "https://uitinhengelo.nl/evenementen/dansen-op-de-markt",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Hart van Zuid Festival",
-    "startDate": "2026-09-05T12:00:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/hart-van-zuid-festival",
-    "ticketUrl": "https://metropool.nl/agenda/hart-van-zuid-festival",
-    "stage": "OOGST, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Anthology",
-    "startDate": "2026-09-05T18:00:00Z",
-    "location": "",
-    "genre": "Dans",
-    "url": "https://uitinhengelo.nl/evenementen/anthology",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Dansmaar Back to the 90ties!",
-    "startDate": "2026-09-05T18:30:00Z",
-    "endDate": "2026-09-05T23:00:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111584122",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111584122",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "The Rushians - A Tribute To Rush",
-    "startDate": "2026-09-05T19:00:00Z",
-    "location": "Hengelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/the-rushians-a-tribute-to-rush",
-    "ticketUrl": "https://www.ticketmaster.nl/event/292478576?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-09-06T08:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Wijkfeest Hengelose Es",
-    "startDate": "2026-09-06T08:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Markten, Sport & Spel, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/wijkfeest-hengelose-es-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "Groningen - FC Twente",
-    "startDate": "2026-09-06T10:15:00Z",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Drumfanfare: (mars)muziek festival",
-    "startDate": "2026-09-06T11:00:00Z",
-    "location": "",
-    "genre": "Diversen, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/drumfanfare-hengelo-presenteert-marsmuziek-festival-ter-ere-van-diamanten-jubileum",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-09-06T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "LOFT",
-    "startDate": "2026-09-06T12:00:00Z",
-    "location": "",
-    "genre": "Actief, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/loft",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "The Kopp'l Stones",
-    "startDate": "2026-09-06T12:00:00Z",
-    "location": "",
-    "genre": "Actief, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/the-koppl-stones",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Mark Harman & The Rhumba Kings (Rock&Roll, Rockabilly, UK)",
-    "startDate": "2026-09-06T13:00:00Z",
-    "endDate": "2026-09-06T15:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111626141",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111626141",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Zumba Feest met Saara & Andrea",
-    "startDate": "2026-09-06T13:00:00Z",
-    "location": "",
-    "genre": "Actief",
-    "url": "https://uitinhengelo.nl/evenementen/zumba-feest-met-saara-andrea",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Jazzplatform Hengelo presenteert",
-    "startDate": "2026-09-06T14:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/jazzplatform-hengelo-presenteert",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten feestje",
-    "startDate": "2026-09-08T17:30:00Z",
-    "endDate": "2026-09-08T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111659217",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111659217",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "FC Twente - Telstar",
-    "startDate": "2026-09-09T16:45:00Z",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "dIRE sTRATS",
-    "startDate": "2026-09-10T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/in-concert-3",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Dan Again (Steely Dan Tribute, NL)",
-    "startDate": "2026-09-10T18:30:00Z",
-    "endDate": "2026-09-10T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111654221",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111654221",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Come from away",
-    "startDate": "2026-09-10T18:30:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/come-from-away",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Barefoot at Sundown Festival [verplaatst vanwege de warmte naar vr 11 sep]",
-    "startDate": "2026-09-11T14:00:00Z",
-    "location": "",
-    "genre": "Kinderen, Jeugd / Familie, Broedplaats Oogst, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/barefoot-at-sundown-festival",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Whisky & Music",
-    "startDate": "2026-09-11T17:00:00Z",
-    "location": "Hengelo",
-    "genre": "Blues",
-    "url": "https://metropool.nl/agenda/whisky-music",
-    "ticketUrl": "https://www.ticketmaster.nl/event/297909675?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Film; JOE SPEEDBOOT",
-    "startDate": "2026-09-11T17:30:00Z",
-    "location": "",
-    "genre": "Film, Kinderen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/film-joe-speedboot",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Floor Bosman",
-    "startDate": "2026-09-11T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/puur-floor",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten feestje",
-    "startDate": "2026-09-11T18:30:00Z",
-    "endDate": "2026-09-11T22:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111615568",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111615568",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Arrested Development",
-    "startDate": "2026-09-11T19:30:00Z",
-    "location": "Enschede",
-    "genre": "Hiphop/R&B",
-    "url": "https://metropool.nl/agenda/arrested-development",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1265200928?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Arrested Development."
-  },
-  {
-    "@type": "Event",
-    "name": "Wine Lips",
-    "startDate": "2026-09-11T20:00:00Z",
-    "location": "Enschede",
-    "genre": "Hardcore/Punk",
-    "url": "https://metropool.nl/agenda/wine-lips",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1058663356?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor hardcore en punk."
-  },
-  {
-    "@type": "Event",
-    "name": "Open Monumentendag Hengelo",
-    "startDate": "2026-09-12T09:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/open-monumentendag-hengelo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Beerland",
-    "startDate": "2026-09-12T12:00:00Z",
-    "location": "Hengelo",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/beerland",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1487815556?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Euwe & Sybolt de Jong",
-    "startDate": "2026-09-12T13:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/euwe-amp-sybolt-de-jong",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Orgelconcert: Euwe en Sybolt de Jong",
-    "startDate": "2026-09-12T13:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/vier-handen-twee-broers-en-één-brein-op-kofferharmoniums-en-orgel-lambertusbasiliek",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Zin in Interactie: een Muzikale Wereldreis",
-    "startDate": "2026-09-12T13:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/zin-in-interactie-een-muzikale-wereldreis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "FC Twente - ADO Den Haag",
-    "startDate": "2026-09-12T14:30:00Z",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Donderse Pubquiz",
-    "startDate": "2026-09-12T17:30:00Z",
-    "location": "",
-    "genre": "Diversen, Sport & Spel, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/donderse-pubquiz-11",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "80's Verantwoord",
-    "startDate": "2026-09-12T18:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/80s-verantwoord-12-sep",
-    "ticketUrl": "http://www.ticketmaster.nl/event/726955793?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Disco Celebration",
-    "startDate": "2026-09-12T18:00:00Z",
-    "location": "Almelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/disco-celebration",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1128170802?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten feestje (Bruiloft)",
-    "startDate": "2026-09-12T18:30:00Z",
-    "endDate": "2026-09-12T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111565953",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111565953",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "De Tent van het Oosten",
-    "startDate": "2026-09-12T18:30:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/de-tent-van-het-oosten",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Lezing: Zin in Interactie met Hans Leeflang",
-    "startDate": "2026-09-13T07:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/zin-in-interactie-met-hans-leeflang",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "﻿Frankys Ijs Kinderdag",
-    "startDate": "2026-09-13T08:00:00Z",
-    "location": "",
-    "genre": "Eten & Drinken, Kinderen, Sport & Spel, Jeugd / Familie, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/frankys-kinderdag",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "De ridder zonder billen (3+)",
-    "startDate": "2026-09-13T09:00:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/de-ridder-zonder-billen-3",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Henglore Dungeons& Dragons",
-    "startDate": "2026-09-13T10:30:00Z",
-    "location": "Broedplaats Oogst, Hengelo",
-    "genre": "Event, Spel, 12:30 – 18.00",
-    "url": "https://oogst.eu/agenda/",
-    "source": "oogst"
-  },
-  {
-    "@type": "Event",
-    "name": "Hengelore \"Een IJzer-Stork verhaal\"",
-    "startDate": "2026-09-13T10:30:00Z",
-    "location": "",
-    "genre": "Diversen, Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/hengelore-een-ijzer-stork-verhaal",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-09-13T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "De ridder zonder billen (3+)",
-    "startDate": "2026-09-13T12:00:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/de-ridder-zonder-billen-3-3",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "V-Street",
-    "startDate": "2026-09-13T12:00:00Z",
-    "location": "",
-    "genre": "Actief, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/v-street",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Vocal Group Notes",
-    "startDate": "2026-09-13T12:00:00Z",
-    "location": "",
-    "genre": "Actief, Jeugd / Familie, Muziek, Dans",
-    "url": "https://uitinhengelo.nl/evenementen/vocal-group-notes",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "JazzRock Café - Rayn Bechoe & the Flavors of Soul",
-    "startDate": "2026-09-13T13:00:00Z",
-    "location": "Hengelo",
-    "genre": "Jazz",
-    "url": "https://metropool.nl/agenda/jazzrock-cafe-rayn-bechoe-the-flavors-of-soul",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1783052812?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Muziekcafé, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "De ridder zonder billen (3+)",
-    "startDate": "2026-09-13T13:30:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/de-ridder-zonder-billen-3-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Mic",
-    "startDate": "2026-09-15T18:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/open-mic-15-sep",
-    "ticketUrl": "https://metropool.nl/agenda/open-mic-15-sep",
-    "stage": "Vestzak, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Pubquiz @'t Pleintje",
-    "startDate": "2026-09-15T18:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Lambertuskermis",
-    "startDate": "2026-09-16",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/lambertuskermis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "STUDIO15 JAMSESSIE x RADJE DRAAI'N EDITIE",
-    "startDate": "2026-09-16T17:00:00Z",
-    "location": "",
-    "genre": "Diversen, Kunst & Cultuur, Jeugd / Familie, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/studio15-jamsessie-x-radje-draain-editie",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "As I Left My Father’s House",
-    "startDate": "2026-09-16T18:00:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/as-i-left-my-fathers-house",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Muziek Bingo Hitster @ De Cactus (Pub Quiz)",
-    "startDate": "2026-09-16T18:30:00Z",
-    "endDate": "2026-09-16T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111638769",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111638769",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Lambertuskermis",
-    "startDate": "2026-09-17",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/lambertuskermis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Popronde Enschede",
-    "startDate": "2026-09-17T18:00:00Z",
-    "location": "Enschede",
-    "genre": "Overig",
-    "url": "https://metropool.nl/agenda/popronde-enschede",
-    "ticketUrl": "https://metropool.nl/agenda/popronde-enschede",
-    "stage": "Muziekcafé, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Plien & Bianca",
-    "startDate": "2026-09-17T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/harrekidee-reprise",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Unb'rocken (Blues, Rock, Bali, IND)",
-    "startDate": "2026-09-17T18:30:00Z",
-    "endDate": "2026-09-17T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111582957",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111582957",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Scott Hamilton Quartet & Marcela",
-    "startDate": "2026-09-17T18:30:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/scott-hamilton-quartet-amp-marcela",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Lambertuskermis",
-    "startDate": "2026-09-18",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/lambertuskermis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Clownproeverij met Clownerie",
-    "startDate": "2026-09-18T08:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Kinderen, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/clownproeverij-met-clownerie-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Patrick Laureij",
-    "startDate": "2026-09-18T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/patrick-laureij",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Nu-Metal Night",
-    "startDate": "2026-09-18T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/nu-metal-night",
-    "ticketUrl": "https://www.ticketmaster.nl/event/900607516?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Prof Nomad Sessies: Neil Young",
-    "startDate": "2026-09-18T18:30:00Z",
-    "location": "Almelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/prof-nomad-sessies-neil-young",
-    "ticketUrl": "https://www.ticketmaster.nl/event/563010005?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten Feestje",
-    "startDate": "2026-09-18T18:30:00Z",
-    "endDate": "2026-09-18T22:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111637714",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111637714",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Colin Benders + AMORAL + Twiena",
-    "startDate": "2026-09-18T20:00:00Z",
-    "location": "Enschede",
-    "genre": "Elektronisch",
-    "url": "https://metropool.nl/agenda/colin-benders-amoral-twiena",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1654854731?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Emma Annelie - EP release",
-    "startDate": "2026-09-18T20:00:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/emma-annelie-ep-release",
-    "ticketUrl": "https://www.ticketmaster.nl/event/393425296?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Oktoberfest München",
-    "startDate": "2026-09-19",
-    "endDate": "2026-10-04",
-    "location": "Theresienwiese, München",
-    "genre": "Oktoberfeest",
-    "url": "https://www.oktoberfest.de/en/information/oktoberfest-opening-times/opening-hours-munich-oktoberfest",
-    "source": "bijzonder"
-  },
-  {
-    "@type": "Event",
-    "name": "Lambertuskermis",
-    "startDate": "2026-09-19",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/lambertuskermis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Jongdierenkeuring HKSV",
-    "startDate": "2026-09-19T08:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/jongdierenkeuring-hksv",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten bijeenkomst",
-    "startDate": "2026-09-19T13:00:00Z",
-    "endDate": "2026-09-19T15:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111650749",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111650749",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Oogst Live: LOE. + Marije Bruinsma + Jenta",
-    "startDate": "2026-09-19T18:00:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta",
-    "ticketUrl": "https://metropool.nl/agenda/oogst-live-loe-marije-bruinsma-jenta",
-    "stage": "OOGST, Hengelo",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Live."
-  },
-  {
-    "@type": "Event",
-    "name": "Patrick Laureij",
-    "startDate": "2026-09-19T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/kintsugi",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Postmen",
-    "startDate": "2026-09-19T18:30:00Z",
-    "location": "Almelo",
-    "genre": "Hiphop/R&B",
-    "url": "https://metropool.nl/agenda/postmen",
-    "ticketUrl": "https://www.ticketmaster.nl/event/936950475?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Good Times (Pop, Soul, Funk, Covers, NL)",
-    "startDate": "2026-09-19T18:30:00Z",
-    "endDate": "2026-09-19T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111653781",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111653781",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "PIÑA",
-    "startDate": "2026-09-19T20:30:00Z",
-    "location": "Hengelo",
-    "genre": "Latin",
-    "url": "https://metropool.nl/agenda/pina",
-    "ticketUrl": "https://www.ticketmaster.nl/event/52026726?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor latin."
-  },
-  {
-    "@type": "Event",
-    "name": "Lambertuskermis",
-    "startDate": "2026-09-20",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/lambertuskermis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-09-20T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Cultuurpodium Hengelo",
-    "startDate": "2026-09-20T12:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/cultuurpodium-hengelo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Erwin Nyhoff (Try Out Theater Tour: Singers en Songwriters)",
-    "startDate": "2026-09-20T13:00:00Z",
-    "endDate": "2026-09-20T15:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111610298",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111610298",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "FC Twente - PSV",
-    "startDate": "2026-09-20T14:45:00Z",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Cory Hanson",
-    "startDate": "2026-09-20T19:30:00Z",
-    "location": "Hengelo",
-    "genre": "Folk/Country",
-    "url": "https://metropool.nl/agenda/cory-hanson",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1591156607?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Dichterbij (reprise)",
-    "startDate": "2026-09-21T17:30:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/dichterbij-reprise-3",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Expositie Heide Haanepen, Carel Harbrink en Tom de Jong",
-    "startDate": "2026-09-23T11:00:00Z",
-    "location": "",
-    "genre": "Diversen, Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/expositie-heide-haanepen-carel-harbrink-en-tom-de-jong",
-    "endDate": "2026-10-10T15:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "The Hi-Ballin' Daddies (Mexico, Rock&Roll/Rhythm and Blues)",
-    "startDate": "2026-09-24T18:30:00Z",
-    "endDate": "2026-09-24T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111655474",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111655474",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Ateliers Hengelo 2027",
-    "startDate": "2026-09-25T09:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/open-ateliers-hengelo-2027",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten bijeenkomst tot 18.00uur",
-    "startDate": "2026-09-25T14:00:00Z",
-    "endDate": "2026-09-25T16:00:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111676792",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111676792",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Pieter Derks",
-    "startDate": "2026-09-25T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/ja-leuk-reprise",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Donna's Hot Stuff",
-    "startDate": "2026-09-25T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/donnas-hot-stuff",
-    "ticketUrl": "https://www.ticketmaster.nl/event/39328718?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten feestje",
-    "startDate": "2026-09-25T18:30:00Z",
-    "endDate": "2026-09-25T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111594814",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111594814",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Naaz",
-    "startDate": "2026-09-25T20:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/naaz",
-    "ticketUrl": "https://www.ticketmaster.nl/event/279264674?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Revester",
-    "startDate": "2026-09-25T20:00:00Z",
-    "location": "Hengelo",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/revester",
-    "ticketUrl": "http://www.ticketmaster.nl/event/416711364?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Kasbah Braderie/Creamarkt",
-    "startDate": "2026-09-26T09:00:00Z",
-    "location": "",
-    "genre": "Markten",
-    "url": "https://uitinhengelo.nl/evenementen/rommelmarkt-kasbah",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Ateliers Hengelo 2027",
-    "startDate": "2026-09-26T09:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/open-ateliers-hengelo-2027",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "REBEL & ROOTS",
-    "startDate": "2026-09-26T10:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/optreden-marktplein-i-o-m-jim-korf",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "5Y Anniversary CraftBeer Fest",
-    "startDate": "2026-09-26T11:00:00Z",
-    "location": "",
-    "genre": "Eten & Drinken",
-    "url": "https://uitinhengelo.nl/evenementen/4y-anniversary-craftbeer-fest",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Never Too Late",
-    "startDate": "2026-09-26T17:00:00Z",
-    "location": "Enschede",
-    "genre": "Elektronisch",
-    "url": "https://metropool.nl/agenda/never-too-late",
-    "ticketUrl": "https://www.ticketmaster.nl/event/895145320?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "The Chicago Funk - Earth, Wind & Fire Tribute",
-    "startDate": "2026-09-26T18:30:00Z",
-    "location": "Enschede",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/the-chicago-funk-earth-wind-fire-tribute",
-    "ticketUrl": "https://www.ticketmaster.nl/event/919040560?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten Sarah Feestje",
-    "startDate": "2026-09-26T18:30:00Z",
-    "endDate": "2026-09-26T22:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111622652",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111622652",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Tjolk! Everything 80's",
-    "startDate": "2026-09-26T19:00:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/tjolk-everything-80s-26-sep",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1355418505?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Dilayda EP Release",
-    "startDate": "2026-09-26T19:30:00Z",
-    "location": "Almelo",
-    "genre": "Hiphop/R&B",
-    "url": "https://metropool.nl/agenda/dilayda-ep-release",
-    "ticketUrl": "https://www.ticketmaster.nl/event/2056920205?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Koopzondag binnenstad Hengelo",
-    "startDate": "2026-09-27T10:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/koopzondag-binnenstad-hengelo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Modespektakel Hengelo",
-    "startDate": "2026-09-27T10:30:00Z",
-    "location": "",
-    "genre": "Diversen, Eten & Drinken, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/modespektakel-hengelo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "5Y Anniversary CraftBeer Fest",
-    "startDate": "2026-09-27T11:00:00Z",
-    "location": "",
-    "genre": "Eten & Drinken",
-    "url": "https://uitinhengelo.nl/evenementen/4y-anniversary-craftbeer-fest",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Jeffrey Halford & The Healers (Roots, Americana, USA)",
-    "startDate": "2026-09-27T13:00:00Z",
-    "endDate": "2026-09-27T15:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111600997",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111600997",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Ben's Boogaloo Soul Jazz Extravaganza!",
-    "startDate": "2026-09-27T17:00:00Z",
-    "location": "",
-    "genre": "Actief, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/bens-boogaloo-soul-jazz-extravaganza",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Sosha Sophia",
-    "startDate": "2026-09-27T17:00:00Z",
-    "location": "",
-    "genre": "Actief, Muziek, Dans",
-    "url": "https://uitinhengelo.nl/evenementen/sosha-sophia",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Danny Vera",
-    "startDate": "2026-09-27T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/danny-vera",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Blood on the Clocktower",
-    "startDate": "2026-09-29T17:00:00Z",
-    "location": "",
-    "genre": "Actief, Diversen, Kinderen, Sport & Spel, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/blood-on-the-clocktower-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Exclusieve Dress Red Night",
-    "startDate": "2026-09-29T18:00:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/exclusieve-dress-red-night",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Metropool Muziekquiz - Enschede",
-    "startDate": "2026-09-30T18:15:00Z",
-    "location": "Enschede",
-    "genre": "Overig",
-    "url": "https://metropool.nl/agenda/metropool-muziekquiz-enschede-30-sep",
-    "ticketUrl": "https://www.ticketmaster.nl/event/333898700?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Muziekcafé, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Metropool Muziekquiz - Hengelo",
-    "startDate": "2026-09-30T18:15:00Z",
-    "location": "Hengelo",
-    "genre": "Overig",
-    "url": "https://metropool.nl/agenda/metropool-muziekquiz-hengelo-30-sep",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1633704975?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Muziekcafé, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "ABBA GOLD",
-    "startDate": "2026-10-01T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/abba-gold",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Tim Grimm & Sergio Webb (Country, Americana, USA)",
-    "startDate": "2026-10-01T18:30:00Z",
-    "endDate": "2026-10-01T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111594779",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111594779",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "SUPERMENS gezocht (try-out) (6+)",
-    "startDate": "2026-10-02T17:30:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/supermens-gezocht-try-out-6",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Boogie Nights",
-    "startDate": "2026-10-02T18:00:00Z",
-    "location": "Almelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/boogie-nights-2-okt",
-    "ticketUrl": "https://www.ticketmaster.nl/event/237777548?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Bouke en de ElvisMatters Band",
-    "startDate": "2026-10-02T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/bouke-rocks-elvis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Polyphonic",
-    "startDate": "2026-10-02T18:30:00Z",
-    "location": "Enschede",
-    "genre": "Elektronisch",
-    "url": "https://metropool.nl/agenda/polyphonic",
-    "ticketUrl": "https://www.ticketmaster.nl/event/polyphonic-tickets/584112125?CAMEFROM=METROPOOL&_gl=&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "After Ten (Top 2000, Feestje, Covers, NL)",
-    "startDate": "2026-10-02T18:30:00Z",
-    "endDate": "2026-10-02T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111599540",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111599540",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "De Boetners + Kiek Now Us",
-    "startDate": "2026-10-02T19:00:00Z",
-    "location": "Hengelo",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/de-boetners-kiek-now-us",
-    "ticketUrl": "https://www.ticketmaster.nl/event/587419122?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Emo Night Mainland",
-    "startDate": "2026-10-02T19:00:00Z",
-    "location": "Enschede",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/emo-night-mainland",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1051965397?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Belphegor + Krisiun",
-    "startDate": "2026-10-02T19:50:00Z",
-    "location": "Hengelo",
-    "genre": "Metal",
-    "url": "https://metropool.nl/agenda/belphegor-krisiun",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1303950526?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-10-03T08:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "SUPERMENS gezocht (première) (6+)",
-    "startDate": "2026-10-03T13:00:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/supermens-gezocht-première-6",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Tenside & Aurorawave",
-    "startDate": "2026-10-03T17:30:00Z",
-    "location": "Hengelo",
-    "genre": "Hardcore/Punk",
-    "url": "https://metropool.nl/agenda/tenside-aurorawave",
-    "ticketUrl": "https://www.ticketmaster.nl/event/834155093?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor hardcore en punk."
-  },
-  {
-    "@type": "Event",
-    "name": "Echo's van 25 jaar",
-    "startDate": "2026-10-03T18:00:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/echo-039-s-van-25-jaar",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Harmonieorkest Concordia Hengelo",
-    "startDate": "2026-10-03T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/harmonieorkest-concordia-hengelo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Beach Boys' Best",
-    "startDate": "2026-10-03T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/beach-boys-best",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1614480324?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "The Dublin Legends",
-    "startDate": "2026-10-03T18:30:00Z",
-    "location": "Enschede",
-    "genre": "Folk/Country",
-    "url": "https://metropool.nl/agenda/the-dublin-legends",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1290361263?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "The ObsCURE",
-    "startDate": "2026-10-03T18:30:00Z",
-    "location": "Almelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/the-obscure",
-    "ticketUrl": "https://www.ticketmaster.nl/event/626561898?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "90's loves 00's",
-    "startDate": "2026-10-03T19:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/90s-loves-00s-03-okt",
-    "ticketUrl": "https://www.ticketmaster.nl/event/873945725?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-10-04T08:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Platenbeurs Enschede",
-    "startDate": "2026-10-04T09:00:00Z",
-    "location": "Enschede",
-    "genre": "Overig",
-    "url": "https://metropool.nl/agenda/platenbeurs-enschede",
-    "ticketUrl": "https://www.ticketmaster.nl/event/947367471?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-10-04T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Kinderboekenfestival 2026",
-    "startDate": "2026-10-04T11:30:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/kinderboekenfestival-2026",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "The Mukherjee Development",
-    "startDate": "2026-10-04T12:00:00Z",
-    "location": "Enschede",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/the-mukherjee-development",
-    "ticketUrl": "https://metropool.nl/agenda/the-mukherjee-development",
-    "stage": "Muziekcafé, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Meedoeconcert Wind in de wilgen",
-    "startDate": "2026-10-04T13:30:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/meedoeconcert-wind-in-de-wilgen",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Dotan",
-    "startDate": "2026-10-04T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/dotan",
-    "ticketUrl": "https://www.ticketmaster.nl/event/2088917158?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Pubquiz @'t Pleintje",
-    "startDate": "2026-10-06T18:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Monkeyjam",
-    "startDate": "2026-10-07T18:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/monkeyjam-7-okt",
-    "ticketUrl": "https://metropool.nl/agenda/monkeyjam-7-okt",
-    "stage": "Muziekcafé, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Tim Kroezen",
-    "startDate": "2026-10-07T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/tim-kroezen",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Berit Companjen",
-    "startDate": "2026-10-08T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/berit-companjen",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Nona",
-    "startDate": "2026-10-08T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Soul/Funk",
-    "url": "https://metropool.nl/agenda/nona",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1024482601?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Tristan (Jazz, Funk & Soul, NL)",
-    "startDate": "2026-10-08T18:30:00Z",
-    "endDate": "2026-10-08T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111597605",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111597605",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Herfst Bokbierdagen",
-    "startDate": "2026-10-09T11:00:00Z",
-    "location": "",
-    "genre": "Eten & Drinken",
-    "url": "https://uitinhengelo.nl/evenementen/bokbierdag",
-    "endDate": "2026-10-11T20:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Paarse vrijdag Bandnight",
-    "startDate": "2026-10-09T18:00:00Z",
-    "location": "",
-    "genre": "Actief, Jeugd / Familie, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/paarse-vrijdag-bandnight",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Rowwen Hèze",
-    "startDate": "2026-10-09T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/rowwen-heze",
-    "ticketUrl": "https://www.ticketmaster.nl/event/765745521?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Besloten feestje",
-    "startDate": "2026-10-09T18:30:00Z",
-    "endDate": "2026-10-09T22:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111628067",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111628067",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Kalpanarts",
-    "startDate": "2026-10-09T18:30:00Z",
-    "location": "",
-    "genre": "Dans",
-    "url": "https://uitinhengelo.nl/evenementen/kalpanarts",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Waxing Crescent",
-    "startDate": "2026-10-09T19:30:00Z",
-    "location": "Enschede",
-    "genre": "Metal",
-    "url": "https://metropool.nl/agenda/waxing-crescent",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1772207428?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Tukker 40/80 Kennedymars",
-    "startDate": "2026-10-09T21:00:00Z",
-    "location": "",
-    "genre": "Actief, Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/tukker-80-kennedymars",
-    "endDate": "2026-10-10T17:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Alle kinderen stinken (6+)",
-    "startDate": "2026-10-10T13:00:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/alle-kinderen-stinken-6",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Tunnelbeats Underground - Techno",
-    "startDate": "2026-10-10T14:00:00Z",
-    "location": "",
-    "genre": "Actief, Jeugd / Familie, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/tunnelbeats-underground-techno",
-    "endDate": "2026-10-10T23:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Boktober Festival",
-    "startDate": "2026-10-10T16:00:00Z",
-    "location": "",
-    "genre": "Eten & Drinken, Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/boktober-festival",
-    "endDate": "2026-10-11T20:00:00Z",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Donderse Pubquiz",
-    "startDate": "2026-10-10T17:30:00Z",
-    "location": "",
-    "genre": "Sport & Spel, Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/donderse-pubquiz-12",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Queen Must Go On",
-    "startDate": "2026-10-10T18:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/queen-must-go-on",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "IOS",
-    "startDate": "2026-10-10T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/ios",
-    "ticketUrl": "http://www.ticketmaster.nl/event/1841133207?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Kisjeskearls (Een ode aan Normaal, dialect, NL)",
-    "startDate": "2026-10-10T18:30:00Z",
-    "endDate": "2026-10-10T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111578875",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111578875",
-    "soldOut": true,
-    "source": "de-cactus",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Normaal."
-  },
-  {
-    "@type": "Event",
-    "name": "Jörgen Raymann",
-    "startDate": "2026-10-10T18:30:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/jörgen-raymann",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "New Wave Generation",
-    "startDate": "2026-10-10T19:00:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/new-wave-generation-10-okt",
-    "ticketUrl": "https://www.ticketmaster.nl/event/574879897?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor new wave."
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "Fortuna Sittard - FC Twente",
-    "startDate": "2026-10-10T19:00:00Z",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Paralysis",
-    "startDate": "2026-10-10T20:00:00Z",
-    "location": "Enschede",
-    "genre": "Elektronisch",
-    "url": "https://metropool.nl/agenda/paralysis",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1273841917?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Kisjeskearls (Een ode aan Normaal, dialect, NL)",
-    "startDate": "2026-10-11T13:00:00Z",
-    "endDate": "2026-10-11T15:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111575965",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111575965",
-    "soldOut": true,
-    "source": "de-cactus",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Normaal."
-  },
-  {
-    "@type": "Event",
-    "name": "Schulhoff Trio",
-    "startDate": "2026-10-11T13:00:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/schulhoff-trio",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Khemmis",
-    "startDate": "2026-10-11T19:00:00Z",
-    "location": "Hengelo",
-    "genre": "Metal",
-    "url": "https://metropool.nl/agenda/khemmis",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1936188908?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "EUS",
-    "startDate": "2026-10-13T18:00:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/eus",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Lezing Marco Krijnsen: De Hippiemoord",
-    "startDate": "2026-10-13T18:00:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/lezing-marco-krijnsen-de-hippiemoord",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Sneeuwwitje (4+)",
-    "startDate": "2026-10-14T13:00:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/sneeuwwitje-4-3",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Sneeuwwitje (4+)",
-    "startDate": "2026-10-14T17:30:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/sneeuwwitje-4",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Mystiek Lichaam",
-    "startDate": "2026-10-14T18:00:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/mystiek-lichaam",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Comedy Tunes Comedy Night",
-    "startDate": "2026-10-14T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Overig",
-    "url": "https://metropool.nl/agenda/comedy-tunes-comedy-night-14-okt",
-    "ticketUrl": "https://www.ticketmaster.nl/event/654896304?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Muziekcafé, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Mondo Drag + Early Moods",
-    "startDate": "2026-10-14T18:30:00Z",
-    "location": "Enschede",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/mondo-drag-early-moods",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1116935402?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "ICE presenteert Khalid Alterch",
-    "startDate": "2026-10-15T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/ice-presenteert-khalid-alterch",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Rondé",
-    "startDate": "2026-10-15T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/ronde",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1463496258?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Puur de Nijs",
-    "startDate": "2026-10-15T18:30:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/puur-de-nijs",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Firtan",
-    "startDate": "2026-10-15T19:00:00Z",
-    "location": "Hengelo",
-    "genre": "Metal",
-    "url": "https://metropool.nl/agenda/firtan",
-    "ticketUrl": "https://www.ticketmaster.nl/event/567230301?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Wat 'n gedoo!",
-    "startDate": "2026-10-16T18:00:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/wat-039-n-gedoo",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Frank Boeijen",
-    "startDate": "2026-10-16T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/frank-boeijen",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1675781918?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Dan Patlansky & Band (Blues, Bluesrock, SA)",
-    "startDate": "2026-10-16T18:30:00Z",
-    "endDate": "2026-10-16T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111583121",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111583121",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "An evening with Dominic Seldis",
-    "startDate": "2026-10-16T18:30:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/an-evening-with-dominic-seldis",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Cavolo Nero",
-    "startDate": "2026-10-16T19:00:00Z",
-    "location": "Hengelo",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/cavolo-nero",
-    "ticketUrl": "https://www.ticketmaster.nl/event/920301648?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Limehouse Lizzy",
-    "startDate": "2026-10-16T19:00:00Z",
-    "location": "Enschede",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/limehouse-lizzy",
-    "ticketUrl": "https://www.ticketmaster.nl/event/845433242?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Space Academy - Missie Maan (8+)",
-    "startDate": "2026-10-17T13:30:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/space-academy-missie-maan-8-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "LEGENDS of ROCK Tribute Festival",
-    "startDate": "2026-10-17T14:00:00Z",
-    "location": "Hengelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/legends-of-rock-tribute-festival",
-    "ticketUrl": "https://www.ticketmaster.nl/event/467592893?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "VroegZat",
-    "startDate": "2026-10-17T17:30:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/vroegzat-17-okt",
-    "ticketUrl": "https://www.ticketmaster.nl/event/345730276?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Space Academy - Missie Maan (8+)",
-    "startDate": "2026-10-17T17:30:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/space-academy-missie-maan-8",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Boban Braspenning",
-    "startDate": "2026-10-17T18:00:00Z",
-    "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/boban-braspenning",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Amy's Legacy (Tribute to Amy Winehouse, NL)",
-    "startDate": "2026-10-17T18:30:00Z",
-    "endDate": "2026-10-17T21:30:00Z",
-    "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111654550",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111654550",
-    "soldOut": false,
-    "source": "de-cactus"
-  },
-  {
-    "@type": "Event",
-    "name": "Afslag Gewist",
-    "startDate": "2026-10-17T18:30:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/afslag-gewist",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Carl Verheyen",
-    "startDate": "2026-10-17T19:00:00Z",
-    "location": "Almelo",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/carl-verheyen",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1968018762?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Zuco 103",
-    "startDate": "2026-10-17T19:00:00Z",
-    "location": "Enschede",
-    "genre": "Jazz",
-    "url": "https://metropool.nl/agenda/zuco-103",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1975267029?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Open zondag watermolen Oele",
-    "startDate": "2026-10-18T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/open-zondag-watermolen-oele",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Het lammetje dat een varken is (4+)",
-    "startDate": "2026-10-18T12:00:00Z",
-    "location": "",
-    "genre": "Jeugd / Familie",
-    "url": "https://uitinhengelo.nl/evenementen/het-lammetje-dat-een-varken-is-4",
-    "source": "hengelo"
-  },
-  {
-    "@type": "SportsEvent",
-    "name": "FC Twente - FC Utrecht",
-    "startDate": "2026-10-18T12:30:00Z",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
-  },
-  {
-    "@type": "Event",
-    "name": "Marillion",
-    "startDate": "2026-10-19T19:30:00Z",
-    "location": "Enschede",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/marillion",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1572763065?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "soldOut": true,
-    "stage": "Muziekcentrum, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Open Mic",
-    "startDate": "2026-10-20T18:00:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/open-mic-20-okt",
-    "ticketUrl": "https://metropool.nl/agenda/open-mic-20-okt",
-    "stage": "Vestzak, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Pubquiz @'t Pleintje",
-    "startDate": "2026-10-20T18:30:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/pubquiz-t-pleintje",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "TBS met Job Knoester",
-    "startDate": "2026-10-21T18:00:00Z",
-    "location": "",
-    "genre": "Theater",
-    "url": "https://uitinhengelo.nl/evenementen/tbs-met-job-knoester",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Ernest Beuving",
-    "startDate": "2026-10-21T18:30:00Z",
-    "location": "",
-    "genre": "Muziek",
-    "url": "https://uitinhengelo.nl/evenementen/eén-v-d-70-039-s-2",
-    "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Codefendants",
-    "startDate": "2026-10-21T19:00:00Z",
-    "location": "Enschede",
-    "genre": "Hardcore/Punk",
-    "url": "https://metropool.nl/agenda/codefendants",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1842241855?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor hardcore en punk."
   },
   {
     "@type": "Event",
     "name": "Walk Off The Earth",
-    "startDate": "2026-10-22T18:00:00Z",
+    "startDate": "2026-10-22T19:00:00Z",
     "location": "Hengelo",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/walk-off-the-earth",
@@ -2643,12 +40,38 @@
     "source": "metropool"
   },
   {
+    "@type": "SportsEvent",
+    "name": "Lincoln Red Imps - FC Twente",
+    "startDate": "2026-10-22T19:00:00Z",
+    "genre": "Voetbal",
+    "isHome": false,
+    "source": "fc-twente"
+  },
+  {
     "@type": "Event",
-    "name": "Thijs Kemperink",
-    "startDate": "2026-10-22T18:00:00Z",
+    "name": "JATTI – Hippiemoord in de Fashion",
+    "startDate": "2026-10-23T07:00:00Z",
     "location": "",
-    "genre": "Cabaret",
-    "url": "https://uitinhengelo.nl/evenementen/thijs-kemperink",
+    "genre": "Theater, Muziek, Herdenken",
+    "url": "https://uitinhengelo.nl/evenementen/jatti-hippiemoord-in-de-fashion",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Spooktocht Weusthagbos",
+    "startDate": "2026-10-23T16:00:00Z",
+    "location": "",
+    "genre": "Kinderen, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/spooktocht-weusthagbos",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "I SWEAR",
+    "startDate": "2026-10-23T17:30:00Z",
+    "location": "",
+    "genre": "Film",
+    "url": "https://uitinhengelo.nl/evenementen/i-swear",
     "source": "hengelo"
   },
   {
@@ -2662,6 +85,15 @@
   },
   {
     "@type": "Event",
+    "name": "Filmhuis Hengelo - Silent rebellion",
+    "startDate": "2026-10-23T18:15:00Z",
+    "location": "",
+    "genre": "Film, Filmhuis",
+    "url": "https://uitinhengelo.nl/evenementen/filmhuis-hengelo-silent-rebellion",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "ACinDC",
     "startDate": "2026-10-23T18:30:00Z",
     "location": "Hengelo",
@@ -2670,19 +102,6 @@
     "ticketUrl": "https://www.ticketmaster.nl/event/1772911150?CAMEFROM=METROPOOL&brand=nl_metropool",
     "stage": "Bud Stage, Hengelo",
     "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Ploegendienst",
-    "startDate": "2026-10-23T18:30:00Z",
-    "location": "Enschede",
-    "genre": "Hardcore/Punk",
-    "url": "https://metropool.nl/agenda/ploegendienst",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1458931274?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Past bij je smaak voor hardcore en punk."
   },
   {
     "@type": "Event",
@@ -2706,14 +125,26 @@
   },
   {
     "@type": "Event",
+    "name": "Ploegendienst",
+    "startDate": "2026-10-23T19:30:00Z",
+    "location": "Enschede",
+    "genre": "Hardcore/Punk",
+    "url": "https://metropool.nl/agenda/ploegendienst",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1458931274?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Past bij je smaak voor hardcore en punk."
+  },
+  {
+    "@type": "Event",
     "name": "Ruben Hillen",
-    "startDate": "2026-10-23T19:00:00Z",
+    "startDate": "2026-10-23T20:00:00Z",
     "location": "Hengelo",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/ruben-hillen",
     "ticketUrl": "https://www.ticketmaster.nl/event/570293096?CAMEFROM=METROPOOL&brand=nl_metropool",
     "soldOut": true,
-    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2727,11 +158,65 @@
   },
   {
     "@type": "Event",
+    "name": "Happy Halloween bij Attractiepark De Waarbeek",
+    "startDate": "2026-10-24T08:00:00Z",
+    "location": "",
+    "genre": "Diversen, Eten & Drinken, Kinderen, Sport & Spel, Theater, Herfstvakantie, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/happy-halloween-bij-attractiepark-de-waarbeek",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Foto expositie 'Onzichtbaar'",
+    "startDate": "2026-10-24T10:00:00Z",
+    "location": "",
+    "genre": "Diversen, Kunst & Cultuur",
+    "url": "https://uitinhengelo.nl/evenementen/foto-expositie-onzichtbaar",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Theatrale voorstelling: From Reflection to Action",
+    "startDate": "2026-10-24T12:00:00Z",
+    "location": "",
+    "genre": "Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/theatrale-voorstelling-space-of-becoming-from-reflection-to-action",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Griezeltocht Tuindorp 't Lansink",
     "startDate": "2026-10-24T17:00:00Z",
     "location": "",
     "genre": "Actief, Diversen, Kinderen",
     "url": "https://uitinhengelo.nl/evenementen/griezeltocht-tuindorp-t-lansink",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Nacht in het Museum",
+    "startDate": "2026-10-24T17:30:00Z",
+    "location": "",
+    "genre": "Actief, Diversen, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/nacht-in-het-museum",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Fanfare ontmoet Harmonie",
+    "startDate": "2026-10-24T18:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/fanfare-ontmoet-harmonie",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Guess The Groove",
+    "startDate": "2026-10-24T18:00:00Z",
+    "location": "",
+    "genre": "Diversen, Sport & Spel, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/guess-the-groove-2",
     "source": "hengelo"
   },
   {
@@ -2745,14 +230,23 @@
   },
   {
     "@type": "Event",
-    "name": "IDA",
-    "startDate": "2026-10-24T18:30:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/ida",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1483883385?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
+    "name": "Optreden The Classixx live band",
+    "startDate": "2026-10-24T18:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/optreden-the-classixx-live-band",
+    "source": "hengelo",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Live."
+  },
+  {
+    "@type": "Event",
+    "name": "Spooky Stroll Hengelo",
+    "startDate": "2026-10-24T18:00:00Z",
+    "location": "",
+    "genre": "Diversen, Sport & Spel, Theater, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/spooky-stroll-hengelo",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -2763,17 +257,6 @@
     "url": "https://metropool.nl/agenda/leif-de-leeuw-band",
     "ticketUrl": "https://www.ticketmaster.nl/event/1829352569?CAMEFROM=METROPOOL&brand=nl_metropool",
     "stage": "Metropool Almelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
-    "name": "Loïs Lane",
-    "startDate": "2026-10-24T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/lois-lane",
-    "ticketUrl": "https://www.ticketmaster.nl/event/416956979?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -2809,12 +292,36 @@
   },
   {
     "@type": "Event",
-    "name": "ROCAR-TECH Twente Rally﻿",
-    "startDate": "2026-10-25",
-    "location": "",
-    "genre": "Sport & Spel",
-    "url": "https://uitinhengelo.nl/evenementen/rocar-tech-twente-rally",
-    "source": "hengelo"
+    "name": "IDA",
+    "startDate": "2026-10-24T19:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/ida",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1483883385?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Loïs Lane",
+    "startDate": "2026-10-24T19:30:00Z",
+    "location": "Hengelo",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/lois-lane",
+    "ticketUrl": "https://www.ticketmaster.nl/event/416956979?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "4AM",
+    "startDate": "2026-10-24T21:00:00Z",
+    "location": "Enschede",
+    "genre": "Hiphop/R&B",
+    "url": "https://metropool.nl/agenda/4am",
+    "ticketUrl": "https://www.ticketmaster.nl/event/174957914?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -2862,8 +369,17 @@
     "location": "De Cactus, Hengelo",
     "url": "https://decactus.stager.co/shop/default/events/111644769",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111644769",
-    "soldOut": false,
+    "soldOut": true,
     "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "The Music of Ludovico Einaudi by Candlelight",
+    "startDate": "2026-10-25T18:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/the-music-of-ludovico-einaudi-by-candlelight",
+    "source": "hengelo"
   },
   {
     "@type": "SportsEvent",
@@ -2875,11 +391,29 @@
   },
   {
     "@type": "Event",
+    "name": "Workshop Amsterdam Burlesque Revue",
+    "startDate": "2026-10-26T18:00:00Z",
+    "location": "",
+    "genre": "Workshop",
+    "url": "https://uitinhengelo.nl/evenementen/workshop-amsterdam-burlesque-revue",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "The Wardrobe",
     "startDate": "2026-10-26T19:00:00Z",
     "location": "",
     "genre": "Dans",
     "url": "https://uitinhengelo.nl/evenementen/the-wardrobe",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Zin in Interactie met Ismail Agzanay (lezing)",
+    "startDate": "2026-10-27T18:30:00Z",
+    "location": "",
+    "genre": "Diversen",
+    "url": "https://uitinhengelo.nl/evenementen/zin-in-interactie-met-ismail-agzanay-lezing",
     "source": "hengelo"
   },
   {
@@ -2902,11 +436,35 @@
   },
   {
     "@type": "Event",
+    "name": "Metropool Muziekquiz - Enschede",
+    "startDate": "2026-10-28T19:15:00Z",
+    "location": "Enschede",
+    "genre": "Overig",
+    "url": "https://metropool.nl/agenda/metropool-muziekquiz-enschede-28-okt",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1044670466?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
+    "stage": "Muziekcafé, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Metropool Muziekquiz - Hengelo",
+    "startDate": "2026-10-28T19:15:00Z",
+    "location": "Hengelo",
+    "genre": "Overig",
+    "url": "https://metropool.nl/agenda/metropool-muziekquiz-hengelo-28-okt",
+    "ticketUrl": "https://www.ticketmaster.nl/event/191473447?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
+    "stage": "Muziekcafé, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Halloween Hengelo",
     "startDate": "2026-10-29T17:00:00Z",
     "location": "",
-    "genre": "Kinderen",
-    "url": "https://uitinhengelo.nl/evenementen/halloween-hengelo",
+    "genre": "Kinderen, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/halloween-henglo",
     "source": "hengelo"
   },
   {
@@ -2927,6 +485,15 @@
     "location": "",
     "genre": "Musical",
     "url": "https://uitinhengelo.nl/evenementen/dolly-dots-de-musical",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Filmhuis Hengelo - Home",
+    "startDate": "2026-10-29T19:15:00Z",
+    "location": "",
+    "genre": "Film, Filmhuis",
+    "url": "https://uitinhengelo.nl/evenementen/filmhuis-hengelo-home",
     "source": "hengelo"
   },
   {
@@ -2960,6 +527,26 @@
   },
   {
     "@type": "Event",
+    "name": "Koninklijk Symfonie Orkest Cecilia.",
+    "startDate": "2026-10-30T19:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/koninklijk-symfonie-orkest-cecilia",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Filmhuis Hengelo - A sad and beautiful world",
+    "startDate": "2026-10-30T19:15:00Z",
+    "location": "",
+    "genre": "Film, Filmhuis",
+    "url": "https://uitinhengelo.nl/evenementen/filmhuis-hengelo-a-sad-and-beautiful-world",
+    "source": "hengelo",
+    "recommended": true,
+    "tasteReason": "Past bij je smaak voor wereldmuziek."
+  },
+  {
+    "@type": "Event",
     "name": "Bökkers",
     "startDate": "2026-10-30T19:30:00Z",
     "location": "Hengelo",
@@ -2977,8 +564,17 @@
     "location": "De Cactus, Hengelo",
     "url": "https://decactus.stager.co/shop/default/events/111578426",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111578426",
-    "soldOut": false,
+    "soldOut": true,
     "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "HALLOWEENAVOND JE BENT WIE JE BAND",
+    "startDate": "2026-10-30T19:30:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/halloweenavond-je-bent-wie-je-band",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -3004,6 +600,17 @@
   },
   {
     "@type": "Event",
+    "name": "EPS x ESN Twente Halloween",
+    "startDate": "2026-10-30T22:00:00Z",
+    "location": "Enschede",
+    "genre": "Elektronisch",
+    "url": "https://metropool.nl/agenda/eps-x-esn-twente-halloween",
+    "ticketUrl": "https://www.ticketmaster.nl/event/701695503?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Dolly Dots, de musical",
     "startDate": "2026-10-31T13:30:00Z",
     "location": "",
@@ -3013,11 +620,38 @@
   },
   {
     "@type": "Event",
+    "name": "BS de Jeugd: Halloween",
+    "startDate": "2026-10-31T18:00:00Z",
+    "location": "",
+    "genre": "Diversen, Eten & Drinken, Sport & Spel, Theater, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/halloween-3",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Halloween 't Neutje",
+    "startDate": "2026-10-31T18:30:00Z",
+    "location": "",
+    "genre": "Diversen, Eten & Drinken, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/halloween-t-neutje",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Project Man",
     "startDate": "2026-10-31T18:30:00Z",
     "location": "",
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/project-man",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Kasbah’s after dark",
+    "startDate": "2026-10-31T19:00:00Z",
+    "location": "",
+    "genre": "Diversen, Sport & Spel, Theater, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/kasbahs-after-dark",
     "source": "hengelo"
   },
   {
@@ -3125,6 +759,24 @@
   },
   {
     "@type": "Event",
+    "name": "Allerzielenviering",
+    "startDate": "2026-11-01T15:00:00Z",
+    "location": "",
+    "genre": "Diversen, Herdenken",
+    "url": "https://uitinhengelo.nl/evenementen/allerzielenviering-2",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Jazzplatform Hengelo presenteert",
+    "startDate": "2026-11-01T15:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/jazzplatform-hengelo-presenteert-2",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Verjaardag Ronald",
     "startDate": "2026-11-02",
     "location": "",
@@ -3133,8 +785,17 @@
   },
   {
     "@type": "Event",
+    "name": "Vrijwilligerscompliment 2026",
+    "startDate": "2026-11-03T17:00:00Z",
+    "location": "",
+    "genre": "Evenement",
+    "url": "https://uitinhengelo.nl/evenementen/vrijwilligerscompliment-2026",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Monkeyjam",
-    "startDate": "2026-11-04T18:30:00Z",
+    "startDate": "2026-11-04T19:00:00Z",
     "location": "Enschede",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/monkeyjam-4-nov",
@@ -3152,6 +813,17 @@
     "source": "hengelo",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor Live."
+  },
+  {
+    "@type": "Event",
+    "name": "Akoestische Sessie 4 november 2026",
+    "startDate": "2026-11-04T19:30:00Z",
+    "endDate": "2026-11-04T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111652278",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111652278",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -3173,6 +845,16 @@
   },
   {
     "@type": "Event",
+    "name": "Opening expositie Aslan Çelik",
+    "startDate": "2026-11-05T18:30:00Z",
+    "location": "",
+    "genre": "Diversen, Kunst & Cultuur",
+    "url": "https://uitinhengelo.nl/evenementen/opening-expositie-aslan-çelik-çeşme-cultuur-festival-2026",
+    "endDate": "2026-11-25T16:00:00Z",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "STIK (12+)",
     "startDate": "2026-11-05T18:30:00Z",
     "location": "",
@@ -3187,6 +869,15 @@
     "location": "",
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/supertribute",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Filmhuis Hengelo - Het diner",
+    "startDate": "2026-11-05T19:15:00Z",
+    "location": "",
+    "genre": "Film, Filmhuis",
+    "url": "https://uitinhengelo.nl/evenementen/filmhuis-hengelo-het-diner",
     "source": "hengelo"
   },
   {
@@ -3213,12 +904,58 @@
     "source": "de-cactus"
   },
   {
+    "@type": "SportsEvent",
+    "name": "FC Twente - Pafos",
+    "startDate": "2026-11-05T20:00:00Z",
+    "genre": "Voetbal",
+    "isHome": true,
+    "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "VRIJ",
+    "startDate": "2026-11-06T16:00:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/vrij",
+    "ticketUrl": "https://tickets.vrijenschede.nl/84077633f4ee4ec4b43ce8b9c49ab921/tickets",
+    "stage": "Muziekcentrum, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Blueprint Big Band plays Miles Davis",
+    "startDate": "2026-11-06T18:30:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/blueprint-big-band-plays-miles-davis",
+    "source": "hengelo"
+  },
+  {
     "@type": "Event",
     "name": "Donna's Hot Stuff",
     "startDate": "2026-11-06T19:00:00Z",
     "location": "",
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/a-tribute-to-the-queen-of-disco",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Korte theatervoorstelling 'Enfin Barbin'",
+    "startDate": "2026-11-06T19:00:00Z",
+    "location": "",
+    "genre": "Muziek, Dans, Theaterinstallatie, Theaterspecial",
+    "url": "https://uitinhengelo.nl/evenementen/korte-theatervoorstelling-enfin-barbin",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Zing mee met BLEND",
+    "startDate": "2026-11-06T19:00:00Z",
+    "location": "",
+    "genre": "Diversen, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/zing-mee-met-blend",
     "source": "hengelo"
   },
   {
@@ -3274,6 +1011,15 @@
   },
   {
     "@type": "Event",
+    "name": "Yellofox bij Elpees van Kees",
+    "startDate": "2026-11-07T12:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/yellofox-bij-elpees-van-kees",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Museumnacht Enschede",
     "startDate": "2026-11-07T18:00:00Z",
     "location": "",
@@ -3290,6 +1036,26 @@
     "location": "",
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/pan-8",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Studio15 x Museumnacht",
+    "startDate": "2026-11-07T18:45:00Z",
+    "location": "Enschede",
+    "genre": "Overig",
+    "url": "https://metropool.nl/agenda/studio15-x-museumnacht",
+    "ticketUrl": "https://tickets.concordia.nl/mtTicket/performance/10025679?stlt=cncrd&_gl=1%2Apwqtpg%2A_gcl_au%2AMTI5NTAyNzM5NC4xNzgzMzM3Nzg4",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "The Hustle - We Are Family (6e editie)",
+    "startDate": "2026-11-07T19:00:00Z",
+    "location": "",
+    "genre": "Diversen, Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/the-hustle-we-are-family-6e-editie-2",
     "source": "hengelo"
   },
   {
@@ -3328,17 +1094,6 @@
   },
   {
     "@type": "Event",
-    "name": "WIES",
-    "startDate": "2026-11-07T19:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/wies",
-    "ticketUrl": "https://www.ticketmaster.nl/event/744626559?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
     "name": "Dansmaar: Lady's Night",
     "startDate": "2026-11-07T19:30:00Z",
     "endDate": "2026-11-08T00:00:00Z",
@@ -3370,12 +1125,25 @@
   },
   {
     "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-11-08T09:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
-    "source": "hengelo"
+    "name": "WIES",
+    "startDate": "2026-11-07T20:00:00Z",
+    "location": "Hengelo",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/wies",
+    "ticketUrl": "https://www.ticketmaster.nl/event/744626559?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Basic Grooves",
+    "startDate": "2026-11-07T22:00:00Z",
+    "location": "Enschede",
+    "genre": "Elektronisch",
+    "url": "https://metropool.nl/agenda/basic-grooves",
+    "ticketUrl": "https://tickets.basicgrooves.nl/6da524b80abe4334aebdfe76080f8526/",
+    "stage": "Muziekcentrum, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -3436,6 +1204,15 @@
   },
   {
     "@type": "Event",
+    "name": "Filmhuis Hengelo - Värn",
+    "startDate": "2026-11-08T19:15:00Z",
+    "location": "",
+    "genre": "Film, Filmhuis",
+    "url": "https://uitinhengelo.nl/evenementen/filmhuis-hengelo-värn",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Esther van der Voort",
     "startDate": "2026-11-10T19:00:00Z",
     "location": "",
@@ -3450,6 +1227,26 @@
     "location": "",
     "genre": "Cabaret",
     "url": "https://uitinhengelo.nl/evenementen/mama-is-boos-reprise",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Muziek Bingo Hitster 11-11 @ De Cactus (Pub Quiz)",
+    "startDate": "2026-11-11T19:30:00Z",
+    "endDate": "2026-11-11T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111638771",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111638771",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Al het blauw van de hemel",
+    "startDate": "2026-11-12T19:00:00Z",
+    "location": "",
+    "genre": "Musical",
+    "url": "https://uitinhengelo.nl/evenementen/al-het-blauw-van-de-hemel",
     "source": "hengelo"
   },
   {
@@ -3521,7 +1318,6 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/gruppo-sportivo",
     "ticketUrl": "https://www.ticketmaster.nl/event/1841179847?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -3547,7 +1343,7 @@
   {
     "@type": "Event",
     "name": "Queen's Pleasure",
-    "startDate": "2026-11-13T20:00:00Z",
+    "startDate": "2026-11-13T21:00:00Z",
     "location": "Enschede",
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/queens-pleasure",
@@ -3558,7 +1354,7 @@
   {
     "@type": "Event",
     "name": "Thijs Veldhuis",
-    "startDate": "2026-11-13T20:00:00Z",
+    "startDate": "2026-11-13T21:00:00Z",
     "location": "Hengelo",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/thijs-veldhuis",
@@ -3605,6 +1401,15 @@
   },
   {
     "@type": "Event",
+    "name": "Jubileumconcert TCOV Concertkoor Twente",
+    "startDate": "2026-11-14T18:30:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/jubileumconcert-tcov-concertkoor-twente",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Vanesa Harbeck (The Queen of Latin Blues, AR)",
     "startDate": "2026-11-14T19:30:00Z",
     "endDate": "2026-11-14T22:30:00Z",
@@ -3628,13 +1433,26 @@
   {
     "@type": "Event",
     "name": "Deppie - IDIOOT EP Release",
-    "startDate": "2026-11-14T21:00:00Z",
+    "startDate": "2026-11-14T20:30:00Z",
     "location": "Enschede",
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/deppie-idioot-ep-release",
     "ticketUrl": "https://www.ticketmaster.nl/event/660228469?CAMEFROM=METROPOOL&brand=nl_metropool",
     "stage": "Saxion Stage, Enschede",
     "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "PIÑA",
+    "startDate": "2026-11-14T21:30:00Z",
+    "location": "Hengelo",
+    "genre": "Latin",
+    "url": "https://metropool.nl/agenda/pina-14-nov",
+    "ticketUrl": "https://www.ticketmaster.nl/event/594039536?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Past bij je smaak voor latin."
   },
   {
     "@type": "Event",
@@ -3652,6 +1470,15 @@
     "location": "",
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/de-mega-sint-show-chaos-in-de-cadeaufabriek",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "SABOTAJ",
+    "startDate": "2026-11-15T14:00:00Z",
+    "location": "",
+    "genre": "Theaterspecial",
+    "url": "https://uitinhengelo.nl/evenementen/sabotaj",
     "source": "hengelo"
   },
   {
@@ -3698,6 +1525,27 @@
   },
   {
     "@type": "Event",
+    "name": "Huis van Sinterklaas",
+    "startDate": "2026-11-18T14:00:00Z",
+    "location": "",
+    "genre": "Kinderen",
+    "url": "https://uitinhengelo.nl/evenementen/huis-van-sinterklaas",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Tales & Tunes met Bennie Jolink",
+    "startDate": "2026-11-18T19:00:00Z",
+    "location": "Enschede",
+    "genre": "Overig",
+    "url": "https://metropool.nl/agenda/tales-tunes-met-bennie-jolink",
+    "ticketUrl": "https://bibliotheekenschede.op-shop.nl/10316/tales-tunes-met-bennie-jolink-en-menting/18-11-2026",
+    "soldOut": true,
+    "stage": "Muziekcafé, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Coming on Strong",
     "startDate": "2026-11-18T19:00:00Z",
     "location": "",
@@ -3718,14 +1566,23 @@
   },
   {
     "@type": "Event",
-    "name": "Fleshcrawl + Avulsed",
+    "name": "Hartelijk Hengelo: een open huis voor alle Hengeloërs",
+    "startDate": "2026-11-19T16:30:00Z",
+    "location": "",
+    "genre": "Diversen, Eten & Drinken, Sport & Spel",
+    "url": "https://uitinhengelo.nl/evenementen/hartelijk-hengelo-een-open-huis-voor-alle-hengeloërs",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Church of Cash speciale show! (Johnny Cash Tribute, USA)",
     "startDate": "2026-11-19T19:30:00Z",
-    "location": "Enschede",
-    "genre": "Metal",
-    "url": "https://metropool.nl/agenda/fleshcrawl-avulsed",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1980589855?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Saxion Stage, Enschede",
-    "source": "metropool"
+    "endDate": "2026-11-19T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111597269",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111597269",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -3738,6 +1595,17 @@
   },
   {
     "@type": "Event",
+    "name": "Fleshcrawl + Avulsed",
+    "startDate": "2026-11-19T20:50:00Z",
+    "location": "Enschede",
+    "genre": "Metal",
+    "url": "https://metropool.nl/agenda/fleshcrawl-avulsed",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1980589855?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "The Young Analogues",
     "startDate": "2026-11-20T19:00:00Z",
     "location": "",
@@ -3747,23 +1615,13 @@
   },
   {
     "@type": "Event",
-    "name": "Electric Six",
-    "startDate": "2026-11-20T19:30:00Z",
-    "location": "Enschede",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/electric-six",
-    "ticketUrl": "https://www.ticketmaster.nl/event/679293266?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
     "name": "Niels Geusebroek sings Coldplay",
     "startDate": "2026-11-20T19:30:00Z",
     "location": "Hengelo",
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/niels-geusebroek-sings-coldplay",
     "ticketUrl": "https://www.ticketmaster.nl/event/1254544546?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
     "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
@@ -3799,12 +1657,54 @@
     "source": "metropool"
   },
   {
-    "@type": "SportsEvent",
-    "name": "FC Twente - Willem II",
-    "startDate": "2026-11-21",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
+    "@type": "Event",
+    "name": "Electric Six",
+    "startDate": "2026-11-20T20:30:00Z",
+    "location": "Enschede",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/electric-six",
+    "ticketUrl": "https://www.ticketmaster.nl/event/679293266?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Beleef het Realisme",
+    "startDate": "2026-11-21T11:00:00Z",
+    "location": "",
+    "genre": "Diversen, Kunst & Cultuur, Workshop",
+    "url": "https://uitinhengelo.nl/evenementen/beleef-het-realisme",
+    "endDate": "2026-11-29T16:00:00Z",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Nelles bij Elpees van Kees - Popronde 2026",
+    "startDate": "2026-11-21T12:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/nelles-bij-elpees-van-kees-popronde-2026",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "The Pelumas bij Elpees van Kees - Popronde 2026",
+    "startDate": "2026-11-21T12:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/the-pelumas-bij-elpees-van-kees-popronde-2026",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Wendy Moore & Band (Opening Popronde Hengelo @ De Cactus)",
+    "startDate": "2026-11-21T14:00:00Z",
+    "endDate": "2026-11-21T15:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111667200",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111667200",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -3824,6 +1724,26 @@
     "url": "https://metropool.nl/agenda/frank-meijer-kampvuuravond-experience",
     "ticketUrl": "https://shop.weeztix.com/df45e655-2d77-43e8-9ba8-06547cc16c0b/tickets",
     "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Kampvuuravond Experience",
+    "startDate": "2026-11-21T18:30:00Z",
+    "location": "",
+    "genre": "Diversen, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/kampvuuravond-experience",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Popronde: Eyesores + Semuta",
+    "startDate": "2026-11-21T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/popronde-eyesores-semuta",
+    "ticketUrl": "https://metropool.nl/agenda/popronde-eyesores-semuta",
+    "stage": "Jack Daniel's Stage, Hengelo",
     "source": "metropool"
   },
   {
@@ -3897,12 +1817,33 @@
   },
   {
     "@type": "Event",
+    "name": "Spanish Heat",
+    "startDate": "2026-11-21T22:00:00Z",
+    "location": "Enschede",
+    "genre": "Latin",
+    "url": "https://metropool.nl/agenda/spanish-heat",
+    "ticketUrl": "https://www.ticketmaster.nl/event/spanish-heat-tickets/300116771",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Past bij je smaak voor latin."
+  },
+  {
+    "@type": "Event",
     "name": "Quinn & Aaron",
     "startDate": "2026-11-22T10:00:00Z",
     "location": "",
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/quinn-amp-aaron",
     "source": "hengelo"
+  },
+  {
+    "@type": "SportsEvent",
+    "name": "FC Twente - Willem II",
+    "startDate": "2026-11-22T11:15:00Z",
+    "genre": "Voetbal",
+    "isHome": true,
+    "source": "fc-twente"
   },
   {
     "@type": "Event",
@@ -3924,6 +1865,39 @@
   },
   {
     "@type": "Event",
+    "name": "JazzRock Café - Mr. Fusion",
+    "startDate": "2026-11-22T14:00:00Z",
+    "location": "Hengelo",
+    "genre": "Jazz",
+    "url": "https://metropool.nl/agenda/jazzrock-cafe-mr-fusion",
+    "ticketUrl": "https://www.ticketmaster.nl/event/2092229393?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcafé, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Bezzem dut akoestisch (Dialect, Rock, Covers, NL)",
+    "startDate": "2026-11-22T14:00:00Z",
+    "endDate": "2026-11-22T16:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111660965",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111660965",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "James Walsh (Starsailor)",
+    "startDate": "2026-11-22T20:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/james-walsh-starsailor",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1730159430?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Vestzak, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Schaatsbaan Hengelo",
     "startDate": "2026-11-25",
     "location": "",
@@ -3934,7 +1908,7 @@
   },
   {
     "@type": "Event",
-    "name": "Besloten bijeenkomst",
+    "name": "Besloten bijeenkomst van 16.00 tot 19.30uur",
     "startDate": "2026-11-25T15:00:00Z",
     "endDate": "2026-11-25T18:30:00Z",
     "location": "De Cactus, Hengelo",
@@ -3942,6 +1916,15 @@
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111597262",
     "soldOut": false,
     "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Trouwbeurs Lang & Gelukkig",
+    "startDate": "2026-11-25T17:00:00Z",
+    "location": "",
+    "genre": "Actief, Markten",
+    "url": "https://uitinhengelo.nl/evenementen/trouwbeurs-lang-gelukkig",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -3963,6 +1946,17 @@
   },
   {
     "@type": "Event",
+    "name": "Sing it!",
+    "startDate": "2026-11-26T19:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/sing-it-26-nov",
+    "ticketUrl": "https://metropool.nl/agenda/sing-it-26-nov",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Rachel Croft (Singer/Songwriter, UK)",
     "startDate": "2026-11-26T19:30:00Z",
     "endDate": "2026-11-26T22:30:00Z",
@@ -3980,6 +1974,25 @@
     "genre": "Cabaret",
     "url": "https://uitinhengelo.nl/evenementen/jan-beuving",
     "source": "hengelo"
+  },
+  {
+    "@type": "SportsEvent",
+    "name": "SC Freiburg - FC Twente",
+    "startDate": "2026-11-26T20:00:00Z",
+    "genre": "Voetbal",
+    "isHome": false,
+    "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "Palindroom Festival",
+    "startDate": "2026-11-27T18:00:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/palindroom-festival",
+    "ticketUrl": "https://www.ticketmaster.nl/event/908488867?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -4006,24 +2019,13 @@
   },
   {
     "@type": "Event",
-    "name": "Snelle",
-    "startDate": "2026-11-27T19:30:00Z",
-    "location": "Enschede",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/snelle",
-    "ticketUrl": "https://www.ticketmaster.nl/event/675574627?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Muziekcentrum, Enschede",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
     "name": "Rasta Pasta extra show! (A tribute to reggae & ska, NL)",
     "startDate": "2026-11-27T19:30:00Z",
     "endDate": "2026-11-27T22:30:00Z",
     "location": "De Cactus, Hengelo",
     "url": "https://decactus.stager.co/shop/default/events/111625763",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111625763",
-    "soldOut": false,
+    "soldOut": true,
     "source": "de-cactus",
     "recommended": true,
     "tasteReason": "Past bij je smaak voor reggae en ska."
@@ -4040,12 +2042,16 @@
     "source": "metropool"
   },
   {
-    "@type": "SportsEvent",
-    "name": "NEC - FC Twente",
-    "startDate": "2026-11-28",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
+    "@type": "Event",
+    "name": "Snelle",
+    "startDate": "2026-11-27T20:15:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/snelle",
+    "ticketUrl": "https://www.ticketmaster.nl/event/675574627?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
+    "stage": "Muziekcentrum, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -4106,13 +2112,12 @@
     "source": "metropool"
   },
   {
-    "@type": "Event",
-    "name": "Koopzondag binnenstad Hengelo",
-    "startDate": "2026-11-29T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/koopzondag-binnenstad-hengelo",
-    "source": "hengelo"
+    "@type": "SportsEvent",
+    "name": "NEC - FC Twente",
+    "startDate": "2026-11-29T19:00:00Z",
+    "genre": "Voetbal",
+    "isHome": false,
+    "source": "fc-twente"
   },
   {
     "@type": "Event",
@@ -4154,6 +2159,17 @@
   },
   {
     "@type": "Event",
+    "name": "Akoestische Sessie 2 december 2026",
+    "startDate": "2026-12-02T19:30:00Z",
+    "endDate": "2026-12-02T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111652280",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111652280",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Marlon Kicken",
     "startDate": "2026-12-02T19:30:00Z",
     "location": "",
@@ -4172,14 +2188,14 @@
   },
   {
     "@type": "Event",
-    "name": "Steve 'n' Seagulls",
+    "name": "Lovesick (country, western swing and rock’n’roll, It)",
     "startDate": "2026-12-03T19:30:00Z",
-    "location": "Hengelo",
-    "genre": "Folk/Country",
-    "url": "https://metropool.nl/agenda/steve-n-seagulls",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1891424359?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
+    "endDate": "2026-12-03T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111656497",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111656497",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -4189,6 +2205,17 @@
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/the-kilkennys",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Steve 'n' Seagulls",
+    "startDate": "2026-12-03T20:30:00Z",
+    "location": "Hengelo",
+    "genre": "Folk/Country",
+    "url": "https://metropool.nl/agenda/steve-n-seagulls",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1891424359?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -4225,8 +2252,19 @@
   },
   {
     "@type": "Event",
-    "name": "Roundabouts - EP release",
+    "name": "90's loves 00's",
     "startDate": "2026-12-04T20:00:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/90s-loves-00s-4-dec",
+    "ticketUrl": "https://www.ticketmaster.nl/event/246090644?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Roundabouts - EP release",
+    "startDate": "2026-12-04T21:00:00Z",
     "location": "Hengelo",
     "genre": "Rock",
     "url": "https://metropool.nl/agenda/roundabouts-ep-release",
@@ -4235,41 +2273,35 @@
     "source": "metropool"
   },
   {
-    "@type": "SportsEvent",
-    "name": "Go Ahead Eagles - FC Twente",
-    "startDate": "2026-12-05",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
-  },
-  {
     "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-12-05T09:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
-    "source": "hengelo"
+    "name": "Dansmaar \"70's Disco\"",
+    "startDate": "2026-12-05T19:30:00Z",
+    "endDate": "2026-12-05T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111581672",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111581672",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
     "name": "Gotu Jim",
-    "startDate": "2026-12-05T19:30:00Z",
+    "startDate": "2026-12-05T20:30:00Z",
     "location": "Enschede",
     "genre": "Hiphop/R&B",
     "url": "https://metropool.nl/agenda/gotu-jim",
     "ticketUrl": "https://www.ticketmaster.nl/event/1819676797?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
     "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
-    "@type": "Event",
-    "name": "Glas-in-loodmuseum Hengelo geopend!",
-    "startDate": "2026-12-06T09:00:00Z",
-    "location": "",
-    "genre": "Kunst & Cultuur",
-    "url": "https://uitinhengelo.nl/evenementen/glas-in-loodmuseum-hengelo-geopend",
-    "source": "hengelo"
+    "@type": "SportsEvent",
+    "name": "Go Ahead Eagles - FC Twente",
+    "startDate": "2026-12-06T13:30:00Z",
+    "genre": "Voetbal",
+    "isHome": false,
+    "source": "fc-twente"
   },
   {
     "@type": "Event",
@@ -4285,7 +2317,7 @@
   {
     "@type": "Event",
     "name": "David Ellefson - Bass Warrior",
-    "startDate": "2026-12-08T19:00:00Z",
+    "startDate": "2026-12-08T20:00:00Z",
     "location": "Enschede",
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/david-ellefson-bass-warrior",
@@ -4310,8 +2342,38 @@
     "genre": "Overig",
     "url": "https://metropool.nl/agenda/comedy-tunes-comedy-night-9-dec",
     "ticketUrl": "https://www.ticketmaster.nl/event/637602370?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
     "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Mobiel Media Lab",
+    "startDate": "2026-12-10T10:00:00Z",
+    "location": "",
+    "genre": "Diversen",
+    "url": "https://uitinhengelo.nl/evenementen/mobiel-media-lab",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Living Library",
+    "startDate": "2026-12-10T11:30:00Z",
+    "location": "",
+    "genre": "Diversen",
+    "url": "https://uitinhengelo.nl/evenementen/living-library",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Kerstborrel (Besloten feest)",
+    "startDate": "2026-12-10T18:00:00Z",
+    "endDate": "2026-12-10T22:59:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111702306",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111702306",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -4330,7 +2392,27 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/haevn",
     "ticketUrl": "https://www.ticketmaster.nl/event/875521976?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
     "stage": "Muziekcentrum, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "SportsEvent",
+    "name": "AGF Aarhus - FC Twente",
+    "startDate": "2026-12-10T20:00:00Z",
+    "genre": "Voetbal",
+    "isHome": false,
+    "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "NILE & Guests: REDSPHERE + INTREPID + ORECUS",
+    "startDate": "2026-12-11T18:30:00Z",
+    "location": "Enschede",
+    "genre": "Metal",
+    "url": "https://metropool.nl/agenda/nile-guests-redsphere-intrepid-orecus",
+    "ticketUrl": "https://www.ticketmaster.nl/event/2030451159?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
     "source": "metropool"
   },
   {
@@ -4374,7 +2456,7 @@
     "location": "De Cactus, Hengelo",
     "url": "https://decactus.stager.co/shop/default/events/111599536",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111599536",
-    "soldOut": false,
+    "soldOut": true,
     "source": "de-cactus"
   },
   {
@@ -4389,12 +2471,13 @@
     "source": "metropool"
   },
   {
-    "@type": "SportsEvent",
-    "name": "FC Twente - Sparta Rotterdam",
-    "startDate": "2026-12-12",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
+    "@type": "Event",
+    "name": "Het meisje met de zwavelstokjes",
+    "startDate": "2026-12-12T18:00:00Z",
+    "location": "",
+    "genre": "Theater",
+    "url": "https://uitinhengelo.nl/evenementen/het-meisje-met-de-zwavelstokjes",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -4451,12 +2534,25 @@
   },
   {
     "@type": "Event",
-    "name": "Koopzondag binnenstad Hengelo",
-    "startDate": "2026-12-13T11:00:00Z",
-    "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/koopzondag-binnenstad-hengelo",
-    "source": "hengelo"
+    "name": "Tjolk! Everything 80's",
+    "startDate": "2026-12-12T20:00:00Z",
+    "location": "Hengelo",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/tjolk-everything-80s",
+    "ticketUrl": "https://www.ticketmaster.nl/event/449938762?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Besloten feestje op zondagmiddag 13/12/2026",
+    "startDate": "2026-12-13T14:00:00Z",
+    "endDate": "2026-12-13T17:00:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111705720",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111705720",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -4471,6 +2567,17 @@
   },
   {
     "@type": "Event",
+    "name": "Muziek Bingo Hitster 16-12 @ De Cactus (Pub Quiz)",
+    "startDate": "2026-12-16T19:30:00Z",
+    "endDate": "2026-12-16T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111638772",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111638772",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Folk",
     "startDate": "2026-12-16T19:30:00Z",
     "location": "",
@@ -4480,13 +2587,24 @@
   },
   {
     "@type": "Event",
+    "name": "Kerstborrel (Besloten feest)",
+    "startDate": "2026-12-17T16:00:00Z",
+    "endDate": "2026-12-17T22:00:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111692542",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111692542",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "The Doors Alive",
     "startDate": "2026-12-17T19:00:00Z",
-    "location": "Hengelo",
+    "location": "Enschede",
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/the-doors-alive",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1262145124?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1162187306?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
     "source": "metropool",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor The Doors."
@@ -4499,6 +2617,14 @@
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/maria-de-buenos-aires",
     "source": "hengelo"
+  },
+  {
+    "@type": "SportsEvent",
+    "name": "FC Twente - Kairat",
+    "startDate": "2026-12-17T20:00:00Z",
+    "genre": "Voetbal",
+    "isHome": true,
+    "source": "fc-twente"
   },
   {
     "@type": "Event",
@@ -4552,12 +2678,15 @@
     "source": "metropool"
   },
   {
-    "@type": "SportsEvent",
-    "name": "Feyenoord - FC Twente",
-    "startDate": "2026-12-19",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
+    "@type": "Event",
+    "name": "Loeck EP Release",
+    "startDate": "2026-12-18T20:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/loeck-ep-release",
+    "ticketUrl": "https://www.ticketmaster.nl/event/117381457?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -4590,19 +2719,32 @@
   },
   {
     "@type": "Event",
-    "name": "Besloten feestje",
+    "name": "Blackbird Kerstshow",
     "startDate": "2026-12-19T19:30:00Z",
-    "endDate": "2026-12-19T23:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/blackbird-kerstshow",
+    "ticketUrl": "https://www.ticketmaster.nl/event/377237479?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Vestzak, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Heatland (Hard Rock, alternative, grunge en punk, NL)",
+    "startDate": "2026-12-19T19:30:00Z",
+    "endDate": "2026-12-19T22:30:00Z",
     "location": "De Cactus, Hengelo",
-    "url": "https://decactus.stager.co/shop/default/events/111599851",
-    "ticketUrl": "https://decactus.stager.co/shop/default/events/111599851",
+    "url": "https://decactus.stager.co/shop/default/events/111707267",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111707267",
     "soldOut": false,
-    "source": "de-cactus"
+    "source": "de-cactus",
+    "recommended": true,
+    "tasteReason": "Past bij je smaak voor alternative rock en punk."
   },
   {
     "@type": "Event",
     "name": "Call It Off plays Taylor Swift",
-    "startDate": "2026-12-19T20:00:00Z",
+    "startDate": "2026-12-19T21:00:00Z",
     "location": "Enschede",
     "genre": "Tribute",
     "url": "https://metropool.nl/agenda/call-it-off-plays-taylor-swift",
@@ -4612,11 +2754,50 @@
   },
   {
     "@type": "Event",
-    "name": "Koopzondag binnenstad Hengelo",
+    "name": "CLASSIC (R&B & Hiphop)",
+    "startDate": "2026-12-19T21:00:00Z",
+    "location": "Almelo",
+    "genre": "Hiphop/R&B",
+    "url": "https://metropool.nl/agenda/classic-rb-hiphop-19-dec",
+    "ticketUrl": "https://www.ticketmaster.nl/event/991286543",
+    "stage": "Metropool Almelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Kerstmarkt Theetuin Driene",
     "startDate": "2026-12-20T11:00:00Z",
     "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/koopzondag-binnenstad-hengelo",
+    "genre": "Diversen, Eten & Drinken, Kerst",
+    "url": "https://uitinhengelo.nl/evenementen/kerstmarkt-theetuin-driene",
+    "source": "hengelo"
+  },
+  {
+    "@type": "SportsEvent",
+    "name": "Feyenoord - FC Twente",
+    "startDate": "2026-12-20T13:30:00Z",
+    "genre": "Voetbal",
+    "isHome": false,
+    "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "PJ Taylor Band (New rockin' country / honky tonk, NL)",
+    "startDate": "2026-12-20T14:00:00Z",
+    "endDate": "2026-12-20T16:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111655965",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111655965",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Hitster Family Christmas Edition",
+    "startDate": "2026-12-20T14:00:00Z",
+    "location": "",
+    "genre": "Eten & Drinken, Sport & Spel, Kerst, Kerstvakantie",
+    "url": "https://uitinhengelo.nl/evenementen/hitster-family-christmas-edition",
     "source": "hengelo"
   },
   {
@@ -4644,6 +2825,15 @@
     "location": "",
     "genre": "Diversen, Kerst",
     "url": "https://uitinhengelo.nl/evenementen/kerstmiddag",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Club Lust: Kerstmiddag",
+    "startDate": "2026-12-24T11:30:00Z",
+    "location": "",
+    "genre": "Eten & Drinken, Kerst, Kerstvakantie, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/kerstmiddag-2",
     "source": "hengelo"
   },
   {
@@ -4693,11 +2883,22 @@
   },
   {
     "@type": "Event",
-    "name": "Koopzondag binnenstad Hengelo",
-    "startDate": "2026-12-27T11:00:00Z",
+    "name": "Besloten Feestje",
+    "startDate": "2026-12-27T14:30:00Z",
+    "endDate": "2026-12-27T20:00:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111668207",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111668207",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Rock Sympho Show",
+    "startDate": "2026-12-27T15:00:00Z",
     "location": "",
-    "genre": "Diversen",
-    "url": "https://uitinhengelo.nl/evenementen/koopzondag-binnenstad-hengelo",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/rock-sympho-show-2",
     "source": "hengelo"
   },
   {
@@ -4769,12 +2970,32 @@
   },
   {
     "@type": "Event",
+    "name": "TESTVOORSTELLING Podiumpas prijs",
+    "startDate": "2027-01-01T11:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/testvoorstelling-podiumpas-prijs",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Nu is het nog rustig (8+)",
     "startDate": "2027-01-02T18:30:00Z",
     "location": "",
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/nu-is-het-nog-rustig-8",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Dansmaar \"Back to the Eighties\" Party!",
+    "startDate": "2027-01-02T19:30:00Z",
+    "endDate": "2027-01-03T00:00:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111625787",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111625787",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -4815,12 +3036,56 @@
     "source": "hengelo"
   },
   {
+    "@type": "Event",
+    "name": "Nobo's Blues Band (Blues uut Twente)",
+    "startDate": "2027-01-07T19:30:00Z",
+    "endDate": "2027-01-07T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111685521",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111685521",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "AD INFINITUM + TAKIDA",
+    "startDate": "2027-01-08T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/ad-infinitum-takida",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1584602687?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
     "@type": "SportsEvent",
     "name": "FC Twente - Fortuna Sittard",
     "startDate": "2027-01-08T19:00:00Z",
     "genre": "Voetbal",
     "isHome": true,
     "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "Nick & Friends (Soul, Funk, R&B Classics, NL)",
+    "startDate": "2027-01-08T19:30:00Z",
+    "endDate": "2027-01-08T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111655926",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111655926",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Ohrima Album Release",
+    "startDate": "2027-01-08T20:30:00Z",
+    "location": "Hengelo",
+    "genre": "Metal",
+    "url": "https://metropool.nl/agenda/ohrima-album-release",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1814191904?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -4846,11 +3111,31 @@
   },
   {
     "@type": "Event",
+    "name": "Besloten Feestje",
+    "startDate": "2027-01-09T19:30:00Z",
+    "endDate": "2027-01-09T23:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111625788",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111625788",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "CODA",
     "startDate": "2027-01-09T19:30:00Z",
     "location": "",
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/coda",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "WoolderEslopen",
+    "startDate": "2027-01-10T10:00:00Z",
+    "location": "",
+    "genre": "Diversen, Kinderen, Sport & Spel, Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/wooldereslopen-2",
     "source": "hengelo"
   },
   {
@@ -4891,23 +3176,23 @@
   },
   {
     "@type": "Event",
+    "name": "Murphy McCoy (Blues, Funk, Soul, Covers, NL)",
+    "startDate": "2027-01-14T19:30:00Z",
+    "endDate": "2027-01-14T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111686994",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111686994",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "50 Years of Rumours",
     "startDate": "2027-01-15T19:00:00Z",
     "location": "",
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/50-years-of-rumours",
     "source": "hengelo"
-  },
-  {
-    "@type": "Event",
-    "name": "Jazzalike - 15th anniversary",
-    "startDate": "2027-01-15T19:30:00Z",
-    "location": "Hengelo",
-    "genre": "Pop",
-    "url": "https://metropool.nl/agenda/jazzalike-15th-anniversary",
-    "ticketUrl": "https://www.ticketmaster.nl/event/478810363?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -4943,25 +3228,15 @@
     "source": "hengelo"
   },
   {
-    "@type": "SportsEvent",
-    "name": "FC Utrecht - FC Twente",
-    "startDate": "2027-01-16",
-    "genre": "Voetbal",
-    "isHome": false,
-    "source": "fc-twente"
-  },
-  {
     "@type": "Event",
-    "name": "Het Goede Doel met Henk Westbroek",
-    "startDate": "2027-01-16T19:00:00Z",
-    "location": "Enschede",
+    "name": "Jazzalike - 15th anniversary",
+    "startDate": "2027-01-15T21:15:00Z",
+    "location": "Hengelo",
     "genre": "Pop",
-    "url": "https://metropool.nl/agenda/het-goede-doel-met-henk-westbroek",
-    "ticketUrl": "https://www.ticketmaster.nl/event/822663806?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Leffe Stage, Enschede",
-    "source": "metropool",
-    "recommended": true,
-    "tasteReason": "Sluit aan bij je voorkeur voor Het Goede Doel."
+    "url": "https://metropool.nl/agenda/jazzalike-15th-anniversary",
+    "ticketUrl": "https://www.ticketmaster.nl/event/478810363?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -4976,8 +3251,21 @@
   },
   {
     "@type": "Event",
+    "name": "Het Goede Doel met Henk Westbroek",
+    "startDate": "2027-01-16T20:00:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/het-goede-doel-met-henk-westbroek",
+    "ticketUrl": "https://www.ticketmaster.nl/event/822663806?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Het Goede Doel."
+  },
+  {
+    "@type": "Event",
     "name": "Fleddy Melculy",
-    "startDate": "2027-01-16T19:30:00Z",
+    "startDate": "2027-01-16T20:30:00Z",
     "location": "Enschede",
     "genre": "Metal",
     "url": "https://metropool.nl/agenda/fleddy-melculy",
@@ -4986,15 +3274,12 @@
     "source": "metropool"
   },
   {
-    "@type": "Event",
-    "name": "Made in Purple",
-    "startDate": "2027-01-16T19:30:00Z",
-    "location": "Almelo",
-    "genre": "Tribute",
-    "url": "https://metropool.nl/agenda/made-in-purple",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1065430308?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Metropool Almelo",
-    "source": "metropool"
+    "@type": "SportsEvent",
+    "name": "FC Utrecht - FC Twente",
+    "startDate": "2027-01-17T11:15:00Z",
+    "genre": "Voetbal",
+    "isHome": false,
+    "source": "fc-twente"
   },
   {
     "@type": "Event",
@@ -5091,7 +3376,7 @@
   {
     "@type": "Event",
     "name": "The Steepwater Band",
-    "startDate": "2027-01-22T20:00:00Z",
+    "startDate": "2027-01-22T21:00:00Z",
     "location": "Enschede",
     "genre": "Blues",
     "url": "https://metropool.nl/agenda/the-steepwater-band",
@@ -5102,7 +3387,7 @@
   {
     "@type": "SportsEvent",
     "name": "FC Twente - Heerenveen",
-    "startDate": "2027-01-23",
+    "startDate": "2027-01-23T19:00:00Z",
     "genre": "Voetbal",
     "isHome": true,
     "source": "fc-twente"
@@ -5158,6 +3443,28 @@
   },
   {
     "@type": "Event",
+    "name": "The Uppertunes (Jazz, Funk, Fusion en Wereldmuziek, NL)",
+    "startDate": "2027-01-24T14:00:00Z",
+    "endDate": "2027-01-24T16:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111706896",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111706896",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Don Diego Trio (Rockabilly, Surf, Rock&Roll, Italië)",
+    "startDate": "2027-01-28T19:30:00Z",
+    "endDate": "2027-01-28T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111689216",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111689216",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Amor Matador (try-out)",
     "startDate": "2027-01-28T19:30:00Z",
     "location": "",
@@ -5173,7 +3480,7 @@
     "genre": "Folk/Country",
     "url": "https://metropool.nl/agenda/david-ramirez",
     "ticketUrl": "https://www.ticketmaster.nl/event/532070519?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Jack Daniel's Stage, Hengelo",
+    "stage": "Muziekcafé, Hengelo",
     "source": "metropool"
   },
   {
@@ -5195,14 +3502,6 @@
     "source": "hengelo"
   },
   {
-    "@type": "SportsEvent",
-    "name": "FC Twente - SC Cambuur",
-    "startDate": "2027-01-30",
-    "genre": "Voetbal",
-    "isHome": true,
-    "source": "fc-twente"
-  },
-  {
     "@type": "Event",
     "name": "Double You",
     "startDate": "2027-01-30T18:30:00Z",
@@ -5210,6 +3509,17 @@
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/double-you",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "80's Verantwoord",
+    "startDate": "2027-01-30T19:00:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/80s-verantwoord",
+    "ticketUrl": "https://www.ticketmaster.nl/event/2087701907?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -5234,8 +3544,30 @@
   },
   {
     "@type": "Event",
-    "name": "State Power",
+    "name": "Besloten Feestje",
     "startDate": "2027-01-30T19:30:00Z",
+    "endDate": "2027-01-30T23:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111695710",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111695710",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Emo Night Mainland",
+    "startDate": "2027-01-30T20:00:00Z",
+    "location": "Enschede",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/emo-night-mainland",
+    "ticketUrl": "https://www.ticketmaster.nl/event/237266044?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "State Power",
+    "startDate": "2027-01-30T20:30:00Z",
     "location": "Hengelo",
     "genre": "Hardcore/Punk",
     "url": "https://metropool.nl/agenda/state-power",
@@ -5247,12 +3579,29 @@
   },
   {
     "@type": "Event",
+    "name": "Double You",
+    "startDate": "2027-01-31T10:00:00Z",
+    "location": "",
+    "genre": "Jeugd / Familie",
+    "url": "https://uitinhengelo.nl/evenementen/double-you-4",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Wat 'n Spul",
     "startDate": "2027-01-31T13:00:00Z",
     "location": "",
     "genre": "Theater",
     "url": "https://uitinhengelo.nl/evenementen/wat-039-n-spul-3",
     "source": "hengelo"
+  },
+  {
+    "@type": "SportsEvent",
+    "name": "FC Twente - SC Cambuur",
+    "startDate": "2027-01-31T13:30:00Z",
+    "genre": "Voetbal",
+    "isHome": true,
+    "source": "fc-twente"
   },
   {
     "@type": "Event",
@@ -5310,6 +3659,28 @@
   },
   {
     "@type": "Event",
+    "name": "Erwin Nyhoff & The Prodigal Sons",
+    "startDate": "2027-02-05T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/erwin-nyhoff-the-prodigal-sons",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1317668486?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Status Quotes",
+    "startDate": "2027-02-05T19:00:00Z",
+    "location": "Enschede",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/status-quotes",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1446133111?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Wat 'n Spul",
     "startDate": "2027-02-05T19:00:00Z",
     "location": "",
@@ -5329,6 +3700,14 @@
     "source": "de-cactus"
   },
   {
+    "@type": "SportsEvent",
+    "name": "FC Twente - Sparta Rotterdam",
+    "startDate": "2027-02-06",
+    "genre": "Voetbal",
+    "isHome": true,
+    "source": "fc-twente"
+  },
+  {
     "@type": "Event",
     "name": "Rayen Panday",
     "startDate": "2027-02-06T19:00:00Z",
@@ -5336,6 +3715,17 @@
     "genre": "Cabaret",
     "url": "https://uitinhengelo.nl/evenementen/rayen-panday",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Made in Purple",
+    "startDate": "2027-02-06T19:30:00Z",
+    "location": "Almelo",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/made-in-purple",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1065430308?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -5374,12 +3764,32 @@
   },
   {
     "@type": "Event",
+    "name": "Jazzplatform Hengelo presenteert",
+    "startDate": "2027-02-07T15:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/jazzplatform-hengelo-presenteert-3",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Rhythm of Freedom",
     "startDate": "2027-02-10T19:00:00Z",
     "location": "",
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/rhythm-of-freedom",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Wende",
+    "startDate": "2027-02-11T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/wende-11-feb",
+    "ticketUrl": "https://www.ticketmaster.nl/event/619924938?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -5403,6 +3813,17 @@
   },
   {
     "@type": "Event",
+    "name": "Wende",
+    "startDate": "2027-02-12T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/wende-12-feb",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1155229030?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Flamingo",
     "startDate": "2027-02-12T19:00:00Z",
     "location": "",
@@ -5420,12 +3841,34 @@
     "source": "hengelo"
   },
   {
+    "@type": "Event",
+    "name": "TAPE TOY",
+    "startDate": "2027-02-12T20:00:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/tape-toy",
+    "ticketUrl": "https://www.ticketmaster.nl/event/427598232?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
     "@type": "SportsEvent",
     "name": "PSV - FC Twente",
     "startDate": "2027-02-13",
     "genre": "Voetbal",
     "isHome": false,
     "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "Deadly Alliance",
+    "startDate": "2027-02-13T18:30:00Z",
+    "location": "Enschede",
+    "genre": "Metal",
+    "url": "https://metropool.nl/agenda/deadly-alliance",
+    "ticketUrl": "https://www.ticketmaster.nl/event/848277899?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -5469,6 +3912,17 @@
   },
   {
     "@type": "Event",
+    "name": "Kisjeskearls & Rode Beatjes & Heinoos (Benefietmiddag)",
+    "startDate": "2027-02-14T14:00:00Z",
+    "endDate": "2027-02-14T16:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111688228",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111688228",
+    "soldOut": true,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Idun Quartett met o.a. André Kerver",
     "startDate": "2027-02-14T14:00:00Z",
     "location": "",
@@ -5484,6 +3938,17 @@
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/ernst-en-bobbie-2",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Besloten bijeenkomst",
+    "startDate": "2027-02-16T18:00:00Z",
+    "endDate": "2027-02-16T20:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111691808",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111691808",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -5532,12 +3997,24 @@
   },
   {
     "@type": "Event",
+    "name": "GRIMNER + WAYLANDER + VANSIND",
+    "startDate": "2027-02-19T19:30:00Z",
+    "location": "Hengelo",
+    "genre": "Metal",
+    "url": "https://metropool.nl/agenda/grimner-waylander-vansind",
+    "ticketUrl": "https://www.ticketmaster.nl/event/435852586?CAMEFROM=METROPOOL&_gl=&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "The Dirty Daddies",
     "startDate": "2027-02-19T19:30:00Z",
     "location": "Hengelo",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/the-dirty-daddies-19-feb",
     "ticketUrl": "https://www.ticketmaster.nl/event/158426918?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
     "stage": "Bud Stage, Hengelo",
     "source": "metropool"
   },
@@ -5549,7 +4026,7 @@
     "location": "De Cactus, Hengelo",
     "url": "https://decactus.stager.co/shop/default/events/111688186",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111688186",
-    "soldOut": false,
+    "soldOut": true,
     "source": "de-cactus",
     "recommended": true,
     "tasteReason": "Sluit aan bij je voorkeur voor U2."
@@ -5564,14 +4041,39 @@
   },
   {
     "@type": "Event",
+    "name": "Altoooooh!",
+    "startDate": "2027-02-20T19:00:00Z",
+    "location": "Enschede",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/altoooooh",
+    "ticketUrl": "https://www.ticketmaster.nl/event/730092698?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "The Dirty Daddies",
     "startDate": "2027-02-20T19:30:00Z",
     "location": "Hengelo",
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/the-dirty-daddies-20-feb",
     "ticketUrl": "https://www.ticketmaster.nl/event/12642694?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
     "stage": "Bud Stage, Hengelo",
     "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "U2ONE (Extra show, U2 Tribute, NL)",
+    "startDate": "2027-02-20T19:30:00Z",
+    "endDate": "2027-02-20T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111688394",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111688394",
+    "soldOut": false,
+    "source": "de-cactus",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor U2."
   },
   {
     "@type": "Event",
@@ -5590,6 +4092,28 @@
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/familiecarrousel-4-6-8",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Paul Watchorn (Leadsinger Dublin Legends)",
+    "startDate": "2027-02-21T14:00:00Z",
+    "endDate": "2027-02-21T16:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111709049",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111709049",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Lee Rocker",
+    "startDate": "2027-02-21T20:00:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/lee-rocker",
+    "ticketUrl": "https://www.ticketmaster.nl/event/290142764?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -5638,6 +4162,17 @@
   },
   {
     "@type": "Event",
+    "name": "Tommy Castro & The Painkillers",
+    "startDate": "2027-02-25T19:30:00Z",
+    "location": "Hengelo",
+    "genre": "Blues",
+    "url": "https://metropool.nl/agenda/tommy-castro-the-painkillers",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1071181146?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Take It To The Limit",
     "startDate": "2027-02-26T19:00:00Z",
     "location": "",
@@ -5681,6 +4216,7 @@
     "genre": "Pop",
     "url": "https://metropool.nl/agenda/dikkie-dik-en-dirk-scheele-2-show-2",
     "ticketUrl": "https://www.ticketmaster.nl/event/1056473448?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
     "stage": "Leffe Stage, Enschede",
     "source": "metropool"
   },
@@ -5692,6 +4228,19 @@
     "genre": "Dans",
     "url": "https://uitinhengelo.nl/evenementen/ballet-vibes",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "The Riverstreet Band (Bruce Springsteen Covers)",
+    "startDate": "2027-02-27T19:30:00Z",
+    "endDate": "2027-02-27T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111686104",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111686104",
+    "soldOut": false,
+    "source": "de-cactus",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Bruce Springsteen."
   },
   {
     "@type": "Event",
@@ -5826,6 +4375,26 @@
   },
   {
     "@type": "Event",
+    "name": "Matthäus Passion, J.S. Bach",
+    "startDate": "2027-03-06T18:00:00Z",
+    "location": "",
+    "genre": "Theater",
+    "url": "https://uitinhengelo.nl/evenementen/matthäus-passion-j-s-bach",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "The Clarks ft. Rinus Gerritsen & Cesar Zuiderwijk",
+    "startDate": "2027-03-06T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/the-clarks-ft-rinus-gerritsen-cesar-zuiderwijk",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1377621737?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Opvoeden, hoe dan...!?",
     "startDate": "2027-03-06T19:00:00Z",
     "location": "",
@@ -5835,13 +4404,26 @@
   },
   {
     "@type": "Event",
-    "name": "Dansmaar: De Cactus Reünie",
+    "name": "Meltheads",
+    "startDate": "2027-03-06T19:30:00Z",
+    "location": "Hengelo",
+    "genre": "Hardcore/Punk",
+    "url": "https://metropool.nl/agenda/meltheads",
+    "ticketUrl": "https://www.ticketmaster.nl/event/527482728?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Past bij je smaak voor hardcore en punk."
+  },
+  {
+    "@type": "Event",
+    "name": "Dansmaar: De Cactus Reünie (Cactus Classics)",
     "startDate": "2027-03-06T19:30:00Z",
     "endDate": "2027-03-07T00:00:00Z",
     "location": "De Cactus, Hengelo",
     "url": "https://decactus.stager.co/shop/default/events/111625809",
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111625809",
-    "soldOut": false,
+    "soldOut": true,
     "source": "de-cactus"
   },
   {
@@ -5852,6 +4434,26 @@
     "genre": "Cabaret",
     "url": "https://uitinhengelo.nl/evenementen/cameretten-festival",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Legends",
+    "startDate": "2027-03-07T15:00:00Z",
+    "location": "",
+    "genre": "Theater",
+    "url": "https://uitinhengelo.nl/evenementen/legends",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Chef'Special",
+    "startDate": "2027-03-07T19:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/chefspecial",
+    "ticketUrl": "https://www.ticketmaster.nl/event/919049499?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcentrum, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -5873,12 +4475,45 @@
   },
   {
     "@type": "Event",
+    "name": "BRITPOP A Flashback To The Nineties",
+    "startDate": "2027-03-12T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/britpop-a-flashback-to-the-nineties",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1324705366?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Conny Janssen Danst",
     "startDate": "2027-03-12T19:00:00Z",
     "location": "",
     "genre": "Dans",
     "url": "https://uitinhengelo.nl/evenementen/conny-janssen-danst",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Scrum",
+    "startDate": "2027-03-12T19:30:00Z",
+    "location": "Enschede",
+    "genre": "Folk/Country",
+    "url": "https://metropool.nl/agenda/scrum",
+    "ticketUrl": "https://www.ticketmaster.nl/event/130533943?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "EightySeven (Eighties covers, Disco, NL)",
+    "startDate": "2027-03-12T19:30:00Z",
+    "endDate": "2027-03-12T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111707684",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111707684",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -5896,6 +4531,24 @@
     "genre": "Voetbal",
     "isHome": false,
     "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "The Rock Orchestra by Candlelight",
+    "startDate": "2027-03-13T16:30:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/the-rock-orchestra-by-candlelight",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "The Rock Orchestra by Candlelight",
+    "startDate": "2027-03-13T19:30:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/the-rock-orchestra-by-candlelight-2",
+    "source": "hengelo"
   },
   {
     "@type": "Event",
@@ -5925,6 +4578,17 @@
     "genre": "Diversen",
     "url": "https://uitinhengelo.nl/evenementen/cultuurpodium-hengelo-8",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "JazzRock Café - Adam Hawley",
+    "startDate": "2027-03-14T14:00:00Z",
+    "location": "Hengelo",
+    "genre": "Jazz",
+    "url": "https://metropool.nl/agenda/jazzrock-cafe-adam-hawley",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1867369222?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcafé, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -5973,6 +4637,28 @@
   },
   {
     "@type": "Event",
+    "name": "Moss",
+    "startDate": "2027-03-18T19:30:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/moss",
+    "ticketUrl": "https://www.ticketmaster.nl/event/571381530?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Dom Glynn & His Sunday Best (Old-School Honky-Tonk Country, UK)",
+    "startDate": "2027-03-18T19:30:00Z",
+    "endDate": "2027-03-18T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111686990",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111686990",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Leo en Marius Blokhuis",
     "startDate": "2027-03-18T19:30:00Z",
     "location": "",
@@ -6000,6 +4686,17 @@
   },
   {
     "@type": "Event",
+    "name": "Besloten Feestje",
+    "startDate": "2027-03-19T19:30:00Z",
+    "endDate": "2027-03-19T23:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111697824",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111697824",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Stefan Hendrikx",
     "startDate": "2027-03-19T19:30:00Z",
     "location": "",
@@ -6008,12 +4705,34 @@
     "source": "hengelo"
   },
   {
+    "@type": "Event",
+    "name": "Alvin Youngblood Hart",
+    "startDate": "2027-03-19T20:00:00Z",
+    "location": "Hengelo",
+    "genre": "Blues",
+    "url": "https://metropool.nl/agenda/alvin-youngblood-hart",
+    "ticketUrl": "https://www.ticketmaster.nl/event/703088291?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
     "@type": "SportsEvent",
     "name": "FC Twente - Go Ahead Eagles",
     "startDate": "2027-03-20",
     "genre": "Voetbal",
     "isHome": true,
     "source": "fc-twente"
+  },
+  {
+    "@type": "Event",
+    "name": "The Dutch Queen",
+    "startDate": "2027-03-20T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/the-dutch-queen",
+    "ticketUrl": "https://www.ticketmaster.nl/event/593065634?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -6026,6 +4745,30 @@
   },
   {
     "@type": "Event",
+    "name": "Ransom (Top 2000, Rock, Pop, Covers, NL)",
+    "startDate": "2027-03-20T19:30:00Z",
+    "endDate": "2027-03-20T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111710505",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111710505",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Neuk!",
+    "startDate": "2027-03-20T21:00:00Z",
+    "location": "Hengelo",
+    "genre": "Hardcore/Punk",
+    "url": "https://metropool.nl/agenda/neuk",
+    "ticketUrl": "https://www.ticketmaster.nl/event/10690108?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Past bij je smaak voor hardcore en punk."
+  },
+  {
+    "@type": "Event",
     "name": "Verhalenkracht",
     "startDate": "2027-03-21T13:00:00Z",
     "location": "",
@@ -6035,12 +4778,46 @@
   },
   {
     "@type": "Event",
+    "name": "Get the Funk 2 (Tower of Power Tribute, NL)",
+    "startDate": "2027-03-21T14:00:00Z",
+    "endDate": "2027-03-21T16:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111704384",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111704384",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Help, ik ga trouwen…",
     "startDate": "2027-03-23T19:00:00Z",
     "location": "",
     "genre": "Theaterspecial",
     "url": "https://uitinhengelo.nl/evenementen/help-ik-ga-trouwen",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Clouseau",
+    "startDate": "2027-03-23T19:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/clouseau",
+    "ticketUrl": "https://www.ticketmaster.nl/event/837189691?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
+    "stage": "Muziekcentrum, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "Morgan Wallen Tribute",
+    "startDate": "2027-03-24T19:00:00Z",
+    "location": "Hengelo",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/morgan-wallen-tribute",
+    "ticketUrl": "https://www.ticketmaster.nl/event/286623748?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -6091,6 +4868,18 @@
   },
   {
     "@type": "Event",
+    "name": "Favourites Live",
+    "startDate": "2027-03-26T15:00:00Z",
+    "location": "",
+    "genre": "Diversen, Eten & Drinken, Markten, Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/favourites-live",
+    "endDate": "2027-03-27T16:00:00Z",
+    "source": "hengelo",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Live."
+  },
+  {
+    "@type": "Event",
     "name": "The Illusionists",
     "startDate": "2027-03-26T19:00:00Z",
     "location": "",
@@ -6109,6 +4898,19 @@
   },
   {
     "@type": "Event",
+    "name": "Smells Like Nirvana",
+    "startDate": "2027-03-26T20:00:00Z",
+    "location": "Hengelo",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/smells-like-nirvana",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1153715749?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Nirvana."
+  },
+  {
+    "@type": "Event",
     "name": "Prins Panter (8+)",
     "startDate": "2027-03-27T18:30:00Z",
     "location": "",
@@ -6124,6 +4926,17 @@
     "genre": "Dans",
     "url": "https://uitinhengelo.nl/evenementen/introdans",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Ironic (Alanis Morissette Tribute Band, NL)",
+    "startDate": "2027-03-27T19:30:00Z",
+    "endDate": "2027-03-27T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111710607",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111710607",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -6147,6 +4960,17 @@
   },
   {
     "@type": "Event",
+    "name": "LEGENDS of ROCK Tribute Festival",
+    "startDate": "2027-03-28T14:15:00Z",
+    "location": "Hengelo",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/legends-of-rock-tribute-festival-28-mrt",
+    "ticketUrl": "https://www.ticketmaster.nl/event/713677278?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Tweede paasdag",
     "startDate": "2027-03-29",
     "genre": "Nationale feestdag",
@@ -6165,7 +4989,7 @@
   },
   {
     "@type": "Event",
-    "name": "Drugsmonologen",
+    "name": "ALLES ONDER CONTROLE",
     "startDate": "2027-03-31T18:00:00Z",
     "location": "",
     "genre": "Theater",
@@ -6189,6 +5013,17 @@
     "genre": "Cabaret",
     "url": "https://uitinhengelo.nl/evenementen/luuk-weggemans",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Booster Showcasefestival",
+    "startDate": "2027-04-02T18:00:00Z",
+    "location": "Enschede",
+    "genre": "Overig",
+    "url": "https://metropool.nl/agenda/booster-showcasefestival",
+    "ticketUrl": "https://metropool.nl/agenda/booster-showcasefestival",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -6218,12 +5053,34 @@
   },
   {
     "@type": "Event",
+    "name": "Booster Showcasefestival",
+    "startDate": "2027-04-03T16:30:00Z",
+    "location": "Enschede",
+    "genre": "Overig",
+    "url": "https://metropool.nl/agenda/booster-showcasefestival-3-apr",
+    "ticketUrl": "https://metropool.nl/agenda/booster-showcasefestival-3-apr",
+    "stage": "Leffe Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Gouden Jaren",
     "startDate": "2027-04-03T18:00:00Z",
     "location": "",
     "genre": "Theater",
     "url": "https://uitinhengelo.nl/evenementen/gouden-jaren-3",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Besloten feestje",
+    "startDate": "2027-04-03T18:30:00Z",
+    "endDate": "2027-04-03T22:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111704386",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111704386",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -6241,6 +5098,15 @@
     "location": "",
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/de-voorleeskampioen-4",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Beach Boys' Best",
+    "startDate": "2027-04-05T18:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/beach-boys-039-best-3",
     "source": "hengelo"
   },
   {
@@ -6278,6 +5144,17 @@
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/phil-it",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "40 jaar Hallo Venray",
+    "startDate": "2027-04-09T18:30:00Z",
+    "location": "Enschede",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/40-jaar-hallo-venray",
+    "ticketUrl": "https://www.ticketmaster.nl/event/578278233?CAMEFROM=METROPOOL&_gl=&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -6327,6 +5204,28 @@
   },
   {
     "@type": "Event",
+    "name": "Extince",
+    "startDate": "2027-04-10T18:30:00Z",
+    "location": "Enschede",
+    "genre": "Hiphop/R&B",
+    "url": "https://metropool.nl/agenda/extince",
+    "ticketUrl": "https://www.ticketmaster.nl/event/350409167?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
+    "name": "VOF de Kunst",
+    "startDate": "2027-04-10T18:30:00Z",
+    "location": "Almelo",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/vof-de-kunst",
+    "ticketUrl": "https://www.ticketmaster.nl/event/348613468?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Metropool Almelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Wina Ricardo",
     "startDate": "2027-04-10T18:30:00Z",
     "location": "",
@@ -6342,6 +5241,17 @@
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/nijntje-op-de-fiets-2",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Handy Joe and the Boogie Kearls (Dialect, Rock, NL)",
+    "startDate": "2027-04-11T13:00:00Z",
+    "endDate": "2027-04-11T15:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111707970",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111707970",
+    "soldOut": false,
+    "source": "de-cactus"
   },
   {
     "@type": "Event",
@@ -6373,10 +5283,28 @@
   {
     "@type": "Event",
     "name": "Kasper van der Laan",
+    "startDate": "2027-04-12T18:00:00Z",
+    "location": "",
+    "genre": "Cabaret",
+    "url": "https://uitinhengelo.nl/evenementen/kasper-van-der-laan-2",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Kasper van der Laan",
     "startDate": "2027-04-13T18:00:00Z",
     "location": "",
     "genre": "Cabaret",
     "url": "https://uitinhengelo.nl/evenementen/kasper-van-der-laan",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Dichterbij (reprise)",
+    "startDate": "2027-04-14T17:30:00Z",
+    "location": "",
+    "genre": "Theaterspecial",
+    "url": "https://uitinhengelo.nl/evenementen/dichterbij-reprise",
     "source": "hengelo"
   },
   {
@@ -6419,12 +5347,34 @@
   },
   {
     "@type": "Event",
+    "name": "Starman",
+    "startDate": "2027-04-16T18:00:00Z",
+    "location": "Hengelo",
+    "genre": "Tribute",
+    "url": "https://metropool.nl/agenda/starman",
+    "ticketUrl": "https://www.ticketmaster.nl/event/81431504?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "THE NETHER",
     "startDate": "2027-04-16T18:00:00Z",
     "location": "",
     "genre": "Theater",
     "url": "https://uitinhengelo.nl/evenementen/the-nether",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Jim Gardner",
+    "startDate": "2027-04-16T18:30:00Z",
+    "location": "Hengelo",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/jim-gardner",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1649660370?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Jack Daniel's Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -6511,6 +5461,17 @@
   },
   {
     "@type": "Event",
+    "name": "High Fade",
+    "startDate": "2027-04-21T18:00:00Z",
+    "location": "Enschede",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/high-fade",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1461389768?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Saxion Stage, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Christel de Laat",
     "startDate": "2027-04-21T18:00:00Z",
     "location": "",
@@ -6535,6 +5496,17 @@
     "genre": "Theater",
     "url": "https://uitinhengelo.nl/evenementen/dolle-mina",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Richard Thompson",
+    "startDate": "2027-04-23T18:00:00Z",
+    "location": "Hengelo",
+    "genre": "Folk/Country",
+    "url": "https://metropool.nl/agenda/richard-thompson",
+    "ticketUrl": "https://www.ticketmaster.nl/event/572558777?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -6573,23 +5545,23 @@
   },
   {
     "@type": "Event",
-    "name": "Bettie Serveert",
-    "startDate": "2027-04-24T18:30:00Z",
-    "location": "Hengelo",
-    "genre": "Rock",
-    "url": "https://metropool.nl/agenda/bettie-serveert",
-    "ticketUrl": "https://www.ticketmaster.nl/event/1178978110?CAMEFROM=METROPOOL&brand=nl_metropool",
-    "stage": "Bud Stage, Hengelo",
-    "source": "metropool"
-  },
-  {
-    "@type": "Event",
     "name": "The Glamrocks",
     "startDate": "2027-04-24T18:30:00Z",
     "location": "",
     "genre": "Muziek",
     "url": "https://uitinhengelo.nl/evenementen/the-glamrocks",
     "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Bettie Serveert",
+    "startDate": "2027-04-24T19:30:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/bettie-serveert",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1178978110?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",
@@ -6709,6 +5681,15 @@
     "location": "",
     "genre": "Jeugd / Familie",
     "url": "https://uitinhengelo.nl/evenementen/kikker-is-kikker-3",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Jazzplatform Hengelo presenteert",
+    "startDate": "2027-05-02T14:00:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/jazzplatform-hengelo-presenteert-5",
     "source": "hengelo"
   },
   {
@@ -6838,6 +5819,17 @@
   },
   {
     "@type": "Event",
+    "name": "JOB Dutchtuber & Billy The Kit",
+    "startDate": "2027-05-15T12:30:00Z",
+    "location": "Enschede",
+    "genre": "Pop",
+    "url": "https://metropool.nl/agenda/job-dutchtuber-billy-the-kit",
+    "ticketUrl": "https://www.ticketmaster.nl/event/1644573466?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "stage": "Muziekcentrum, Enschede",
+    "source": "metropool"
+  },
+  {
+    "@type": "Event",
     "name": "Jandino",
     "startDate": "2027-05-15T18:00:00Z",
     "location": "",
@@ -6902,6 +5894,15 @@
   },
   {
     "@type": "Event",
+    "name": "Lucky",
+    "startDate": "2027-05-21T17:30:00Z",
+    "location": "",
+    "genre": "Theaterspecial",
+    "url": "https://uitinhengelo.nl/evenementen/lucky",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Bökkers",
     "startDate": "2027-05-22T18:00:00Z",
     "location": "",
@@ -6946,6 +5947,17 @@
   },
   {
     "@type": "Event",
+    "name": "Unb'rocken (Blues, Rock, Bali, IND)",
+    "startDate": "2027-05-27T18:30:00Z",
+    "endDate": "2027-05-27T21:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111582957",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111582957",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
     "name": "Legends Remastered feat. Rock4",
     "startDate": "2027-05-28T18:00:00Z",
     "location": "",
@@ -6973,7 +5985,7 @@
   },
   {
     "@type": "Event",
-    "name": "Chanson 2",
+    "name": "Route du Soleil (try-out)",
     "startDate": "2027-06-09T18:00:00Z",
     "location": "",
     "genre": "Muziek",
@@ -6987,6 +5999,16 @@
     "location": "",
     "genre": "Dans",
     "url": "https://uitinhengelo.nl/evenementen/introdans-amp-orkest-phion",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Nacht van de Haven 2027",
+    "startDate": "2027-07-03T14:00:00Z",
+    "location": "",
+    "genre": "Muziek, Dans",
+    "url": "https://uitinhengelo.nl/evenementen/nacht-van-de-haven-2027",
+    "endDate": "2027-07-03T22:00:00Z",
     "source": "hengelo"
   },
   {
@@ -7009,6 +6031,55 @@
   },
   {
     "@type": "Event",
+    "name": "De Cactus heeft Vakantie t/m 28 juli 2027",
+    "startDate": "2027-07-12T18:30:00Z",
+    "endDate": "2027-07-28T21:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111695816",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111695816",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Zwarte Cross",
+    "startDate": "2027-07-15",
+    "endDate": "2027-07-19",
+    "location": "Lichtenvoorde",
+    "genre": "Muziek, motorcross en campingfestival",
+    "url": "https://www.zwartecross.nl/veelgestelde-vragen/",
+    "source": "bijzonder"
+  },
+  {
+    "@type": "Event",
+    "name": "Lowlands",
+    "startDate": "2027-08-20",
+    "endDate": "2027-08-23",
+    "location": "Evenemententerrein Walibi Holland, Biddinghuizen",
+    "genre": "Muziek, cultuur en campingfestival",
+    "url": "https://lowlands.nl/",
+    "source": "bijzonder"
+  },
+  {
+    "@type": "Event",
+    "name": "Peter Pannekoek",
+    "startDate": "2027-09-09T18:00:00Z",
+    "location": "",
+    "genre": "Cabaret",
+    "url": "https://uitinhengelo.nl/evenementen/peter-pannekoek",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Peter Pannekoek",
+    "startDate": "2027-09-10T18:00:00Z",
+    "location": "",
+    "genre": "Cabaret",
+    "url": "https://uitinhengelo.nl/evenementen/peter-pannekoek-2",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
     "name": "Fäaschtbänkler",
     "startDate": "2027-09-10T18:30:00Z",
     "location": "Enschede",
@@ -7020,6 +6091,61 @@
   },
   {
     "@type": "Event",
+    "name": "Rösti und die Bratkartoffeln (Neue Deutsche Welle, Covers, BE)",
+    "startDate": "2027-09-10T18:30:00Z",
+    "endDate": "2027-09-10T21:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111708880",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111708880",
+    "soldOut": false,
+    "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Peter Pannekoek",
+    "startDate": "2027-09-11T18:00:00Z",
+    "location": "",
+    "genre": "Cabaret",
+    "url": "https://uitinhengelo.nl/evenementen/peter-pannekoek-3",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Open Ateliers Hengelo 2027",
+    "startDate": "2027-09-25T09:00:00Z",
+    "location": "",
+    "genre": "Kunst & Cultuur",
+    "url": "https://uitinhengelo.nl/evenementen/open-ateliers-hengelo-2027",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Kisjeskearls (Een ode aan Normaal, dialect, NL)",
+    "startDate": "2027-10-02T18:30:00Z",
+    "endDate": "2027-10-02T21:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111705846",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111705846",
+    "soldOut": false,
+    "source": "de-cactus",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Normaal."
+  },
+  {
+    "@type": "Event",
+    "name": "Kisjeskearls (Een ode aan Normaal, dialect, NL)",
+    "startDate": "2027-10-03T13:00:00Z",
+    "endDate": "2027-10-03T15:30:00Z",
+    "location": "De Cactus, Hengelo",
+    "url": "https://decactus.stager.co/shop/default/events/111705847",
+    "ticketUrl": "https://decactus.stager.co/shop/default/events/111705847",
+    "soldOut": false,
+    "source": "de-cactus",
+    "recommended": true,
+    "tasteReason": "Sluit aan bij je voorkeur voor Normaal."
+  },
+  {
+    "@type": "Event",
     "name": "Besloten feestje",
     "startDate": "2027-10-15T18:00:00Z",
     "endDate": "2027-10-15T21:59:00Z",
@@ -7028,6 +6154,27 @@
     "ticketUrl": "https://decactus.stager.co/shop/default/events/111668449",
     "soldOut": false,
     "source": "de-cactus"
+  },
+  {
+    "@type": "Event",
+    "name": "Ernest Beuving",
+    "startDate": "2027-10-21T18:30:00Z",
+    "location": "",
+    "genre": "Muziek",
+    "url": "https://uitinhengelo.nl/evenementen/eén-v-d-70-039-s-2",
+    "source": "hengelo"
+  },
+  {
+    "@type": "Event",
+    "name": "Tröckener Kecks",
+    "startDate": "2027-10-30T18:00:00Z",
+    "location": "Hengelo",
+    "genre": "Rock",
+    "url": "https://metropool.nl/agenda/trockener-kecks",
+    "ticketUrl": "https://www.ticketmaster.nl/event/739952330?CAMEFROM=METROPOOL&brand=nl_metropool",
+    "soldOut": true,
+    "stage": "Bud Stage, Hengelo",
+    "source": "metropool"
   },
   {
     "@type": "Event",

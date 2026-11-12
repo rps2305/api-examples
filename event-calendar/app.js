@@ -21,7 +21,7 @@ if (brandMark instanceof HTMLImageElement) {
 }
 const initialParams = new URLSearchParams(location.search);
 const initialView = initialParams.get('view');
-const PAGE_SIZE = 60;
+const PAGE_DAYS = 14;
 let filter = 'all';
 let selectedSources = new Set();
 let query = '';
@@ -35,7 +35,7 @@ let eveningOnly = initialParams.get('evening') === '1';
 let favoritesOnly = initialParams.get('favorites') === '1';
 const FAVORITES_STORAGE_KEY = 'uit-vandaag-favorites';
 let favoriteKeys = loadFavorites();
-let visibleLimit = PAGE_SIZE;
+let visibleDays = PAGE_DAYS;
 let hasPrerenderedAgenda = agenda.dataset.prerendered === 'true';
 const DEFAULT_EVENT_DURATION_MINUTES = 120;
 const dateFormat = new Intl.DateTimeFormat('nl-NL', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -43,11 +43,11 @@ const timeFormat = new Intl.DateTimeFormat('nl-NL', {
   hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam',
 });
 const sourcePriority = new Map([
-  ['metropool', 0],
-  ['de-cactus', 1],
-  ['fc-twente', 2],
+  ['metropool', 1],
+  ['de-cactus', 2],
   ['oogst', 3],
   ['feestdagen', 4],
+  ['fc-twente', 5],
   ['bijzonder', 10],
 ]);
 const allowedSources = new Set(['metropool', 'de-cactus', 'fc-twente', 'oogst', 'hengelo', 'feestdagen', 'persoonlijk', 'bijzonder']);
@@ -441,9 +441,22 @@ function updateAgendaSummary(events) {
   agendaSummary.textContent = `Vandaag ${todayCount} ${todayLabel}, deze week ${weekCount}.`;
 }
 
+function agendaRank(event) {
+  if (event.source === 'fc-twente' && event.isHome) return 0;
+  return sourcePriority.get(event.source) ?? 10;
+}
+
 function agendaOrder(first, second) {
-  const priority = (sourcePriority.get(first.source) ?? 10) - (sourcePriority.get(second.source) ?? 10);
+  const priority = agendaRank(first) - agendaRank(second);
   return priority || first.startDate.localeCompare(second.startDate) || first.name.localeCompare(second.name, 'nl');
+}
+
+// The agenda is paged by calendar days: the first `visibleDays` days from the
+// first matching event, so a busy fortnight is never cut off halfway.
+function visibleEvents(matching) {
+  if (!matching.length) return [];
+  const cutoff = dateKeyAfter(eventDateKey(matching[0]), visibleDays);
+  return matching.filter(event => eventDateKey(event) < cutoff);
 }
 
 function syncLoadMore(visibleCount, totalCount) {
@@ -451,13 +464,13 @@ function syncLoadMore(visibleCount, totalCount) {
   const remaining = Math.max(0, totalCount - visibleCount);
   loadMoreButton.hidden = remaining === 0;
   loadMoreButton.textContent = remaining
-    ? `Toon volgende ${Math.min(PAGE_SIZE, remaining)} plannen`
+    ? `Toon volgende ${PAGE_DAYS} dagen`
     : 'Alle plannen zijn zichtbaar';
 }
 
 function render(events) {
-  if (hasPrerenderedAgenda && visibleLimit === PAGE_SIZE && selectedSources.size === 0 && !todayOnly && !recommendedOnly && !eveningOnly && !favoritesOnly && !query && !selectedMonth && !selectedYear && !selectedDate && !selectedCity) {
-    const visibleCount = Math.min(PAGE_SIZE, events.length);
+  if (hasPrerenderedAgenda && visibleDays === PAGE_DAYS && selectedSources.size === 0 && !todayOnly && !recommendedOnly && !eveningOnly && !favoritesOnly && !query && !selectedMonth && !selectedYear && !selectedDate && !selectedCity) {
+    const visibleCount = visibleEvents(events).length;
     status.dataset.state = 'ready';
     status.textContent = `${visibleCount} van ${events.length} plannen zichtbaar${events.length > visibleCount ? ' · scroll door voor meer' : ''}`;
     syncLoadMore(visibleCount, events.length);
@@ -475,7 +488,7 @@ function render(events) {
     && (!selectedDate || eventDateKey(event) === selectedDate)
     && (!selectedCity || `${event.location} ${venueLabel(event)}`.toLowerCase().includes(selectedCity))
     && (!query || `${event.name} ${event.location} ${event.genre} ${event.source}`.toLowerCase().includes(query)));
-  const shown = matching.slice(0, visibleLimit);
+  const shown = visibleEvents(matching);
   const groups = Object.groupBy(shown, eventDateKey);
   status.dataset.state = 'ready';
   const scope = eveningOnly ? ' vanavond' : todayOnly ? ' vandaag' : favoritesOnly ? ' bewaard' : ' in de agenda';
@@ -536,7 +549,7 @@ async function loadAgenda() {
   render(events);
   syncFavoriteButtons();
   loadMoreButton?.addEventListener('click', () => {
-    visibleLimit += PAGE_SIZE;
+    visibleDays += PAGE_DAYS;
     hasPrerenderedAgenda = false;
     render(events);
   });
@@ -568,7 +581,7 @@ async function loadAgenda() {
       else favoriteKeys.add(favoriteKey);
       saveFavorites();
       favoriteButton.setAttribute('aria-pressed', String(favoriteKeys.has(favoriteKey)));
-      if (favoritesOnly) { visibleLimit = PAGE_SIZE; render(events); }
+      if (favoritesOnly) { visibleDays = PAGE_DAYS; render(events); }
     }
   });
   document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
@@ -581,12 +594,12 @@ async function loadAgenda() {
       control.classList.toggle('active', active);
       control.setAttribute('aria-pressed', String(active));
     });
-    visibleLimit = PAGE_SIZE; render(events);
+    visibleDays = PAGE_DAYS; render(events);
     syncFiltersToUrl();
   }));
   document.querySelector('[data-today-filter]').addEventListener('click', event => {
     todayOnly = !todayOnly;
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     event.currentTarget.classList.toggle('active', todayOnly);
     event.currentTarget.setAttribute('aria-pressed', String(todayOnly));
     render(events);
@@ -594,7 +607,7 @@ async function loadAgenda() {
   });
   document.querySelector('[data-recommended-filter]').addEventListener('click', event => {
     recommendedOnly = !recommendedOnly;
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     event.currentTarget.classList.toggle('active', recommendedOnly);
     event.currentTarget.setAttribute('aria-pressed', String(recommendedOnly));
     render(events);
@@ -603,7 +616,7 @@ async function loadAgenda() {
   const eveningButton = document.querySelector('[data-evening-filter]');
   if (eveningButton) eveningButton.addEventListener('click', event => {
     eveningOnly = !eveningOnly;
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     event.currentTarget.classList.toggle('active', eveningOnly);
     event.currentTarget.setAttribute('aria-pressed', String(eveningOnly));
     render(events);
@@ -612,7 +625,7 @@ async function loadAgenda() {
   const favoritesButton = document.querySelector('[data-favorites-filter]');
   if (favoritesButton) favoritesButton.addEventListener('click', event => {
     favoritesOnly = !favoritesOnly;
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     event.currentTarget.classList.toggle('active', favoritesOnly);
     event.currentTarget.setAttribute('aria-pressed', String(favoritesOnly));
     render(events);
@@ -620,7 +633,7 @@ async function loadAgenda() {
   });
   const updateSearch = event => {
     query = event.target.value.toLowerCase();
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     render(events);
     syncFiltersToUrl();
   };
@@ -630,22 +643,22 @@ async function loadAgenda() {
   monthFilter.addEventListener('change', event => {
     selectedMonth = event.target.value;
     if (selectedMonth) { selectedYear = selectedMonth.slice(0, 4); yearFilter.value = selectedYear; }
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     render(events);
     syncFiltersToUrl();
   });
   yearFilter.addEventListener('change', event => {
     selectedYear = event.target.value;
     if (selectedMonth && !selectedMonth.startsWith(`${selectedYear}-`)) { selectedMonth = ''; monthFilter.value = ''; }
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     render(events);
     syncFiltersToUrl();
   });
-  dateFilter.addEventListener('change', event => { selectedDate = event.target.value; visibleLimit = PAGE_SIZE; render(events); syncFiltersToUrl(); });
-  cityFilter.addEventListener('change', event => { selectedCity = event.target.value; visibleLimit = PAGE_SIZE; render(events); syncFiltersToUrl(); });
+  dateFilter.addEventListener('change', event => { selectedDate = event.target.value; visibleDays = PAGE_DAYS; render(events); syncFiltersToUrl(); });
+  cityFilter.addEventListener('change', event => { selectedCity = event.target.value; visibleDays = PAGE_DAYS; render(events); syncFiltersToUrl(); });
   window.addEventListener('popstate', () => {
     applyUrlFilters(events);
-    visibleLimit = PAGE_SIZE;
+    visibleDays = PAGE_DAYS;
     render(events);
   });
   const loadFullFeed = async () => {
@@ -679,7 +692,7 @@ loadAgenda();
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=20261014-pages-8', { scope: '/' }).catch(() => {
+    navigator.serviceWorker.register('/sw.js?v=20261022-logo2', { scope: '/' }).catch(() => {
       // The agenda remains fully usable online when service workers are unavailable.
     });
   });

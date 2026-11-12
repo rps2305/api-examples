@@ -64,4 +64,33 @@
 
   if ('requestIdleCallback' in window) window.requestIdleCallback(renderStandings, { timeout: 3_000 });
   else window.setTimeout(renderStandings, 0);
+  const dateFormat = new Intl.DateTimeFormat('nl-NL', { timeZone: 'Europe/Amsterdam', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  function showMatches(listId, statusId, matches, emptyText) {
+    const list = document.getElementById(listId), status = document.getElementById(statusId);
+    if (!list || !status) return;
+    if (!matches.length) { status.textContent = emptyText; return; }
+    list.replaceChildren(...matches.map(match => {
+      const li = document.createElement('li');
+      const date = document.createElement('time'); date.dateTime = match.date; date.textContent = dateFormat.format(new Date(match.date));
+      const name = document.createElement('strong'); name.textContent = match.name;
+      li.append(date, name);
+      if (match.score) { const score = document.createElement('span'); score.className = 'football-score'; score.textContent = match.score; li.append(score); }
+      return li;
+    }));
+    status.hidden = true;
+  }
+  fetch('events.json', { cache: 'no-cache' }).then(response => { if (!response.ok) throw Error(); return response.json(); }).then(events => {
+    const matches = events.filter(e => e.source === 'fc-twente' && new Date(e.startDate) >= new Date()).sort((a,b) => new Date(a.startDate) - new Date(b.startDate)).slice(0, 8).map(e => ({ date: e.startDate, name: e.name }));
+    showMatches('fixtures-list', 'fixtures-status', matches, 'Er zijn momenteel geen komende wedstrijden beschikbaar.');
+  }).catch(() => { document.getElementById('fixtures-status').textContent = 'Wedstrijden konden niet worden geladen. Bekijk het programma bij FC Twente.'; });
+  fetch('/api/fc-twente-results').then(response => { if (!response.ok) throw Error(); return response.json(); }).then(data => {
+    const matches = (data.events || []).flatMap(event => {
+      const competition = event.competitions?.[0], teams = competition?.competitors || [];
+      if (!competition?.status?.type?.completed) return [];
+      const home = teams.find(team => team.homeAway === 'home'), away = teams.find(team => team.homeAway === 'away');
+      if (!home || !away || home.score?.displayValue == null || away.score?.displayValue == null) return [];
+      return [{ date: event.date, name: `${home.team.displayName} – ${away.team.displayName}`, score: `${home.score.displayValue} – ${away.score.displayValue}` }];
+    }).sort((a,b) => new Date(b.date) - new Date(a.date)).slice(0, 8);
+    showMatches('results-list', 'results-status', matches, 'Er zijn momenteel geen uitslagen beschikbaar.');
+  }).catch(() => { document.getElementById('results-status').textContent = 'Uitslagen konden niet worden geladen. Bekijk de uitslagen bij ESPN.'; });
 }());

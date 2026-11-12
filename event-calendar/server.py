@@ -37,6 +37,8 @@ RSS_PATH = "/feeds/agenda.xml"
 RSS_FEED_ITEMS = 100
 STANDINGS_PATH = "/api/standings"
 STANDINGS_URL = "https://site.api.espn.com/apis/v2/sports/soccer/ned.1/standings"
+MATCHES_PATH = "/api/fc-twente-results"
+MATCHES_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/teams/152/schedule"
 STANDINGS_TTL_SECONDS = 600
 STANDINGS_LOCK = threading.Lock()
 _standings_cache: tuple[float, bytes | None] = (0.0, None)
@@ -287,18 +289,18 @@ class CalendarHandler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-    def fetch_standings(self) -> bytes:
+    def fetch_standings(self, url: str = STANDINGS_URL) -> bytes:
         """Fetch the standings with the request signature ESPN accepts."""
         if shutil.which("curl"):
             completed = subprocess.run(
-                ["curl", "-sS", "--fail", "--http2", STANDINGS_URL],
+                ["curl", "-sS", "--fail", "--http2", url],
                 capture_output=True,
                 timeout=15,
             )
             if completed.returncode == 0:
                 return completed.stdout
         request = urllib.request.Request(
-            STANDINGS_URL,
+            url,
             headers={
                 "User-Agent": "Mozilla/5.0 (compatible; Uit-Vandaag-Twente/1.0)",
                 "Accept": "application/json",
@@ -394,6 +396,18 @@ class CalendarHandler(SimpleHTTPRequestHandler):
             return
         if request_path == RSS_PATH:
             self.serve_feed()
+            return
+        if request_path == MATCHES_PATH:
+            try:
+                body = self.fetch_standings(MATCHES_URL)
+                self.send_response(HTTPStatus.OK)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Cache-Control", "public, max-age=600")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+            except Exception:
+                self.send_error(HTTPStatus.BAD_GATEWAY)
             return
         if request_path == STANDINGS_PATH:
             self.serve_standings()

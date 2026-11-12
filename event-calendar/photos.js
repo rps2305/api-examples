@@ -73,6 +73,7 @@
     if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) show(index + (dx < 0 ? 1 : -1));
   });
   dialog.addEventListener('keydown', event => {
+    if (event.key === 'Escape') { event.preventDefault(); dialog.close(); return; }
     if (event.key === 'ArrowLeft') show(index - 1);
     if (event.key === 'ArrowRight') show(index + 1);
   });

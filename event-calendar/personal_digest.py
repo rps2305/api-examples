@@ -89,19 +89,36 @@ def html_digest(events: list[dict[str, object]], logo_cid: str) -> str:
             meta = " · ".join(str(value) for value in (venue, event.get("genre"), event.get("location")) if value)
             availability = "<br><strong>Uitverkocht</strong>" if event.get("soldOut") is True else ""
             items.append(
-                f"<tr><td style='padding:0 0 12px'><table role='presentation' width='100%' cellspacing='0' cellpadding='0' style='background:{background};color:{foreground}'><tr>"
+                f"<tr><td style='padding:0 0 12px'><table role='presentation' class='event event-{escape(source, quote=True)}' width='100%' cellspacing='0' cellpadding='0' bgcolor='{background}' style='background:{background};color:{foreground}'><tr>"
                 f"<td style='width:72px;padding:16px 10px 16px 16px;vertical-align:top;font:700 16px {EMAIL_FONT_DISPLAY}'>{escape(start.strftime('%d'))}<br><span style='font:12px {EMAIL_FONT_UI}'>{WEEKDAY_ABBREVIATIONS[start.weekday()].upper()}</span></td>"
                 f"<td style='padding:16px 16px 16px 0;vertical-align:top'><strong style='font:600 18px {EMAIL_FONT_DISPLAY}'>{escape(str(event['name']))}</strong><br><span style='font:13px {EMAIL_FONT_UI}'>{escape(meta)}</span><br><span style='font:13px {EMAIL_FONT_UI}'>{escape(start.strftime('%H:%M'))} uur &nbsp; {links}</span>{availability}</td></tr></table></td></tr>"
             )
         sections.append(f"<tr><td style='padding:28px 0 10px;font:700 24px {EMAIL_FONT_DISPLAY};text-transform:uppercase'>{month_title(first_start)}</td></tr>{''.join(items)}")
     content = "".join(sections) or "<tr><td>Geen evenementen in de komende twee maanden.</td></tr>"
-    return f"""<!doctype html><html lang='nl'><body style='margin:0;background:{EMAIL_COLORS['canvas']};color:{EMAIL_COLORS['ink']};font-family:{EMAIL_FONT_UI}'>
+    return f"""<!doctype html><html lang='nl'><head><meta name='color-scheme' content='light dark'><meta name='supported-color-schemes' content='light dark'><style>
+@media (prefers-color-scheme: dark) {{
+  .email-canvas {{ background-color:#111827 !important; color:#f8fafc !important; }}
+  .email-surface {{ background-color:#202b3c !important; color:#f8fafc !important; }}
+  .email-footer, .email-footer a {{ color:#d8e1ec !important; }}
+  .event {{ background-color:#34445b !important; color:#ffffff !important; }}
+  .event a {{ color:#ffffff !important; }}
+  .event-metropool {{ background-color:#56317d !important; color:#fff0a6 !important; }}
+  .event-metropool a {{ color:#fff0a6 !important; }}
+  .event-de-cactus {{ background-color:#a5e870 !important; color:#101b12 !important; }}
+  .event-de-cactus a {{ color:#101b12 !important; }}
+  .event-fc-twente {{ background-color:#9e2028 !important; color:#ffffff !important; }}
+  .event-hengelo {{ background-color:#3154a1 !important; color:#ffffff !important; }}
+  .event-feestdagen {{ background-color:#ffad5c !important; color:#241508 !important; }}
+  .event-feestdagen a {{ color:#241508 !important; }}
+  .email-button {{ background-color:#f9c234 !important; color:#111827 !important; }}
+}}
+</style></head><body class='email-canvas' style='margin:0;background:{EMAIL_COLORS['canvas']};color:{EMAIL_COLORS['ink']};font-family:{EMAIL_FONT_UI}'>
 <table role='presentation' width='100%' cellspacing='0' cellpadding='0'><tr><td align='center' style='padding:24px'>
 <table role='presentation' width='600' cellspacing='0' cellpadding='0' style='max-width:600px'><tr><td style='background:{EMAIL_COLORS['masthead']};color:{EMAIL_COLORS['inverse']};padding:24px'>
 <img src='cid:{logo_cid}' width='56' height='56' alt='Uit Vandaag' style='display:block;margin:0 0 18px' /><p style='margin:0;color:{EMAIL_COLORS['accent_warm']};font:12px {EMAIL_FONT_UI};letter-spacing:1px'>TWENTE · UITAGENDA</p><h1 style='margin:10px 0 0;font:700 36px {EMAIL_FONT_DISPLAY}'>Dit staat er op de planning</h1></td></tr>
-<tr><td style='background:{EMAIL_COLORS['surface']};padding:26px'><p style='margin:0'>Jouw culturele agenda voor deze en volgende maand.</p><table role='presentation' width='100%' cellspacing='0' cellpadding='0'>{content}</table>
-<p style='margin:26px 0 0'><a href='{PUBLIC_SITE_URL}' style='display:inline-block;background:{EMAIL_COLORS['accent']};color:{EMAIL_COLORS['inverse']};padding:12px 16px;text-decoration:none'>Bekijk volledige agenda →</a></p></td></tr>
-<tr><td style='padding:18px 26px;color:{EMAIL_COLORS['muted']};font:12px {EMAIL_FONT_UI}'>Een idee van <a href='https://www.ronaldpunt.nl' style='color:{EMAIL_COLORS['muted']}'>Ronald Punt</a>. Deze agenda gebruikt webscraping; gebruik op eigen risico.</td></tr>
+<tr><td class='email-surface' bgcolor='{EMAIL_COLORS['surface']}' style='background:{EMAIL_COLORS['surface']};color:{EMAIL_COLORS['ink']};padding:26px'><p style='margin:0'>Jouw culturele agenda voor deze en volgende maand.</p><table role='presentation' width='100%' cellspacing='0' cellpadding='0'>{content}</table>
+<p style='margin:26px 0 0'><a class='email-button' href='{PUBLIC_SITE_URL}' style='display:inline-block;background:{EMAIL_COLORS['accent']};color:{EMAIL_COLORS['inverse']};padding:12px 16px;text-decoration:none'>Bekijk volledige agenda →</a></p></td></tr>
+<tr><td class='email-footer' style='padding:18px 26px;color:{EMAIL_COLORS['muted']};font:12px {EMAIL_FONT_UI}'>Een idee van <a href='https://www.ronaldpunt.nl' style='color:{EMAIL_COLORS['muted']}'>Ronald Punt</a>. Deze agenda gebruikt webscraping; gebruik op eigen risico.</td></tr>
 </table></td></tr></table></body></html>"""
 
 

@@ -22,7 +22,7 @@ ICAL = Path(__file__).with_name("events.ics")
 INDEX = Path(__file__).with_name("index.html")
 CONTACT = Path(__file__).with_name("contact.html")
 DISCLAIMER = Path(__file__).with_name("disclaimer.html")
-PRERENDER_LIMIT = 60
+PRERENDER_DAYS = 14
 sys.path.insert(0, str(SCRIPTS))
 
 from event_sources import load_text, normalize_event_times  # noqa: E402
@@ -58,6 +58,9 @@ def future_events(
     return result
 
 
+DEDUPE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3, "feestdagen": 4, "bijzonder": 10, "hengelo": 10}
+
+
 def deduplicate_events(events: list[dict[str, object]]) -> list[dict[str, object]]:
     """Remove duplicate events, retaining the preferred source where records overlap."""
     seen_exact: set[tuple[str, str]] = set()
@@ -66,7 +69,7 @@ def deduplicate_events(events: list[dict[str, object]]) -> list[dict[str, object
     ordered_events = sorted(
         events,
         key=lambda event: (
-            SOURCE_PRIORITY.get(str(event.get("source")), 10),
+            DEDUPE_PRIORITY.get(str(event.get("source")), 10),
             str(event["startDate"]),
             str(event.get("name", "")).casefold(),
         ),
@@ -78,11 +81,11 @@ def deduplicate_events(events: list[dict[str, object]]) -> list[dict[str, object
         exact_identity = name, start
         place_identity = name, local_date_key(start), location
         is_lower_priority_duplicate = (
-            SOURCE_PRIORITY.get(str(event.get("source")), 10) > 1
+            DEDUPE_PRIORITY.get(str(event.get("source")), 10) > 1
             and any(
                 existing.get("source") in {"metropool", "de-cactus", "oogst"}
-                and SOURCE_PRIORITY.get(str(existing.get("source")), 10)
-                < SOURCE_PRIORITY.get(str(event.get("source")), 10)
+                and DEDUPE_PRIORITY.get(str(existing.get("source")), 10)
+                < DEDUPE_PRIORITY.get(str(event.get("source")), 10)
                 and local_date_key(existing["startDate"]) == local_date_key(start)
                 and event_names_match(name, normalized_event_name(existing.get("name")))
                 for existing in result
@@ -160,7 +163,13 @@ def json_for_script(value: object) -> str:
 
 WEEKDAYS = ("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag")
 MONTHS = ("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december")
-SOURCE_PRIORITY = {"metropool": 0, "de-cactus": 1, "fc-twente": 2, "oogst": 3, "feestdagen": 4, "bijzonder": 10, "hengelo": 10}
+SOURCE_PRIORITY = {"metropool": 1, "de-cactus": 2, "oogst": 3, "feestdagen": 4, "fc-twente": 5, "bijzonder": 10, "hengelo": 10}
+
+
+def agenda_rank(event: dict) -> int:
+    if event.get("source") == "fc-twente" and event.get("isHome") is True:
+        return 0
+    return SOURCE_PRIORITY.get(str(event.get("source")), 10)
 
 
 def safe_external_url(value: object) -> str:
@@ -277,17 +286,25 @@ def prerender_event(event: dict[str, object]) -> str:
     )
 
 
+def first_page(events: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Events in the first PRERENDER_DAYS calendar days, matching the paging in app.js."""
+    if not events:
+        return []
+    cutoff = (date.fromisoformat(local_date_key(str(events[0]["startDate"]))) + timedelta(days=PRERENDER_DAYS)).isoformat()
+    return [event for event in events if local_date_key(str(event["startDate"])) < cutoff]
+
+
 def prerender_agenda(events: list[dict[str, object]]) -> str:
     """Build an initial semantic agenda page; JavaScript progressively reveals the rest."""
     groups: dict[str, list[dict[str, object]]] = {}
-    for event in events[:PRERENDER_LIMIT]:
+    for event in first_page(events):
         for day_key in display_date_keys(event):
             groups.setdefault(day_key, []).append(event)
     sections: list[str] = []
     for day_key, items in groups.items():
         current = date.fromisoformat(day_key)
         label = f"{WEEKDAYS[current.weekday()]} {current.day} {MONTHS[current.month - 1]}"
-        items.sort(key=lambda event: (SOURCE_PRIORITY.get(str(event.get("source")), 10), str(event["startDate"]), str(event.get("name", "")).casefold()))
+        items.sort(key=lambda event: (agenda_rank(event), str(event["startDate"]), str(event.get("name", "")).casefold()))
         count = len(items)
         sections.append(
             f'<section class="day"><div class="day-heading"><h2><time datetime="{day_key}">{label}<span class="day-year">{current.year}</span></time></h2>'
@@ -379,11 +396,11 @@ def update_index(events: list[dict[str, object]], processed_at: datetime) -> Non
     script_end = index.index("</script>", script_start) + len("</script>")
     # Keep the rendered first page available to file:// users and non-networked
     # previews. Hosted pages fetch the complete feed after their first paint.
-    embedded = f'<script id="event-data" type="application/json">{json_for_script(events[:PRERENDER_LIMIT])}</script>'
+    embedded = f'<script id="event-data" type="application/json">{json_for_script(first_page(events))}</script>'
     index = index[:script_start] + embedded + index[script_end:]
     # Match structured data to the server-rendered first page. A page-sized list
     # is useful to crawlers without turning the document head into the main payload.
-    schema = f'<script id="event-schema" type="application/ld+json">{json_for_script(event_item_list(events[:PRERENDER_LIMIT]))}</script>'
+    schema = f'<script id="event-schema" type="application/ld+json">{json_for_script(event_item_list(first_page(events)))}</script>'
     index = replace_between(index, "<!-- EVENT_SCHEMA_START -->", "<!-- EVENT_SCHEMA_END -->", schema)
     index = replace_between(index, "<!-- EVENT_LIST_START -->", "<!-- EVENT_LIST_END -->", prerender_agenda(events))
     index = replace_between(index, "<!-- HERO_SUMMARY_START -->", "<!-- HERO_SUMMARY_END -->", agenda_summary(events, processed_at))
