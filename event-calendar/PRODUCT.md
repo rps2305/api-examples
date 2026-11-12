@@ -1,32 +1,42 @@
 # Product
 
-## Register
+<!-- impeccable:product-schema 1 -->
 
-product
+## Platform
+
+web
 
 ## Users
 
-Ronald Punt uses this agenda to decide what to do and avoid double bookings. Other visitors may use the same practical planning tool.
+Ronald Punt gebruikt deze agenda om te bepalen wat hij gaat doen en dubbele afspraken te voorkomen. Andere bezoekers kunnen dezelfde praktische agenda gebruiken.
 
 ## Product Purpose
 
-Bring a deliberately selected set of Twente events into one reliable, shareable agenda. Filters must be understandable, persistent, and useful without pretending to be a complete regional listing.
+Een bewust geselecteerd aanbod van Twentse evenementen samenbrengen in één betrouwbare, deelbare agenda.
 
-## Brand Personality
+## Positioning
 
-Nuchter, lokaal, betrouwbaar.
+Een persoonlijke selectie, geen volledige regionale evenementenkalender, drukke commerciële ticketwinkel of advertentieportaal.
 
-## Anti-references
+## Operating Context
 
-Not a busy commercial ticket shop, an ad-filled events portal, or an exhaustive claim about every event in Twente.
+Bezoekers gebruiken de agenda om evenementen te vinden en hun planning te maken. De selectie bevat onder meer muziek, evenementen en FC Twente.
 
-## Design Principles
+## Brand Commitments
 
-- Explain scope and data provenance at the point of use.
-- Make planning actions explicit.
-- Preserve shareable state in the URL.
-- Never invent event details that a source did not publish.
+Uit Vandaag Twente is nuchter, lokaal en betrouwbaar.
+
+## Evidence on Hand
+
+De bestaande agenda en bronvermeldingen staan in `index.html` en `events.json`. De projectdocumentatie staat in `README.md`.
+
+## Product Principles
+
+- Leg de reikwijdte en herkomst van gegevens uit op de plek waar ze worden gebruikt.
+- Maak acties voor het plannen expliciet.
+- Bewaar deelbare instellingen in de URL.
+- Verzin nooit evenementgegevens die een bron niet heeft gepubliceerd.
 
 ## Accessibility & Inclusion
 
-Use plain Dutch labels, keyboard-accessible controls, visible focus, and text labels in addition to color and icons.
+Gebruik duidelijke Nederlandse labels, toetsenbordtoegankelijke bediening, zichtbare focus en tekstlabels naast kleur en pictogrammen.
