@@ -944,10 +944,11 @@ button.active { background: var(--color-ink); color: var(--color-ink-inverse); }
   .site-menu-icon path { transition: none; }
 }
 
-.site-menu { position: relative; z-index: 5; }
+.site-menu { position: relative; z-index: 5; display: flex; align-items: center; }
 .site-menu-toggle { display: inline-flex; align-items: center; gap: var(--space-2); min-height: 44px; border-color: color-mix(in srgb, var(--color-ink-inverse) 55%, transparent); color: var(--color-ink-inverse); }
 .site-menu-toggle:hover, .site-menu-toggle[aria-expanded="true"] { border-color: var(--color-accent-warm); background: transparent; color: var(--color-accent-warm); }
-.site-menu-icon { display: block; width: 1.15rem; height: 1.15rem; }
+.site-menu-icon { display: grid; place-items: center; width: 1.15rem; height: 1.15rem; flex: 0 0 auto; }
+.site-menu-icon svg { width: 250%; height: 250%; max-width: none; }
 .site-menu-icon path {
   fill: none;
   stroke: currentColor;
